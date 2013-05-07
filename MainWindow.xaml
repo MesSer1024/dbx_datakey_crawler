@@ -1,0 +1,73 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:local="clr-namespace:Search_DBX_files" x:Class="Search_DBX_files.MainWindow"
+        Title="MainWindow" Height="768" Width="1024">
+    <Window.Resources>
+        <Style x:Key="emptyStyle">
+            <Style.Resources>
+                <SolidColorBrush x:Key="{x:Static SystemColors.HighlightBrushKey}" Color="Red"/>
+            </Style.Resources>
+        </Style>
+        <Style x:Key="normalStyle" TargetType="{x:Type ListBoxItem}">
+            <Setter Property="Background" Value="Black"/>
+            <Setter Property="Foreground" Value="Yellow"/>
+        </Style>
+    </Window.Resources>
+    <Grid>
+            <StackPanel Margin="0" VerticalAlignment="Top" Height="100" >
+                <StackPanel Orientation="Horizontal">
+                    <Label Content="DBX Root Folder:" />
+                    <TextBox Height="23" MinWidth="500" Text="E:\repositories\Warsaw\Data\Source\UI" x:Name="dbxFolder"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Label Content="CPP Root Folder:" />
+                    <TextBox HorizontalAlignment="Left" MinWidth="500" Height="23" Text="E:\repositories\Warsaw\TnT\Code" VerticalAlignment="Top" x:Name="cppRoot" />
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Label Content="UICompDataDefines.h:" />
+                    <TextBox HorizontalAlignment="Left" Height="23" MinWidth="500" Text="E:\repositories\Warsaw\TnT\Code\BF\BF\Client\UI\Generated\UIComponentDataDefines.h" x:Name="dataDefsFile"/>
+                </StackPanel>
+                <Button Content="Analyze dependencies" HorizontalAlignment="Left" Width="281" Click="onAnalyze" x:Name="btn"/>
+            </StackPanel>
+
+        <DockPanel Margin="0,125,0,0">
+            <StackPanel DockPanel.Dock="Left">
+                <StackPanel Orientation="Horizontal" >
+                    <Label Content="filter:" HorizontalAlignment="Left" />
+                    <TextBox x:Name="idFilter" MinWidth="250" HorizontalAlignment="Stretch" SelectionChanged="onFilterChanged" Text="UI_"/>
+                </StackPanel>
+                <!--Label Content="Datakeys:" Width="332" HorizontalContentAlignment="Center"/-->
+                <!--<ListBox Height="600" MinWidth="332" x:Name="identifiersList" SelectionChanged="onGuidSelected" DisplayMemberPath="VisibleName">-->
+                <ListBox Height="600" MinWidth="332" x:Name="identifiersList" SelectionChanged="onGuidSelected" DisplayMemberPath="VisibleName" FontFamily="Segoe UI Mono">
+                    <ListBox.DataContext>
+                        <local:DiceItem/>
+                    </ListBox.DataContext>
+                </ListBox>
+            </StackPanel>
+            <StackPanel>
+                <Label Content="Used in files:" Width="332" HorizontalContentAlignment="Center"/>
+                <ListBox Height="600" Width="332" x:Name="usedFileList" SelectionChanged="onFileSelected" FontFamily="Segoe UI Mono" />
+            </StackPanel>
+            <StackPanel>
+                <Label Content="Line when used:" MinWidth="332" HorizontalContentAlignment="Center"/>
+                <ListBox Height="600" MinWidth="332" x:Name="usedLinesList" SelectionChanged="onLineSelected" FontFamily="Segoe UI Mono" />
+            </StackPanel>
+
+        </DockPanel>
+        <StackPanel HorizontalAlignment="Left" Height="175" Margin="706,0,0,0" VerticalAlignment="Top" Width="300" x:Name="infoBox" >
+            <StackPanel Orientation="Horizontal">
+                <Label Content="Dbx line filter:" />
+                <TextBox x:Name="dbxLineFilter" MinWidth="150" Text="field name="/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <Label Content="cpp line filter:" />
+                <TextBox x:Name="cppLineFilter" MinWidth="150" Text="UI_"/>
+            </StackPanel>
+        </StackPanel>
+        <Rectangle Fill="#FFF4F4F5" Stroke="Black" Margin="0,230,0,240" x:Name="blocker1"/>
+        <Label Content="Loading ... [progress should be seen within 10s]" HorizontalAlignment="Left" Margin="398,336,0,0" VerticalAlignment="Top" x:Name="blocker2"/>
+        <Label Content="files:" HorizontalAlignment="Left" Margin="342,405,0,0" VerticalAlignment="Top" x:Name="fileStatus" Width="315"/>
+        <Label Content="guid:" HorizontalAlignment="Left" Margin="342,431,0,0" VerticalAlignment="Top" x:Name="guidStatus" Width="397"/>
+    </Grid>
+</Window>

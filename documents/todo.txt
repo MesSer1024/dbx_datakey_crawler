@@ -1,0 +1,11 @@
+Förslag till 1.3
+	När en key bara har setData så kan den markeras som obsolete.
+	Gör det möjligt att filtrera i fälten
+
+förslag till 1.4
+	Ta bort false positives när en key heter precis likadan och sen heter något mer
+	UI_USERCOMP_MENUHINT
+	UI_USERCOMP_MENUHINTAWESOMENESS
+	Möjligt att spara en sökning
+	Möjligt att ladda en sökning
+
