@@ -1,8 +1,8 @@
 
 -1050510277 - UI_FRONTENDCOMP_GLOBALCONSTBOOLFALSE
-	[1008] setData(UI_FRONTENDCOMP_GLOBALCONSTBOOLFALSE, false); | BFUISystem.cpp
+	[1010] setData(UI_FRONTENDCOMP_GLOBALCONSTBOOLFALSE, false); | BFUISystem.cpp
 589916236 - UI_FRONTENDCOMP_PREMIUMHIGHLIGHTED
-	[146] IUISystem::getInstance()->setData(UI_FRONTENDCOMP_PREMIUMHIGHLIGHTED, false); | FrontEnd.cpp
+	[144] IUISystem::getInstance()->setData(UI_FRONTENDCOMP_PREMIUMHIGHLIGHTED, false); | FrontEnd.cpp
 1339344192 - UI_UIASSIGNMENTSCOMP_ASSIGNMENTNAME
 	[486] UISystem::getInstance()->setData(UI_UIASSIGNMENTSCOMP_ASSIGNMENTNAME, item.m_name); | UIAssignmentsComp.cpp
 -807304919 - UI_UIASSIGNMENTSCOMP_REQUIREMENTLIST
@@ -10,138 +10,170 @@
 -2113173309 - UI_UIASSIGNMENTSCOMP_SHOWMULTIPLEREWARDS
 	[596] IUISystem::getInstance()->setData(UI_UIASSIGNMENTSCOMP_SHOWMULTIPLEREWARDS, true); | UIAssignmentsComp.cpp
 	[616] IUISystem::getInstance()->setData(UI_UIASSIGNMENTSCOMP_SHOWMULTIPLEREWARDS, false); | UIAssignmentsComp.cpp
--1849405839 - UI_UIBATTLELOGCOMP_BATTLEFEEDCOUNT
-	[68] IUISystem::getInstance()->setData(UI_UIBATTLELOGCOMP_BATTLEFEEDCOUNT, m_unreadBattleLogItemsCount); | BattlelogSourceBattlefeed.cpp
-	[126] IUISystem::getInstance()->setData(UI_UIBATTLELOGCOMP_BATTLEFEEDCOUNT, battleLogItemCount); | BattlelogSourceBattlefeed.cpp
-4543768 - UI_UIBATTLELOGCOMP_FRIENDSCOUNT
-	[194] IUISystem::getInstance()->setDataValue(UI_UIBATTLELOGCOMP_FRIENDSCOUNT, 5); | BattlelogSourceFriends.cpp
 1400234184 - UI_UICOMBATAREACOMP_TEXT
 	[558] UISystem::getInstance()->setData(UI_UICOMBATAREACOMP_TEXT, sidPrefix.append(levelName).c_str()); | UICombatAreaComp.cpp
 -1036797390 - UI_UICOMBATAREACOMP_TIMER
 	[566] UISystem::getInstance()->setData(UI_UICOMBATAREACOMP_TIMER, 0); | UICombatAreaComp.cpp
 	[684] UISystem::getInstance()->setData(UI_UICOMBATAREACOMP_TIMER, (double)m_deserterTimer); | UICombatAreaComp.cpp
 -2070895918 - UI_UICOMMANDERCOMP_COMMANDERLABEL
-	[120] IUISystem::getInstance()->setData(UI_UICOMMANDERCOMP_COMMANDERLABEL, isCommander ? "COMMANDER_RESIGN" : "COMMANDER_APPLY"); | UICommanderComp.cpp
+	[150] IUISystem::getInstance()->setData(UI_UICOMMANDERCOMP_COMMANDERLABEL, isCommander ? "COMMANDER_RESIGN" : "COMMANDER_APPLY"); | UICommanderComp.cpp
 1819782920 - UI_UICOMMANDERCOMP_EARLYWARNINGENABLED
-	[318] IUISystem::getInstance()->setData(UI_UICOMMANDERCOMP_EARLYWARNINGENABLED, commanderEntity->isActionEnabled(CommanderActionType_EarlyWarning)); | UICommanderComp.cpp
+	[398] IUISystem::getInstance()->setData(UI_UICOMMANDERCOMP_EARLYWARNINGENABLED, commanderEntity->isActionEnabled(CommanderActionType_EarlyWarning)); | UICommanderComp.cpp
+487160153 - UI_UICOMMANDERCOMP_EARLYWARNINGMAX
+	[394] IUISystem::getInstance()->setData(UI_UICOMMANDERCOMP_EARLYWARNINGMAX, commanderEntity->getActionStateDuration(CommanderActionType_EarlyWarning) * gameTime->tickFrequency()); | UICommanderComp.cpp
+-41797680 - UI_UICOMMANDERCOMP_EARLYWARNINGPROGRESS
+	[392] IUISystem::getInstance()->setData(UI_UICOMMANDERCOMP_EARLYWARNINGPROGRESS, (float)(commanderEntity->getActionStateEndTimeStamp(CommanderActionType_EarlyWarning) - gameTime->ticks())); | UICommanderComp.cpp
 -2028476678 - UI_UICOMMANDERCOMP_EARLYWARNINGSTATE
-	[320] IUISystem::getInstance()->setData(UI_UICOMMANDERCOMP_EARLYWARNINGSTATE, commanderEntity->getActionState(CommanderActionType_EarlyWarning)); | UICommanderComp.cpp
+	[400] IUISystem::getInstance()->setData(UI_UICOMMANDERCOMP_EARLYWARNINGSTATE, commanderEntity->getActionState(CommanderActionType_EarlyWarning)); | UICommanderComp.cpp
 888199535 - UI_UICOMMANDERCOMP_INFANTRYSCANENABLED
-	[290] IUISystem::getInstance()->setData(UI_UICOMMANDERCOMP_INFANTRYSCANENABLED, commanderEntity->isActionEnabled(CommanderActionType_InfantryScan)); | UICommanderComp.cpp
+	[370] IUISystem::getInstance()->setData(UI_UICOMMANDERCOMP_INFANTRYSCANENABLED, commanderEntity->isActionEnabled(CommanderActionType_InfantryScan)); | UICommanderComp.cpp
+1671740606 - UI_UICOMMANDERCOMP_INFANTRYSCANMAX
+	[366] IUISystem::getInstance()->setData(UI_UICOMMANDERCOMP_INFANTRYSCANMAX, commanderEntity->getActionStateDuration(CommanderActionType_InfantryScan) * gameTime->tickFrequency()); | UICommanderComp.cpp
+-274479593 - UI_UICOMMANDERCOMP_INFANTRYSCANPROGRESS
+	[364] IUISystem::getInstance()->setData(UI_UICOMMANDERCOMP_INFANTRYSCANPROGRESS, (float)(commanderEntity->getActionStateEndTimeStamp(CommanderActionType_InfantryScan) - gameTime->ticks())); | UICommanderComp.cpp
 -514951843 - UI_UICOMMANDERCOMP_INFANTRYSCANSTATE
-	[292] IUISystem::getInstance()->setData(UI_UICOMMANDERCOMP_INFANTRYSCANSTATE, commanderEntity->getActionState(CommanderActionType_InfantryScan)); | UICommanderComp.cpp
+	[372] IUISystem::getInstance()->setData(UI_UICOMMANDERCOMP_INFANTRYSCANSTATE, commanderEntity->getActionState(CommanderActionType_InfantryScan)); | UICommanderComp.cpp
 1391594791 - UI_UICOMMANDERCOMP_JAMENABLED
-	[220] IUISystem::getInstance()->setData(UI_UICOMMANDERCOMP_JAMENABLED, commanderEntity->isActionEnabled(CommanderActionType_SectorJam)); | UICommanderComp.cpp
+	[300] IUISystem::getInstance()->setData(UI_UICOMMANDERCOMP_JAMENABLED, commanderEntity->isActionEnabled(CommanderActionType_SectorJam)); | UICommanderComp.cpp
+1253651574 - UI_UICOMMANDERCOMP_JAMMAX
+	[296] IUISystem::getInstance()->setData(UI_UICOMMANDERCOMP_JAMMAX, commanderEntity->getActionStateDuration(CommanderActionType_SectorJam) * gameTime->tickFrequency()); | UICommanderComp.cpp
+-823462305 - UI_UICOMMANDERCOMP_JAMPROGRESS
+	[294] IUISystem::getInstance()->setData(UI_UICOMMANDERCOMP_JAMPROGRESS, (float)(commanderEntity->getActionStateEndTimeStamp(CommanderActionType_SectorJam) - gameTime->ticks())); | UICommanderComp.cpp
 -575806187 - UI_UICOMMANDERCOMP_JAMSTATE
-	[222] IUISystem::getInstance()->setData(UI_UICOMMANDERCOMP_JAMSTATE, commanderEntity->getActionState(CommanderActionType_SectorJam)); | UICommanderComp.cpp
+	[302] IUISystem::getInstance()->setData(UI_UICOMMANDERCOMP_JAMSTATE, commanderEntity->getActionState(CommanderActionType_SectorJam)); | UICommanderComp.cpp
 -1377752443 - UI_UICOMMANDERCOMP_RADARENABLED
-	[234] //	IUISystem::getInstance()->setData(UI_UICOMMANDERCOMP_RADARENABLED, commanderEntity->isActionEnabled(CommanderActionType_RadarScan)); | UICommanderComp.cpp
+	[314] //	IUISystem::getInstance()->setData(UI_UICOMMANDERCOMP_RADARENABLED, commanderEntity->isActionEnabled(CommanderActionType_RadarScan)); | UICommanderComp.cpp
+1406960084 - UI_UICOMMANDERCOMP_RADARMAX
+	[310] //	IUISystem::getInstance()->setData(UI_UICOMMANDERCOMP_RADARMAX, commanderEntity->getActionStateDuration(CommanderActionType_RadarScan) * gameTime->tickFrequency()); | UICommanderComp.cpp
+1510125949 - UI_UICOMMANDERCOMP_RADARPROGRESS
+	[308] //	IUISystem::getInstance()->setData(UI_UICOMMANDERCOMP_RADARPROGRESS, (float)(commanderEntity->getActionStateEndTimeStamp(CommanderActionType_RadarScan) - gameTime->ticks())); | UICommanderComp.cpp
 -1112480265 - UI_UICOMMANDERCOMP_RADARSTATE
-	[236] //	IUISystem::getInstance()->setData(UI_UICOMMANDERCOMP_RADARSTATE, commanderEntity->getActionState(CommanderActionType_RadarScan)); | UICommanderComp.cpp
+	[316] //	IUISystem::getInstance()->setData(UI_UICOMMANDERCOMP_RADARSTATE, commanderEntity->getActionState(CommanderActionType_RadarScan)); | UICommanderComp.cpp
 -609373179 - UI_UICOMMANDERCOMP_REINFORCEDROPENABLED
-	[276] IUISystem::getInstance()->setData(UI_UICOMMANDERCOMP_REINFORCEDROPENABLED, commanderEntity->isActionEnabled(CommanderActionType_DefenseDrop)); | UICommanderComp.cpp
+	[356] IUISystem::getInstance()->setData(UI_UICOMMANDERCOMP_REINFORCEDROPENABLED, commanderEntity->isActionEnabled(CommanderActionType_DefenseDrop)); | UICommanderComp.cpp
+-102741164 - UI_UICOMMANDERCOMP_REINFORCEDROPMAX
+	[352] //	IUISystem::getInstance()->setData(UI_UICOMMANDERCOMP_REINFORCEDROPMAX, commanderEntity->getActionStateDuration(CommanderActionType_DefenseDrop) * gameTime->tickFrequency()); | UICommanderComp.cpp
 -204664969 - UI_UICOMMANDERCOMP_REINFORCEDROPSTATE
-	[278] IUISystem::getInstance()->setData(UI_UICOMMANDERCOMP_REINFORCEDROPSTATE, commanderEntity->getActionState(CommanderActionType_DefenseDrop)); | UICommanderComp.cpp
+	[358] IUISystem::getInstance()->setData(UI_UICOMMANDERCOMP_REINFORCEDROPSTATE, commanderEntity->getActionState(CommanderActionType_DefenseDrop)); | UICommanderComp.cpp
+-1116506156 - UI_UICOMMANDERCOMP_REINFORCEPROGRESS
+	[350] //	IUISystem::getInstance()->setData(UI_UICOMMANDERCOMP_REINFORCEPROGRESS, (float)(commanderEntity->getActionStateEndTimeStamp(CommanderActionType_DefenseDrop) - gameTime->ticks())); | UICommanderComp.cpp
 -1100445598 - UI_UICOMMANDERCOMP_SATELLITEEMPENABLED
-	[332] IUISystem::getInstance()->setData(UI_UICOMMANDERCOMP_SATELLITEEMPENABLED, commanderEntity->isActionEnabled(CommanderActionType_SatelliteEMP)); | UICommanderComp.cpp
+	[412] IUISystem::getInstance()->setData(UI_UICOMMANDERCOMP_SATELLITEEMPENABLED, commanderEntity->isActionEnabled(CommanderActionType_SatelliteEMP)); | UICommanderComp.cpp
+-378608717 - UI_UICOMMANDERCOMP_SATELLITEEMPMAX
+	[408] IUISystem::getInstance()->setData(UI_UICOMMANDERCOMP_SATELLITEEMPMAX, commanderEntity->getActionStateDuration(CommanderActionType_SatelliteEMP) * gameTime->tickFrequency()); | UICommanderComp.cpp
+1617031034 - UI_UICOMMANDERCOMP_SATELLITEEMPPROGRESS
+	[406] IUISystem::getInstance()->setData(UI_UICOMMANDERCOMP_SATELLITEEMPPROGRESS, (float)(commanderEntity->getActionStateEndTimeStamp(CommanderActionType_SatelliteEMP) - gameTime->ticks())); | UICommanderComp.cpp
 27667280 - UI_UICOMMANDERCOMP_SATELLITEEMPSTATE
-	[334] IUISystem::getInstance()->setData(UI_UICOMMANDERCOMP_SATELLITEEMPSTATE, commanderEntity->getActionState(CommanderActionType_SatelliteEMP)); | UICommanderComp.cpp
+	[414] IUISystem::getInstance()->setData(UI_UICOMMANDERCOMP_SATELLITEEMPSTATE, commanderEntity->getActionState(CommanderActionType_SatelliteEMP)); | UICommanderComp.cpp
 -211796610 - UI_UICOMMANDERCOMP_SCANENABLED
-	[186] IUISystem::getInstance()->setData(UI_UICOMMANDERCOMP_SCANENABLED, commanderEntity->isActionEnabled(CommanderActionType_SectorScan)); | UICommanderComp.cpp
+	[266] IUISystem::getInstance()->setData(UI_UICOMMANDERCOMP_SCANENABLED, commanderEntity->isActionEnabled(CommanderActionType_SectorScan)); | UICommanderComp.cpp
+1876332719 - UI_UICOMMANDERCOMP_SCANMAX
+	[262] IUISystem::getInstance()->setData(UI_UICOMMANDERCOMP_SCANMAX, commanderEntity->getActionStateDuration(CommanderActionType_SectorScan) * gameTime->tickFrequency()); | UICommanderComp.cpp
+225171430 - UI_UICOMMANDERCOMP_SCANPROGRESS
+	[260] IUISystem::getInstance()->setData(UI_UICOMMANDERCOMP_SCANPROGRESS, (float)(commanderEntity->getActionStateEndTimeStamp(CommanderActionType_SectorScan) - gameTime->ticks())); | UICommanderComp.cpp
 -1089410740 - UI_UICOMMANDERCOMP_SCANSTATE
-	[188] IUISystem::getInstance()->setData(UI_UICOMMANDERCOMP_SCANSTATE, commanderEntity->getActionState(CommanderActionType_SectorScan)); | UICommanderComp.cpp
+	[268] IUISystem::getInstance()->setData(UI_UICOMMANDERCOMP_SCANSTATE, commanderEntity->getActionState(CommanderActionType_SectorScan)); | UICommanderComp.cpp
 400489042 - UI_UICOMMANDERCOMP_SUPPLYENABLED
-	[248] //	IUISystem::getInstance()->setData(UI_UICOMMANDERCOMP_SUPPLYENABLED, commanderEntity->isActionEnabled(CommanderActionType_SupplyDrop)); | UICommanderComp.cpp
+	[328] //	IUISystem::getInstance()->setData(UI_UICOMMANDERCOMP_SUPPLYENABLED, commanderEntity->isActionEnabled(CommanderActionType_SupplyDrop)); | UICommanderComp.cpp
+-98582909 - UI_UICOMMANDERCOMP_SUPPLYMAX
+	[324] //	IUISystem::getInstance()->setData(UI_UICOMMANDERCOMP_SUPPLYMAX, commanderEntity->getActionStateDuration(CommanderActionType_SupplyDrop) * gameTime->tickFrequency()); | UICommanderComp.cpp
+-520030774 - UI_UICOMMANDERCOMP_SUPPLYPROGRESS
+	[322] //	IUISystem::getInstance()->setData(UI_UICOMMANDERCOMP_SUPPLYPROGRESS, (float)(commanderEntity->getActionStateEndTimeStamp(CommanderActionType_SupplyDrop) - gameTime->ticks())); | UICommanderComp.cpp
 -12732128 - UI_UICOMMANDERCOMP_SUPPLYSTATE
-	[250] //	IUISystem::getInstance()->setData(UI_UICOMMANDERCOMP_SUPPLYSTATE, commanderEntity->getActionState(CommanderActionType_SupplyDrop)); | UICommanderComp.cpp
+	[330] //	IUISystem::getInstance()->setData(UI_UICOMMANDERCOMP_SUPPLYSTATE, commanderEntity->getActionState(CommanderActionType_SupplyDrop)); | UICommanderComp.cpp
+-1920160787 - UI_UICOMMANDERCOMP_TOMAHAWKCOST
+	[288] IUISystem::getInstance()->setData(UI_UICOMMANDERCOMP_TOMAHAWKCOST, 210); | UICommanderComp.cpp
 730033667 - UI_UICOMMANDERCOMP_TOMAHAWKENABLED
-	[200] IUISystem::getInstance()->setData(UI_UICOMMANDERCOMP_TOMAHAWKENABLED, commanderEntity->isActionEnabled(CommanderActionType_LaunchTomahawk)); | UICommanderComp.cpp
+	[280] IUISystem::getInstance()->setData(UI_UICOMMANDERCOMP_TOMAHAWKENABLED, commanderEntity->isActionEnabled(CommanderActionType_LaunchTomahawk)); | UICommanderComp.cpp
+1113178706 - UI_UICOMMANDERCOMP_TOMAHAWKMAX
+	[276] IUISystem::getInstance()->setData(UI_UICOMMANDERCOMP_TOMAHAWKMAX, commanderEntity->getActionStateDuration(CommanderActionType_LaunchTomahawk) * gameTime->tickFrequency()); | UICommanderComp.cpp
+1887867323 - UI_UICOMMANDERCOMP_TOMAHAWKPROGRESS
+	[274] IUISystem::getInstance()->setData(UI_UICOMMANDERCOMP_TOMAHAWKPROGRESS, (float)(commanderEntity->getActionStateEndTimeStamp(CommanderActionType_LaunchTomahawk) - gameTime->ticks())); | UICommanderComp.cpp
 1077398641 - UI_UICOMMANDERCOMP_TOMAHAWKSTATE
-	[202] IUISystem::getInstance()->setData(UI_UICOMMANDERCOMP_TOMAHAWKSTATE, commanderEntity->getActionState(CommanderActionType_LaunchTomahawk)); | UICommanderComp.cpp
+	[282] IUISystem::getInstance()->setData(UI_UICOMMANDERCOMP_TOMAHAWKSTATE, commanderEntity->getActionState(CommanderActionType_LaunchTomahawk)); | UICommanderComp.cpp
 -1177842096 - UI_UICOMMANDERCOMP_VEHICLEDROPENABLED
-	[262] //	IUISystem::getInstance()->setData(UI_UICOMMANDERCOMP_VEHICLEDROPENABLED, commanderEntity->isActionEnabled(CommanderActionType_VehicleSpawn)); | UICommanderComp.cpp
+	[342] //	IUISystem::getInstance()->setData(UI_UICOMMANDERCOMP_VEHICLEDROPENABLED, commanderEntity->isActionEnabled(CommanderActionType_VehicleSpawn)); | UICommanderComp.cpp
+-694291839 - UI_UICOMMANDERCOMP_VEHICLEDROPMAX
+	[338] //	IUISystem::getInstance()->setData(UI_UICOMMANDERCOMP_VEHICLEDROPMAX, commanderEntity->getActionStateDuration(CommanderActionType_VehicleSpawn) * gameTime->tickFrequency()); | UICommanderComp.cpp
+-1612826232 - UI_UICOMMANDERCOMP_VEHICLEDROPPROGRESS
+	[336] //	IUISystem::getInstance()->setData(UI_UICOMMANDERCOMP_VEHICLEDROPPROGRESS, (float)(commanderEntity->getActionStateEndTimeStamp(CommanderActionType_VehicleSpawn) - gameTime->ticks())); | UICommanderComp.cpp
 -185755870 - UI_UICOMMANDERCOMP_VEHICLEDROPSTATE
-	[264] //	IUISystem::getInstance()->setData(UI_UICOMMANDERCOMP_VEHICLEDROPSTATE, commanderEntity->getActionState(CommanderActionType_VehicleSpawn)); | UICommanderComp.cpp
+	[344] //	IUISystem::getInstance()->setData(UI_UICOMMANDERCOMP_VEHICLEDROPSTATE, commanderEntity->getActionState(CommanderActionType_VehicleSpawn)); | UICommanderComp.cpp
 -1495559130 - UI_UICOMMANDERCOMP_VEHICLESCANENABLED
-	[304] IUISystem::getInstance()->setData(UI_UICOMMANDERCOMP_VEHICLESCANENABLED, commanderEntity->isActionEnabled(CommanderActionType_VehicleScan)); | UICommanderComp.cpp
+	[384] IUISystem::getInstance()->setData(UI_UICOMMANDERCOMP_VEHICLESCANENABLED, commanderEntity->isActionEnabled(CommanderActionType_VehicleScan)); | UICommanderComp.cpp
+1155879799 - UI_UICOMMANDERCOMP_VEHICLESCANMAX
+	[380] IUISystem::getInstance()->setData(UI_UICOMMANDERCOMP_VEHICLESCANMAX, commanderEntity->getActionStateDuration(CommanderActionType_VehicleScan) * gameTime->tickFrequency()); | UICommanderComp.cpp
+-1002760642 - UI_UICOMMANDERCOMP_VEHICLESCANPROGRESS
+	[378] IUISystem::getInstance()->setData(UI_UICOMMANDERCOMP_VEHICLESCANPROGRESS, (float)(commanderEntity->getActionStateEndTimeStamp(CommanderActionType_VehicleScan) - gameTime->ticks())); | UICommanderComp.cpp
 324978708 - UI_UICOMMANDERCOMP_VEHICLESCANSTATE
-	[306] IUISystem::getInstance()->setData(UI_UICOMMANDERCOMP_VEHICLESCANSTATE, commanderEntity->getActionState(CommanderActionType_VehicleScan)); | UICommanderComp.cpp
+	[386] IUISystem::getInstance()->setData(UI_UICOMMANDERCOMP_VEHICLESCANSTATE, commanderEntity->getActionState(CommanderActionType_VehicleScan)); | UICommanderComp.cpp
 -1306804202 - UI_UICUSTOMIZATIONCOMP_CUSTRECEIVEDSTATS
-	[2648] uiSystem->setData(UI_UICUSTOMIZATIONCOMP_CUSTRECEIVEDSTATS, false); | UIActionFactory.cpp
-	[2438] IUISystem::getInstance()->setData(UI_UICUSTOMIZATIONCOMP_CUSTRECEIVEDSTATS, true); | UICustomizationComp.cpp
+	[2604] uiSystem->setData(UI_UICUSTOMIZATIONCOMP_CUSTRECEIVEDSTATS, false); | UIActionFactory.cpp
+	[2446] IUISystem::getInstance()->setData(UI_UICUSTOMIZATIONCOMP_CUSTRECEIVEDSTATS, true); | UICustomizationComp.cpp
 -699823196 - UI_UICUSTOMIZATIONCOMP_WEAPONFOCUSDISTANCE
-	[3996] IUISystem::getInstance()->setDataValue(UI_UICUSTOMIZATIONCOMP_WEAPONFOCUSDISTANCE, m_weaponFocusDistance); | UICustomizationComp.cpp
+	[4114] IUISystem::getInstance()->setDataValue(UI_UICUSTOMIZATIONCOMP_WEAPONFOCUSDISTANCE, m_weaponFocusDistance); | UICustomizationComp.cpp
+648803470 - UI_UIDETAILEDSERVERINFOCOMP_FRIENDS
+	[1762] IUISystem::getInstance()->setData(UI_UIDETAILEDSERVERINFOCOMP_FRIENDS, stringBuffer); | UIDetailedServerInfoComp.cpp
+	[1768] IUISystem::getInstance()->setData(UI_UIDETAILEDSERVERINFOCOMP_FRIENDS, ""); | UIDetailedServerInfoComp.cpp
+	[2376] bfui->setData(UI_UIDETAILEDSERVERINFOCOMP_FRIENDS, ""); | UIDetailedServerInfoComp.cpp
+-894240902 - UI_UIDETAILEDSERVERINFOCOMP_INFOBUTTONDATASOURCE
+	[1964] IUISystem::getInstance()->setData(UI_UIDETAILEDSERVERINFOCOMP_INFOBUTTONDATASOURCE, buffer); | UIDetailedServerInfoComp.cpp
+-588485319 - UI_UIDETAILEDSERVERINFOCOMP_MAPIMAGEPATH
+	[1074] bfui->setData(UI_UIDETAILEDSERVERINFOCOMP_MAPIMAGEPATH, uiLevelDescription ? uiLevelDescription->getTexturePath().c_str() : ""); | UIDetailedServerInfoComp.cpp
+	[1080] bfui->setData(UI_UIDETAILEDSERVERINFOCOMP_MAPIMAGEPATH, ""); | UIDetailedServerInfoComp.cpp
+	[2374] bfui->setData(UI_UIDETAILEDSERVERINFOCOMP_MAPIMAGEPATH, ""); | UIDetailedServerInfoComp.cpp
 1177205169 - UI_UIDETAILEDSERVERINFOCOMP_SELECTEDSERVERSETTINGSTAB
 	[44] IUISystem::getInstance()->setData(UI_UIDETAILEDSERVERINFOCOMP_SELECTEDSERVERSETTINGSTAB, 0); | UIServerSettingsScreen.cpp
 	[134] IUISystem::getInstance()->setData(UI_UIDETAILEDSERVERINFOCOMP_SELECTEDSERVERSETTINGSTAB, m_selectedTab); | UIServerSettingsScreen.cpp
 1068593614 - UI_UIDETAILEDSERVERINFOCOMP_SHOWLATENCYWARNING
-	[478] IUISystem::getInstance()->setData(UI_UIDETAILEDSERVERINFOCOMP_SHOWLATENCYWARNING, false); | UIDetailedServerInfoComp.cpp
-	[782] IUISystem::getInstance()->setData(UI_UIDETAILEDSERVERINFOCOMP_SHOWLATENCYWARNING, client->hasConnectionProblem()); | UIDetailedServerInfoComp.cpp
-	[790] IUISystem::getInstance()->setData(UI_UIDETAILEDSERVERINFOCOMP_SHOWLATENCYWARNING, false); | UIDetailedServerInfoComp.cpp
+	[480] IUISystem::getInstance()->setData(UI_UIDETAILEDSERVERINFOCOMP_SHOWLATENCYWARNING, false); | UIDetailedServerInfoComp.cpp
+	[784] IUISystem::getInstance()->setData(UI_UIDETAILEDSERVERINFOCOMP_SHOWLATENCYWARNING, client->hasConnectionProblem()); | UIDetailedServerInfoComp.cpp
+	[792] IUISystem::getInstance()->setData(UI_UIDETAILEDSERVERINFOCOMP_SHOWLATENCYWARNING, false); | UIDetailedServerInfoComp.cpp
+-1744003398 - UI_UIDETAILEDSERVERINFOCOMP_TABLIST
+	[1398] UISystem::getInstance()->setDataValue(UI_UIDETAILEDSERVERINFOCOMP_TABLIST, m_settingsList); | UIDetailedServerInfoComp.cpp
+	[1404] UISystem::getInstance()->setDataValue(UI_UIDETAILEDSERVERINFOCOMP_TABLIST, m_levelList); | UIDetailedServerInfoComp.cpp
+	[1410] UISystem::getInstance()->setDataValue(UI_UIDETAILEDSERVERINFOCOMP_TABLIST, m_playerList); | UIDetailedServerInfoComp.cpp
+	[2378] bfui->setDataValue(UI_UIDETAILEDSERVERINFOCOMP_TABLIST, m_settingsList); | UIDetailedServerInfoComp.cpp
+2143423323 - UI_UIFRIENDSCOMP_NUMFRIENDSAVAILABLE
+	[1026] IUISystem::getInstance()->setData(UI_UIFRIENDSCOMP_NUMFRIENDSAVAILABLE, (int)nrOfFriendsAvailable); | UIFriendsComp.cpp
+1912693020 - UI_UIFRIENDSCOMP_TRIGGERSELECTIONUPDATE
+	[1036] IUISystem::getInstance()->setData(UI_UIFRIENDSCOMP_TRIGGERSELECTIONUPDATE, name, UINotifyType_Always); | UIFriendsComp.cpp
+	[728] IUISystem::getInstance()->setData(UI_UIFRIENDSCOMP_TRIGGERSELECTIONUPDATE, name, UINotifyType_Always); | UIPlaygroupComp.cpp
 1946747747 - UI_UIINGAMEMENUCOMP_ISPLAYGROUNDLEVEL
 	[100] IUISystem::getInstance()->setData(UI_UIINGAMEMENUCOMP_ISPLAYGROUNDLEVEL, BFUIScreenUtil::isPlaygroundLevel()); | UIIngameMenuComp.cpp
 108202001 - UI_UIINSTALLHDCONTENTCOMP_INSTALLATIONPROGRESS
 	[300] IUISystem::getInstance()->setData(UI_UIINSTALLHDCONTENTCOMP_INSTALLATIONPROGRESS, progress); | UIInstallHDContentComp.cpp
 	[314] IUISystem::getInstance()->setData(UI_UIINSTALLHDCONTENTCOMP_INSTALLATIONPROGRESSDESC, buffer); | UIInstallHDContentComp.cpp
 -78759506 - UI_UIKILLCARDCOMP_ISBADLUCK
-	[452] IUISystem::getInstance()->setData(UI_UIKILLCARDCOMP_ISBADLUCK, false); | UIKillCardComp.cpp
-	[462] IUISystem::getInstance()->setData(UI_UIKILLCARDCOMP_ISBADLUCK, isBadLuck); | UIKillCardComp.cpp
+	[520] IUISystem::getInstance()->setData(UI_UIKILLCARDCOMP_ISBADLUCK, false); | UIKillCardComp.cpp
+	[532] IUISystem::getInstance()->setData(UI_UIKILLCARDCOMP_ISBADLUCK, isBadLuck); | UIKillCardComp.cpp
 2001433660 - UI_UIKILLCARDCOMP_ISSUICIDE
-	[450] IUISystem::getInstance()->setData(UI_UIKILLCARDCOMP_ISSUICIDE, 2); | UIKillCardComp.cpp
-	[460] IUISystem::getInstance()->setData(UI_UIKILLCARDCOMP_ISSUICIDE, isSuicide ? 1 : 0); | UIKillCardComp.cpp
+	[518] IUISystem::getInstance()->setData(UI_UIKILLCARDCOMP_ISSUICIDE, 2); | UIKillCardComp.cpp
+	[530] IUISystem::getInstance()->setData(UI_UIKILLCARDCOMP_ISSUICIDE, isSuicide ? 1 : 0); | UIKillCardComp.cpp
 588534364 - UI_UIKILLCARDCOMP_KILLERDAMAGEDONE
-	[486] IUISystem::getInstance()->setData(UI_UIKILLCARDCOMP_KILLERDAMAGEDONE, killerDamageDone); | UIKillCardComp.cpp
-2111854051 - UI_UIKILLCARDCOMP_KILLERDOGTAGIMAGEPATH
-	[490] IUISystem::getInstance()->setData(UI_UIKILLCARDCOMP_KILLERDOGTAGIMAGEPATH, killerDogtagImage.c_str()); | UIKillCardComp.cpp
+	[566] IUISystem::getInstance()->setData(UI_UIKILLCARDCOMP_KILLERDAMAGEDONE, killerDamageDone); | UIKillCardComp.cpp
+-544069929 - UI_UIKILLCARDCOMP_KILLEREXISTS
+	[306] IUISystem::getInstance()->setData(UI_UIKILLCARDCOMP_KILLEREXISTS, false); | UIKillCardComp.cpp
+	[386] IUISystem::getInstance()->setData(UI_UIKILLCARDCOMP_KILLEREXISTS, true); | UIKillCardComp.cpp
 833041105 - UI_UIKILLCARDCOMP_KILLERHEALTHREAL
-	[472] IUISystem::getInstance()->setData(UI_UIKILLCARDCOMP_KILLERHEALTHREAL, killerHealthReal); | UIKillCardComp.cpp
+	[552] IUISystem::getInstance()->setData(UI_UIKILLCARDCOMP_KILLERHEALTHREAL, killerHealthReal); | UIKillCardComp.cpp
 -844960959 - UI_UIKILLCARDCOMP_KILLERRANK
-	[478] IUISystem::getInstance()->setData(UI_UIKILLCARDCOMP_KILLERRANK, killerRank); | UIKillCardComp.cpp
-	[488] IUISystem::getInstance()->setData(UI_UIKILLCARDCOMP_KILLERRANKIMAGEPATH, killerRankImage.c_str()); | UIKillCardComp.cpp
+	[558] IUISystem::getInstance()->setData(UI_UIKILLCARDCOMP_KILLERRANK, killerRank); | UIKillCardComp.cpp
+	[568] IUISystem::getInstance()->setData(UI_UIKILLCARDCOMP_KILLERRANKIMAGEPATH, killerRankImage.c_str()); | UIKillCardComp.cpp
 -2110493985 - UI_UIKILLCARDCOMP_KILLERSCORE
-	[476] IUISystem::getInstance()->setData(UI_UIKILLCARDCOMP_KILLERSCORE, killerScore); | UIKillCardComp.cpp
+	[556] IUISystem::getInstance()->setData(UI_UIKILLCARDCOMP_KILLERSCORE, killerScore); | UIKillCardComp.cpp
+-1731520370 - UI_UIKILLCARDCOMP_KILLERWEAPONHASATT
+	[296] IUISystem::getInstance()->setData(UI_UIKILLCARDCOMP_KILLERWEAPONHASATT, false); | UIKillCardComp.cpp
 -1811009649 - UI_UIKILLCARDCOMP_KILLERWEAPONSERVICESTARS
-	[776] IUISystem::getInstance()->setData(UI_UIKILLCARDCOMP_KILLERWEAPONSERVICESTARS, weaponServiceStars); | UIKillCardComp.cpp
+	[890] IUISystem::getInstance()->setData(UI_UIKILLCARDCOMP_KILLERWEAPONSERVICESTARS, weaponServiceStars); | UIKillCardComp.cpp
 414906732 - UI_UIKILLCARDCOMP_KILLERVEHICLESEAT
-	[272] IUISystem::getInstance()->setData(UI_UIKILLCARDCOMP_KILLERVEHICLESEAT, ""); | UIKillCardComp.cpp
-	[610] IUISystem::getInstance()->setData(UI_UIKILLCARDCOMP_KILLERVEHICLESEAT, seatTypeToSID(hudData.getSeatType())); | UIKillCardComp.cpp
+	[274] IUISystem::getInstance()->setData(UI_UIKILLCARDCOMP_KILLERVEHICLESEAT, ""); | UIKillCardComp.cpp
+	[704] IUISystem::getInstance()->setData(UI_UIKILLCARDCOMP_KILLERVEHICLESEAT, seatTypeToSID(hudData.getSeatType())); | UIKillCardComp.cpp
 -768285953 - UI_UIKILLCARDCOMP_OWNDAMAGEDONE
-	[484] IUISystem::getInstance()->setData(UI_UIKILLCARDCOMP_OWNDAMAGEDONE, ownDamageDone); | UIKillCardComp.cpp
--1781456015 - UI_UIKILLCOUNTERCOMP_ENEMYTEAM1MAXKILLS
-	[188] system->setData(UI_UIKILLCOUNTERCOMP_ENEMYTEAM1MAXKILLS, maxTeamKills); | UIKillCounterComp.cpp
--516173280 - UI_UIKILLCOUNTERCOMP_ENEMYTEAMMAXKILLS
-	[166] system->setData(UI_UIKILLCOUNTERCOMP_ENEMYTEAMMAXKILLS, maxTeamKills); | UIKillCounterComp.cpp
-1430033890 - UI_UIKILLCOUNTERCOMP_LEADINGTEAMKILLS
-	[256] system->setData(UI_UIKILLCOUNTERCOMP_LEADINGTEAMKILLS, leadingTeamKillCounterEntity ? (int)leadingTeamKillCounterEntity->killCount() : 0); | UIKillCounterComp.cpp
+	[564] IUISystem::getInstance()->setData(UI_UIKILLCARDCOMP_OWNDAMAGEDONE, ownDamageDone); | UIKillCardComp.cpp
 -1311541044 - UI_UIKILLCOUNTERCOMP_PLAYERTEAM
-	[148] system->setData(UI_UIKILLCOUNTERCOMP_PLAYERTEAM, toString(localPlayerTeam)); | UIKillCounterComp.cpp
-	[150] system->setData(UI_UIKILLCOUNTERCOMP_PLAYERTEAMKILLS, teamKills); | UIKillCounterComp.cpp
-	[152] system->setData(UI_UIKILLCOUNTERCOMP_PLAYERTEAMMAXKILLS, maxTeamKills); | UIKillCounterComp.cpp
-	[248] system->setData(UI_UIKILLCOUNTERCOMP_PLAYERTEAMPOSITION, sortedTeamIndex + 1); | UIKillCounterComp.cpp
-1846227147 - UI_UIKILLCOUNTERCOMP_TEAM1MAXKILLS
-	[518] system->setData(UI_UIKILLCOUNTERCOMP_TEAM1MAXKILLS, maxKills); | UIKillCounterComp.cpp
--446719416 - UI_UIKILLCOUNTERCOMP_TEAM2MAXKILLS
-	[526] system->setData(UI_UIKILLCOUNTERCOMP_TEAM2MAXKILLS, maxKills); | UIKillCounterComp.cpp
--786451767 - UI_UIKILLCOUNTERCOMP_TEAM3MAXKILLS
-	[534] system->setData(UI_UIKILLCOUNTERCOMP_TEAM3MAXKILLS, maxKills); | UIKillCounterComp.cpp
-1737530446 - UI_UIKILLCOUNTERCOMP_TEAM4MAXKILLS
-	[542] system->setData(UI_UIKILLCOUNTERCOMP_TEAM4MAXKILLS, maxKills); | UIKillCounterComp.cpp
--1884238533 - UI_UIKILLCOUNTERCOMP_TEAM5KILLS
-	[548] system->setData(UI_UIKILLCOUNTERCOMP_TEAM5KILLS, kills); | UIKillCounterComp.cpp
--30936369 - UI_UIKILLCOUNTERCOMP_TEAM5MAXKILLS
-	[550] system->setData(UI_UIKILLCOUNTERCOMP_TEAM5MAXKILLS, maxKills); | UIKillCounterComp.cpp
--1769136424 - UI_UIKILLCOUNTERCOMP_TEAM6KILLS
-	[556] system->setData(UI_UIKILLCOUNTERCOMP_TEAM6KILLS, kills); | UIKillCounterComp.cpp
-1971084364 - UI_UIKILLCOUNTERCOMP_TEAM6MAXKILLS
-	[558] system->setData(UI_UIKILLCOUNTERCOMP_TEAM6MAXKILLS, maxKills); | UIKillCounterComp.cpp
--1805828231 - UI_UIKILLCOUNTERCOMP_TEAM7KILLS
-	[564] system->setData(UI_UIKILLCOUNTERCOMP_TEAM7KILLS, kills); | UIKillCounterComp.cpp
-1631352013 - UI_UIKILLCOUNTERCOMP_TEAM7MAXKILLS
-	[566] system->setData(UI_UIKILLCOUNTERCOMP_TEAM7MAXKILLS, maxKills); | UIKillCounterComp.cpp
--1985401322 - UI_UIKILLCOUNTERCOMP_TEAM8KILLS
-	[572] system->setData(UI_UIKILLCOUNTERCOMP_TEAM8KILLS, kills); | UIKillCounterComp.cpp
--747365822 - UI_UIKILLCOUNTERCOMP_TEAM8MAXKILLS
-	[574] system->setData(UI_UIKILLCOUNTERCOMP_TEAM8MAXKILLS, maxKills); | UIKillCounterComp.cpp
+	[142] system->setData(UI_UIKILLCOUNTERCOMP_PLAYERTEAMKILLS, teamKills); | UIKillCounterComp.cpp
+	[144] system->setData(UI_UIKILLCOUNTERCOMP_PLAYERTEAMMAXKILLS, maxTeamKills); | UIKillCounterComp.cpp
 1525139139 - UI_UILEVELCOMP_SELECTEDLEVELCOMPLETEDDIFFICULTY
 	[1044] uiSystem->setData(UI_UILEVELCOMP_SELECTEDLEVELCOMPLETEDDIFFICULTY, levelCompletedDifficulty); | UILevelComp.cpp
 593707952 - UI_UILIFECOUNTERCOMP_BASECOUNT
@@ -158,6 +190,8 @@
 	[980] system->setData(UI_UILIFECOUNTERCOMP_FRIENDLYLOWERLIMIT, lifeCounter->lifeCounterData().getUiShowCountLowerThreshold()); | UILifeCounterComp.cpp
 1115736534 - UI_UILIFECOUNTERCOMP_FRIENDLYUPPERLIMIT
 	[982] system->setData(UI_UILIFECOUNTERCOMP_FRIENDLYUPPERLIMIT, lifeCounter->lifeCounterData().getUiShowCountUpperThreshold()); | UILifeCounterComp.cpp
+469493999 - UI_UILIFECOUNTERCOMP_TEAM1ISATTACKER
+	[1026] system->setData(UI_UILIFECOUNTERCOMP_TEAM1ISATTACKER, lifeCounterTeam == Team1 ? isAttacker : !isAttacker); | UILifeCounterComp.cpp
 309997785 - UI_UIMANAGESERVERPRESETSCOMP_SELECTORROW
 	[956] IUISystem::getInstance()->setData(UI_UIMANAGESERVERPRESETSCOMP_SELECTORROW, (int)selectorIndex->getDoubleValue()); | UIManageServerPresetsComp.cpp
 -1963054780 - UI_UIMATCHCOMP_ISSPECTATOR
@@ -176,44 +210,21 @@
 1315567049 - UI_UIPLAYGROUPCOMP_QUICKMATCHDISABLED
 	[714] IUISystem::getInstance()->setData(UI_UIPLAYGROUPCOMP_QUICKMATCHDISABLED, quickMatchDisabled); | UIPlaygroupComp.cpp
 1029206676 - UI_UIPREMIUMCOMP_DETAILSTOREITEM
-	[1714] IUISystem::getInstance()->setDataValue(UI_UIPREMIUMCOMP_DETAILSTOREITEMEXISTS, false); | UIPremiumComp.cpp
-	[1722] IUISystem::getInstance()->setDataValue(UI_UIPREMIUMCOMP_DETAILSTOREITEMEXISTS, true); | UIPremiumComp.cpp
-	[1724] IUISystem::getInstance()->setData(UI_UIPREMIUMCOMP_DETAILSTOREITEM, event->storeItem.c_str()); | UIPremiumComp.cpp
+	[1696] IUISystem::getInstance()->setDataValue(UI_UIPREMIUMCOMP_DETAILSTOREITEMEXISTS, false); | UIPremiumComp.cpp
+	[1704] IUISystem::getInstance()->setDataValue(UI_UIPREMIUMCOMP_DETAILSTOREITEMEXISTS, true); | UIPremiumComp.cpp
+	[1706] IUISystem::getInstance()->setData(UI_UIPREMIUMCOMP_DETAILSTOREITEM, event->storeItem.c_str()); | UIPremiumComp.cpp
 1478376340 - UI_UIPREMIUMCOMP_DETAILSTOREITEMEXISTS
-	[1714] IUISystem::getInstance()->setDataValue(UI_UIPREMIUMCOMP_DETAILSTOREITEMEXISTS, false); | UIPremiumComp.cpp
-	[1722] IUISystem::getInstance()->setDataValue(UI_UIPREMIUMCOMP_DETAILSTOREITEMEXISTS, true); | UIPremiumComp.cpp
+	[1696] IUISystem::getInstance()->setDataValue(UI_UIPREMIUMCOMP_DETAILSTOREITEMEXISTS, false); | UIPremiumComp.cpp
+	[1704] IUISystem::getInstance()->setDataValue(UI_UIPREMIUMCOMP_DETAILSTOREITEMEXISTS, true); | UIPremiumComp.cpp
 -1546807106 - UI_UIPURCHASESERVERCOMP_SERVERCAPACITYEMPTY
 	[614] IUISystem::getInstance()->setData(UI_UIPURCHASESERVERCOMP_SERVERCAPACITYEMPTY, "true"); | UIPurchaseServerComp.cpp
 	[620] IUISystem::getInstance()->setData(UI_UIPURCHASESERVERCOMP_SERVERCAPACITYEMPTY, "false"); | UIPurchaseServerComp.cpp
 1875561770 - UI_UISERVERLISTCOMP_ISSELECTEDSERVERONLINE
-	[2754] IUISystem::getInstance()->setData(UI_UISERVERLISTCOMP_ISSELECTEDSERVERONLINE, listComp->isServerPublished(data.rspServerId)); | UIActionFactory.cpp
+	[2710] IUISystem::getInstance()->setData(UI_UISERVERLISTCOMP_ISSELECTEDSERVERONLINE, listComp->isServerPublished(data.rspServerId)); | UIActionFactory.cpp
 -183906313 - UI_UISERVERLISTFILTERBARCOMP_MYSERVERLASTUPDATEDBY
-	[318] UISystem::getInstance()->setData(UI_UISERVERLISTFILTERBARCOMP_MYSERVERLASTUPDATEDBY, extraInfo.updatedById.asString()); | UIServerListFilterBarComp.cpp
+	[328] UISystem::getInstance()->setData(UI_UISERVERLISTFILTERBARCOMP_MYSERVERLASTUPDATEDBY, extraInfo.updatedById.asString()); | UIServerListFilterBarComp.cpp
 1589122936 - UI_UISERVERLISTFILTERBARCOMP_MYSERVERLASTUPDATEDDATE
-	[314] UISystem::getInstance()->setData(UI_UISERVERLISTFILTERBARCOMP_MYSERVERLASTUPDATEDDATE, updatedBuffer); | UIServerListFilterBarComp.cpp
-6571374 - UI_UISOLDIERCOMP_CAMERABLUR
-	[388] IUISystem::getInstance()->setData(UI_UISOLDIERCOMP_CAMERABLUR, (double)getCameraBlurAmount()); | UISoldierComp.cpp
--1903125135 - UI_UISOLDIERCOMP_FIRSTPERSON
-	[390] IUISystem::getInstance()->setData(UI_UISOLDIERCOMP_FIRSTPERSON, getFirstPerson()); | UISoldierComp.cpp
-347110003 - UI_UISOLDIERCOMP_ISALIVE
-	[352] IUISystem::getInstance()->setData(UI_UISOLDIERCOMP_ISALIVE, false); | UISoldierComp.cpp
-	[398] IUISystem::getInstance()->setData(UI_UISOLDIERCOMP_ISALIVE, false); | UISoldierComp.cpp
-	[406] IUISystem::getInstance()->setData(UI_UISOLDIERCOMP_ISALIVE, soldier->isAlive()); | UISoldierComp.cpp
--48744452 - UI_UISOLDIERCOMP_ISINTERACTIVEMANDOWN
-	[408] IUISystem::getInstance()->setData(UI_UISOLDIERCOMP_ISINTERACTIVEMANDOWN, soldier->isInteractiveManDown()); | UISoldierComp.cpp
-1371114103 - UI_UISOLDIERCOMP_POSE
-	[248] uiSystem->setData(UI_UISOLDIERCOMP_POSE, (int)getPose()); | UISoldierComp.cpp
-	[386] IUISystem::getInstance()->setData(UI_UISOLDIERCOMP_POSE, (int)getPose()); | UISoldierComp.cpp
--2057146829 - UI_UISOLDIERCOMP_STAMINA
-	[244] uiSystem->setData(UI_UISOLDIERCOMP_STAMINA, (int)getPlayerStamina()); | UISoldierComp.cpp
-	[316] IUISystem::getInstance()->setData(UI_UISOLDIERCOMP_STAMINA, (int)0); | UISoldierComp.cpp
-	[382] IUISystem::getInstance()->setData(UI_UISOLDIERCOMP_STAMINA, (int)getPlayerStamina()); | UISoldierComp.cpp
--1175029057 - UI_UISOLDIERCOMP_SUPRESSING
-	[1082] IUISystem::getInstance()->setData(UI_UISOLDIERCOMP_SUPRESSING, message.as<UIHasSuppressedEnemyMessage>().getHasSuppressed()); | UISoldierComp.cpp
-629222781 - UI_UISOLDIERCOMP_TIMEUNTILDEATH
-	[1294] IUISystem::getInstance()->setData(UI_UISOLDIERCOMP_TIMEUNTILDEATH, soldier->getManDownTimeLeft()); | UISoldierComp.cpp
--305598342 - UI_UISOLDIERCOMP_TIMEUNTILREVIVE
-	[1292] IUISystem::getInstance()->setData(UI_UISOLDIERCOMP_TIMEUNTILREVIVE, m_timeToRevive); | UISoldierComp.cpp
+	[324] UISystem::getInstance()->setData(UI_UISERVERLISTFILTERBARCOMP_MYSERVERLASTUPDATEDDATE, updatedBuffer); | UIServerListFilterBarComp.cpp
 1987896515 - UI_UISPAWNLOGICCOMP_STARTTIMETORESPAWN
 	[156] IUISystem::getInstance()->setData(UI_UISPAWNLOGICCOMP_STARTTIMETORESPAWN, (double)startTimeToRespawnCeil); | UISpawnLogicComp.cpp
 -990983020 - UI_UISPAWNPOINTCOMP_CANSPAWN
@@ -231,24 +242,10 @@
 	[732] UISystem::getInstance()->setData(UI_UISPAWNPOINTCOMP_SELECTEDSPAWNTYPE,(int)eSpawnType_BaseSpawn); | UISpawnPointComp.cpp
 	[808] UISystem::getInstance()->setData(UI_UISPAWNPOINTCOMP_SELECTEDSPAWNTYPE,(int)eSpawnType_TeamSpawn); | UISpawnPointComp.cpp
 	[906] UISystem::getInstance()->setData(UI_UISPAWNPOINTCOMP_SELECTEDSPAWNTYPE,(int)eSpawnType_SquadSpawn); | UISpawnPointComp.cpp
-1587023600 - UI_UISQUADCOMP_LOCALPLAYERHASSQUAD
-	[440] uiSystem->setData(UI_UISQUADCOMP_LOCALPLAYERHASSQUAD, (int)localSquad); | UISquadComp.cpp
-1599323115 - UI_UISQUADCOMP_LOCALPLAYERISSQUADLEADER
-	[428] uiSystem->setData(UI_UISQUADCOMP_LOCALPLAYERISSQUADLEADER, getIsSquadLeader()); | UISquadComp.cpp
--463504165 - UI_UISQUADCOMP_SQUADISEMPTY
-	[436] uiSystem->setData(UI_UISQUADCOMP_SQUADISEMPTY, getSquadSize(m_selectedSquad) == 0); | UISquadComp.cpp
--1444480478 - UI_UISQUADCOMP_SQUADLEADERMESSAGEVISIBILITY
-	[430] uiSystem->setData(UI_UISQUADCOMP_SQUADLEADERMESSAGEVISIBILITY, updateIsSquadLeaderForMessage()); | UISquadComp.cpp
-1380016392 - UI_UISQUADCOMP_SQUADLENGTH
-	[434] uiSystem->setData(UI_UISQUADCOMP_SQUADLENGTH, getSquadSize(m_selectedSquad)); | UISquadComp.cpp
--917467149 - UI_UISQUADCOMP_SQUADNAME
-	[432] uiSystem->setData(UI_UISQUADCOMP_SQUADNAME, getSquadName(m_selectedSquad)); | UISquadComp.cpp
+672791416 - UI_UISPECTATORCOMP_SCOREBOARDFRIENDLY
+	[104] IUISystem::getInstance()->setData(UI_UISPECTATORCOMP_SCOREBOARDFRIENDLY, "friendly"); | UISpectatorComp.cpp
 -618246605 - UI_UITEAMCOMP_COMMANDERRATINGFRACDATAVALUE
 	[94] ui->setData(UI_UITEAMCOMP_COMMANDERRATINGFRACDATAVALUE, 0.01); | UICurrentCommanderWidget.cpp
-2078378787 - UI_UITEAMCOMP_ENEMYTEAM2FACTIONNAME
-	[372] IUISystem::getInstance()->setData(UI_UITEAMCOMP_ENEMYTEAM2FACTIONNAME, factionSID.c_str()); | UITeamComp.cpp
--1573435710 - UI_UITEAMCOMP_ENEMYTEAM3FACTIONNAME
-	[382] IUISystem::getInstance()->setData(UI_UITEAMCOMP_ENEMYTEAM3FACTIONNAME, factionSID.c_str()); | UITeamComp.cpp
 -998915509 - UI_UITICKETCOUNTERCOMP_TEAM1MAXTICKETS
 	[188] system->setData(UI_UITICKETCOUNTERCOMP_TEAM1MAXTICKETS, maxTickets); | UITicketCounterComp.cpp
 -887505080 - UI_UITICKETCOUNTERCOMP_TEAM2MAXTICKETS
@@ -258,59 +255,61 @@
 574498510 - UI_UITICKETCOUNTERCOMP_TEAM4MAXTICKETS
 	[212] system->setData(UI_UITICKETCOUNTERCOMP_TEAM4MAXTICKETS, maxTickets); | UITicketCounterComp.cpp
 -1064132573 - UI_UIWEAPONCOMP_ABSOLUTEDISPERSION
-	[1366] IUISystem::getInstance()->setData(UI_UIWEAPONCOMP_ABSOLUTEDISPERSION, (double)getAbsoluteCrossHairScale()); | UIWeaponComp.cpp
+	[1424] IUISystem::getInstance()->setData(UI_UIWEAPONCOMP_ABSOLUTEDISPERSION, (double)getAbsoluteCrossHairScale()); | UIWeaponComp.cpp
 908427334 - UI_UIWEAPONCOMP_ACTIVEWEAPONINDEX
-	[1396] IUISystem::getInstance()->setData(UI_UIWEAPONCOMP_ACTIVEWEAPONINDEX, (int)getCurrentWeaponIndex()); | UIWeaponComp.cpp
+	[1454] IUISystem::getInstance()->setData(UI_UIWEAPONCOMP_ACTIVEWEAPONINDEX, (int)getCurrentWeaponIndex()); | UIWeaponComp.cpp
 -1863866139 - UI_UIWEAPONCOMP_ACTIVEWEAPONPROGRESS
-	[1464] uiSystem->setData(UI_UIWEAPONCOMP_ACTIVEWEAPONPROGRESS, (double)getWeaponProgression(getCurrentWeaponIndex())); | UIWeaponComp.cpp
+	[1522] uiSystem->setData(UI_UIWEAPONCOMP_ACTIVEWEAPONPROGRESS, (double)getWeaponProgression(getCurrentWeaponIndex())); | UIWeaponComp.cpp
 1518447154 - UI_UIWEAPONCOMP_ACTIVEWEAPONRELOADPERCENT
-	[1696] uiSystem->setData(secondaryWeapon ? UI_UIWEAPONCOMP_SECONDARYWEAPONRELOADPERCENT : UI_UIWEAPONCOMP_ACTIVEWEAPONRELOADPERCENT, (double)reloadPercent); | UIWeaponComp.cpp
+	[1756] uiSystem->setData(secondaryWeapon ? UI_UIWEAPONCOMP_SECONDARYWEAPONRELOADPERCENT : UI_UIWEAPONCOMP_ACTIVEWEAPONRELOADPERCENT, (double)reloadPercent); | UIWeaponComp.cpp
+-1657799563 - UI_UIWEAPONCOMP_ACTIVEWEAPONSHOWAMMO
+	[1468] IUISystem::getInstance()->setData(UI_UIWEAPONCOMP_ACTIVEWEAPONSHOWAMMO, !bHideAmmo, fb::UINotifyType_Always); | UIWeaponComp.cpp
 1761297160 - UI_UIWEAPONCOMP_AIMONENEMY
-	[1302] /*IUISystem::getInstance()->setData(UI_UIWEAPONCOMP_AIMONENEMY, gameInfo.weaponTool ?  gameInfo.weaponTool->hasEnemyTarget() : false); | UIWeaponComp.cpp
+	[1360] /*IUISystem::getInstance()->setData(UI_UIWEAPONCOMP_AIMONENEMY, gameInfo.weaponTool ?  gameInfo.weaponTool->hasEnemyTarget() : false); | UIWeaponComp.cpp
 1233058418 - UI_UIWEAPONCOMP_AIMONTEAMMATE
-	[1304] IUISystem::getInstance()->setData(UI_UIWEAPONCOMP_AIMONTEAMMATE, gameInfo.weaponTool ?  gameInfo.weaponTool->hasFriendlyTarget() : false);*/ | UIWeaponComp.cpp
+	[1362] IUISystem::getInstance()->setData(UI_UIWEAPONCOMP_AIMONTEAMMATE, gameInfo.weaponTool ?  gameInfo.weaponTool->hasFriendlyTarget() : false);*/ | UIWeaponComp.cpp
 778100930 - UI_UIWEAPONCOMP_CANFIRE
-	[1432] IUISystem::getInstance()->setData(UI_UIWEAPONCOMP_CANFIRE, getPlayer() && getClientSoldier() ? !getPlayer()->isInputRestricted(EIAFire) && !getClientSoldier()->isFiringLogicDisabled() && !isReloading(): false); | UIWeaponComp.cpp
+	[1490] IUISystem::getInstance()->setData(UI_UIWEAPONCOMP_CANFIRE, getPlayer() && getClientSoldier() ? !getPlayer()->isInputRestricted(EIAFire) && !getClientSoldier()->isFiringLogicDisabled() && !isReloading(): false); | UIWeaponComp.cpp
 -238538622 - UI_UIWEAPONCOMP_CROSSHAIRSCALE
-	[1362] IUISystem::getInstance()->setData(UI_UIWEAPONCOMP_CROSSHAIRSCALE, crossHairScale); | UIWeaponComp.cpp
+	[1420] IUISystem::getInstance()->setData(UI_UIWEAPONCOMP_CROSSHAIRSCALE, crossHairScale); | UIWeaponComp.cpp
 -1460252236 - UI_UIWEAPONCOMP_DISPERSION
-	[1364] IUISystem::getInstance()->setData(UI_UIWEAPONCOMP_DISPERSION, crossHairScale); | UIWeaponComp.cpp
+	[1422] IUISystem::getInstance()->setData(UI_UIWEAPONCOMP_DISPERSION, crossHairScale); | UIWeaponComp.cpp
 1282990421 - UI_UIWEAPONCOMP_HEATPENALTY
-	[1506] uiSystem->setData(UI_UIWEAPONCOMP_HEATPENALTY, gameInfo.weaponFiring ? (double)gameInfo.weaponFiring->primaryHeatTimer() : 0.0); | UIWeaponComp.cpp
+	[1564] uiSystem->setData(UI_UIWEAPONCOMP_HEATPENALTY, gameInfo.weaponFiring ? (double)gameInfo.weaponFiring->primaryHeatTimer() : 0.0); | UIWeaponComp.cpp
 1561495785 - UI_UIWEAPONCOMP_RANGE
-	[944] IUISystem::getInstance()->setData(UI_UIWEAPONCOMP_RANGEMETER, "-"); | UIWeaponComp.cpp
-	[948] IUISystem::getInstance()->setData(UI_UIWEAPONCOMP_RANGEMETER, (int)m_predictedRangeMeterDistance); | UIWeaponComp.cpp
+	[1006] IUISystem::getInstance()->setData(UI_UIWEAPONCOMP_RANGEMETER, rangeString.c_str()); | UIWeaponComp.cpp
 843551516 - UI_UIWEAPONCOMP_RELOADBUTTONID
-	[1672] uiSystem->setData(UI_UIWEAPONCOMP_RELOADBUTTONID, TooltipInputId::toString(actions).c_str()); | UIWeaponComp.cpp
+	[1732] uiSystem->setData(UI_UIWEAPONCOMP_RELOADBUTTONID, TooltipInputId::toString(actions).c_str()); | UIWeaponComp.cpp
 -909311804 - UI_UIWEAPONCOMP_SECONDARYWEAPONRELOADPERCENT
-	[1696] uiSystem->setData(secondaryWeapon ? UI_UIWEAPONCOMP_SECONDARYWEAPONRELOADPERCENT : UI_UIWEAPONCOMP_ACTIVEWEAPONRELOADPERCENT, (double)reloadPercent); | UIWeaponComp.cpp
+	[1756] uiSystem->setData(secondaryWeapon ? UI_UIWEAPONCOMP_SECONDARYWEAPONRELOADPERCENT : UI_UIWEAPONCOMP_ACTIVEWEAPONRELOADPERCENT, (double)reloadPercent); | UIWeaponComp.cpp
 126549824 - UI_UIWEAPONCOMP_SHOWTOOLTIP
-	[1402] IUISystem::getInstance()->setData(UI_UIWEAPONCOMP_SHOWTOOLTIP, true); | UIWeaponComp.cpp
+	[1460] IUISystem::getInstance()->setData(UI_UIWEAPONCOMP_SHOWTOOLTIP, true); | UIWeaponComp.cpp
 -155899994 - UI_UIWEAPONCOMP_ZOOMTIMER
-	[1286] IUISystem::getInstance()->setData(UI_UIWEAPONCOMP_ZOOMTIMER, getWeaponZoomTime()); | UIWeaponComp.cpp
+	[1344] IUISystem::getInstance()->setData(UI_UIWEAPONCOMP_ZOOMTIMER, getWeaponZoomTime()); | UIWeaponComp.cpp
 -837099572 - UI_UIVEHICLECOMP_GPSLATITUDEDEGREE
-	[4118] IUISystem::getInstance()->setData(UI_UIVEHICLECOMP_GPSLATITUDEDEGREE, m_gpsLatitude[eGpsDegree]); | UIVehicleComp.cpp
+	[4132] IUISystem::getInstance()->setData(UI_UIVEHICLECOMP_GPSLATITUDEDEGREE, m_gpsLatitude[eGpsDegree]); | UIVehicleComp.cpp
 -1099719050 - UI_UIVEHICLECOMP_GPSLATITUDEMINUTE
-	[4120] IUISystem::getInstance()->setData(UI_UIVEHICLECOMP_GPSLATITUDEMINUTE, m_gpsLatitude[eGpsMinute]); | UIVehicleComp.cpp
+	[4134] IUISystem::getInstance()->setData(UI_UIVEHICLECOMP_GPSLATITUDEMINUTE, m_gpsLatitude[eGpsMinute]); | UIVehicleComp.cpp
 -1647295416 - UI_UIVEHICLECOMP_GPSLATITUDESECOND
-	[4122] IUISystem::getInstance()->setData(UI_UIVEHICLECOMP_GPSLATITUDESECOND, m_gpsLatitude[eGpsSecond]); | UIVehicleComp.cpp
+	[4136] IUISystem::getInstance()->setData(UI_UIVEHICLECOMP_GPSLATITUDESECOND, m_gpsLatitude[eGpsSecond]); | UIVehicleComp.cpp
 348034655 - UI_UIVEHICLECOMP_GPSLONGITUDEDEGREE
-	[4128] IUISystem::getInstance()->setData(UI_UIVEHICLECOMP_GPSLONGITUDEDEGREE, m_gpsLongitude[eGpsDegree]); | UIVehicleComp.cpp
+	[4142] IUISystem::getInstance()->setData(UI_UIVEHICLECOMP_GPSLONGITUDEDEGREE, m_gpsLongitude[eGpsDegree]); | UIVehicleComp.cpp
 -139989339 - UI_UIVEHICLECOMP_GPSLONGITUDEMINUTE
-	[4130] IUISystem::getInstance()->setData(UI_UIVEHICLECOMP_GPSLONGITUDEMINUTE, m_gpsLongitude[eGpsMinute]); | UIVehicleComp.cpp
+	[4144] IUISystem::getInstance()->setData(UI_UIVEHICLECOMP_GPSLONGITUDEMINUTE, m_gpsLongitude[eGpsMinute]); | UIVehicleComp.cpp
 712142555 - UI_UIVEHICLECOMP_GPSLONGITUDESECOND
-	[4132] IUISystem::getInstance()->setData(UI_UIVEHICLECOMP_GPSLONGITUDESECOND, m_gpsLongitude[eGpsSecond]); | UIVehicleComp.cpp
+	[4146] IUISystem::getInstance()->setData(UI_UIVEHICLECOMP_GPSLONGITUDESECOND, m_gpsLongitude[eGpsSecond]); | UIVehicleComp.cpp
 -721141060 - UI_UIVEHICLECOMP_GUNNERDIRECTIONANGULARMAXPITCH
-	[4624] IUISystem::getInstance()->setData(UI_UIVEHICLECOMP_GUNNERDIRECTIONANGULARMAXPITCH, (int)maxPitch); | UIVehicleComp.cpp
+	[4638] IUISystem::getInstance()->setData(UI_UIVEHICLECOMP_GUNNERDIRECTIONANGULARMAXPITCH, (int)maxPitch); | UIVehicleComp.cpp
 -205751083 - UI_UIVEHICLECOMP_GUNNERDIRECTIONANGULARMAXYAW
-	[4628] IUISystem::getInstance()->setData(UI_UIVEHICLECOMP_GUNNERDIRECTIONANGULARMAXYAW, (int)maxYaw); | UIVehicleComp.cpp
+	[4642] IUISystem::getInstance()->setData(UI_UIVEHICLECOMP_GUNNERDIRECTIONANGULARMAXYAW, (int)maxYaw); | UIVehicleComp.cpp
 36745954 - UI_UIVEHICLECOMP_GUNNERDIRECTIONANGULARMINPITCH
-	[4622] IUISystem::getInstance()->setData(UI_UIVEHICLECOMP_GUNNERDIRECTIONANGULARMINPITCH, (int)minPitch); | UIVehicleComp.cpp
+	[4636] IUISystem::getInstance()->setData(UI_UIVEHICLECOMP_GUNNERDIRECTIONANGULARMINPITCH, (int)minPitch); | UIVehicleComp.cpp
 -197150325 - UI_UIVEHICLECOMP_GUNNERDIRECTIONANGULARMINYAW
-	[4626] IUISystem::getInstance()->setData(UI_UIVEHICLECOMP_GUNNERDIRECTIONANGULARMINYAW, (int)minYaw); | UIVehicleComp.cpp
+	[4640] IUISystem::getInstance()->setData(UI_UIVEHICLECOMP_GUNNERDIRECTIONANGULARMINYAW, (int)minYaw); | UIVehicleComp.cpp
 -90563576 - UI_UIVEHICLECOMP_ISINVEHICLEWEAPONSEAT
 	[352] UISystem::getInstance()->setData(UI_UIVEHICLECOMP_ISINVEHICLEWEAPONSEAT, false); | UIVehicleComp.cpp
-	[2214] IUISystem::getInstance()->setData(UI_UIVEHICLECOMP_ISINVEHICLEWEAPONSEAT, gameInfo.isInVehicleWeaponSeat); | UIVehicleComp.cpp
+	[1810] IUISystem::getInstance()->setData(UI_UIVEHICLECOMP_ISINVEHICLEWEAPONSEAT, false); | UIVehicleComp.cpp
+	[2234] IUISystem::getInstance()->setData(UI_UIVEHICLECOMP_ISINVEHICLEWEAPONSEAT, gameInfo.isInVehicleWeaponSeat); | UIVehicleComp.cpp
 -2062670331 - UI_UIVOICECOMP_CAPTUREMODE
 	[266] IUISystem::getInstance()->setData(UI_UIVOICECOMP_CAPTUREMODE, m_voiceSettings.captureMode); | UIVoiceComp.cpp
 241507086 - UI_UIVOICECOMP_CAPTUREVOLUME

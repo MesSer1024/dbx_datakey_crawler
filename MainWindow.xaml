@@ -15,8 +15,9 @@
         </Style>
     </Window.Resources>
     <Grid>
-            <StackPanel Margin="0" VerticalAlignment="Top" Height="100" >
-                <StackPanel Orientation="Horizontal">
+        <StackPanel Margin="0" VerticalAlignment="Top" Height="100" >
+
+            <StackPanel Orientation="Horizontal">
                     <Label Content="DBX Root Folder:" />
                     <TextBox Height="23" MinWidth="500" Text="E:\repositories\Warsaw\Data\Source\UI" x:Name="dbxFolder"/>
                 </StackPanel>
