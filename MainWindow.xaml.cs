@@ -6,6 +6,7 @@ using System.Globalization;
 using System.IO;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading;
 using System.Threading.Tasks;
 using System.Timers;
@@ -122,19 +123,27 @@ namespace Search_DBX_files
             else
             {
                 showLoading();
+                updateThePopulationText("Populating files [You should see progress within ~10s]");
                 new System.Threading.Timer(obj => {
                     populateIdentifiers(defFile);
-
                     this.Dispatcher.Invoke((Action)(() =>
                     {
                         identifiersList.ItemsSource = _items;
                     }));
                     _allDbxFiles = dbxPath.GetFiles("*.dbx", SearchOption.AllDirectories);
                     _allCppFiles = cppPath.GetFiles("*.cpp", SearchOption.AllDirectories);
-
+                    updateThePopulationText("DBX/CPP Files populated, searching in files");
                     analyzeFiles(defFile, dbxPath, cppPath, dbxFilter, cppFilter); 
                 }, null, 50, System.Threading.Timeout.Infinite);
             }
+        }
+
+        private void updateThePopulationText(string s)
+        {
+            this.Dispatcher.Invoke((Action)(() =>
+            {
+                blocker2.Content = s;
+            }));
         }
 
         private void populateIdentifiers(FileInfo defFile)
@@ -194,7 +203,7 @@ namespace Search_DBX_files
             int cpusCpp = _unfinishedThreads - cpusDbx;
 
             _timestamp = DateTime.Now.Ticks;
-            var threadSafeCollection = _items.AsReadOnly();
+            var readOnlyCollection = _items.AsReadOnly();
 
             for (var i = 0; i < cpusDbx; ++i)
             {
@@ -204,7 +213,7 @@ namespace Search_DBX_files
 
                 var bw = new BackgroundWorker();
                 bw.DoWork += (sender, args) => {
-                    this.findUsage(_allDbxFiles, threadSafeCollection, dbxFilter, tStart, tEnd, true);
+                    this.findUsage(_allDbxFiles, readOnlyCollection, dbxFilter, tStart, tEnd, true);
                 };
 
                 bw.RunWorkerCompleted += onThreadError;
@@ -220,7 +229,7 @@ namespace Search_DBX_files
                 var bw = new BackgroundWorker();
                 bw.DoWork += (sender, args) =>
                 {
-                    this.findUsage(_allCppFiles, threadSafeCollection, cppFilter, tStart, tEnd, false);
+                    this.findUsage(_allCppFiles, readOnlyCollection, cppFilter, tStart, tEnd, false);
                 };
 
                 bw.RunWorkerCompleted += onThreadError;
@@ -235,13 +244,23 @@ namespace Search_DBX_files
             threadDone();
         }
 
+        /// <summary>
+        /// Increase the amount of files that are completed and update the gui
+        /// </summary>
+        /// <param name="value"></param>
         private void increaseFilesCompleted(int value)
         {
             Interlocked.Add(ref _filesCompleted, value);
 
             Console.WriteLine("Files gone through: " + _filesCompleted);
-            fileStatus.Content = "FileStatus: " + _filesCompleted + " / " + (_allCppFiles.Length + _allDbxFiles.Length);
-            guidStatus.Content = "Identifiers: " + _items.Count;
+            var totalFiles = _allCppFiles.Length + _allDbxFiles.Length;
+            
+            fileStatus.Content = String.Format("Files completed: {0}/{1}", _filesCompleted, _allCppFiles.Length + _allDbxFiles.Length);
+            //guidStatus.Content = String.Format("Amount of keys: {0}", _items.Count);
+            guidStatus.Content = "";
+            var approximateLineCount = 1477;
+            long linesToGoThrough = (long)(totalFiles - _filesCompleted) * (long)_items.Count * (long)approximateLineCount;
+            updateThePopulationText(String.Format("Hang on, I just have another {0} potential lines to go through or so ...", linesToGoThrough));
         }
 
         private void threadDone()
@@ -399,13 +418,13 @@ namespace Search_DBX_files
 
         private void findUsage(FileInfo[] files, ReadOnlyCollection<DiceItem> identifiers, String filter, int startIndex, int endIndex, bool checkDbxFiles)
         {
-            //_timestamp = DateTime.Now.Ticks;
             var fileCounter = 0;
-            //foreach (var file in files)
+            //navigate through a subset of all the files (files from start_index to end_index)
             for (int i = startIndex; i < endIndex; ++i)
             {
                 var file = files[i];
-                if (fileCounter > 0 && fileCounter % 50 == 0)
+                //report progress to gui every 50 files or so
+                if (fileCounter % 50 == 0 && fileCounter > 0)
                 {
                     this.Dispatcher.Invoke((Action)(() =>
                     {
@@ -413,13 +432,13 @@ namespace Search_DBX_files
                         fileCounter = 0;
                     }));
                 }
-                //if (id++ > 100) break;
                 String[] lines;
                 using (var sr = new StreamReader(file.OpenRead()))
                 {
-                    lines = sr.ReadToEnd().Split(Environment.NewLine.ToCharArray());
+                    var input = sr.ReadToEnd();
+                    lines = Regex.Split(input, "\r\n|\r|\n");
                 }
-                int lineNumber = 0;
+                int lineNumber = 1;
                 foreach (var line in lines)
                 {
                     if (line.Contains(filter))
