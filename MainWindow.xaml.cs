@@ -51,6 +51,20 @@ namespace Search_DBX_files
             InitializeComponent();
             hideLoading();
             loadSettings();
+
+            settingsControl.onAnalyzeButton += settingsControl_onAnalyzeButton;
+            settingsControl.onLoadButton += settingsControl_onLoadButton;
+            resultGrid.Visibility = Visibility.Collapsed;
+        }
+
+        void settingsControl_onLoadButton()
+        {
+            onLoad(null, null);
+        }
+
+        void settingsControl_onAnalyzeButton()
+        {
+            onAnalyze(null, null);
         }            
 
         private void loadSettings()
@@ -67,31 +81,31 @@ namespace Search_DBX_files
                         {
                             var foo = line.Split(splitter);
                             var item = foo[1].Trim();
-                            dbxFolder.Text = item;
+                            settingsControl.DbxRoot = item;
                         }
                         else if (line.Contains("cpp_root"))
                         {
                             var foo = line.Split(splitter);
                             var item = foo[1].Trim();
-                            cppRoot.Text = item;
+                            settingsControl.CppRoot = item;
                         }
                         else if (line.Contains("comp_file"))
                         {
                             var foo = line.Split(splitter);
                             var item = foo[1].Trim();
-                            dataDefsFile.Text = item;
+                            settingsControl.DataDefinesFile = item;
                         }
                         else if (line.Contains("dbx_filter"))
                         {
                             var foo = line.Split(splitter);
                             var item = foo[1].Trim();
-                            dbxLineFilter.Text = item;
+                            settingsControl.DbxLineFilter = item;
                         }
                         else if (line.Contains("cpp_filter"))
                         {
                             var foo = line.Split(splitter);
                             var item = foo[1].Trim();
-                            cppLineFilter.Text = item;
+                            settingsControl.CppLineFilter = item;
                         }
                     }
                 }
@@ -114,11 +128,11 @@ namespace Search_DBX_files
             _resultingFiles = new Dictionary<String, List<FileInfo>>();
             _resultingLines = new Dictionary<String, List<String>>();
 
-            var defFile = new FileInfo(dataDefsFile.Text);
-            var dbxPath = new DirectoryInfo(dbxFolder.Text);
-            var cppPath = new DirectoryInfo(cppRoot.Text);
-            var cppFilter = cppLineFilter.Text;
-            var dbxFilter = dbxLineFilter.Text;
+            var defFile = new FileInfo(settingsControl.DataDefinesFile);
+            var dbxPath = new DirectoryInfo(settingsControl.DbxRoot);
+            var cppPath = new DirectoryInfo(settingsControl.CppRoot);
+            var cppFilter = settingsControl.CppLineFilter;
+            var dbxFilter = settingsControl.DbxLineFilter;
 
             if (!validatePaths(defFile, dbxPath, cppPath))
             {
@@ -491,22 +505,27 @@ namespace Search_DBX_files
 
         private void showLoading()
         {
-            btn.IsEnabled = false;
+            settingsControl.EnableAnalyzeButton = false;
+            settingsControl.EnableLoadButton = false;
             blocker1.Visibility = Visibility.Visible;
             blocker2.Visibility = Visibility.Visible;
             fileStatus.Visibility = Visibility.Visible;
             guidStatus.Visibility = Visibility.Visible;
             identifiersList.IsEnabled = false;
+            //settingsControl.MaxHeight = 50;
+            //settingsControl.Visibility = Visibility.Collapsed;
         }
 
         private void hideLoading()
         {
-            //btn.IsEnabled = false;
+            settingsControl.EnableAnalyzeButton = true;
+            settingsControl.EnableLoadButton = true;
             blocker1.Visibility = Visibility.Hidden;
             blocker2.Visibility = Visibility.Hidden;
             fileStatus.Visibility = Visibility.Hidden;
             guidStatus.Visibility = Visibility.Hidden;
             identifiersList.IsEnabled = true;
+            resultGrid.Visibility = Visibility.Visible;
         }
 
         private void insertUsage(string guid, FileInfo file)

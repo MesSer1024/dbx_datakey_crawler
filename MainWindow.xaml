@@ -14,59 +14,43 @@
             <Setter Property="Foreground" Value="Yellow"/>
         </Style>
     </Window.Resources>
-    <Grid>
-        <StackPanel Margin="0" VerticalAlignment="Top" Height="100" >
+    <Grid x:Name="_root">
+        <DockPanel>
+            <local:SettingsControl DockPanel.Dock="Top" x:Name="settingsControl">
 
-            <StackPanel Orientation="Horizontal">
-                    <Label Content="DBX Root Folder:" />
-                    <TextBox Height="23" MinWidth="500" Text="E:\repositories\Warsaw\Data\Source\UI" x:Name="dbxFolder"/>
-                </StackPanel>
-                <StackPanel Orientation="Horizontal">
-                    <Label Content="CPP Root Folder:" />
-                    <TextBox HorizontalAlignment="Left" MinWidth="500" Height="23" Text="E:\repositories\Warsaw\TnT\Code" VerticalAlignment="Top" x:Name="cppRoot" />
-                </StackPanel>
-                <StackPanel Orientation="Horizontal">
-                    <Label Content="UICompDataDefines.h:" />
-                    <TextBox HorizontalAlignment="Left" Height="23" MinWidth="500" Text="E:\repositories\Warsaw\TnT\Code\BF\BF\Client\UI\Generated\UIComponentDataDefines.h" x:Name="dataDefsFile"/>
-                </StackPanel>
-            <StackPanel Orientation="Horizontal">
-                <Button Content="Analyze dependencies" HorizontalAlignment="Left" Width="281" Click="onAnalyze" x:Name="btn"/>
-                <Button Margin="20,0,0,0" Content="Load Saved Search" HorizontalAlignment="Left" MinWidth="200" Click="onLoad" x:Name="loadBtn"/>
-            </StackPanel>
-        </StackPanel>
+            </local:SettingsControl>
+            <Grid x:Name="resultGrid" MinWidth="800" MinHeight="500" HorizontalAlignment="Stretch" DockPanel.Dock="Top" IsManipulationEnabled="True">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="400" />
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition />
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition />
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition />
+                </Grid.RowDefinitions>
 
-        <DockPanel Margin="0,125,0,0">
-            <StackPanel DockPanel.Dock="Left">
-                <StackPanel Orientation="Horizontal" >
+                <StackPanel Grid.Column="0" Grid.Row="0" Orientation="Horizontal" HorizontalAlignment="Stretch">
                     <Label Content="filter:" HorizontalAlignment="Left" />
                     <TextBox x:Name="idFilter" MinWidth="250" HorizontalAlignment="Stretch" SelectionChanged="onFilterChanged" Text=""/>
                 </StackPanel>
-                <ListBox Height="600" MinWidth="332" x:Name="identifiersList" SelectionChanged="onGuidSelected" DisplayMemberPath="VisibleName" FontFamily="Segoe UI Mono">
+
+                <Label Grid.Row="0" Grid.Column="2" Content="Used in files:" HorizontalContentAlignment="Center"/>
+                <Label Grid.Row="0" Grid.Column="4" Content="Line when used:" HorizontalContentAlignment="Center"/>
+                <ListBox Grid.Row="1" Grid.Column="0" MinWidth="332" x:Name="identifiersList" SelectionChanged="onGuidSelected" DisplayMemberPath="VisibleName" FontFamily="Segoe UI Mono">
                     <ListBox.DataContext>
                         <local:DiceItem/>
                     </ListBox.DataContext>
                 </ListBox>
-            </StackPanel>
-            <StackPanel>
-                <Label Content="Used in files:" Width="332" HorizontalContentAlignment="Center"/>
-                <ListBox Height="600" Width="332" x:Name="usedFileList" SelectionChanged="onFileSelected" FontFamily="Segoe UI Mono" />
-            </StackPanel>
-            <StackPanel>
-                <Label Content="Line when used:" MinWidth="332" HorizontalContentAlignment="Center"/>
-                <ListBox Height="600" MinWidth="332" x:Name="usedLinesList" SelectionChanged="onLineSelected" FontFamily="Segoe UI Mono" />
-            </StackPanel>
+                <ListBox Grid.Row="1" Grid.Column="2" x:Name="usedFileList" SelectionChanged="onFileSelected" FontFamily="Segoe UI Mono" />
+                <ListBox Grid.Row="1" Grid.Column="4" x:Name="usedLinesList" SelectionChanged="onLineSelected" FontFamily="Segoe UI Mono" />
 
-        </DockPanel>
-        <StackPanel HorizontalAlignment="Left" Height="175" Margin="706,0,0,0" VerticalAlignment="Top" Width="300" x:Name="infoBox" >
-            <StackPanel Orientation="Horizontal">
-                <Label Content="Dbx line filter:" />
-                <TextBox x:Name="dbxLineFilter" MinWidth="150" Text="field name="/>
-            </StackPanel>
-            <StackPanel Orientation="Horizontal">
-                <Label Content="cpp line filter:" />
-                <TextBox x:Name="cppLineFilter" MinWidth="150" Text="UI_"/>
-            </StackPanel>
-        </StackPanel>
+                <GridSplitter Grid.Row="0" Grid.Column="1"  Grid.RowSpan="2" HorizontalAlignment="Center" VerticalAlignment="Stretch" Background="Black"  ShowsPreview="True" Width="2" />
+                <GridSplitter Grid.Row="0" Grid.Column="3"  Grid.RowSpan="2" HorizontalAlignment="Center" VerticalAlignment="Stretch" Background="Black"  ShowsPreview="True" Width="2" />
+            </Grid>
+        </DockPanel>        
         <Rectangle Fill="#FFF4F4F5" Stroke="Black" Margin="0,230,0,240" x:Name="blocker1"/>
         <Label Content="Loading ... [progress should be seen within 10s]" HorizontalAlignment="Left" Margin="398,336,0,0" VerticalAlignment="Top" x:Name="blocker2"/>
         <Label Content="files:" HorizontalAlignment="Left" Margin="342,405,0,0" VerticalAlignment="Top" x:Name="fileStatus" Width="315"/>

@@ -4,8 +4,35 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              mc:Ignorable="d" 
-             d:DesignHeight="300" d:DesignWidth="300">
-    <Grid>
-            
-    </Grid>
+             d:DesignHeight="150" d:DesignWidth="1024">
+    <DockPanel MinWidth="1024" MinHeight="150" MaxHeight="150">
+        <DockPanel DockPanel.Dock="Right" LastChildFill="False">
+            <StackPanel DockPanel.Dock="Top" Orientation="Horizontal">
+                <Label Content="Dbx line filter:" />
+                <TextBox x:Name="dbxLineFilter" MinWidth="150" Text="field name="/>
+            </StackPanel>
+            <StackPanel DockPanel.Dock="Top" Orientation="Horizontal">
+                <Label Content="cpp line filter:" />
+                <TextBox x:Name="cppLineFilter" MinWidth="150" Text="UI_"/>
+            </StackPanel>
+        </DockPanel>
+        <DockPanel DockPanel.Dock="Left">
+            <DockPanel DockPanel.Dock="Top" LastChildFill="False">
+                <Label Content="DBX Root Folder:" MinWidth="150" />
+                <TextBox Height="23" MinWidth="500" Text="E:\repositories\Warsaw\Data\Source\UI" x:Name="dbxFolder"/>
+            </DockPanel>
+            <DockPanel DockPanel.Dock="Top" LastChildFill="False">
+                <Label Content="CPP Root Folder:" MinWidth="150"  />
+                <TextBox HorizontalAlignment="Left" MinWidth="500" Height="23" Text="E:\repositories\Warsaw\TnT\Code" VerticalAlignment="Top" x:Name="cppRoot" />
+            </DockPanel>
+            <DockPanel DockPanel.Dock="Top" LastChildFill="False">
+                <Label Content="UICompDataDefines.h:" MinWidth="150" />
+                <TextBox HorizontalAlignment="Left" Height="23" MinWidth="500" Text="E:\repositories\Warsaw\TnT\Code\BF\BF\Client\UI\Generated\UIComponentDataDefines.h" x:Name="dataDefsFile"/>
+            </DockPanel>
+            <DockPanel DockPanel.Dock="Top" HorizontalAlignment="Center">
+                <Button DockPanel.Dock="Left" MaxHeight="30" Content="Analyze dependencies" HorizontalAlignment="Left" Width="200" Click="onAnalyze" x:Name="btn"/>
+                <Button DockPanel.Dock="Left" MaxHeight="30" Margin="50,0,0,0" Content="Load Previous Data" HorizontalAlignment="Left" MinWidth="200" Click="onLoad" x:Name="loadBtn"/>
+            </DockPanel>
+        </DockPanel>
+    </DockPanel>
 </UserControl>
