@@ -19,6 +19,9 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using Microsoft.Win32;
+using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
 
 namespace Search_DBX_files
 {
@@ -41,6 +44,7 @@ namespace Search_DBX_files
         private long _totalTime;
         private int _unfinishedThreads;
         private int _filesCompleted;
+        private long _fileId;
 
         public MainWindow()
         {
@@ -94,7 +98,7 @@ namespace Search_DBX_files
             }
             catch (Exception e)
             {
-
+                throw new Exception("Corrupt config-file! Please reinstall the product or get a valid one in another way! \n\n" + e.ToString());
             }
         }
 
@@ -129,6 +133,7 @@ namespace Search_DBX_files
                     this.Dispatcher.Invoke((Action)(() =>
                     {
                         identifiersList.ItemsSource = _items;
+                        identifiersList.Items.Refresh();
                     }));
                     _allDbxFiles = dbxPath.GetFiles("*.dbx", SearchOption.AllDirectories);
                     _allCppFiles = cppPath.GetFiles("*.cpp", SearchOption.AllDirectories);
@@ -281,8 +286,9 @@ namespace Search_DBX_files
         {
             populateSuspects();
             outputToFile();
-            hideLoading();
             updateIdentifiers();
+            saveAsJson();
+            hideLoading();
             onFilterChanged(null, null);
         }
 
@@ -351,10 +357,10 @@ namespace Search_DBX_files
                     unusedSB.AppendFormat(Environment.NewLine + "{0} - {1}", guid, id);
                 }
             }
-            var fileId = DateTime.Now.Ticks;
+            _fileId = DateTime.Now.Ticks;
             var di = new DirectoryInfo("./");
             di.CreateSubdirectory("./output/");
-            var f = "./output/" + fileId;
+            var f = "./output/" + _fileId;
 
             using (var sw = new StreamWriter(f + "_usedKeys.txt", false))
             {
@@ -391,8 +397,28 @@ namespace Search_DBX_files
                 FileInfo foo = new FileInfo(f + "_suspects.txt");
                 foo.CopyTo("./output/__suspects.txt", true);
             }
+        }
 
+        private void saveAsJson()
+        {
+            var file = String.Format("./output/{0}.dcs", _fileId);
 
+            var save = new SavedData();
+            save.Items = _items;
+            save.Files = _resultingFiles;
+            save.Lines = _resultingLines;
+            var output = JsonConvert.SerializeObject(save);
+            using (var sw = new StreamWriter(file, false))
+            {
+                sw.Write(output);
+                sw.Flush();
+            }
+
+            using (var sw = new StreamWriter(String.Format("./output/_lastSave.dcs", _fileId), false))
+            {
+                sw.Write(output);
+                sw.Flush();
+            }
         }
 
         private void updateIdentifiers()
@@ -475,7 +501,7 @@ namespace Search_DBX_files
 
         private void hideLoading()
         {
-            //btn.IsEnabled = true;
+            //btn.IsEnabled = false;
             blocker1.Visibility = Visibility.Hidden;
             blocker2.Visibility = Visibility.Hidden;
             fileStatus.Visibility = Visibility.Hidden;
@@ -566,6 +592,49 @@ namespace Search_DBX_files
             else
             {
                 identifiersList.ItemsSource = _items;
+            }
+            identifiersList.Items.Refresh();
+        }
+
+        private void onLoad(object sender, RoutedEventArgs e)
+        {
+            var dlg = new OpenFileDialog();
+            dlg.Filter = "Datacrawler Save (*.dcs)|*.dcs";
+            dlg.Multiselect = false;
+            dlg.FileOk += dlg_FileOk;
+            dlg.InitialDirectory = Environment.CurrentDirectory + "\\output\\";
+            dlg.FileName = "_lastSave.dcs";
+            dlg.Title = "Selected a previous search";
+            dlg.ShowDialog();
+        }
+
+        void dlg_FileOk(object sender, CancelEventArgs e)
+        {
+            var dlg = sender as OpenFileDialog;
+            doLoadFile(dlg.FileName);
+        }
+
+        private void doLoadFile(string filePath)
+        {
+            //filePath = "./output/635092303488279385.dcs";
+            var file = new FileInfo(filePath);
+            if (file.Exists)
+            {
+                showLoading();
+                using (var sr = new StreamReader(file.FullName))
+                {
+                    string s = sr.ReadToEnd();
+                    var load = JsonConvert.DeserializeObject<SavedData>(s);
+                    _items = load.Items;
+                    _resultingFiles = load.Files;
+                    _resultingLines = load.Lines;
+                    hideLoading();
+                    onFilterChanged(null, null);
+                }
+            }
+            else
+            {
+                throw new Exception(String.Format("File does not exist \"{0}\"", filePath));
             }
         }
 

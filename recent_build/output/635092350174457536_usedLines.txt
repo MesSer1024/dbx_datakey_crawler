@@ -3317,8 +3317,8 @@
 	[1378] <field name="DataKey">948726668</field>
 	[1402] <field name="DataKey">948726668</field>
 -1361268560 - UI_UIPREMIUMCOMP_ISVIDEOVISIBLEINDETAILSCREEN
-	[156] case UI_UIPREMIUMCOMP_ISVIDEOVISIBLEINDETAILSCREEN:
 	[21] <field name="DataKey">-1361268560</field>
+	[156] case UI_UIPREMIUMCOMP_ISVIDEOVISIBLEINDETAILSCREEN:
 -1961246897 - UI_UIPREMIUMCOMP_PLAYSTOPABOUTVIDEO
 	[1328] <field name="DataKey">-1961246897</field>
 	[1473] <field name="DataKey">-1961246897</field>
@@ -4952,15 +4952,15 @@
 	[209] <field name="DataKey">-1893651353</field>
 -995594437 - UI_UIWEAPONCOMP_GPSLATITUDEPOSITION
 	[178] <field name="DataKey">-995594437</field>
-	[543] m_ui->setData(UI_UIWEAPONCOMP_GPSLATITUDEPOSITION, (float)gpsLat);
 	[148] <field name="DataKey">-995594437</field>
 	[132] <field name="DataKey">-995594437</field>
+	[543] m_ui->setData(UI_UIWEAPONCOMP_GPSLATITUDEPOSITION, (float)gpsLat);
 	[136] <field name="DataKey">-995594437</field>
 	[140] <field name="DataKey">-995594437</field>
 356138280 - UI_UIWEAPONCOMP_GPSLONGITUDEPOSITION
 	[213] <field name="DataKey">356138280</field>
-	[544] m_ui->setData(UI_UIWEAPONCOMP_GPSLONGITUDEPOSITION, (float)gpsLong);
 	[208] <field name="DataKey">356138280</field>
+	[544] m_ui->setData(UI_UIWEAPONCOMP_GPSLONGITUDEPOSITION, (float)gpsLong);
 	[186] <field name="DataKey">356138280</field>
 	[146] <field name="DataKey">356138280</field>
 	[150] <field name="DataKey">356138280</field>
@@ -5009,9 +5009,9 @@
 	[1159] IUISystem::getInstance()->setData(UI_UIWEAPONCOMP_LIGHTENABLED, isLightEnabled, fb::UINotifyType_Always);
 	[1484] <field name="DataKey">230573869</field>
 -1183721598 - UI_UIWEAPONCOMP_RANGEMETER
-	[409] m_ui->setData(UI_UIWEAPONCOMP_RANGEMETER, rangeString.c_str());
 	[60] <field name="DataKey">-1183721598</field>
 	[53] <field name="DataKey">-1183721598</field>
+	[409] m_ui->setData(UI_UIWEAPONCOMP_RANGEMETER, rangeString.c_str());
 	[121] <field name="DataKey">-1183721598</field>
 	[151] <field name="DataKey">-1183721598</field>
 	[40] <field name="DataKey">-1183721598</field>

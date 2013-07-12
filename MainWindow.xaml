@@ -29,17 +29,18 @@
                     <Label Content="UICompDataDefines.h:" />
                     <TextBox HorizontalAlignment="Left" Height="23" MinWidth="500" Text="E:\repositories\Warsaw\TnT\Code\BF\BF\Client\UI\Generated\UIComponentDataDefines.h" x:Name="dataDefsFile"/>
                 </StackPanel>
+            <StackPanel Orientation="Horizontal">
                 <Button Content="Analyze dependencies" HorizontalAlignment="Left" Width="281" Click="onAnalyze" x:Name="btn"/>
+                <Button Margin="20,0,0,0" Content="Load Saved Search" HorizontalAlignment="Left" MinWidth="200" Click="onLoad" x:Name="loadBtn"/>
             </StackPanel>
+        </StackPanel>
 
         <DockPanel Margin="0,125,0,0">
             <StackPanel DockPanel.Dock="Left">
                 <StackPanel Orientation="Horizontal" >
                     <Label Content="filter:" HorizontalAlignment="Left" />
-                    <TextBox x:Name="idFilter" MinWidth="250" HorizontalAlignment="Stretch" SelectionChanged="onFilterChanged" Text="UI_"/>
+                    <TextBox x:Name="idFilter" MinWidth="250" HorizontalAlignment="Stretch" SelectionChanged="onFilterChanged" Text=""/>
                 </StackPanel>
-                <!--Label Content="Datakeys:" Width="332" HorizontalContentAlignment="Center"/-->
-                <!--<ListBox Height="600" MinWidth="332" x:Name="identifiersList" SelectionChanged="onGuidSelected" DisplayMemberPath="VisibleName">-->
                 <ListBox Height="600" MinWidth="332" x:Name="identifiersList" SelectionChanged="onGuidSelected" DisplayMemberPath="VisibleName" FontFamily="Segoe UI Mono">
                     <ListBox.DataContext>
                         <local:DiceItem/>
