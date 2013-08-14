@@ -1,3 +1,19 @@
+DatakeyCrawler
+
+Intention: Make it possible to bridge dataKey-identifiers inside CPP-screens (FRONTEND_FOOBAR) to DBX identifiers inside FrostEd (-1285919) and see what keys that are used and where they are used.
+
+Source code: https://github.com/MesSer1024/dbx_datakey_crawler
+
+
+-----------------------------------------------
+-----------------------------------------------
+Changelog:
+--------------------------
+  1.4
+--------------------------
+- Made it possible to save/load a previous search to make it faster to restart program etc.
+- Improved GUI of program and made it possible to rearrange lists in view
+- fixed issues with line numbers being wrong (windows understood \n\r as 2 line breaks instead of 1)
 --------------------------
   1.3
 --------------------------
