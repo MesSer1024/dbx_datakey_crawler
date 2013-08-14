@@ -11,9 +11,9 @@ Changelog:
 --------------------------
   1.4
 --------------------------
-- Made it possible to save/load a previous search to make it faster to restart program etc.
+- Made it possible to save/load a search to make it faster to use program when user has not done any sync changes etc.
 - Improved GUI of program and made it possible to rearrange lists in view
-- fixed issues with line numbers being wrong (windows understood \n\r as 2 line breaks instead of 1)
+- fixed bug with line numbers being wrong (windows understood \n\r as 2 line breaks instead of 1)
 --------------------------
   1.3
 --------------------------
