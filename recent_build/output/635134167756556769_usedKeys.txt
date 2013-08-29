@@ -3,18 +3,18 @@
 	MySoldierScreen.dbx
 	MySoldierScreen.dbx
 	MySoldierScreen.dbx
-	MultiPlayerScreen.dbx
-	MultiPlayerScreen.dbx
-	MultiPlayerScreen.dbx
-	MultiPlayerScreen.dbx
-	MultiPlayerScreen.dbx
-	MainMenuScreen.dbx
-	MainMenuScreen.dbx
 	MainMenuScreenStreamInstalling.dbx
 	MainMenuScreenStreamInstalling.dbx
+	MultiPlayerScreen.dbx
+	MultiPlayerScreen.dbx
+	MultiPlayerScreen.dbx
+	MultiPlayerScreen.dbx
+	MultiPlayerScreen.dbx
 	ManagePresetsScreen.dbx
 	ManagePresetsScreen.dbx
 	ManagePresetsScreen.dbx
+	MainMenuScreen.dbx
+	MainMenuScreen.dbx
 	ManageMapRotationScreen.dbx
 	ManageMapRotationScreen.dbx
 	ManageMapRotationScreen.dbx
@@ -26,10 +26,10 @@
 -1945598635 - UI_FRONTENDCOMP_FRONTENDTARGETSCREEN
 	FrontendRoot.dbx
 	FrontendRoot.dbx
-	GoOnlineLoadingScreen.dbx
 	ExtraMenuScreen.dbx
-	MainMenuScreen.dbx
+	GoOnlineLoadingScreen.dbx
 	MainMenuScreenStreamInstalling.dbx
+	MainMenuScreen.dbx
 	FrontEnd.cpp
 	FrontEnd.cpp
 243204015 - UI_FRONTENDCOMP_GETCAMPAIGNLISTSELECTEDROW
@@ -37,18 +37,18 @@
 	FrontEnd.cpp
 -1573823445 - UI_FRONTENDCOMP_GETMAINLIST1SELECTEDROW
 	MainMenuScreenPC.dbx
-	MainMenuScreen.dbx
 	MainMenuScreenStreamInstalling.dbx
+	MainMenuScreen.dbx
 	FrontEnd.cpp
 -1792637304 - UI_FRONTENDCOMP_GETMAINLIST2SELECTEDROW
 	MainMenuScreenPC.dbx
-	MainMenuScreen.dbx
-	MainMenuScreen.dbx
 	MainMenuScreenStreamInstalling.dbx
+	MainMenuScreen.dbx
+	MainMenuScreen.dbx
 	FrontEnd.cpp
 1449011829 - UI_FRONTENDCOMP_GETMAINLISTFOCUS
-	MainMenuScreen.dbx
 	MainMenuScreenStreamInstalling.dbx
+	MainMenuScreen.dbx
 	FrontEnd.cpp
 953321099 - UI_FRONTENDCOMP_GETMULTIPLAYERLISTSELECTEDROW
 	MultiPlayerScreen.dbx
@@ -77,10 +77,10 @@
 -2099373007 - UI_FRONTENDCOMP_ISPRO
 	PremiumGraph.dbx
 	MySoldierGraph.dbx
-	PremiumStartScreen.dbx
-	PremiumStartScreen.dbx
-	PremiumStartScreen.dbx
 	PremiumAboutScreen.dbx
+	PremiumStartScreen.dbx
+	PremiumStartScreen.dbx
+	PremiumStartScreen.dbx
 	PremiumCalendarScreen.dbx
 	UIFrontendChangeMovie_prefab.dbx
 	FrontEnd.cpp
@@ -97,71 +97,71 @@
 	MainMenuScreen.dbx
 	FrontEnd.cpp
 1226566395 - UI_FRONTENDCOMP_MAINMENUSELECTIONENABLED
-	MainMenuScreen.dbx
-	MainMenuScreen.dbx
 	MainMenuScreenStreamInstalling.dbx
 	MainMenuScreenStreamInstalling.dbx
+	MainMenuScreen.dbx
+	MainMenuScreen.dbx
 1056315302 - UI_FRONTENDCOMP_MAINMENUSHOWHINT
 	MainMenuScreenPC.dbx
-	MainMenuScreen.dbx
-	MainMenuScreen.dbx
 	MainMenuScreenStreamInstalling.dbx
+	MainMenuScreen.dbx
+	MainMenuScreen.dbx
 	FrontEnd.cpp
 1452887548 - UI_FRONTENDCOMP_MAINMENUTILESENABLED
-	MainMenuScreen.dbx
 	MainMenuScreenStreamInstalling.dbx
+	MainMenuScreen.dbx
 	FrontEnd.cpp
 606381875 - UI_FRONTENDCOMP_MENUHINTTEXT
+	CampaignMissionsScreen.dbx
+	CampaignMissionsScreen.dbx
 	FrontendRoot.dbx
-	CampaignMissionsScreen.dbx
-	CampaignMissionsScreen.dbx
-	PlayCampaignMissionScreen.dbx
-	PlayCampaignMissionScreen.dbx
-	WeaponsAndGadgetsScreen.dbx
-	WeaponsAndGadgetsScreen.dbx
-	QuickMatchScreen.dbx
-	QuickMatchScreen.dbx
-	QuickMatchScreen.dbx
-	MySoldierScreen.dbx
-	MySoldierScreen.dbx
-	MySoldierScreen.dbx
 	MultiplayerLeaderboardsScreen.dbx
 	MultiplayerLeaderboardsScreen.dbx
+	QuickMatchScreen.dbx
+	QuickMatchScreen.dbx
+	QuickMatchScreen.dbx
+	PlayCampaignMissionScreen.dbx
+	PlayCampaignMissionScreen.dbx
+	MySoldierScreen.dbx
+	MySoldierScreen.dbx
+	MySoldierScreen.dbx
+	WeaponsAndGadgetsScreen.dbx
+	WeaponsAndGadgetsScreen.dbx
 	StartNewCampaignScreen.dbx
 	StartNewCampaignScreen.dbx
+	PremiumAboutScreen.dbx
 	ExtraMenuScreen.dbx
 	MainMenuScreenPC.dbx
 	MainMenuScreenPC.dbx
 	MainMenuScreenPC.dbx
-	MultiPlayerScreen.dbx
-	MultiPlayerScreen.dbx
-	MultiPlayerScreen.dbx
-	MainMenuScreen.dbx
-	MainMenuScreen.dbx
 	MainMenuScreenStreamInstalling.dbx
-	SinglePlayerScreen.dbx
-	SinglePlayerScreen.dbx
+	MultiPlayerScreen.dbx
+	MultiPlayerScreen.dbx
+	MultiPlayerScreen.dbx
 	PopupBuyServerCard.dbx
+	SinglePlayerScreen.dbx
+	SinglePlayerScreen.dbx
+	ManagePresetsScreen.dbx
+	ManagePresetsScreen.dbx
+	ManagePresetsScreen.dbx
 	PopupExtendLease.dbx
 	PopupExtendLease.dbx
-	PremiumAboutScreen.dbx
-	ManagePlayersScreen.dbx
-	ManagePlayersScreen.dbx
-	ManagePlayersScreen.dbx
-	ManagePlayersScreen.dbx
-	ManagePlayersScreen.dbx
-	ManagePlayersScreen.dbx
-	ManagePlayersScreen.dbx
-	ManagePresetsScreen.dbx
-	ManagePresetsScreen.dbx
-	ManagePresetsScreen.dbx
+	MainMenuScreen.dbx
+	MainMenuScreen.dbx
 	ManageMapRotationScreen.dbx
 	ManageMapRotationScreen.dbx
 	ManageMapRotationScreen.dbx
 	ManageMapRotationScreen.dbx
-	PopupServerLocation.dbx
-	PopupServerLocation.dbx
 	MatchesScreen.dbx
+	PopupServerLocation.dbx
+	PopupServerLocation.dbx
+	ManagePlayersScreen.dbx
+	ManagePlayersScreen.dbx
+	ManagePlayersScreen.dbx
+	ManagePlayersScreen.dbx
+	ManagePlayersScreen.dbx
+	ManagePlayersScreen.dbx
+	ManagePlayersScreen.dbx
 	ManageSettingsScreen.dbx
 	ManageSettingsScreen.dbx
 	ManageSettingsScreen.dbx
@@ -214,12 +214,12 @@
 	FrontEnd.cpp
 -739673281 - UI_FRONTENDCOMP_SETMAINLIST1SELECTEDROW
 	MainMenuScreenPC.dbx
-	MainMenuScreen.dbx
 	MainMenuScreenStreamInstalling.dbx
+	MainMenuScreen.dbx
 	FrontEnd.cpp
 -958487140 - UI_FRONTENDCOMP_SETMAINLIST2SELECTEDROW
-	MainMenuScreen.dbx
 	MainMenuScreenStreamInstalling.dbx
+	MainMenuScreen.dbx
 	FrontEnd.cpp
 -959052129 - UI_FRONTENDCOMP_SETMULTIPLAYERLISTSELECTEDROW
 	MultiPlayerScreen.dbx
@@ -246,14 +246,14 @@
 	FrontEnd.cpp
 	FrontEnd.cpp
 -508764810 - UI_FRONTENDCOMP_VKBDCURRENTFIELD
-	ManagePlayersScreen.dbx
-	ManagePlayersScreen.dbx
 	PopupCreatePreset.dbx
 	PopupCreatePreset.dbx
 	PopupLogin.dbx
 	PopupLogin.dbx
 	PopupLogin.dbx
 	PopupLogin.dbx
+	ManagePlayersScreen.dbx
+	ManagePlayersScreen.dbx
 	ManageSettingsScreen.dbx
 	ManageSettingsScreen.dbx
 	ManageSettingsScreen.dbx
@@ -266,11 +266,11 @@
 	UISetupServerWizardComp.cpp
 	UISetupServerWizardComp.cpp
 495565559 - UI_FRONTENDCOMP_VKBDDISPLAYDATA
-	ManagePlayersScreen.dbx
 	PopupCreatePreset.dbx
 	PopupLogin.dbx
 	PopupLogin.dbx
 	PopupLogin.dbx
+	ManagePlayersScreen.dbx
 	ManageSettingsScreen.dbx
 	ManageSettingsScreen.dbx
 	ManageSettingsScreen.dbx
@@ -280,22 +280,22 @@
 	PopupServerWizard1.dbx
 	UIActionFactory.cpp
 -1888704194 - UI_FRONTENDCOMP_VKBDINPUTSTRING
-	ManagePlayersScreen.dbx
-	ManagePlayersScreen.dbx
 	PopupCreatePreset.dbx
 	PopupCreatePreset.dbx
 	PopupLogin.dbx
 	PopupLogin.dbx
 	PopupLogin.dbx
 	PopupLogin.dbx
+	ManagePlayersScreen.dbx
+	ManagePlayersScreen.dbx
+	ManageSettingsScreen.dbx
+	ManageSettingsScreen.dbx
+	ManageSettingsScreen.dbx
+	ManageSettingsScreen.dbx
+	PopupServerWizard1.dbx
+	PopupServerWizard1.dbx
+	PopupServerWizard1.dbx
 	PopupCreateMapRotation.dbx
-	ManageSettingsScreen.dbx
-	ManageSettingsScreen.dbx
-	ManageSettingsScreen.dbx
-	ManageSettingsScreen.dbx
-	PopupServerWizard1.dbx
-	PopupServerWizard1.dbx
-	PopupServerWizard1.dbx
 	BFUISystem.cpp
 1339344192 - UI_UIASSIGNMENTSCOMP_ASSIGNMENTNAME
 	UIAssignmentsComp.cpp
@@ -317,8 +317,8 @@
 	UIAssignmentsComp.cpp
 -178667290 - UI_UIAWARDSSCREENCOMP_AWARDSTABSPLUS
 	AssignmentScreen.dbx
-	MultiplayerMapsScreen.dbx
 	MultiplayerAwardsScreen.dbx
+	MultiplayerMapsScreen.dbx
 	LicenseAssignmentScreen.dbx
 	MultiplayerStatsScreen.dbx
 	MultiplayerRibbonsScreen.dbx
@@ -452,16 +452,16 @@
 	MySoldierGraph.dbx
 	MySoldierGraph.dbx
 405065968 - UI_UIBATTLEDASHCOMP_DASHISOPEN
-	UIIngameScoreboardAndMenuCombo.dbx
 	UIGameInputManager.dbx
+	UIIngameScoreboardAndMenuCombo.dbx
 	UIEndOfRoundLogic.dbx
 	UIGameLogicSP.dbx
 	UIBattledashComp.cpp
 	UIBattledashComp.cpp
 	UIBattledashComp.cpp
 1536110216 - UI_UIBATTLEDASHCOMP_FRIENDHASNOSTATS
-	BattledashChallengesEmptyWidget.dbx
 	BattledashChallengesErrorWidget.dbx
+	BattledashChallengesEmptyWidget.dbx
 	BattledashFriendEmptyWidget.dbx
 	UIBattledashComp.cpp
 	UIBattledashComp.cpp
@@ -561,9 +561,9 @@
 266317944 - UI_UICOMMANDERCOMP_COMMANDERACTIVE
 	UICommanderPresenceWidget.dbx
 	CommanderStatusWidget.dbx
-	UICommanderComp.cpp
-	UICommanderComp.cpp
 	UICommanderPresenceWidget.cpp
+	UICommanderComp.cpp
+	UICommanderComp.cpp
 -1844567905 - UI_UICOMMANDERCOMP_COMMANDERINACTIVE
 	UICommanderPresenceHardcoreWidget.dbx
 	UICommanderPresenceWidget.dbx
@@ -609,6 +609,7 @@
 -514951843 - UI_UICOMMANDERCOMP_INFANTRYSCANSTATE
 	UICommanderComp.cpp
 -400322258 - UI_UICOMMANDERCOMP_ISCOMMANDER
+	Commander.dbx
 	SquadGraph.dbx
 	UICommanderComp.cpp
 1391594791 - UI_UICOMMANDERCOMP_JAMENABLED
@@ -757,19 +758,19 @@
 	UIConnectionComp.cpp
 	UIConnectionComp.cpp
 -1641999115 - UI_UICONNECTIONCOMP_STATE
-	PurchaseBattlepack.dbx
 	GoOnlineHandler.dbx
+	PurchaseBattlepack.dbx
 	PurchaseServer.dbx
-	PreFrontendGraph.dbx
 	MultiplayerGraph.dbx
+	PreFrontendGraph.dbx
 	FrontendRoot.dbx
 	FrontendRoot.dbx
+	UIGameLogicFrontend.dbx
+	UIGameLogicFrontend.dbx
 	GoOnlineLoadingScreen.dbx
-	UIGameLogicFrontend.dbx
-	UIGameLogicFrontend.dbx
-	MainMenuScreen.dbx
-	MainMenuScreen.dbx
 	MainMenuScreenStreamInstalling.dbx
+	MainMenuScreen.dbx
+	MainMenuScreen.dbx
 	UIConnectionComp.cpp
 	UIConnectionComp.cpp
 	UIConnectionComp.cpp
@@ -814,6 +815,16 @@
 	ClientUICustomizeStateEntity.cpp
 	UIKitLoadoutSlotHandlerWidget.cpp
 	UIKitLoadoutSlotWidget.cpp
+966814404 - UI_UICUSTOMIZATIONCOMP_DOF
+	ShowRoom.dbx
+	VE_VehicleRenders.dbx
+	VE_Customize.dbx
+	UI_Schematic.dbx
+	UILogic.dbx
+-331236318 - UI_UICUSTOMIZATIONCOMP_DOFCHANGE
+	VE_Customize.dbx
+-8437975 - UI_UICUSTOMIZATIONCOMP_DOFCHANGEVEHICLES
+	VE_Customize.dbx
 1901410573 - UI_UICUSTOMIZATIONCOMP_HIGHLIGHTEDITEM
 	CustomizeOverlayScreenRoot.dbx
 	ClientUICustomizeStateEntity.cpp
@@ -853,6 +864,10 @@
 -1320946827 - UI_UICUSTOMIZATIONCOMP_SELECTEDITEM
 	ClientUICustomizeStateEntity.cpp
 1651925142 - UI_UICUSTOMIZATIONCOMP_SELECTEDKIT
+	WishlistGrammar.dbx
+	WishlistGrammar.dbx
+	WishlistGrammar.dbx
+	WishlistGrammar.dbx
 	DeployKitIconWidget.dbx
 	UISupplyCrateLogic.dbx
 	UISpawnMenuMPLogic.dbx
@@ -872,6 +887,8 @@
 	ClientUICustomizeStateEntity.cpp
 	UICustomizationComp.cpp
 -635462473 - UI_UICUSTOMIZATIONCOMP_SELECTEDSTATE
+	ShowRoom.dbx
+	VE_Customize.dbx
 	ClientUICustomize3DModelEntity.cpp
 	ClientUICustomize3DModelEntity.cpp
 	ClientUICustomizeStateEntity.cpp
@@ -928,6 +945,7 @@
 	UIDeployScreen.cpp
 	UIDeployScreen.cpp
 -1897554052 - UI_UIDEPLOYCOMP_DEPLOYPOINTLOST
+	Commander.dbx
 	DeployMessagesWidget.dbx
 	UISpawnMenuMPLogic.dbx
 	UIDeployComp.cpp
@@ -939,6 +957,8 @@
 	UIDeployScreen.cpp
 	UICCTVWidget.cpp
 995994302 - UI_UIDEPLOYCOMP_SHOWCCTV
+	Spectator.dbx
+	Commander.dbx
 	CCTVWidgetCommander.dbx
 	CCTVWidget.dbx
 	UISpawnMenuMPLogic.dbx
@@ -1042,8 +1062,8 @@
 	UIServerListFilterBarComp.cpp
 	UIServerInfoWidget.cpp
 -1941308760 - UI_UIDETAILEDSERVERINFOCOMP_NAME
-	ServerInfoWidget.dbx
 	MyServersRoot.dbx
+	ServerInfoWidget.dbx
 	DetailedServerInfoScreen.dbx
 	DetailedServerInfoScreen.dbx
 	UIMyServersWidget.cpp
@@ -1147,6 +1167,7 @@
 	UIDetailedServerInfoComp.cpp
 	UIDetailedServerInfoComp.cpp
 1184189751 - UI_UIELIMINATIONPREEORCOMP_CURRENTROUND
+	MP_RoundOutcome.dbx
 	UIEliminationPreEorComp.cpp
 	UIEliminationPreEorComp.cpp
 1720370968 - UI_UIELIMINATIONPREEORCOMP_FORMATTEDFINALRESULTTEAMOUTCOME
@@ -1171,12 +1192,15 @@
 	PreEndOfRoundEliminationWidget.dbx
 	UIEliminationPreEorComp.cpp
 2005299609 - UI_UIELIMINATIONPREEORCOMP_MAXROUNDS
+	MP_RoundOutcome.dbx
 	UIEliminationPreEorComp.cpp
 	UIEliminationPreEorComp.cpp
 -1595921192 - UI_UIELIMINATIONPREEORCOMP_TEAM1SCORE
+	MP_RoundOutcome.dbx
 	UIEliminationPreEorComp.cpp
 	UIEliminationPreEorComp.cpp
 -1485560709 - UI_UIELIMINATIONPREEORCOMP_TEAM2SCORE
+	MP_RoundOutcome.dbx
 	UIEliminationPreEorComp.cpp
 	UIEliminationPreEorComp.cpp
 1329219349 - UI_UIENDOFROUNDCOMP_ASSAULTSCORE
@@ -1233,9 +1257,9 @@
 	UIEndOfRoundComp.cpp
 -1159267695 - UI_UIENDOFROUNDCOMP_CURRENTLEVELSID
 	UIPreEndOfRoundObliterationWidget.dbx
-	UIPreEndOfRoundConquestWidget.dbx
-	UIPreEndOfRoundSQDMWidget.dbx
 	UIPreEndOfRoundTDMWidget.dbx
+	UIPreEndOfRoundSQDMWidget.dbx
+	UIPreEndOfRoundConquestWidget.dbx
 	UIPreEndOfRoundRushWidget.dbx
 	UIEndOfRoundComp.cpp
 -1889958520 - UI_UIENDOFROUNDCOMP_CURRENTRANKIMAGE
@@ -1256,10 +1280,10 @@
 -995000405 - UI_UIENDOFROUNDCOMP_EORTABSSETUP
 	EORDetailsKitsScreen.dbx
 	EORDetailsAwardsScreen.dbx
-	EORDetailsStatsScreen.dbx
 	EORDetailsTabsScreen.dbx
-	EORDetailsUnlocksScreen.dbx
 	EORDetailsVehiclesScreen.dbx
+	EORDetailsStatsScreen.dbx
+	EORDetailsUnlocksScreen.dbx
 	UIEndOfRoundComp.cpp
 -1254654309 - UI_UIENDOFROUNDCOMP_FEEDSHARED
 	EndOfRoundOverlayWidget.dbx
@@ -1359,8 +1383,8 @@
 	UIEndOfRoundComp.cpp
 440278732 - UI_UIENDOFROUNDCOMP_ROUNDDURATION
 	UIPreEndOfRoundObliterationWidget.dbx
-	UIPreEndOfRoundSQDMWidget.dbx
 	UIPreEndOfRoundTDMWidget.dbx
+	UIPreEndOfRoundSQDMWidget.dbx
 	UIPreEndOfRoundRushWidget.dbx
 	EORScoreboardHeaderScreen.dbx
 	UIEndOfRoundComp.cpp
@@ -1369,23 +1393,23 @@
 	UIPreEndOfRoundObliterationWidget.dbx
 	UIPreEndOfRoundObliterationWidget.dbx
 	UIPreEndOfRoundObliterationWidget.dbx
-	UIPreEndOfRoundConquestWidget.dbx
-	UIPreEndOfRoundConquestWidget.dbx
-	UIPreEndOfRoundConquestWidget.dbx
-	UIPreEndOfRoundConquestWidget.dbx
-	UIPreEndOfRoundSQDMWidget.dbx
-	UIPreEndOfRoundSQDMWidget.dbx
-	UIPreEndOfRoundSQDMWidget.dbx
-	UIPreEndOfRoundSQDMWidget.dbx
 	UIPreEndOfRoundTDMWidget.dbx
 	UIPreEndOfRoundTDMWidget.dbx
 	UIPreEndOfRoundTDMWidget.dbx
 	UIPreEndOfRoundTDMWidget.dbx
+	UIPreEndOfRoundSQDMWidget.dbx
+	UIPreEndOfRoundSQDMWidget.dbx
+	UIPreEndOfRoundSQDMWidget.dbx
+	UIPreEndOfRoundSQDMWidget.dbx
+	UIPreEndOfRoundConquestWidget.dbx
+	UIPreEndOfRoundConquestWidget.dbx
+	UIPreEndOfRoundConquestWidget.dbx
+	UIPreEndOfRoundConquestWidget.dbx
 	UIPreEndOfRoundRushWidget.dbx
 	UIPreEndOfRoundRushWidget.dbx
 	UIPreEndOfRoundRushWidget.dbx
-	UIEliminationPreEorComp.cpp
 	UIEndOfRoundComp.cpp
+	UIEliminationPreEorComp.cpp
 -1359971741 - UI_UIENDOFROUNDCOMP_ROUNDSTARTRANKIMAGE
 	UIEndOfRoundComp.cpp
 152414698 - UI_UIENDOFROUNDCOMP_RSPMESSAGE
@@ -1437,12 +1461,13 @@
 	EORDetailsStatsScreen.dbx
 	UIEndOfRoundComp.cpp
 -362841901 - UI_UIENDOFROUNDCOMP_WINNINGTEAM
-	SDMUIDataGraph.dbx
-	SDMUIDataGraph.dbx
-	SDMUIDataGraph.dbx
-	SDMUIDataGraph.dbx
+	MP_RoundOutcome.dbx
 	ConquestUIDataGraph.dbx
 	ConquestUIDataGraph.dbx
+	SDMUIDataGraph.dbx
+	SDMUIDataGraph.dbx
+	SDMUIDataGraph.dbx
+	SDMUIDataGraph.dbx
 	UIEndOfRoundComp.cpp
 	UIEndOfRoundComp.cpp
 934561255 - UI_UIFLAGCOUNTERCOMP_ENEMYFLAGPROGRESS
@@ -1498,6 +1523,7 @@
 	UIHardcoreComp.cpp
 	WarsawWorldIconPlayer.cpp
 1234169587 - UI_UIIMCOMP_BRIGHTNESSCALIBRATION
+	UiBrightnessSetting.dbx
 	OptionsScreenLogic.dbx
 -710174905 - UI_UIIMCOMP_CHATWANTSINPUT
 	UIGameInputManager.dbx
@@ -1509,8 +1535,12 @@
 	UIIngameScoreboardAndMenuCombo.dbx
 	UIEndOfRoundLogic.dbx
 2087633497 - UI_UIIMCOMP_CROSSHAIRENABLED
-	UIGameLogicMP.dbx
+	M224_Deployed_PDA.dbx
+	Spectator.dbx
+	JDAMMapScreenLogic.dbx
 	UIHudLogic.dbx
+	UIGameLogicMP.dbx
+	UIGameLogicMP_TitanTest.dbx
 -530792718 - UI_UIIMCOMP_DEPLOYWANTSINPUT
 	UIGameInputManager.dbx
 1816345257 - UI_UIIMCOMP_ENABLEGAMEINPUT
@@ -1519,6 +1549,7 @@
 1914032615 - UI_UIIMCOMP_HUDVISIBLE
 	UIGameLogicSP.dbx
 -836264985 - UI_UIIMCOMP_INGAMESCOREBOARDACTIVE
+	Spectator.dbx
 	UIScoreboardScreenSelector.dbx
 	UIHudLogic.dbx
 1192955951 - UI_UIIMCOMP_INTERACTIONENABLED
@@ -1532,46 +1563,136 @@
 	UIDeathLogic.dbx
 	SP_NPX_pause_prefab.dbx
 -1249565970 - UI_UIIMCOMP_NPXAC130ENTER
+	AC130_Gunship.dbx
 	NPXHudMP.dbx
 -1901433178 - UI_UIIMCOMP_NPXARMOREDJEEPENTER
+	CH_MRAP-ZFB-05.dbx
+	CH_MRAP-ZFB-05_SP_AI.dbx
+	RU_MRAP_SPM3.dbx
+	RU_MRAP_SPM3_SP_Player.dbx
+	RU_MRAP_SPM3_SP_AI.dbx
+	US_MRAP-COUGAR_SP_Player.dbx
+	US_MRAP-COUGAR.dbx
 	NPXHudMP.dbx
 1400500062 - UI_UIIMCOMP_NPXATTACKHELIENTER
+	AH1Z.dbx
+	AH1Z_SP.dbx
+	AH1Z_Naval.dbx
+	CH_AHE_Z-10w.dbx
+	CH_AHE_Z-10w_SP_AI.dbx
+	CH_AHE_Z-10w_SP_Naval.dbx
+	Mi28.dbx
+	Mi28_SP.dbx
 	NPXHudMP.dbx
 686834893 - UI_UIIMCOMP_NPXATTACKJETENTER
+	A10_THUNDERBOLT.dbx
+	CH_JET_Q5_FANTAN.dbx
+	SU-25TM.dbx
 	NPXHudMP.dbx
 1427287145 - UI_UIIMCOMP_NPXEODBOTENTER
+	EODBot.dbx
 	NPXHudMP.dbx
 1294424898 - UI_UIIMCOMP_NPXFACBOATENTER
+	CH_FAC_DV15.dbx
+	CH_FAC_DV15_SP_AI.dbx
+	CH_FAC_DV15_SP_Player.dbx
+	RU_FAC_DV15.dbx
+	US_FAC-CB90_AI.dbx
+	US_FAC-CB90_XP2Temp.dbx
+	US_FAC-CB90_SP.dbx
+	US_FAC-CB90.dbx
 	NPXHudMP.dbx
 -322072206 - UI_UIIMCOMP_NPXHIMARSENTER
+	HIMARS.dbx
 	NPXHudMP.dbx
 -1173035065 - UI_UIIMCOMP_NPXIFVAAENTER
+	9K22_Tunguska_M_SP_Player.dbx
+	9K22_Tunguska_M.dbx
+	CH_AA_PGZ-95.dbx
+	CH_AA_PGZ-95_SP_Airfield.dbx
+	CH_AA_PGZ-95_SP_AI.dbx
+	LAV_AD.dbx
 	NPXHudMP.dbx
 -929078489 - UI_UIIMCOMP_NPXIFVENTER
+	BTR90.dbx
+	BTR90_SP_Player.dbx
+	BTR90_SP_AI.dbx
+	CH_IFV_ZBD09.dbx
+	CH_IFV_ZBD09_SP_Player.dbx
+	CH_IFV_ZBD09_SP_AI.dbx
+	LAV25.dbx
 	NPXHudMP.dbx
 1046721370 - UI_UIIMCOMP_NPXLIGHTJEEPENTER
+	CH_FAV_LYT2021.dbx
+	CH_FAV_LYT2021_SP_AI.dbx
+	GrowlerITV_SP_Player.dbx
+	GrowlerITV.dbx
+	VDV_Buggy.dbx
+	VDV_Buggy_SP_AI.dbx
+	VDV_Buggy_SP_AirfieldRail.dbx
 	NPXHudMP.dbx
 -1047299184 - UI_UIIMCOMP_NPXM224MORTARENTER
+	M224_Deployed_PDA.dbx
 	NPXHudMP.dbx
 -1328218460 - UI_UIIMCOMP_NPXMAVENTER
+	MAV.dbx
+	MAV_Restricted_Height.dbx
 	NPXHudMP.dbx
 1036960613 - UI_UIIMCOMP_NPXMBTENTER
+	CH_MBT_Type99_SP_Player.dbx
+	CH_MBT_Type99_SP_Airfield.dbx
+	CH_MBT_Type99_SP_AI.dbx
+	CH_MBT_Type99.dbx
+	M1Abrams.dbx
+	M1Abrams_SP_Player_NoArmor.dbx
+	M1Abrams_SP_Player.dbx
+	T90.dbx
+	T90_SP_Player.dbx
+	T90_SP_AI.dbx
 	NPXHudMP.dbx
 2134033697 - UI_UIIMCOMP_NPXMPAPSENTER
+	MP_APS_Projectile.dbx
 	NPXHudMP.dbx
 -194022491 - UI_UIIMCOMP_NPXPERSONALTRANSPORTENTER
+	PWC_JetSki.dbx
+	QUADBIKE.dbx
 	NPXHudMP.dbx
+	KLR650.dbx
 1119412879 - UI_UIIMCOMP_NPXRHIBENTER
+	RHIB.dbx
+	RHIB_SP_Suez_Rail.dbx
+	RHIB_Sp_Airfield.dbx
+	RHIB_SP_Suez.dbx
+	RHIB_AI.dbx
 	NPXHudMP.dbx
 594074824 - UI_UIIMCOMP_NPXSCOUTHELIENTER
+	AH6_Littlebird.dbx
+	CH_SHEL_Z-11w.dbx
+	Z-11w.dbx
+	Z-11w_SP.dbx
 	NPXHudMP.dbx
 -2033660092 - UI_UIIMCOMP_NPXSOFLAMENTER
+	SOFLAM_Projectile.dbx
 	NPXHudMP.dbx
 -689422523 - UI_UIIMCOMP_NPXSTATIONAIRYWEAPONENTER
+	TOW2.dbx
+	TOW2_SP.dbx
 	NPXHudMP.dbx
 -1189833866 - UI_UIIMCOMP_NPXSTEALTHJETENTER
+	CH_FJET_J-20.dbx
+	F35B.dbx
+	RU_FJET_T-50_Pak_FA.dbx
 	NPXHudMP.dbx
 -1071695115 - UI_UIIMCOMP_NPXTRANSPORTHELIENTER
+	CH_LTHE_Z-9_SP_ShanghaiRoof.dbx
+	CH_LTHE_Z-9_SP_Naval.dbx
+	CH_LTHE_Z-9_SP_AI.dbx
+	CH_LTHE_Z-9.dbx
+	KA-60_Kasatka_SP_AI.dbx
+	KA-60_Kasatka.dbx
+	Venom.dbx
+	Venom_SP.dbx
+	Venom_SP_Prologue.dbx
 	NPXHudMP.dbx
 1124170841 - UI_UIIMCOMP_OBLITERATIONBOMBLOCATION
 	ObliterationBombPositioning.dbx
@@ -1582,8 +1703,8 @@
 	UIObjectiveStatusBarWidget.cpp
 168913001 - UI_UIIMCOMP_OBLITERATIONSITESTATES
 	UIObliterationBaseTrackerStatus.dbx
-	UIObjectiveStatusBarWidget.cpp
 	UIScoreboardWidget.cpp
+	UIObjectiveStatusBarWidget.cpp
 -1034130268 - UI_UIIMCOMP_PERFAVGFPS
 	GraphicsResultsWidget.dbx
 	UIPerformanceTestWidget.cpp
@@ -1608,13 +1729,14 @@
 	UIGameInputManager.dbx
 	UIScoreboardScreenSelector.dbx
 1720303541 - UI_UIIMCOMP_SPECTATORTABLETOPWANTSINPUT
+	Spectator.dbx
 	UIGameInputManager.dbx
 -1116807646 - UI_UIIMCOMP_SPVISORHIDE
-	UISPSoldierLogic.dbx
 	UIGameLogicSP.dbx
+	UISPSoldierLogic.dbx
 1895204238 - UI_UIIMCOMP_SUPPLYCRATEACTIVE
-	UIIngameScoreboardAndMenuCombo.dbx
 	UIGameInputManager.dbx
+	UIIngameScoreboardAndMenuCombo.dbx
 	UISupplyCrateLogic.dbx
 1448673452 - UI_UIIMCOMP_SUPPRESSLOADINGICON
 	SP_Introduction_prefab.dbx
@@ -1629,11 +1751,17 @@
 	UIWeaponCrateLogic.dbx
 	UIHudLogic.dbx
 -1669930929 - UI_UIIMCOMP_WORLDICONSENABLED
+	M224_Deployed_PDA.dbx
 	UIGameLogicMP.dbx
+	UIGameLogicMP_TitanTest.dbx
 -1131459732 - UI_UIIMCOMP_WORLDICONSFADE
 	UIHudLogic.dbx
 	UISpectatorComp.cpp
 -1464414307 - UI_UIINGAMEMENUCOMP_HASPLAYEDTUTORIAL
+	ConquestLarge0_Logic_Schematic33.dbx
+	ConquestLarge0_Logic_Schematic33.dbx
+	ConquestLarge0_Logic_Schematic3.dbx
+	ConquestLarge0_Logic_Schematic3.dbx
 	UIIngameMenuMPTutorial.dbx
 	UIIngameMenuComp.cpp
 	UIIngameMenuComp.cpp
@@ -1692,6 +1820,7 @@
 	UIKillCardComp.cpp
 	UIKillCardComp.cpp
 1694044320 - UI_UIKILLCARDCOMP_KILLEDBYENEMY
+	KillCardKillRatioWidget.dbx
 	UIKillCardBarWidget.dbx
 	UIKillCardBarWidget.dbx
 	DynamicGamertagWidget.dbx
@@ -1702,12 +1831,14 @@
 	UIKillCardBarWidget.dbx
 	UIKillCardComp.cpp
 -467653387 - UI_UIKILLCARDCOMP_KILLEDBYSQUADMATE
+	KillCardKillRatioWidget.dbx
 	UIKillCardBarWidget.dbx
 	UIKillCardBarWidget.dbx
 	DynamicGamertagWidget.dbx
 	UIKillCardComp.cpp
 	UIKillCardComp.cpp
 54348058 - UI_UIKILLCARDCOMP_KILLEDBYTEAMMATE
+	KillCardKillRatioWidget.dbx
 	UIKillCardBarWidget.dbx
 	UIKillCardBarWidget.dbx
 	DynamicGamertagWidget.dbx
@@ -1767,6 +1898,7 @@
 	UIKillCardComp.cpp
 	UIKillCardComp.cpp
 -830911499 - UI_UIKILLCARDCOMP_KILLERPLAYERKILLS
+	KillCardKillRatioWidget.dbx
 	UIKillCardComp.cpp
 -844960959 - UI_UIKILLCARDCOMP_KILLERRANK
 	UIKillCardComp.cpp
@@ -1857,6 +1989,7 @@
 -768285953 - UI_UIKILLCARDCOMP_OWNDAMAGEDONE
 	UIKillCardComp.cpp
 -811659275 - UI_UIKILLCARDCOMP_PLAYERKILLERKILLS
+	KillCardKillRatioWidget.dbx
 	UIKillCardComp.cpp
 2050521687 - UI_UIKILLCARDCOMP_SHOWKILLCARD
 	KillScreenWidget.dbx
@@ -1910,8 +2043,8 @@
 	UIKillCounterComp.cpp
 	UIKillCounterComp.cpp
 -1885752899 - UI_UIKILLCOUNTERCOMP_PLAYERTEAMKILLS
-	UIPreEndOfRoundSQDMWidget.dbx
 	UIPreEndOfRoundTDMWidget.dbx
+	UIPreEndOfRoundSQDMWidget.dbx
 	DeathmatchScoringInfoWidget.dbx
 	DeathmatchScoringInfoWidget.dbx
 	DeathmatchScoringInfoWidget.dbx
@@ -1919,8 +2052,8 @@
 	SpectatorScoreBar.dbx
 	UIKillCounterComp.cpp
 1576926217 - UI_UIKILLCOUNTERCOMP_PLAYERTEAMMAXKILLS
-	UIPreEndOfRoundSQDMWidget.dbx
 	UIPreEndOfRoundTDMWidget.dbx
+	UIPreEndOfRoundSQDMWidget.dbx
 	DeathmatchScoringInfoWidget.dbx
 	DeathmatchScoringInfoWidget.dbx
 	DeathmatchScoringInfoWidget.dbx
@@ -2304,6 +2437,8 @@
 	UIManageMapsComp.cpp
 50684929 - UI_UIMANAGEMAPSCOMP_PRESETTYPEDESCRIPTION
 	PopupCreateMapRotation.dbx
+	ServiceTunnel_StartSegment.dbx
+	ServiceTunnel_StartSegment.dbx
 	UIManageMapsComp.cpp
 	UIManageMapsComp.cpp
 -2050598088 - UI_UIMANAGEMAPSCOMP_PRESETTYPEHEADER
@@ -2378,9 +2513,9 @@
 	UIManagePlayersWidget.cpp
 	UIActionFactory.cpp
 448595892 - UI_UIMANAGEPLAYERSCOMP_DEFAULTROW
-	ManagePlayersScreen.dbx
 	ManagePresetsScreen.dbx
 	ManageMapRotationScreen.dbx
+	ManagePlayersScreen.dbx
 	UIManagePlayersComp.cpp
 -522203497 - UI_UIMANAGEPLAYERSCOMP_GETSTATICPLAYERSINFOLIST
 	ManagePlayersScreen.dbx
@@ -2542,13 +2677,14 @@
 	UIMatchComp.cpp
 	UIMatchComp.cpp
 23054533 - UI_UIMATCHCOMP_ROUNDTIMELIMIT
+	TimelimitSettings_AllModes.dbx
 	UIMatchComp.cpp
 485888073 - UI_UIMATCHCOMP_TIMELEFT
-	ConquestScoringInfoWidget.dbx
 	ObliterationScoringWidget.dbx
-	DeathmatchScoringInfoWidget.dbx
-	DeathmatchScoringInfoWidget.dbx
+	ConquestScoringInfoWidget.dbx
 	RushScoringInfoWidget.dbx
+	DeathmatchScoringInfoWidget.dbx
+	DeathmatchScoringInfoWidget.dbx
 	UIMatchComp.cpp
 352340160 - UI_UIMATCHCOMP_TIMER
 	ScoreboardOverlayWidget.dbx
@@ -2556,6 +2692,7 @@
 	RushScoringInfoWidget.dbx
 	SpectatorScoreBar.dbx
 	SpectatorScoreBar.dbx
+	TitanScoringInfoWidget_TitanTest.dbx
 	UIMatchComp.cpp
 	UIMatchComp.cpp
 	UIMatchComp.cpp
@@ -2563,9 +2700,9 @@
 1555567909 - UI_UIMATCHCOMP_TIMERPREFIXSTRING
 	ScoreboardOverlayWidget.dbx
 	UIPreEndOfRoundObliterationWidget.dbx
-	UIPreEndOfRoundConquestWidget.dbx
-	UIPreEndOfRoundSQDMWidget.dbx
 	UIPreEndOfRoundTDMWidget.dbx
+	UIPreEndOfRoundSQDMWidget.dbx
+	UIPreEndOfRoundConquestWidget.dbx
 	UIPreEndOfRoundRushWidget.dbx
 	UIMatchComp.cpp
 	UIMatchComp.cpp
@@ -2798,9 +2935,9 @@
 	UINewStoreComp.cpp
 	UINewStoreComp.cpp
 2098449438 - UI_UINEWSTORECOMP_POPUPMODE
+	NewStoreGraph.dbx
+	NewStoreGraph.dbx
 	PremiumGraph.dbx
-	NewStoreGraph.dbx
-	NewStoreGraph.dbx
 	UINewStoreComp.cpp
 -808182050 - UI_UINEWSTORECOMP_POPUPRESPONSE
 	PopupStoreItem.dbx
@@ -2992,9 +3129,9 @@
 	FrontendRoot.dbx
 	UIPlmComp.cpp
 116029154 - UI_UIPOPUPCOMP_NAVIGATETO
-	PopupStoreItem.dbx
-	PopupStoreItem.dbx
 	UIGameLogicFrontend.dbx
+	PopupStoreItem.dbx
+	PopupStoreItem.dbx
 	UIPackComp.cpp
 	UINewStoreComp.cpp
 -1192680079 - UI_UIPOPUPCOMP_POPUPBUTTONS
@@ -3006,37 +3143,37 @@
 	PopupCOOPMatchmaking.dbx
 	PopupCOOPMatchmaking.dbx
 	PopupCOOPMatchmaking.dbx
-	PopupDisc2Install.dbx
-	PopupDelay.dbx
-	PopupDelay.dbx
-	PopupDelay.dbx
-	PopupDisc2Insert.dbx
-	PopupDynamic.dbx
 	PopupBuyServerCard.dbx
+	PopupDelay.dbx
+	PopupDelay.dbx
+	PopupDelay.dbx
+	PopupDisc2Install.dbx
+	PopupDynamic.dbx
 	PopupGeneric.dbx
 	PopupGeneric.dbx
 	PopupGeneric.dbx
+	PopupDisc2Insert.dbx
 	PopupGameQueue.dbx
-	PopupLongText.dbx
 	PopupExtendLease.dbx
-	PopupPromoInfo.dbx
-	PopupPromoInfo.dbx
-	PopupPromoInfo.dbx
-	PopupIngamePlayer.dbx
-	PopupManagePlayer.dbx
-	PopupManagePlayer.dbx
-	PopupServerRented.dbx
-	PopupQMMatchmaking.dbx
-	PopupServerExtended.dbx
-	PopupServerReminder.dbx
-	PopupServerReminder.dbx
-	PopupServerLocation.dbx
 	PopupCreatePreset.dbx
+	PopupLongText.dbx
+	PopupServerExtended.dbx
+	PopupIngamePlayer.dbx
+	PopupPromoInfo.dbx
+	PopupPromoInfo.dbx
+	PopupPromoInfo.dbx
+	PopupManagePlayer.dbx
+	PopupManagePlayer.dbx
+	PopupServerReminder.dbx
+	PopupServerReminder.dbx
+	PopupQMMatchmaking.dbx
+	PopupServerRented.dbx
+	PopupServerLocation.dbx
+	PopupLogin.dbx
+	PopupLogin.dbx
 	PopupServerWizard2.dbx
-	PopupLogin.dbx
-	PopupLogin.dbx
-	PopupCreateMapRotation.dbx
 	PopupServerWizard1.dbx
+	PopupCreateMapRotation.dbx
 	UIPopupComp.cpp
 	UIPopupComp.cpp
 682819360 - UI_UIPOPUPCOMP_POPUPISVISIBLE
@@ -3052,21 +3189,21 @@
 201161033 - UI_UIPOPUPCOMP_POPUPTEXT
 	ItemRedeemed.dbx
 	PopupCOOPMatchmaking.dbx
+	PopupBuyServerCard.dbx
 	PopupDelay.dbx
 	PopupDisc1Insert.dbx
-	PopupDisc2Insert.dbx
 	PopupDynamic.dbx
-	PopupBuyServerCard.dbx
 	PopupGeneric.dbx
+	PopupDisc2Insert.dbx
 	PopupGameQueue.dbx
-	PopupLongText.dbx
 	PopupExtendLease.dbx
-	PopupPromoInfo.dbx
-	PopupPromoInfo.dbx
-	PopupIngamePlayer.dbx
-	PopupServerRented.dbx
-	PopupQMMatchmaking.dbx
+	PopupLongText.dbx
 	PopupServerExtended.dbx
+	PopupIngamePlayer.dbx
+	PopupPromoInfo.dbx
+	PopupPromoInfo.dbx
+	PopupQMMatchmaking.dbx
+	PopupServerRented.dbx
 	PopupServerLocation.dbx
 	PopupServerLocation.dbx
 	PopupServerWizard2.dbx
@@ -3076,28 +3213,28 @@
 -1951480908 - UI_UIPOPUPCOMP_POPUPTITLE
 	ItemRedeemed.dbx
 	PopupCOOPMatchmaking.dbx
-	PopupDisc2Install.dbx
-	PopupDelay.dbx
-	PopupDisc1Insert.dbx
-	PopupDisc2Insert.dbx
-	PopupDisc2Installing.dbx
-	PopupDynamic.dbx
-	PopupDynamic.dbx
 	PopupBuyServerCard.dbx
+	PopupDelay.dbx
+	PopupDisc2Install.dbx
+	PopupDisc2Installing.dbx
+	PopupDisc1Insert.dbx
+	PopupDynamic.dbx
+	PopupDynamic.dbx
 	PopupGeneric.dbx
+	PopupDisc2Insert.dbx
 	PopupGameQueue.dbx
-	PopupLongText.dbx
 	PopupExtendLease.dbx
-	PopupIngamePlayer.dbx
-	PopupServerRented.dbx
-	PopupQMMatchmaking.dbx
-	PopupServerExtended.dbx
-	PopupServerReminder.dbx
-	PopupServerLocation.dbx
-	PopupServerLocation.dbx
 	PopupCreatePreset.dbx
-	PopupServerWizard2.dbx
+	PopupLongText.dbx
+	PopupServerExtended.dbx
+	PopupIngamePlayer.dbx
+	PopupServerReminder.dbx
+	PopupQMMatchmaking.dbx
+	PopupServerRented.dbx
+	PopupServerLocation.dbx
+	PopupServerLocation.dbx
 	PopupLogin.dbx
+	PopupServerWizard2.dbx
 	PopupServerWizard1.dbx
 	UIPopupComp.cpp
 	UIPopupComp.cpp
@@ -3112,17 +3249,17 @@
 	GoOnlineLoadingScreen.dbx
 	GoOnlineLoadingScreen.dbx
 	PopupCOOPMatchmaking.dbx
+	PopupBuyServerCard.dbx
 	PopupDelay.dbx
 	PopupDynamic.dbx
-	PopupBuyServerCard.dbx
 	PopupGeneric.dbx
 	PopupExtendLease.dbx
-	PopupServerRented.dbx
+	MatchesScreen.dbx
 	PopupServerExtended.dbx
 	PopupServerReminder.dbx
 	PopupServerReminder.dbx
+	PopupServerRented.dbx
 	PopupServerLocation.dbx
-	MatchesScreen.dbx
 	PopupServerWizard2.dbx
 	PopupServerWizard1.dbx
 	UIPopupComp.cpp
@@ -3143,10 +3280,10 @@
 	UIPostProcessLogic.dbx
 	UIPostProcessComponent.cpp
 	UIPostProcessComponent.cpp
-	UIMPLoadingWidget.cpp
-	UIMPLoadingWidget.cpp
 	UISPLoadingWidget.cpp
 	UISPLoadingWidget.cpp
+	UIMPLoadingWidget.cpp
+	UIMPLoadingWidget.cpp
 316937477 - UI_UIPOSTPROCESSCOMPONENT_DISTORTPOWER
 	UIPostProcessLogic.dbx
 	UIPostProcessLogic.dbx
@@ -3164,22 +3301,22 @@
 	SP_Introduction_prefab.dbx
 	UIPostProcessComponent.cpp
 	UIPostProcessComponent.cpp
-	UIMPLoadingWidget.cpp
-	UIMPLoadingWidget.cpp
 	UISPLoadingWidget.cpp
 	UISPLoadingWidget.cpp
+	UIMPLoadingWidget.cpp
+	UIMPLoadingWidget.cpp
 451335456 - UI_UIPOSTPROCESSCOMPONENT_FULLSCREENDISTORTENABLED
 	UIPostProcessLogic.dbx
 	SP_Introduction_prefab.dbx
 	UIPostProcessComponent.cpp
-	UIMPLoadingWidget.cpp
 	UISPLoadingWidget.cpp
+	UIMPLoadingWidget.cpp
 1113212417 - UI_UIPOSTPROCESSCOMPONENT_FULLSCREENSCANLINESENABLED
 	UIPostProcessLogic.dbx
 	SP_Introduction_prefab.dbx
 	UIPostProcessComponent.cpp
-	UIMPLoadingWidget.cpp
 	UISPLoadingWidget.cpp
+	UIMPLoadingWidget.cpp
 -1953675043 - UI_UIPOSTPROCESSCOMPONENT_GREENSHIFTPOWER
 	UIPostProcessLogic.dbx
 	UIPostProcessLogic.dbx
@@ -3194,10 +3331,10 @@
 	UIPostProcessLogic.dbx
 	UIPostProcessComponent.cpp
 	UIPostProcessComponent.cpp
-	UIMPLoadingWidget.cpp
-	UIMPLoadingWidget.cpp
 	UISPLoadingWidget.cpp
 	UISPLoadingWidget.cpp
+	UIMPLoadingWidget.cpp
+	UIMPLoadingWidget.cpp
 1490732181 - UI_UIPOSTPROCESSCOMPONENT_REDSHIFTPOWER
 	UIPostProcessLogic.dbx
 	UIPostProcessLogic.dbx
@@ -3212,10 +3349,10 @@
 	UIPostProcessLogic.dbx
 	UIPostProcessComponent.cpp
 	UIPostProcessComponent.cpp
-	UIMPLoadingWidget.cpp
-	UIMPLoadingWidget.cpp
 	UISPLoadingWidget.cpp
 	UISPLoadingWidget.cpp
+	UIMPLoadingWidget.cpp
+	UIMPLoadingWidget.cpp
 -651344401 - UI_UIPOSTPROCESSCOMPONENT_SCANLINESALPHA
 	UIPostProcessLogic.dbx
 	UIPostProcessLogic.dbx
@@ -3229,10 +3366,10 @@
 	SP_Introduction_prefab.dbx
 	UIPostProcessComponent.cpp
 	UIPostProcessComponent.cpp
-	UIMPLoadingWidget.cpp
-	UIMPLoadingWidget.cpp
 	UISPLoadingWidget.cpp
 	UISPLoadingWidget.cpp
+	UIMPLoadingWidget.cpp
+	UIMPLoadingWidget.cpp
 1906145553 - UI_UIPOSTPROCESSCOMPONENT_SCANLINESSCROLLSPEED
 	UIPostProcessLogic.dbx
 	UIPostProcessLogic.dbx
@@ -3244,8 +3381,8 @@
 	UIPostProcessLogic.dbx
 	UIPostProcessComponent.cpp
 	UIPostProcessComponent.cpp
-	UIMPLoadingWidget.cpp
 	UISPLoadingWidget.cpp
+	UIMPLoadingWidget.cpp
 763833517 - UI_UIPREMIUMCOMP_CALENDARDATA
 	PremiumCalendarScreen.dbx
 	UIPremiumComp.cpp
@@ -3326,19 +3463,19 @@
 	PremiumGraph.dbx
 	UIPremiumComp.cpp
 -421834112 - UI_UIPREMIUMCOMP_ISVIDEOPLAYING
+	PremiumAboutScreen.dbx
+	PremiumAboutScreen.dbx
+	PremiumAboutScreen.dbx
+	PremiumAboutScreen.dbx
+	PremiumAboutScreen.dbx
+	PremiumAboutScreen.dbx
+	PremiumAboutScreen.dbx
 	PremiumDetailScreen.dbx
 	PremiumDetailScreen.dbx
 	PremiumDetailScreen.dbx
 	PremiumDetailScreen.dbx
 	PremiumDetailScreen.dbx
 	PremiumDetailScreen.dbx
-	PremiumAboutScreen.dbx
-	PremiumAboutScreen.dbx
-	PremiumAboutScreen.dbx
-	PremiumAboutScreen.dbx
-	PremiumAboutScreen.dbx
-	PremiumAboutScreen.dbx
-	PremiumAboutScreen.dbx
 	UIPremiumComp.cpp
 	UIPremiumComp.cpp
 948726668 - UI_UIPREMIUMCOMP_ISVIDEOVISIBLEINABOUTSCREEN
@@ -3383,13 +3520,13 @@
 	PremiumAboutScreen.dbx
 	UIPremiumComp.cpp
 1127654995 - UI_UIPREMIUMCOMP_PREMIUMBUTTONBAR
+	PremiumAboutScreen.dbx
+	PremiumAboutScreen.dbx
+	PremiumAboutScreen.dbx
+	PremiumAboutScreen.dbx
 	PremiumStartScreen.dbx
 	PremiumStartScreen.dbx
 	PremiumStartScreen.dbx
-	PremiumAboutScreen.dbx
-	PremiumAboutScreen.dbx
-	PremiumAboutScreen.dbx
-	PremiumAboutScreen.dbx
 	PremiumCalendarScreen.dbx
 	PremiumCalendarScreen.dbx
 	PremiumCalendarScreen.dbx
@@ -3412,8 +3549,8 @@
 	UIPremiumComp.cpp
 	UIPremiumComp.cpp
 1178113217 - UI_UIPREMIUMCOMP_PREMIUMTABLIST
-	PremiumStartScreen.dbx
 	PremiumAboutScreen.dbx
+	PremiumStartScreen.dbx
 	PremiumCalendarScreen.dbx
 	UIPremiumComp.cpp
 1232432388 - UI_UIPREMIUMCOMP_TIMELINEDATA
@@ -3482,14 +3619,14 @@
 1346905968 - UI_UISCOREBOARDCOMP_HASFOCUS
 	FlowFourSquadsScoreboardsScreen.dbx
 	FlowFourSquadsScoreboardsScreen.dbx
-	FlowTwoTeams64ScoreboardsScreen.dbx
-	FlowTwoTeams64ScoreboardsScreen.dbx
 	FlowTwoTeams24ScoreboardsScreen.dbx
 	FlowTwoTeams24ScoreboardsScreen.dbx
-	FlowTwoTeams32ScoreboardsScreen.dbx
-	FlowTwoTeams32ScoreboardsScreen.dbx
 	FlowTwoSquadsScoreboardsScreen.dbx
 	FlowTwoSquadsScoreboardsScreen.dbx
+	FlowTwoTeams32ScoreboardsScreen.dbx
+	FlowTwoTeams32ScoreboardsScreen.dbx
+	FlowTwoTeams64ScoreboardsScreen.dbx
+	FlowTwoTeams64ScoreboardsScreen.dbx
 	UIScoreboardScreenSelector.dbx
 	UIScoreboardWidget.cpp
 218661847 - UI_UISERVERLISTCOMP_ALLOWREFRESH
@@ -3610,17 +3747,17 @@
 	UIActionFactory.cpp
 1759039576 - UI_UISETTINGSCOMP_BRIGHTNESS
 	OptionsScreenLogic.dbx
-	CalibrateTvBrightness1Screen.dbx
 	UIGameLogicFrontend.dbx
+	CalibrateTvBrightness1Screen.dbx
 	UISettingsComp.cpp
 	UISettingsComp.cpp
 	UISettingsComp.cpp
 	UISettingsComp.cpp
+	UICalibrateTVScreenWidget.cpp
+	UICalibrateTVScreenWidget.cpp
+	UICalibrateTVScreenWidget.cpp
+	UICalibrateTVScreenWidget.cpp
 	UIOptionsSubWidgets.cpp
-	UICalibrateTVScreenWidget.cpp
-	UICalibrateTVScreenWidget.cpp
-	UICalibrateTVScreenWidget.cpp
-	UICalibrateTVScreenWidget.cpp
 -1429870735 - UI_UISETTINGSCOMP_BRIGHTNESSCURRENT
 	UICalibrateTVScreenWidget.dbx
 	UICalibrateTVScreenContentWidget.dbx
@@ -3638,8 +3775,12 @@
 	UISettingsComp.cpp
 	UISettingsComp.cpp
 1733092213 - UI_UISETTINGSCOMP_CURRENTGAMEMODE
-	SDMUIDataGraph.dbx
+	MP_RoundOutcome.dbx
+	MP_RoundOutcome.dbx
+	MP_RoundOutcome.dbx
+	MP_RoundOutcome.dbx
 	ConquestUIDataGraph.dbx
+	SDMUIDataGraph.dbx
 	EORScoreboardHeaderScreen.dbx
 	UISettingsComp.cpp
 	UISettingsComp.cpp
@@ -3647,17 +3788,17 @@
 	UISettingsComp.cpp
 1870459195 - UI_UISETTINGSCOMP_CURRENTGAMEMODECLASS
 	EndOfRoundGraph.dbx
-	UIIngameScoreboardAndMenuCombo.dbx
-	UIIngameScoreboardAndMenuCombo.dbx
 	IngameMenuMPGraph.dbx
+	UIIngameScoreboardAndMenuCombo.dbx
+	UIIngameScoreboardAndMenuCombo.dbx
 	UIScoreboardScreenSelector.dbx
 	UISettingsComp.cpp
 1098058770 - UI_UISETTINGSCOMP_CURRENTGAMEMODENAME
 	ScoreboardOverlayWidget.dbx
 	UIPreEndOfRoundObliterationWidget.dbx
-	UIPreEndOfRoundConquestWidget.dbx
-	UIPreEndOfRoundSQDMWidget.dbx
 	UIPreEndOfRoundTDMWidget.dbx
+	UIPreEndOfRoundSQDMWidget.dbx
+	UIPreEndOfRoundConquestWidget.dbx
 	UIPreEndOfRoundRushWidget.dbx
 	RoundInfoWidget.dbx
 	UISettingsComp.cpp
@@ -3671,11 +3812,11 @@
 	QuitGraph.dbx
 	EndOfRoundGraph.dbx
 	EndOfRoundGraph.dbx
-	PreFrontendGraph.dbx
-	PreFrontendGraph.dbx
+	IngameMenuMPGraph.dbx
+	IngameMenuMPGraph.dbx
 	MultiplayerGraph.dbx
-	IngameMenuMPGraph.dbx
-	IngameMenuMPGraph.dbx
+	PreFrontendGraph.dbx
+	PreFrontendGraph.dbx
 	FrontendRoot.dbx
 	FrontendRoot.dbx
 	MultiplayerLeaderboardsScreen.dbx
@@ -3912,7 +4053,12 @@
 	PlayingSPGraph.dbx
 	PlayingSPGraph.dbx
 	SoldierWeaponTooltipGraph.dbx
+-119619958 - UI_UISOLDIERCOMP_SHOWHUDAMMO
+	SP.dbx
+-1868108524 - UI_UISOLDIERCOMP_SHOWHUDCOMPASS
+	SP.dbx
 795550356 - UI_UISOLDIERCOMP_SQUADENGAGESTATE
+	SP.dbx
 	UISPSoldierLogic.dbx
 	UIHudLogic.dbx
 -2051890476 - UI_UISOLDIERINFOCOMP_SOLDIERINFO
@@ -3948,17 +4094,22 @@
 	UISpawnPointComp.cpp
 	UISpawnPointComp.cpp
 1376444406 - UI_UISPECTATORCOMP_BOMBPICKEDUPTEAM1
+	Rush_5_Base.dbx
 	UIObliterationBaseTrackerStatus.dbx
 	UISpectatorScoreBarWidget.cpp
 1376444405 - UI_UISPECTATORCOMP_BOMBPICKEDUPTEAM2
 	UIObliterationBaseTrackerStatus.dbx
 551004016 - UI_UISPECTATORCOMP_ENABLECCTVNOISE
+	Spectator.dbx
 	UICCTVWidget.cpp
+-668177570 - UI_UISPECTATORCOMP_FREECAMERAINDEX
+	Spectator.dbx
 -1937037259 - UI_UISPECTATORCOMP_HIDE1PHUD
 	UIHudLogic.dbx
 	UISpectatorComp.cpp
 	UISpectatorRootWidget.cpp
 -803749163 - UI_UISPECTATORCOMP_HIDEALLHUD
+	Spectator.dbx
 	SpectatorRootWidget.dbx
 	UIHudLogic.dbx
 	UISpectatorComp.cpp
@@ -3969,6 +4120,7 @@
 	UIHudLogic.dbx
 	UISpectatorRootWidget.cpp
 539249017 - UI_UISPECTATORCOMP_ISELIMINATIONSPECTATOR
+	MP_Global.dbx
 	EliminationSpectatorWidget.dbx
 	SpectatorPlayerNameWidget.dbx
 	UISpectatorComp.cpp
@@ -3986,14 +4138,16 @@
 	SpectatorGraph.dbx
 	UIIngameScoreboardAndMenuCombo.dbx
 	UIScoreboardScreenSelector.dbx
-	UIGameLogicMP.dbx
 	UIHudLogic.dbx
+	UIGameLogicMP.dbx
 	UISpectatorComp.cpp
 	UISpectatorComp.cpp
 133421647 - UI_UISPECTATORCOMP_ISTURBOPRESSED
 	SpectatorViewInputWidget.dbx
 	UISpectatorComp.cpp
 -292592148 - UI_UISPECTATORCOMP_LOCALPLAYERHASFRIENDLYBOMB
+	BombAndTracking.dbx
+	EliminationBombTracking.dbx
 	UISpectatorComp.cpp
 	UISpectatorComp.cpp
 -901699650 - UI_UISPECTATORCOMP_NEXTPLAYERNAME
@@ -4002,6 +4156,8 @@
 	UISpectatorComp.cpp
 	UISpectatorPlayerBarWidget.cpp
 -835367604 - UI_UISPECTATORCOMP_OPTIONSGROUPVISIBLE
+	Spectator.dbx
+	Spectator.dbx
 	UIGameInputManager.dbx
 	UISpectatorComp.cpp
 	UISpectatorRootWidget.cpp
@@ -4012,8 +4168,8 @@
 	SpectatorRootWidget.dbx
 	SpectatorRootWidget.dbx
 -1631521351 - UI_UISPECTATORCOMP_PLAYERNAME
-	SpectatorPlayerBarWidget.dbx
 	SpectatorPlayerNameWidget.dbx
+	SpectatorPlayerBarWidget.dbx
 	UISpectatorComp.cpp
 	UISpectatorComp.cpp
 483389832 - UI_UISPECTATORCOMP_PREVPLAYERNAME
@@ -4031,18 +4187,27 @@
 	SpectatorRootWidget.dbx
 	UISpectatorRootWidget.cpp
 -1213774410 - UI_UISPECTATORCOMP_SPECTATEDPLAYERID
+	MP_Global.dbx
+	Spectator.dbx
 	UISpectatorComp.cpp
 	UISpectatorComp.cpp
 	UISpectatorComp.cpp
+856327353 - UI_UISPECTATORCOMP_SPECTATOR1PACTIVE
+	Spectator.dbx
 -1855042053 - UI_UISPECTATORCOMP_SPECTATOR3PACTIVE
+	Spectator.dbx
 	SpectatorRootWidget.dbx
 -896692744 - UI_UISPECTATORCOMP_SPECTATORBOMBVISIBLE
 	UISpectatorComp.cpp
 	UISpectatorComp.cpp
 259846883 - UI_UISPECTATORCOMP_SPECTATORFREECAMACTIVE
+	Spectator.dbx
 	SpectatorRootWidget.dbx
 	SpectatorRootWidget.dbx
+1463239593 - UI_UISPECTATORCOMP_SPECTATORMODEINDEX
+	Spectator.dbx
 598717357 - UI_UISPECTATORCOMP_SPECTATORTABLETOPACTIVE
+	Spectator.dbx
 	SpectatorRootWidget.dbx
 	UIHudLogic.dbx
 	UIHudLogic.dbx
@@ -4075,6 +4240,8 @@
 1787810304 - UI_UISQUADCOMP_LOCALPLAYERISSQUADMEMBER
 	CommoRoseWidget.dbx
 	UISquadComp.cpp
+725806696 - UI_UISWITCHBLADETTLCOMP_TTL
+	SWBInfoWidget.dbx
 -1334368676 - UI_UITEAMCOMP_COMMANDERRATINGCURRENTVALUE
 	CurrentCommanderWidget.dbx
 	UICurrentCommanderWidget.cpp
@@ -4105,8 +4272,8 @@
 	UITeamComp.cpp
 -748921216 - UI_UITEAMCOMP_ENEMYTEAM1FACTIONNAME
 	UIPreEndOfRoundObliterationWidget.dbx
-	UIPreEndOfRoundConquestWidget.dbx
 	UIPreEndOfRoundTDMWidget.dbx
+	UIPreEndOfRoundConquestWidget.dbx
 	UIPreEndOfRoundRushWidget.dbx
 	ConquestScoringInfoWidget.dbx
 	PreEndOfRoundEliminationWidget.dbx
@@ -4119,12 +4286,13 @@
 	UITeamComp.cpp
 -1549914696 - UI_UITEAMCOMP_ENEMYTEAM1NAME
 	UIPreEndOfRoundRushWidget.dbx
-	CaptureTheFlagScoringInfoWidget.dbx
 	ObliterationScoringWidget.dbx
-	DeathmatchScoringInfoWidget.dbx
-	DeathmatchScoringInfoWidget.dbx
-	DeathmatchScoringInfoWidget.dbx
 	RushScoringInfoWidget.dbx
+	CaptureTheFlagScoringInfoWidget.dbx
+	DeathmatchScoringInfoWidget.dbx
+	DeathmatchScoringInfoWidget.dbx
+	DeathmatchScoringInfoWidget.dbx
+	TitanScoringInfoWidget_TitanTest.dbx
 	UIEliminationPreEorComp.cpp
 	UITeamComp.cpp
 -163624481 - UI_UITEAMCOMP_ENEMYTEAM1PLAYERS
@@ -4177,14 +4345,14 @@
 	UITeamComp.cpp
 93402129 - UI_UITEAMCOMP_FRIENDLYFACTIONNAME
 	UIPreEndOfRoundObliterationWidget.dbx
-	UIPreEndOfRoundConquestWidget.dbx
 	UIPreEndOfRoundTDMWidget.dbx
+	UIPreEndOfRoundConquestWidget.dbx
 	UIPreEndOfRoundRushWidget.dbx
 	ConquestScoringInfoWidget.dbx
 	CommanderFactionFlagWidget.dbx
-	AvailableSquadsWidget.dbx
 	CommanderInfoWidget.dbx
 	CommandeMoralePointWidget.dbx
+	AvailableSquadsWidget.dbx
 	FriendlyFactionFlagWidget.dbx
 	PlayerInfoWidget.dbx
 	PreEndOfRoundEliminationWidget.dbx
@@ -4208,13 +4376,15 @@
 	UITeamComp.cpp
 -909259276 - UI_UITEAMCOMP_FRIENDLYTEAMNAME
 	UIPreEndOfRoundRushWidget.dbx
-	CaptureTheFlagScoringInfoWidget.dbx
 	ObliterationScoringWidget.dbx
-	DeathmatchScoringInfoWidget.dbx
-	DeathmatchScoringInfoWidget.dbx
 	RushScoringInfoWidget.dbx
 	RushScoringInfoWidget.dbx
+	CaptureTheFlagScoringInfoWidget.dbx
+	DeathmatchScoringInfoWidget.dbx
+	DeathmatchScoringInfoWidget.dbx
 	CurrentCommanderWidget.dbx
+	TitanScoringInfoWidget_TitanTest.dbx
+	TitanScoringInfoWidget_TitanTest.dbx
 	UITeamComp.cpp
 644095251 - UI_UITEAMCOMP_FRIENDLYTEAMPLAYERS
 	EORScoreboardScreen.dbx
@@ -4239,6 +4409,7 @@
 	UIPreEndOfRoundConquestWidget.dbx
 	ConquestScoringInfoWidget.dbx
 	ConquestScoringInfoWidget.dbx
+	TitanScoringInfoWidget_TitanTest.dbx
 	UITicketCounterComp.cpp
 	UIEndOfRoundComp.cpp
 2092260605 - UI_UITICKETCOUNTERCOMP_FRIENDLYTEAMMAXTICKETS
@@ -4250,6 +4421,7 @@
 	UIPreEndOfRoundConquestWidget.dbx
 	ConquestScoringInfoWidget.dbx
 	ConquestScoringInfoWidget.dbx
+	TitanScoringInfoWidget_TitanTest.dbx
 	UITicketCounterComp.cpp
 	UIEndOfRoundComp.cpp
 -372347956 - UI_UITICKETCOUNTERCOMP_GLOBALMAXTICKETS
@@ -4277,25 +4449,158 @@
 1326386650 - UI_UITICKETCOUNTERCOMP_TEAM4TICKETS
 	UITicketCounterComp.cpp
 	UIScoreboardWidget.cpp
+1000754196 - UI_UITITANCOMP_TITANTEST_RUINFO
+	TitanScoringInfoWidget_TitanTest.dbx
+-1336924099 - UI_UITITANCOMP_TITANTEST_RUTIMER
+	TitanScoringInfoWidget_TitanTest.dbx
+-1926172398 - UI_UITITANCOMP_TITANTEST_TEAM1MAXTICKETS
+	TitanScoringInfoWidget_TitanTest.dbx
+-1834479866 - UI_UITITANCOMP_TITANTEST_TEAM1TICKETS
+	TitanScoringInfoWidget_TitanTest.dbx
+-1894128367 - UI_UITITANCOMP_TITANTEST_TEAM2MAXTICKETS
+	TitanScoringInfoWidget_TitanTest.dbx
+-1527171739 - UI_UITITANCOMP_TITANTEST_TEAM2TICKETS
+	TitanScoringInfoWidget_TitanTest.dbx
+579824245 - UI_UITITANCOMP_TITANTEST_USINFO
+	TitanScoringInfoWidget_TitanTest.dbx
+1954698236 - UI_UITITANCOMP_TITANTEST_USTIMER
+	TitanScoringInfoWidget_TitanTest.dbx
 -1403103863 - UI_UIUNLOCKSCOMP_AIRRADAR
+	AirRadarDummyUnlock.dbx
+	AtkHeliAirRadar.dbx
+	AavAirRadar.dbx
+	AtkJetAirRadar.dbx
+	FACAirRadar.dbx
+	JetAirRadar.dbx
+	ScoutHeliAirRadar.dbx
 	UIVehicleComp.cpp
+-2013234496 - UI_UIUNLOCKSCOMP_BELOWRADAR
+	AtkHeliBelowRadar.dbx
+	AtkJetBelowRadar.dbx
+	JetBelowRadar.dbx
+	ScoutHeliBelowRadar.dbx
+-1086163402 - UI_UIUNLOCKSCOMP_FIREEXTINGUISHER
+	FireExtinguisher_Dummy_Unlock.dbx
+	AtkHeliExtinguisher.dbx
+	AtkJetFireExtinguisher.dbx
+	JetFireExtinguisher.dbx
+	ScoutExtinguisher.dbx
+1323007608 - UI_UIUNLOCKSCOMP_FLARES
+	FlaresDummyUnlock.dbx
+	AtkHeliFlareLauncherGunner.dbx
+	AtkHeliFlareLauncher.dbx
+	AtkJetFlareLauncher.dbx
+	AtkJetMainCannon.dbx
+	Jet30mmCannon.dbx
+	Jet25mmCannon.dbx
+	JetMainCannon.dbx
+	JetFlareLauncher.dbx
+	ScoutFlares.dbx
+-984774202 - UI_UIUNLOCKSCOMP_FLIR
+	FLIRDummyUnlock.dbx
+	AavENVGOptics.dbx
+	AavIRNVOptics.dbx
+	AtkHeliIRNVOptics.dbx
+	AtkHeliENVGOptics.dbx
+	IfvENVGOptics.dbx
+	MbtENVGOptics.dbx
+	MbtIRNVOptics.dbx
+1781478891 - UI_UIUNLOCKSCOMP_JAMMER
+	AtkHeliECMJammer.dbx
+	AtkJetECMJammerPod.dbx
+	JetECMJammerPod.dbx
+	ScoutECMJammer.dbx
 -2091330920 - UI_UIUNLOCKSCOMP_LASERDESIGNATED
+	ArtilleryATACMS.dbx
+	AtkHeliHellfireMissile.dbx
+	AtkHeliLaserDesignator.dbx
+	AtkJetMaverickMissiles.dbx
+	AtkJetJDAM.dbx
+	IfvHellfire.dbx
+	MbtATGMShell.dbx
+	JetMaverickMissiles.dbx
+	MbtSTAFFShell.dbx
+	ScoutATGMissile.dbx
+	ScoutLDesignator.dbx
 	WarsawWorldIconLaserTarget.cpp
+-2064206019 - UI_UIUNLOCKSCOMP_PROXIMITYSCAN
+	AavProximityScan.dbx
+	ArtilleryProximityScan.dbx
+	AtkHeliProximityScanDUMMY.dbx
+	AtkJetProximityScan.dbx
+	IfvProximityScan.dbx
+	JetProximityScan.dbx
+	MbtProximityScan.dbx
+	ScoutScan.dbx
+188463310 - UI_UIUNLOCKSCOMP_REACTIVEARMORFRONT
+	ReactiveArmorFrontDummyUnlock.dbx
+-1946918156 - UI_UIUNLOCKSCOMP_REACTIVEARMORLEFT
+	ReactiveArmorLeftDummyUnlock.dbx
+-1945853045 - UI_UIUNLOCKSCOMP_REACTIVEARMORREAR
+	ReactiveArmorRearDummyUnlock.dbx
+211218031 - UI_UIUNLOCKSCOMP_REACTIVEARMORRIGHT
+	ReactiveArmorRightDummyUnlock.dbx
+-1675004470 - UI_UIUNLOCKSCOMP_REACTIVEARMORSYSTEM
+	AavReactiveArmor.dbx
+	IfvReactiveArmor.dbx
+	MbtReactiveArmor.dbx
+1846667848 - UI_UIUNLOCKSCOMP_SMOKE
+	SmokeDummyUnlock.dbx
+	AavBrassGraphiteLaunchers.dbx
+	AAVIronFistLaunchers.dbx
+	AavSmokeLaunchers.dbx
+	ArtillerySmokeLaunchers.dbx
+	ArtilleryProximityDefense.dbx
+	FACENVGOptics.dbx
+	FACIRNVOptics.dbx
+	FACIronFistLaunchers.dbx
+	IFVIronFistLaunchers.dbx
+	IfvBrassGraphiteLaunchers.dbx
+	FACZoomOptics.dbx
+	IfvSmokeLaunchers.dbx
+	MbtBrassGraphiteLaunchers.dbx
+	MbtIronFistLaunchers.dbx
+	MbtSmokeLaunchers.dbx
+-984942464 - UI_UIUNLOCKSCOMP_ZOOM
+	ZoomDummyUnlock.dbx
+	AavZoomOptics.dbx
+	ArtilleryZoomOptics.dbx
+	AtkHeliZoomOptics.dbx
+	IFVIRNVOptics.dbx
+	IfvZoomOptics.dbx
+	MbtZoomOptics.dbx
 -1924458570 - UI_UIWEAPONCOMP_ACTIVEWEAPONAMMO
+	AtkJetHUDScreenLogic.dbx
+	StealthJetHUDScreenLogic.dbx
+	GenericVehicleHUDLogic.dbx
 	AC130HUDLogic.dbx
 	HeliHudLogic.dbx
 	AttackHeliHUDLogic.dbx
 	ScoutHeliHUDLogic.dbx
+	BomberHUDScreenLogic.dbx
 	UIWeaponComp.cpp
 	UIWeaponComp.cpp
 	UISoldierStatusWidget.cpp
 -582063692 - UI_UIWEAPONCOMP_ACTIVEWEAPONAMMOTOTAL
+	MissileMeshFiringLogic.dbx
+	MissileMeshFiringJetLogic.dbx
+	MissileMeshFiringLogic4x.dbx
+	US_FAC-CB90_AI.dbx
+	US_FAC-CB90_XP2Temp.dbx
+	US_FAC-CB90_SP.dbx
+	US_FAC-CB90.dbx
 	UIWeaponComp.cpp
 -1977496045 - UI_UIWEAPONCOMP_ACTIVEWEAPONISRELOADING
+	AtkJetHUDScreenLogic.dbx
+	MFDHUDScreenLogic.dbx
+	StealthJetHUDScreenLogic.dbx
+	GenericVehicleHUDLogic.dbx
+	GenericVehicleHUDLogic.dbx
 	AC130HUDLogic.dbx
 	HeliHudLogic.dbx
 	AttackHeliHUDLogic.dbx
 	ScoutHeliHUDLogic.dbx
+	BomberHUDScreenLogic.dbx
 	UIWeaponComp.cpp
 	UIJavelinWidget.cpp
 -1924559777 - UI_UIWEAPONCOMP_ACTIVEWEAPONNAME
@@ -4325,10 +4630,15 @@
 	SOFLAM_Portable_Widget.dbx
 	UIWeaponComp.cpp
 -211913842 - UI_UIWEAPONCOMP_HEAT
+	AtkJetHUDScreenLogic.dbx
+	StealthJetHUDScreenLogic.dbx
+	GenericVehicleHUDLogic.dbx
+	MountedGunAnimationLogic.dbx
 	AC130HUDLogic.dbx
 	HeliHudLogic.dbx
 	AttackHeliHUDLogic.dbx
 	ScoutHeliHUDLogic.dbx
+	BomberHUDScreenLogic.dbx
 	UIWeaponComp.cpp
 -1581064823 - UI_UIWEAPONCOMP_JAVELININITIALIZED
 	UIWeaponGraphMP.dbx
@@ -4337,10 +4647,11 @@
 	UISPSoldierLogic.dbx
 	UIWeaponComp.cpp
 -1183721598 - UI_UIWEAPONCOMP_RANGEMETER
+	SOFLAMHUDScreenLogic.dbx
 	SP_Tactical_Visor_ScreenRoot.dbx
 	SP_Visor_Portable_Widget.dbx
-	SOFLAM_Portable_Widget.dbx
 	XM25Widget.dbx
+	SOFLAM_Portable_Widget.dbx
 	CROWSDistanceWidget.dbx
 	EODDistanceHUDWidget.dbx
 	MPAPSDistanceHUDWidget.dbx
@@ -4372,12 +4683,18 @@
 	UIWeaponComp.cpp
 	UIWeaponComp.cpp
 -572729127 - UI_UIWEAPONCOMP_SHOWTACTICALVISORICONS
+	SpSoldier.dbx
 	UISPSoldierLogic.dbx
 	WarsawWorldIconScan.cpp
 -770332762 - UI_UIWEAPONCOMP_SYSTEMTIME
+	RQ11HUDScreenRoot.dbx
+	SwitchbladeHUDScreenRoot.dbx
 	UIWeaponComp.cpp
 1144635726 - UI_UIWEAPONCOMP_TIMETOLIVE
 	TVGMInfoWidget.dbx
+	UCAV.dbx
+	RQ11_old.dbx
+	RQ-11.dbx
 	UIWeaponComp.cpp
 -1863605314 - UI_UIWEAPONCOMP_TRACKINGLOCKINGINITIALIZED
 	UIWeaponGraphMP.dbx
@@ -4385,10 +4702,14 @@
 	UIWeaponComp.cpp
 	UIWeaponComp.cpp
 -1346801517 - UI_UIWEAPONCOMP_WEAPONPITCHANGLE
+	SOFLAMHUDScreenLogic.dbx
 	VehicleGunnerTankInfo.dbx
 	UIWeaponComp.cpp
 -621840655 - UI_UIWEAPONCOMP_VEHICLECOUNTERMEASURES
+	AirCountermeasureHUDPrefab.dbx
+	LandCountermeasureHUDPrefab.dbx
 	HeliHudLogic.dbx
+	BomberHUDScreenLogic.dbx
 	UIWeaponComp.cpp
 	UISoldierStatusWidget.cpp
 -1748411521 - UI_UIWEAPONCOMP_ZEROINGMETER
@@ -4397,18 +4718,27 @@
 	STORM_Widget.dbx
 	UIWeaponComp.cpp
 295672096 - UI_UIWEAPONCOMP_ZOOMED
+	MpSoldier.dbx
 	HUD_IRNV.dbx
-	HUD_Starstreak.dbx
 	HUD_THOR.dbx
+	HUD_Starstreak.dbx
 	HUD_XM25.dbx
 	UISPSoldierLogic.dbx
-	UIWeaponLogic.dbx
-	UIWeaponLogic.dbx
-	UIWeaponLogic.dbx
-	UIWeaponLogic.dbx
 	UIHudLogic.dbx
+	UIWeaponLogic.dbx
+	UIWeaponLogic.dbx
+	UIWeaponLogic.dbx
+	UIWeaponLogic.dbx
 	UIWeaponComp.cpp
 971779877 - UI_UIVEHICLECOMP_ACTIVEWEAPONNAME
+	CROWSWeaponHUDLogic.dbx
+	StealthJetWeaponHUDLogic.dbx
+	AtkHeliHUDScreenLogic.dbx
+	AtkJetHUDWeaponLogic.dbx
+	AAMainWeapon.dbx
+	IFVMainWeapon.dbx
+	IFVMainWeapon1.dbx
+	MBTMainWeapon.dbx
 	AbramsHUDWidget.dbx
 	DefaultTankWidget.dbx
 	JetInfo.dbx
@@ -4421,6 +4751,7 @@
 	HeliHudLogic.dbx
 	AttackHeliHUDLogic.dbx
 	ScoutHeliHUDLogic.dbx
+	BomberInfo.dbx
 	UIVehicleComp.cpp
 -1969876539 - UI_UIVEHICLECOMP_ATTACKANGLE
 	JetInfo.dbx
@@ -4431,6 +4762,7 @@
 	UIVehicleComp.cpp
 	UIAltitudeMeterWidget.cpp
 -357891235 - UI_UIVEHICLECOMP_COMPASSANGLE
+	SOFLAMHUDScreenLogic.dbx
 	EODInfoHUDWidget.dbx
 	FACInfoHUDWidget.dbx
 	AC130HUDLogic.dbx
@@ -4469,12 +4801,16 @@
 	GPSHUDWidget.dbx
 	AC130HUDLogic.dbx
 	MPAPSInfoHUDWidget.dbx
+	RQ11HUDScreenRoot.dbx
+	SwitchbladeHUDScreenRoot.dbx
 	UIVehicleComp.cpp
 1727142546 - UI_UIVEHICLECOMP_GPSLONGITUDEPOSITION
 	EODInfoHUDWidget.dbx
 	GPSHUDWidget.dbx
 	AC130HUDLogic.dbx
 	MPAPSInfoHUDWidget.dbx
+	RQ11HUDScreenRoot.dbx
+	SwitchbladeHUDScreenRoot.dbx
 	UIVehicleComp.cpp
 1872287886 - UI_UIVEHICLECOMP_GROUNDSPEED
 	GroundSpeedWidget.dbx
@@ -4482,6 +4818,7 @@
 	JetInfo.dbx
 	MFDInfoWidget.dbx
 	VehicleHeliGunnerTankInfo.dbx
+	BomberInfo.dbx
 	UIVehicleComp.cpp
 556761553 - UI_UIVEHICLECOMP_GUNNERDIRECTIONPITCHPERCENT
 	AttackHeliHUDLogic.dbx
@@ -4504,6 +4841,8 @@
 	UIVehicleComp.cpp
 	UIBankAngleWidget.cpp
 	UIPitchLadderWidget.cpp
+-1406929284 - UI_UIVEHICLECOMP_INOPENSEAT
+	SimpleCrosshair.dbx
 570599507 - UI_UIVEHICLECOMP_INVEHICLE
 	CommoRoseWidget.dbx
 	CommoRoseWidget.dbx
@@ -4512,32 +4851,46 @@
 	UIVehicleComp.cpp
 	UIVehicleComp.cpp
 -478007125 - UI_UIVEHICLECOMP_LOCKAMOUNT
+	GenericVehicleHUDLogic.dbx
 	UIVehicleComp.cpp
 794543499 - UI_UIVEHICLECOMP_PITCHANGLE
 	JetInfoWidget.dbx
 	UIVehicleComp.cpp
 	UIPitchLadderWidget.cpp
 -1370513655 - UI_UIVEHICLECOMP_PREDICTEDSIGHTX
+	AtkJetHUDScreenLogic.dbx
+	StealthJetHUDScreenLogic.dbx
 	HeliHudLogic.dbx
 	AttackHeliHUDLogic.dbx
 	ScoutHeliHUDLogic.dbx
 	UIVehicleComp.cpp
 -1370513656 - UI_UIVEHICLECOMP_PREDICTEDSIGHTY
+	AtkJetHUDScreenLogic.dbx
+	StealthJetHUDScreenLogic.dbx
 	HeliHudLogic.dbx
 	AttackHeliHUDLogic.dbx
 	ScoutHeliHUDLogic.dbx
 	UIVehicleComp.cpp
 -327666683 - UI_UIVEHICLECOMP_PRIMARYWEAPONPITCHANGLE
+	AAHUDScreenLogic.dbx
+	IFVHUDScreenLogic.dbx
+	MBTHUDScreenLogic.dbx
 	AbramsTankInfo.dbx
 	FACHUDLogic.dbx
 	UIVehicleComp.cpp
 1739732397 - UI_UIVEHICLECOMP_RADIOALTITUDE
+	AH1Z.dbx
+	AH1Z_SP.dbx
+	AH1Z_Naval.dbx
 	GunnerRadioAltitudeWidget.dbx
 	HeliInfo.dbx
 	RadioAltitudeWidget.dbx
 	HeliHudLogic.dbx
 	AttackHeliHUDLogic.dbx
 	ScoutHeliHUDLogic.dbx
+	RQ11_old.dbx
+	RQ-11.dbx
+	RQ11HUDScreenRoot.dbx
 	UIVehicleComp.cpp
 	UIVehicleComp.cpp
 	UIAltitudeMeterWidget.cpp
@@ -4550,8 +4903,15 @@
 	TankWeaponInfo.dbx
 	VehicleGunnerWeaponInfo.dbx
 	TVGMInfoWidget.dbx
+	BomberHUDRoot.dbx
+	RQ11HUDScreenRoot.dbx
+	SwitchbladeHUDScreenRoot.dbx
 	UIVehicleComp.cpp
 	UIVehicleComp.cpp
+-1054154102 - UI_UIVEHICLECOMP_ROCKETMARKER
+	AH1Z.dbx
+	AH1Z_SP.dbx
+	AH1Z_Naval.dbx
 2032494477 - UI_UIVEHICLECOMP_SEALEVEL
 	UIVehicleComp.cpp
 	UIVehicleComp.cpp
@@ -4562,17 +4922,61 @@
 	HeliInfo.dbx
 	JetInfo.dbx
 	VehicleHeliGunnerTankInfo.dbx
+	BomberInfo.dbx
 	UIVehicleComp.cpp
 	UIVehicleComp.cpp
 148953250 - UI_UIVEHICLECOMP_SEALEVELALTITUDEDIVBYTEN
 	MFDInfoWidget.dbx
 	UIVehicleComp.cpp
 823004595 - UI_UIVEHICLECOMP_SECONDARYWEAPONPITCHANGLE
+	CROWSElevationHUDLogic.dbx
 	UIVehicleComp.cpp
+213350777 - UI_UIVEHICLECOMP_SHORTNAME
+	JetVTOLHUDLogic.dbx
 501014533 - UI_UIVEHICLECOMP_SHOWINVENTORY
+	M224_Deployed_PDA.dbx
+	MP_APS_Projectile.dbx
+	EODBot.dbx
+	MAV.dbx
+	MAV_Restricted_Height.dbx
+	CH_ATGM_HJ-8_SP.dbx
+	BTR90_SP_Player.dbx
+	BTR90_SP_AI.dbx
+	CH_FAV_LYT2021_SP_AI.dbx
+	SOFLAMHUDScreenLogic.dbx
+	CH_LTHE_Z-9_SP_ShanghaiRoof.dbx
+	CH_IFV_ZBD09_SP_Player.dbx
+	CH_LTHE_Z-9_SP_Naval.dbx
+	CH_SHEL_Z-11w.dbx
+	CH_LTHE_Z-9_SP_AI.dbx
+	CH_IFV_ZBD09_SP_AI.dbx
+	CH_MRAP-ZFB-05_SP_AI.dbx
+	InventoryHideShow.dbx
+	Kornet_SP.dbx
+	HIMARS.dbx
+	GrowlerITV_SP_Player.dbx
+	KA-60_Kasatka_SP_AI.dbx
+	PWC_JetSki.dbx
+	Prologue_SUV.dbx
+	RHIB_SP_Suez_Rail.dbx
+	RHIB_Sp_Airfield.dbx
+	RHIB_SP_Suez.dbx
+	RHIB_AI.dbx
+	RU_FAC_DV15.dbx
+	RU_MRAP_SPM3.dbx
+	RU_MRAP_SPM3_SP_Player.dbx
+	RU_MRAP_SPM3_SP_AI.dbx
+	TOW2_SP.dbx
+	US_MRAP-COUGAR_SP_Player.dbx
+	VDV_Buggy_SP_AI.dbx
+	VDV_Buggy_SP_AirfieldRail.dbx
+	Venom_SP.dbx
+	Venom_SP_Prologue.dbx
+	Z-11w_SP.dbx
 	UIGameLogicSP.dbx
-	UIGameLogicMP.dbx
 	UIHudLogic.dbx
+	UIGameLogicMP.dbx
+	KLR650.dbx
 1320579273 - UI_UIVEHICLECOMP_SHOWSOLDIERCROSSHAIR
 	WeaponGraph.dbx
 	UIWeaponGraphMP.dbx
@@ -4582,6 +4986,28 @@
 	AttackHeliHUDLogic.dbx
 	ScoutHeliHUDLogic.dbx
 	UIVehicleComp.cpp
+-359921044 - UI_UIVEHICLECOMP_SPECTATORHIDEHUD
+	MP_Global.dbx
+	SimpleCrosshair.dbx
+	CROWSHUDScreenLogic.dbx
+	AC130HUDScreenLogic.dbx
+	AAHUDScreenLogic.dbx
+	IFVHUDScreenLogic.dbx
+	AtkJetHUDScreenLogic.dbx
+	MFDHUDScreenLogic.dbx
+	ScoutHUDScreenLogic.dbx
+	FACHUDScreenLogic.dbx
+	SOFLAMHUDScreenLogic.dbx
+	MRAPHUDScreenLogic.dbx
+	AtkHeliHUDScreenLogic.dbx
+	MBTHUDScreenLogic.dbx
+	TVGMHUDScreenLogic.dbx
+	TransHeliHUDScreenLogic.dbx
+	StealthJetHUDScreenLogic.dbx
+	BomberHUDScreenLogic.dbx
+	UCAV.dbx
+	RQ11_old.dbx
+	RQ-11.dbx
 2013126640 - UI_UIVEHICLECOMP_THRUST
 	HeliInfo.dbx
 	HeliHudLogic.dbx
@@ -4590,11 +5016,15 @@
 	UIVehicleComp.cpp
 -234786695 - UI_UIVEHICLECOMP_TIME
 	EODTimeHUDWidget.dbx
-	TimeHUDWidget.dbx
 	VehicleTimeWidget.dbx
+	TimeHUDWidget.dbx
 	VehicleHeliGunnerTankInfo.dbx
 	UIVehicleComp.cpp
 -1074335173 - UI_UIVEHICLECOMP_VELOCITY
+	AAHUDScreenLogic.dbx
+	IFVHUDScreenLogic.dbx
+	MBTHUDScreenLogic.dbx
+	JetVTOLHUDLogic.dbx
 	AbramsTankInfo.dbx
 	EODInfoHUDWidget.dbx
 	FACInfoHUDWidget.dbx
@@ -4669,12 +5099,14 @@
 	UserComponent.cpp
 	UserComponent.cpp
 -1093327606 - UI_USERCOMP_ISINGAME
+	Spectator.dbx
 	WeaponGraph.dbx
 	UIWeaponGraphMP.dbx
 	UISoldierComp.cpp
 	UserComponent.cpp
 	UserComponent.cpp
 -1093247625 - UI_USERCOMP_ISINMENU
+	Spectator.dbx
 	UIIngameMenuControl.dbx
 -1942436635 - UI_USERCOMP_ISOPENBETA
 	MainMenuScreen.dbx

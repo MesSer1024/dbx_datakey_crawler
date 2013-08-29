@@ -19,7 +19,7 @@ namespace Search_DBX_files
         private class ThreadState
         {
             public FileInfo File { get; set; }
-            public string[] Content { get; set; }
+            public StreamReader Content { get; set; }
             public bool IsDbxFile { get; set; }
             public string Filter { get; set; }
         }
@@ -62,16 +62,17 @@ namespace Search_DBX_files
                 {
                     if(file.Exists)
                     {
-                        ThreadPool.QueueUserWorkItem(new WaitCallback(parseFile), new ThreadState { File = file, Content = File.ReadAllLines(file.FullName), IsDbxFile = true, Filter = _dbxFilter });
+                        ThreadPool.QueueUserWorkItem(new WaitCallback(parseFile), new ThreadState { File = file, Content = new StreamReader(file.FullName), IsDbxFile = true, Filter = _dbxFilter });
                     }
                 }
                 foreach(var file in _allCppFiles)
                 {
                     using (var sr = new StreamReader(file.OpenRead()))
                     {
-                        ThreadPool.QueueUserWorkItem(new WaitCallback(parseFile), new ThreadState { File = file, Content = File.ReadAllLines(file.FullName), IsDbxFile = false, Filter = _cppFilter });
+                        ThreadPool.QueueUserWorkItem(new WaitCallback(parseFile), new ThreadState { File = file, Content = new StreamReader(file.FullName), IsDbxFile = false, Filter = _cppFilter });
                     }
                 }
+                Console.WriteLine("foreach done in {0}s", (DateTime.Now - _start).TotalSeconds);
             };
             bw.RunWorkerCompleted += onThreadCompleted;
             bw.RunWorkerAsync();
@@ -93,13 +94,10 @@ namespace Search_DBX_files
 
         private void findUsage(ThreadState state, ref Dictionary<string, List<FileInfo>> resultFiles, ref Dictionary<string, List<string>> resultLines)
         {
-            //String[] lines;
-            //lines = Regex.Split(state.Content, "\r\n|\r|\n");
-            String[] lines = state.Content;
             int lineNumber = 1;
-
-            foreach (var line in lines)
+            while(!state.Content.EndOfStream)            
             {
+                string line = state.Content.ReadLine();
                 if (line.Contains(state.Filter))
                 {
                     //check the line against the supplied identifiers [guid/identifier]
