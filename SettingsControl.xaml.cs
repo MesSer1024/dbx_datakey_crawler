@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -58,6 +59,48 @@ namespace Search_DBX_files
         public SettingsControl()
         {
             InitializeComponent();
+        }
+
+        public void loadSettings(string path)
+        {
+            using (var sr = new StreamReader(path))
+            {
+                while (!sr.EndOfStream)
+                {
+                    var splitter = '|';
+                    var line = sr.ReadLine();
+                    if (line.Contains("dbx_root"))
+                    {
+                        var foo = line.Split(splitter);
+                        var item = foo[1].Trim();
+                        DbxRoot = item;
+                    }
+                    else if (line.Contains("cpp_root"))
+                    {
+                        var foo = line.Split(splitter);
+                        var item = foo[1].Trim();
+                        CppRoot = item;
+                    }
+                    else if (line.Contains("comp_file"))
+                    {
+                        var foo = line.Split(splitter);
+                        var item = foo[1].Trim();
+                        DataDefinesFile = item;
+                    }
+                    else if (line.Contains("dbx_filter"))
+                    {
+                        var foo = line.Split(splitter);
+                        var item = foo[1].Trim();
+                        DbxLineFilter = item;
+                    }
+                    else if (line.Contains("cpp_filter"))
+                    {
+                        var foo = line.Split(splitter);
+                        var item = foo[1].Trim();
+                        CppLineFilter = item;
+                    }
+                }
+            }
         }
 
         private void onAnalyze(object sender, RoutedEventArgs e)

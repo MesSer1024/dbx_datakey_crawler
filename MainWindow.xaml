@@ -16,7 +16,7 @@
     </Window.Resources>
     <Grid x:Name="_root">
         <DockPanel>
-            <local:SettingsControl DockPanel.Dock="Top" x:Name="settingsControl">
+            <local:SettingsControl DockPanel.Dock="Top" x:Name="settingsControl" MinWidth="550">
 
             </local:SettingsControl>
             <Grid x:Name="resultGrid" MinWidth="800" MinHeight="500" HorizontalAlignment="Stretch" DockPanel.Dock="Top" IsManipulationEnabled="True">

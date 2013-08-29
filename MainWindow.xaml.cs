@@ -48,13 +48,19 @@ namespace Search_DBX_files
 
         public MainWindow()
         {
-            InitializeComponent();
-            hideLoading();
-            loadSettings();
-
-            settingsControl.onAnalyzeButton += settingsControl_onAnalyzeButton;
-            settingsControl.onLoadButton += settingsControl_onLoadButton;
-            resultGrid.Visibility = Visibility.Collapsed;
+            try
+            {
+                InitializeComponent();
+                hideLoading();
+                settingsControl.onAnalyzeButton += settingsControl_onAnalyzeButton;
+                settingsControl.onLoadButton += settingsControl_onLoadButton;
+                resultGrid.Visibility = Visibility.Collapsed;
+                settingsControl.loadSettings("./config.ini");
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show(String.Format("Error during initialization \n (most likely your config.ini-file is corrupt and you will have to solve this manually):\n\n {0}", e.ToString()));
+            }
         }
 
         void settingsControl_onLoadButton()
@@ -65,55 +71,6 @@ namespace Search_DBX_files
         void settingsControl_onAnalyzeButton()
         {
             onAnalyze(null, null);
-        }            
-
-        private void loadSettings()
-        {
-            try
-            {
-                using (var sr = new StreamReader("./config.ini"))
-                {
-                    while (!sr.EndOfStream)
-                    {
-                        var splitter = '|';
-                        var line = sr.ReadLine();
-                        if (line.Contains("dbx_root"))
-                        {
-                            var foo = line.Split(splitter);
-                            var item = foo[1].Trim();
-                            settingsControl.DbxRoot = item;
-                        }
-                        else if (line.Contains("cpp_root"))
-                        {
-                            var foo = line.Split(splitter);
-                            var item = foo[1].Trim();
-                            settingsControl.CppRoot = item;
-                        }
-                        else if (line.Contains("comp_file"))
-                        {
-                            var foo = line.Split(splitter);
-                            var item = foo[1].Trim();
-                            settingsControl.DataDefinesFile = item;
-                        }
-                        else if (line.Contains("dbx_filter"))
-                        {
-                            var foo = line.Split(splitter);
-                            var item = foo[1].Trim();
-                            settingsControl.DbxLineFilter = item;
-                        }
-                        else if (line.Contains("cpp_filter"))
-                        {
-                            var foo = line.Split(splitter);
-                            var item = foo[1].Trim();
-                            settingsControl.CppLineFilter = item;
-                        }
-                    }
-                }
-            }
-            catch (Exception e)
-            {
-                throw new Exception("Corrupt config-file! Please reinstall the product or get a valid one in another way! \n\n" + e.ToString());
-            }
         }
 
         private void onAnalyze(object sender, RoutedEventArgs e)
@@ -136,12 +93,12 @@ namespace Search_DBX_files
 
             if (!validatePaths(defFile, dbxPath, cppPath))
             {
-                MessageBox.Show("Invalid path to datadefines, dbx folder or cpp folder");
+                MessageBox.Show("Invalid path to datadefines, dbx-folder or cpp-folder");
             }
             else
             {
                 showLoading();
-                updateThePopulationText("Populating files [You should see progress within ~10s]");
+                updateThePopulationText("Populating files [Finding all DBX & CPP files in subfolders]");
                 new System.Threading.Timer(obj => {
                     populateIdentifiers(defFile);
                     this.Dispatcher.Invoke((Action)(() =>
@@ -150,6 +107,7 @@ namespace Search_DBX_files
                         identifiersList.Items.Refresh();
                     }));
                     _allDbxFiles = dbxPath.GetFiles("*.dbx", SearchOption.AllDirectories);
+                    updateThePopulationText("Populating files [Finding all DBX & CPP files in subfolders] \n DBX-files found - searching cpp-files...");
                     _allCppFiles = cppPath.GetFiles("*.cpp", SearchOption.AllDirectories);
                     updateThePopulationText("DBX/CPP Files populated, searching in files");
                     analyzeFiles(defFile, dbxPath, cppPath, dbxFilter, cppFilter); 
@@ -197,7 +155,7 @@ namespace Search_DBX_files
 
                             if (id.Length <= 5 || guid == "")
                             {
-                                MessageBox.Show("Could not find valid ID and Guid from: " + line);
+                                errors.AppendLine("Could not find valid ID and Guid from following line: " + line);
                             }
                             else
                             {
@@ -217,43 +175,51 @@ namespace Search_DBX_files
 
         private void analyzeFiles(FileInfo defFile, DirectoryInfo dbxPath, DirectoryInfo cppPath, string dbxFilter, string cppFilter)
         {
-            _unfinishedThreads = Environment.ProcessorCount;
-            int cpusDbx = _unfinishedThreads / 2;
-            int cpusCpp = _unfinishedThreads - cpusDbx;
+            //TODO# : make one thread read all files
+            //populate a thread pool that keeps taking "files that are loaded"
+            //make sure thread knows whether file loaded is a dbx or cpp-file
+            //when all files are loaded
 
-            _timestamp = DateTime.Now.Ticks;
-            var readOnlyCollection = _items.AsReadOnly();
+            new LoadedFiles(_allDbxFiles, _allCppFiles, dbxFilter, cppFilter, _items.AsReadOnly());
 
-            for (var i = 0; i < cpusDbx; ++i)
-            {
-                int delta = (int)Math.Ceiling(_allDbxFiles.Length / (double)cpusDbx);
-                int tStart = delta * i;
-                int tEnd = Math.Min(delta * (i + 1), _allDbxFiles.Length);
 
-                var bw = new BackgroundWorker();
-                bw.DoWork += (sender, args) => {
-                    this.findUsage(_allDbxFiles, readOnlyCollection, dbxFilter, tStart, tEnd, true);
-                };
+            //_unfinishedThreads = Environment.ProcessorCount;
+            //int cpusDbx = _unfinishedThreads / 2;
+            //int cpusCpp = _unfinishedThreads - cpusDbx;
 
-                bw.RunWorkerCompleted += onThreadError;
-                bw.RunWorkerAsync();
-            }
+            //_timestamp = DateTime.Now.Ticks;
+            //var readOnlyCollection = _items.AsReadOnly();
 
-            for (var i = 0; i < cpusCpp; ++i)
-            {
-                int delta = (int)Math.Ceiling(_allCppFiles.Length / (double)cpusCpp);
-                int tStart = delta * i;
-                int tEnd = Math.Min(delta * (i + 1), _allCppFiles.Length);
+            //for (var i = 0; i < cpusDbx; ++i)
+            //{
+            //    int delta = (int)Math.Ceiling(_allDbxFiles.Length / (double)cpusDbx);
+            //    int tStart = delta * i;
+            //    int tEnd = Math.Min(delta * (i + 1), _allDbxFiles.Length);
 
-                var bw = new BackgroundWorker();
-                bw.DoWork += (sender, args) =>
-                {
-                    this.findUsage(_allCppFiles, readOnlyCollection, cppFilter, tStart, tEnd, false);
-                };
+            //    var bw = new BackgroundWorker();
+            //    bw.DoWork += (sender, args) => {
+            //        this.findUsage(_allDbxFiles, readOnlyCollection, dbxFilter, tStart, tEnd, true);
+            //    };
 
-                bw.RunWorkerCompleted += onThreadError;
-                bw.RunWorkerAsync();
-            }
+            //    bw.RunWorkerCompleted += onThreadError;
+            //    bw.RunWorkerAsync();
+            //}
+
+            //for (var i = 0; i < cpusCpp; ++i)
+            //{
+            //    int delta = (int)Math.Ceiling(_allCppFiles.Length / (double)cpusCpp);
+            //    int tStart = delta * i;
+            //    int tEnd = Math.Min(delta * (i + 1), _allCppFiles.Length);
+
+            //    var bw = new BackgroundWorker();
+            //    bw.DoWork += (sender, args) =>
+            //    {
+            //        this.findUsage(_allCppFiles, readOnlyCollection, cppFilter, tStart, tEnd, false);
+            //    };
+
+            //    bw.RunWorkerCompleted += onThreadError;
+            //    bw.RunWorkerAsync();
+            //}
         }
 
         private void onThreadError(object sender, RunWorkerCompletedEventArgs args)

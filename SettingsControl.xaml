@@ -19,19 +19,19 @@
         <DockPanel DockPanel.Dock="Left">
             <DockPanel DockPanel.Dock="Top" LastChildFill="False">
                 <Label Content="DBX Root Folder:" MinWidth="150" />
-                <TextBox Height="23" MinWidth="500" Text="E:\repositories\Warsaw\Data\Source\UI" x:Name="dbxFolder"/>
+                <TextBox Height="23" MinWidth="550" Text="E:\repositories\Warsaw\Data\Source\UI" x:Name="dbxFolder"/>
             </DockPanel>
             <DockPanel DockPanel.Dock="Top" LastChildFill="False">
                 <Label Content="CPP Root Folder:" MinWidth="150"  />
-                <TextBox HorizontalAlignment="Left" MinWidth="500" Height="23" Text="E:\repositories\Warsaw\TnT\Code" VerticalAlignment="Top" x:Name="cppRoot" />
+                <TextBox HorizontalAlignment="Left" MinWidth="550" Height="23" Text="E:\repositories\Warsaw\TnT\Code" VerticalAlignment="Top" x:Name="cppRoot" />
             </DockPanel>
             <DockPanel DockPanel.Dock="Top" LastChildFill="False">
                 <Label Content="UICompDataDefines.h:" MinWidth="150" />
-                <TextBox HorizontalAlignment="Left" Height="23" MinWidth="500" Text="E:\repositories\Warsaw\TnT\Code\BF\BF\Client\UI\Generated\UIComponentDataDefines.h" x:Name="dataDefsFile"/>
+                <TextBox HorizontalAlignment="Left" Height="23" MinWidth="550" Text="E:\repositories\Warsaw\TnT\Code\BF\BF\Client\UI\Generated\UIComponentDataDefines.h" x:Name="dataDefsFile"/>
             </DockPanel>
             <DockPanel DockPanel.Dock="Top" HorizontalAlignment="Center">
-                <Button DockPanel.Dock="Left" MaxHeight="30" Content="Analyze dependencies" HorizontalAlignment="Left" Width="200" Click="onAnalyze" x:Name="btn"/>
-                <Button DockPanel.Dock="Left" MaxHeight="30" Margin="50,0,0,0" Content="Load Previous Data" HorizontalAlignment="Left" MinWidth="200" Click="onLoad" x:Name="loadBtn"/>
+                <Button DockPanel.Dock="Left" MaxHeight="30" Content="Analyze Dependencies" HorizontalAlignment="Left" Width="200" Click="onAnalyze" x:Name="btn"/>
+                <Button DockPanel.Dock="Left" MaxHeight="30" Margin="50,0,0,0" Content="Load Previous Results" HorizontalAlignment="Left" MinWidth="200" Click="onLoad" x:Name="loadBtn"/>
             </DockPanel>
         </DockPanel>
     </DockPanel>

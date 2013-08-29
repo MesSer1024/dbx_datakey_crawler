@@ -1,6 +1,6 @@
 
 -1050510277 - UI_FRONTENDCOMP_GLOBALCONSTBOOLFALSE
-	[555] setData(UI_FRONTENDCOMP_GLOBALCONSTBOOLFALSE, false); | BFUISystem.cpp
+	[578] setData(UI_FRONTENDCOMP_GLOBALCONSTBOOLFALSE, false); | BFUISystem.cpp
 589916236 - UI_FRONTENDCOMP_PREMIUMHIGHLIGHTED
 	[143] IUISystem::getInstance()->setData(UI_FRONTENDCOMP_PREMIUMHIGHLIGHTED, false); | FrontEnd.cpp
 1339344192 - UI_UIASSIGNMENTSCOMP_ASSIGNMENTNAME
@@ -108,82 +108,79 @@
 324978708 - UI_UICOMMANDERCOMP_VEHICLESCANSTATE
 	[205] IUISystem::getInstance()->setData(UI_UICOMMANDERCOMP_VEHICLESCANSTATE, commanderEntity->getActionState(CommanderActionType_VehicleScan)); | UICommanderComp.cpp
 2130933869 - UI_UICONNECTIONCOMP_USEEXTERNALLOGINFLOW
-	[187] IUISystem::getInstance()->setData(UI_UICONNECTIONCOMP_USEEXTERNALLOGINFLOW, useExternalLoginFlow.c_str()); | UIConnectionComp.cpp
+	[198] IUISystem::getInstance()->setData(UI_UICONNECTIONCOMP_USEEXTERNALLOGINFLOW, useExternalLoginFlow.c_str()); | UIConnectionComp.cpp
 -1306804202 - UI_UICUSTOMIZATIONCOMP_CUSTRECEIVEDSTATS
-	[1282] uiSystem->setData(UI_UICUSTOMIZATIONCOMP_CUSTRECEIVEDSTATS, false); | UIActionFactory.cpp
-	[101] IUISystem::getInstance()->setData(UI_UICUSTOMIZATIONCOMP_CUSTRECEIVEDSTATS, true); | UICustomizationComp.cpp
+	[1304] uiSystem->setData(UI_UICUSTOMIZATIONCOMP_CUSTRECEIVEDSTATS, false); | UIActionFactory.cpp
+	[94] IUISystem::getInstance()->setData(UI_UICUSTOMIZATIONCOMP_CUSTRECEIVEDSTATS, true); | UICustomizationComp.cpp
+-1320946827 - UI_UICUSTOMIZATIONCOMP_SELECTEDITEM
+	[312] IUISystem::getInstance()->setData(UI_UICUSTOMIZATIONCOMP_SELECTEDITEM, itemId); | ClientUICustomizeStateEntity.cpp
 -699823196 - UI_UICUSTOMIZATIONCOMP_WEAPONFOCUSDISTANCE
-	[649] IUISystem::getInstance()->setDataValue(UI_UICUSTOMIZATIONCOMP_WEAPONFOCUSDISTANCE, m_weaponFocusDistance); | ClientUICustomize3DModelEntity.cpp
+	[725] IUISystem::getInstance()->setDataValue(UI_UICUSTOMIZATIONCOMP_WEAPONFOCUSDISTANCE, m_weaponFocusDistance); | ClientUICustomize3DModelEntity.cpp
 648803470 - UI_UIDETAILEDSERVERINFOCOMP_FRIENDS
-	[917] IUISystem::getInstance()->setData(UI_UIDETAILEDSERVERINFOCOMP_FRIENDS, stringBuffer); | UIDetailedServerInfoComp.cpp
-	[920] IUISystem::getInstance()->setData(UI_UIDETAILEDSERVERINFOCOMP_FRIENDS, ""); | UIDetailedServerInfoComp.cpp
-	[1224] bfui->setData(UI_UIDETAILEDSERVERINFOCOMP_FRIENDS, ""); | UIDetailedServerInfoComp.cpp
+	[937] IUISystem::getInstance()->setData(UI_UIDETAILEDSERVERINFOCOMP_FRIENDS, stringBuffer); | UIDetailedServerInfoComp.cpp
+	[940] IUISystem::getInstance()->setData(UI_UIDETAILEDSERVERINFOCOMP_FRIENDS, ""); | UIDetailedServerInfoComp.cpp
+	[1245] bfui->setData(UI_UIDETAILEDSERVERINFOCOMP_FRIENDS, ""); | UIDetailedServerInfoComp.cpp
 -894240902 - UI_UIDETAILEDSERVERINFOCOMP_INFOBUTTONDATASOURCE
-	[1018] IUISystem::getInstance()->setData(UI_UIDETAILEDSERVERINFOCOMP_INFOBUTTONDATASOURCE, buffer); | UIDetailedServerInfoComp.cpp
+	[1038] IUISystem::getInstance()->setData(UI_UIDETAILEDSERVERINFOCOMP_INFOBUTTONDATASOURCE, buffer); | UIDetailedServerInfoComp.cpp
 -588485319 - UI_UIDETAILEDSERVERINFOCOMP_MAPIMAGEPATH
-	[566] bfui->setData(UI_UIDETAILEDSERVERINFOCOMP_MAPIMAGEPATH, uiLevelDescription ? uiLevelDescription->getTexturePath().c_str() : ""); | UIDetailedServerInfoComp.cpp
-	[569] bfui->setData(UI_UIDETAILEDSERVERINFOCOMP_MAPIMAGEPATH, ""); | UIDetailedServerInfoComp.cpp
-	[1223] bfui->setData(UI_UIDETAILEDSERVERINFOCOMP_MAPIMAGEPATH, ""); | UIDetailedServerInfoComp.cpp
+	[578] bfui->setData(UI_UIDETAILEDSERVERINFOCOMP_MAPIMAGEPATH, uiLevelDescription ? uiLevelDescription->getTexturePath().c_str() : ""); | UIDetailedServerInfoComp.cpp
+	[581] bfui->setData(UI_UIDETAILEDSERVERINFOCOMP_MAPIMAGEPATH, ""); | UIDetailedServerInfoComp.cpp
+	[1244] bfui->setData(UI_UIDETAILEDSERVERINFOCOMP_MAPIMAGEPATH, ""); | UIDetailedServerInfoComp.cpp
 1177205169 - UI_UIDETAILEDSERVERINFOCOMP_SELECTEDSERVERSETTINGSTAB
 	[23] IUISystem::getInstance()->setData(UI_UIDETAILEDSERVERINFOCOMP_SELECTEDSERVERSETTINGSTAB, 0); | UIServerSettingsScreen.cpp
 	[68] IUISystem::getInstance()->setData(UI_UIDETAILEDSERVERINFOCOMP_SELECTEDSERVERSETTINGSTAB, m_selectedTab); | UIServerSettingsScreen.cpp
 1068593614 - UI_UIDETAILEDSERVERINFOCOMP_SHOWLATENCYWARNING
-	[241] IUISystem::getInstance()->setData(UI_UIDETAILEDSERVERINFOCOMP_SHOWLATENCYWARNING, false); | UIDetailedServerInfoComp.cpp
-	[393] IUISystem::getInstance()->setData(UI_UIDETAILEDSERVERINFOCOMP_SHOWLATENCYWARNING, client->hasConnectionProblem()); | UIDetailedServerInfoComp.cpp
-	[397] IUISystem::getInstance()->setData(UI_UIDETAILEDSERVERINFOCOMP_SHOWLATENCYWARNING, false); | UIDetailedServerInfoComp.cpp
+	[258] IUISystem::getInstance()->setData(UI_UIDETAILEDSERVERINFOCOMP_SHOWLATENCYWARNING, false); | UIDetailedServerInfoComp.cpp
+	[410] IUISystem::getInstance()->setData(UI_UIDETAILEDSERVERINFOCOMP_SHOWLATENCYWARNING, client->hasConnectionProblem()); | UIDetailedServerInfoComp.cpp
+	[414] IUISystem::getInstance()->setData(UI_UIDETAILEDSERVERINFOCOMP_SHOWLATENCYWARNING, false); | UIDetailedServerInfoComp.cpp
 -1744003398 - UI_UIDETAILEDSERVERINFOCOMP_TABLIST
-	[726] UISystem::getInstance()->setDataValue(UI_UIDETAILEDSERVERINFOCOMP_TABLIST, m_settingsList); | UIDetailedServerInfoComp.cpp
-	[729] UISystem::getInstance()->setDataValue(UI_UIDETAILEDSERVERINFOCOMP_TABLIST, m_levelList); | UIDetailedServerInfoComp.cpp
-	[732] UISystem::getInstance()->setDataValue(UI_UIDETAILEDSERVERINFOCOMP_TABLIST, m_playerList); | UIDetailedServerInfoComp.cpp
-	[1225] bfui->setDataValue(UI_UIDETAILEDSERVERINFOCOMP_TABLIST, m_settingsList); | UIDetailedServerInfoComp.cpp
-2143423323 - UI_UIFRIENDSCOMP_NUMFRIENDSAVAILABLE
-	[562] IUISystem::getInstance()->setData(UI_UIFRIENDSCOMP_NUMFRIENDSAVAILABLE, (int)nrOfFriendsAvailable); | UIFriendsComp.cpp
-1912693020 - UI_UIFRIENDSCOMP_TRIGGERSELECTIONUPDATE
-	[567] IUISystem::getInstance()->setData(UI_UIFRIENDSCOMP_TRIGGERSELECTIONUPDATE, name, UINotifyType_Always); | UIFriendsComp.cpp
-	[365] IUISystem::getInstance()->setData(UI_UIFRIENDSCOMP_TRIGGERSELECTIONUPDATE, name, UINotifyType_Always); | UIPlaygroupComp.cpp
+	[746] UISystem::getInstance()->setDataValue(UI_UIDETAILEDSERVERINFOCOMP_TABLIST, m_settingsList); | UIDetailedServerInfoComp.cpp
+	[749] UISystem::getInstance()->setDataValue(UI_UIDETAILEDSERVERINFOCOMP_TABLIST, m_levelList); | UIDetailedServerInfoComp.cpp
+	[752] UISystem::getInstance()->setDataValue(UI_UIDETAILEDSERVERINFOCOMP_TABLIST, m_playerList); | UIDetailedServerInfoComp.cpp
+	[1246] bfui->setDataValue(UI_UIDETAILEDSERVERINFOCOMP_TABLIST, m_settingsList); | UIDetailedServerInfoComp.cpp
 1946747747 - UI_UIINGAMEMENUCOMP_ISPLAYGROUNDLEVEL
 	[51] IUISystem::getInstance()->setData(UI_UIINGAMEMENUCOMP_ISPLAYGROUNDLEVEL, BFUIScreenUtil::isPlaygroundLevel()); | UIIngameMenuComp.cpp
 108202001 - UI_UIINSTALLHDCONTENTCOMP_INSTALLATIONPROGRESS
 	[151] IUISystem::getInstance()->setData(UI_UIINSTALLHDCONTENTCOMP_INSTALLATIONPROGRESS, progress); | UIInstallHDContentComp.cpp
 	[158] IUISystem::getInstance()->setData(UI_UIINSTALLHDCONTENTCOMP_INSTALLATIONPROGRESSDESC, buffer); | UIInstallHDContentComp.cpp
 -78759506 - UI_UIKILLCARDCOMP_ISBADLUCK
-	[276] IUISystem::getInstance()->setData(UI_UIKILLCARDCOMP_ISBADLUCK, false); | UIKillCardComp.cpp
-	[282] IUISystem::getInstance()->setData(UI_UIKILLCARDCOMP_ISBADLUCK, isBadLuck); | UIKillCardComp.cpp
+	[275] IUISystem::getInstance()->setData(UI_UIKILLCARDCOMP_ISBADLUCK, false); | UIKillCardComp.cpp
+	[281] IUISystem::getInstance()->setData(UI_UIKILLCARDCOMP_ISBADLUCK, isBadLuck); | UIKillCardComp.cpp
 2001433660 - UI_UIKILLCARDCOMP_ISSUICIDE
-	[275] IUISystem::getInstance()->setData(UI_UIKILLCARDCOMP_ISSUICIDE, 2); | UIKillCardComp.cpp
-	[281] IUISystem::getInstance()->setData(UI_UIKILLCARDCOMP_ISSUICIDE, isSuicide ? 1 : 0); | UIKillCardComp.cpp
+	[274] IUISystem::getInstance()->setData(UI_UIKILLCARDCOMP_ISSUICIDE, 2); | UIKillCardComp.cpp
+	[280] IUISystem::getInstance()->setData(UI_UIKILLCARDCOMP_ISSUICIDE, isSuicide ? 1 : 0); | UIKillCardComp.cpp
 588534364 - UI_UIKILLCARDCOMP_KILLERDAMAGEDONE
-	[303] IUISystem::getInstance()->setData(UI_UIKILLCARDCOMP_KILLERDAMAGEDONE, killerDamageDone); | UIKillCardComp.cpp
+	[302] IUISystem::getInstance()->setData(UI_UIKILLCARDCOMP_KILLERDAMAGEDONE, killerDamageDone); | UIKillCardComp.cpp
 -544069929 - UI_UIKILLCARDCOMP_KILLEREXISTS
-	[154] IUISystem::getInstance()->setData(UI_UIKILLCARDCOMP_KILLEREXISTS, false); | UIKillCardComp.cpp
-	[207] IUISystem::getInstance()->setData(UI_UIKILLCARDCOMP_KILLEREXISTS, true); | UIKillCardComp.cpp
+	[150] IUISystem::getInstance()->setData(UI_UIKILLCARDCOMP_KILLEREXISTS, false); | UIKillCardComp.cpp
+	[203] IUISystem::getInstance()->setData(UI_UIKILLCARDCOMP_KILLEREXISTS, true); | UIKillCardComp.cpp
 833041105 - UI_UIKILLCARDCOMP_KILLERHEALTHREAL
-	[296] IUISystem::getInstance()->setData(UI_UIKILLCARDCOMP_KILLERHEALTHREAL, killerHealthReal); | UIKillCardComp.cpp
+	[295] IUISystem::getInstance()->setData(UI_UIKILLCARDCOMP_KILLERHEALTHREAL, killerHealthReal); | UIKillCardComp.cpp
 445690491 - UI_UIKILLCARDCOMP_KILLERKITSERVICESTARS
-	[305] IUISystem::getInstance()->setData(UI_UIKILLCARDCOMP_KILLERKITSERVICESTARS, killerKitServiceStars); | UIKillCardComp.cpp
+	[304] IUISystem::getInstance()->setData(UI_UIKILLCARDCOMP_KILLERKITSERVICESTARS, killerKitServiceStars); | UIKillCardComp.cpp
 -830911499 - UI_UIKILLCARDCOMP_KILLERPLAYERKILLS
-	[300] IUISystem::getInstance()->setData(UI_UIKILLCARDCOMP_KILLERPLAYERKILLS, killerPlayerKills); | UIKillCardComp.cpp
+	[299] IUISystem::getInstance()->setData(UI_UIKILLCARDCOMP_KILLERPLAYERKILLS, killerPlayerKills); | UIKillCardComp.cpp
 -844960959 - UI_UIKILLCARDCOMP_KILLERRANK
-	[299] IUISystem::getInstance()->setData(UI_UIKILLCARDCOMP_KILLERRANK, killerRank); | UIKillCardComp.cpp
-	[304] IUISystem::getInstance()->setData(UI_UIKILLCARDCOMP_KILLERRANKIMAGEPATH, killerRankImage.c_str()); | UIKillCardComp.cpp
+	[298] IUISystem::getInstance()->setData(UI_UIKILLCARDCOMP_KILLERRANK, killerRank); | UIKillCardComp.cpp
+	[303] IUISystem::getInstance()->setData(UI_UIKILLCARDCOMP_KILLERRANKIMAGEPATH, killerRankImage.c_str()); | UIKillCardComp.cpp
 -2110493985 - UI_UIKILLCARDCOMP_KILLERSCORE
-	[298] IUISystem::getInstance()->setData(UI_UIKILLCARDCOMP_KILLERSCORE, killerScore); | UIKillCardComp.cpp
+	[297] IUISystem::getInstance()->setData(UI_UIKILLCARDCOMP_KILLERSCORE, killerScore); | UIKillCardComp.cpp
 -1731520370 - UI_UIKILLCARDCOMP_KILLERWEAPONHASATT
-	[151] IUISystem::getInstance()->setData(UI_UIKILLCARDCOMP_KILLERWEAPONHASATT, false); | UIKillCardComp.cpp
+	[147] IUISystem::getInstance()->setData(UI_UIKILLCARDCOMP_KILLERWEAPONHASATT, false); | UIKillCardComp.cpp
 414906732 - UI_UIKILLCARDCOMP_KILLERVEHICLESEAT
-	[140] IUISystem::getInstance()->setData(UI_UIKILLCARDCOMP_KILLERVEHICLESEAT, ""); | UIKillCardComp.cpp
-	[372] IUISystem::getInstance()->setData(UI_UIKILLCARDCOMP_KILLERVEHICLESEAT, seatTypeToSID(hudData.getSeatType())); | UIKillCardComp.cpp
+	[136] IUISystem::getInstance()->setData(UI_UIKILLCARDCOMP_KILLERVEHICLESEAT, ""); | UIKillCardComp.cpp
+	[369] IUISystem::getInstance()->setData(UI_UIKILLCARDCOMP_KILLERVEHICLESEAT, seatTypeToSID(hudData.getSeatType())); | UIKillCardComp.cpp
 1594106494 - UI_UIKILLCARDCOMP_NUMATTACHMENTS
-	[467] IUISystem::getInstance()->setData(UI_UIKILLCARDCOMP_NUMATTACHMENTS, numAttachments); | UIKillCardComp.cpp
+	[469] IUISystem::getInstance()->setData(UI_UIKILLCARDCOMP_NUMATTACHMENTS, numAttachments); | UIKillCardComp.cpp
 -768285953 - UI_UIKILLCARDCOMP_OWNDAMAGEDONE
-	[302] IUISystem::getInstance()->setData(UI_UIKILLCARDCOMP_OWNDAMAGEDONE, ownDamageDone); | UIKillCardComp.cpp
+	[301] IUISystem::getInstance()->setData(UI_UIKILLCARDCOMP_OWNDAMAGEDONE, ownDamageDone); | UIKillCardComp.cpp
 -811659275 - UI_UIKILLCARDCOMP_PLAYERKILLERKILLS
-	[301] IUISystem::getInstance()->setData(UI_UIKILLCARDCOMP_PLAYERKILLERKILLS, playerKillerKills); | UIKillCardComp.cpp
+	[300] IUISystem::getInstance()->setData(UI_UIKILLCARDCOMP_PLAYERKILLERKILLS, playerKillerKills); | UIKillCardComp.cpp
 -1311541044 - UI_UIKILLCOUNTERCOMP_PLAYERTEAM
 	[80] system->setData(UI_UIKILLCOUNTERCOMP_PLAYERTEAMKILLS, teamKills); | UIKillCounterComp.cpp
 	[81] system->setData(UI_UIKILLCOUNTERCOMP_PLAYERTEAMMAXKILLS, maxTeamKills); | UIKillCounterComp.cpp
 1525139139 - UI_UILEVELCOMP_SELECTEDLEVELCOMPLETEDDIFFICULTY
-	[483] uiSystem->setData(UI_UILEVELCOMP_SELECTEDLEVELCOMPLETEDDIFFICULTY, levelCompletedDifficulty); | UILevelComp.cpp
+	[486] uiSystem->setData(UI_UILEVELCOMP_SELECTEDLEVELCOMPLETEDDIFFICULTY, levelCompletedDifficulty); | UILevelComp.cpp
 -782922965 - UI_UILIFECOUNTERCOMP_DEFENDERMAXLIFE
 	[446] system->setData(lifeCounterTeam == defenderTeam ? UI_UILIFECOUNTERCOMP_DEFENDERMAXLIFE : UI_UILIFECOUNTERCOMP_ATTACKERMAXLIFE, lifeCounter->getStartingLifeCount()); | UILifeCounterComp.cpp
 1681193354 - UI_UILIFECOUNTERCOMP_ENEMYLOWERLIMIT
@@ -210,16 +207,16 @@
 	[22] IUISystem::getInstance()->setData(UI_UIMINIMAP2DCOMP_SHOWCROSSHAIRINCENTER, false); | UIMinimap2DComp.cpp
 	[61] IUISystem::getInstance()->setData(UI_UIMINIMAP2DCOMP_SHOWCROSSHAIRINCENTER, enable); | ClientIndirectFireWeapon.cpp
 1891332666 - UI_UIPLAYGROUPCOMP_NUMMEMBERS
-	[361] IUISystem::getInstance()->setData(UI_UIPLAYGROUPCOMP_NUMMEMBERS, (int)m_playgroup.getMembers().size()); | UIPlaygroupComp.cpp
+	[303] IUISystem::getInstance()->setData(UI_UIPLAYGROUPCOMP_NUMMEMBERS, (int)m_playgroup.getMembers().size()); | UIPlaygroupComp.cpp
 1315567049 - UI_UIPLAYGROUPCOMP_QUICKMATCHDISABLED
-	[358] IUISystem::getInstance()->setData(UI_UIPLAYGROUPCOMP_QUICKMATCHDISABLED, quickMatchDisabled); | UIPlaygroupComp.cpp
+	[300] IUISystem::getInstance()->setData(UI_UIPLAYGROUPCOMP_QUICKMATCHDISABLED, quickMatchDisabled); | UIPlaygroupComp.cpp
 1029206676 - UI_UIPREMIUMCOMP_DETAILSTOREITEM
 	[237] IUISystem::getInstance()->setData(UI_UIPREMIUMCOMP_DETAILSTOREITEMEXISTS, "store"); | UIPremiumComp.cpp
 -1546807106 - UI_UIPURCHASESERVERCOMP_SERVERCAPACITYEMPTY
 	[308] IUISystem::getInstance()->setData(UI_UIPURCHASESERVERCOMP_SERVERCAPACITYEMPTY, "true"); | UIPurchaseServerComp.cpp
 	[311] IUISystem::getInstance()->setData(UI_UIPURCHASESERVERCOMP_SERVERCAPACITYEMPTY, "false"); | UIPurchaseServerComp.cpp
 1875561770 - UI_UISERVERLISTCOMP_ISSELECTEDSERVERONLINE
-	[1345] IUISystem::getInstance()->setData(UI_UISERVERLISTCOMP_ISSELECTEDSERVERONLINE, listComp->isServerPublished(data.rspServerId)); | UIActionFactory.cpp
+	[1367] IUISystem::getInstance()->setData(UI_UISERVERLISTCOMP_ISSELECTEDSERVERONLINE, listComp->isServerPublished(data.rspServerId)); | UIActionFactory.cpp
 -183906313 - UI_UISERVERLISTFILTERBARCOMP_MYSERVERLASTUPDATEDBY
 	[165] UISystem::getInstance()->setData(UI_UISERVERLISTFILTERBARCOMP_MYSERVERLASTUPDATEDBY, extraInfo.updatedById.asString()); | UIServerListFilterBarComp.cpp
 1589122936 - UI_UISERVERLISTFILTERBARCOMP_MYSERVERLASTUPDATEDDATE
@@ -242,7 +239,10 @@
 	[405] UISystem::getInstance()->setData(UI_UISPAWNPOINTCOMP_SELECTEDSPAWNTYPE,(int)eSpawnType_TeamSpawn); | UISpawnPointComp.cpp
 	[454] UISystem::getInstance()->setData(UI_UISPAWNPOINTCOMP_SELECTEDSPAWNTYPE,(int)eSpawnType_SquadSpawn); | UISpawnPointComp.cpp
 672791416 - UI_UISPECTATORCOMP_SCOREBOARDFRIENDLY
-	[54] IUISystem::getInstance()->setData(UI_UISPECTATORCOMP_SCOREBOARDFRIENDLY, "friendly"); | UISpectatorComp.cpp
+	[56] IUISystem::getInstance()->setData(UI_UISPECTATORCOMP_SCOREBOARDFRIENDLY, "friendly"); | UISpectatorComp.cpp
+-896692744 - UI_UISPECTATORCOMP_SPECTATORBOMBVISIBLE
+	[68] IUISystem::getInstance()->setData(UI_UISPECTATORCOMP_SPECTATORBOMBVISIBLE, false); | UISpectatorComp.cpp
+	[95] IUISystem::getInstance()->setData(UI_UISPECTATORCOMP_SPECTATORBOMBVISIBLE, shouldDisplaySpectatorBomb()); | UISpectatorComp.cpp
 -618246605 - UI_UITEAMCOMP_COMMANDERRATINGFRACDATAVALUE
 	[51] ui->setData(UI_UITEAMCOMP_COMMANDERRATINGFRACDATAVALUE, 0.01); | UICurrentCommanderWidget.cpp
 -998915509 - UI_UITICKETCOUNTERCOMP_TEAM1MAXTICKETS
