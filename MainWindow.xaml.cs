@@ -40,11 +40,10 @@ namespace Search_DBX_files
 
         private FileInfo[] _allDbxFiles;
         private FileInfo[] _allCppFiles;
-        private long _timestamp;
-        private long _totalTime;
-        private int _unfinishedThreads;
         private int _filesCompleted;
         private long _fileId;
+        private LoadedFiles _loader;
+        private System.Timers.Timer _timer;
 
         public MainWindow()
         {
@@ -78,12 +77,12 @@ namespace Search_DBX_files
             _items = new List<DiceItem>();
             _items.Clear();
             identifiersList.ItemsSource = _items;
-            _unfinishedThreads = 0;
-            _filesCompleted = 0;
             _allDbxFiles = new FileInfo[] { };
             _allCppFiles = new FileInfo[] { };
             _resultingFiles = new Dictionary<String, List<FileInfo>>();
             _resultingLines = new Dictionary<String, List<String>>();
+            _timer = new System.Timers.Timer(75);
+
 
             var defFile = new FileInfo(settingsControl.DataDefinesFile);
             var dbxPath = new DirectoryInfo(settingsControl.DbxRoot);
@@ -99,7 +98,8 @@ namespace Search_DBX_files
             {
                 showLoading();
                 updateThePopulationText("Populating files [Finding all DBX & CPP files in subfolders]");
-                new System.Threading.Timer(obj => {
+                new System.Threading.Timer(obj =>
+                {
                     populateIdentifiers(defFile);
                     this.Dispatcher.Invoke((Action)(() =>
                     {
@@ -109,10 +109,27 @@ namespace Search_DBX_files
                     _allDbxFiles = dbxPath.GetFiles("*.dbx", SearchOption.AllDirectories);
                     updateThePopulationText("Populating files [Finding all DBX & CPP files in subfolders] \n DBX-files found - searching cpp-files...");
                     _allCppFiles = cppPath.GetFiles("*.cpp", SearchOption.AllDirectories);
-                    updateThePopulationText("DBX/CPP Files populated, searching in files");
-                    analyzeFiles(defFile, dbxPath, cppPath, dbxFilter, cppFilter); 
-                }, null, 50, System.Threading.Timeout.Infinite);
+                    updateThePopulationText("DBX&CPP Files populated, searching in files");
+
+                    _loader = new LoadedFiles(_allDbxFiles, _allCppFiles, dbxFilter, cppFilter, _items.AsReadOnly());
+                    _loader.OnComplete = handleAllDataAvailable;
+                    _timer.Elapsed += _timer_Elapsed;
+                    _timer.Start();
+                    
+                }, null, 2, System.Threading.Timeout.Infinite);
             }
+        }
+
+        void _timer_Elapsed(object sender, ElapsedEventArgs e)
+        {
+            this.Dispatcher.Invoke((Action)(() =>
+            {
+                int total = _allCppFiles.Length + _allDbxFiles.Length;
+                int completed = total - _loader.FilesLeft;
+                fileStatus.Content = String.Format("Files completed: {0}/{1}", completed, total);
+                guidStatus.Content = "";
+                blocker2.Content = String.Format("Hang on, I have approximately {0} lines to go through or so ...", 1477 * _loader.FilesLeft);
+            }));
         }
 
         private void updateThePopulationText(string s)
@@ -173,62 +190,6 @@ namespace Search_DBX_files
             }
         }
 
-        private void analyzeFiles(FileInfo defFile, DirectoryInfo dbxPath, DirectoryInfo cppPath, string dbxFilter, string cppFilter)
-        {
-            //TODO# : make one thread read all files
-            //populate a thread pool that keeps taking "files that are loaded"
-            //make sure thread knows whether file loaded is a dbx or cpp-file
-            //when all files are loaded
-
-            new LoadedFiles(_allDbxFiles, _allCppFiles, dbxFilter, cppFilter, _items.AsReadOnly());
-
-
-            //_unfinishedThreads = Environment.ProcessorCount;
-            //int cpusDbx = _unfinishedThreads / 2;
-            //int cpusCpp = _unfinishedThreads - cpusDbx;
-
-            //_timestamp = DateTime.Now.Ticks;
-            //var readOnlyCollection = _items.AsReadOnly();
-
-            //for (var i = 0; i < cpusDbx; ++i)
-            //{
-            //    int delta = (int)Math.Ceiling(_allDbxFiles.Length / (double)cpusDbx);
-            //    int tStart = delta * i;
-            //    int tEnd = Math.Min(delta * (i + 1), _allDbxFiles.Length);
-
-            //    var bw = new BackgroundWorker();
-            //    bw.DoWork += (sender, args) => {
-            //        this.findUsage(_allDbxFiles, readOnlyCollection, dbxFilter, tStart, tEnd, true);
-            //    };
-
-            //    bw.RunWorkerCompleted += onThreadError;
-            //    bw.RunWorkerAsync();
-            //}
-
-            //for (var i = 0; i < cpusCpp; ++i)
-            //{
-            //    int delta = (int)Math.Ceiling(_allCppFiles.Length / (double)cpusCpp);
-            //    int tStart = delta * i;
-            //    int tEnd = Math.Min(delta * (i + 1), _allCppFiles.Length);
-
-            //    var bw = new BackgroundWorker();
-            //    bw.DoWork += (sender, args) =>
-            //    {
-            //        this.findUsage(_allCppFiles, readOnlyCollection, cppFilter, tStart, tEnd, false);
-            //    };
-
-            //    bw.RunWorkerCompleted += onThreadError;
-            //    bw.RunWorkerAsync();
-            //}
-        }
-
-        private void onThreadError(object sender, RunWorkerCompletedEventArgs args)
-        {
-            if (args.Error != null)  // if an exception occurred during DoWork,
-                MessageBox.Show(args.Error.ToString());  // do your error handling here
-            threadDone();
-        }
-
         /// <summary>
         /// Increase the amount of files that are completed and update the gui
         /// </summary>
@@ -248,28 +209,21 @@ namespace Search_DBX_files
             updateThePopulationText(String.Format("Hang on, I just have another {0} potential lines to go through or so ...", linesToGoThrough));
         }
 
-        private void threadDone()
-        {
-            if (Interlocked.Decrement(ref _unfinishedThreads) <= 0)
-            {
-                _totalTime = DateTime.Now.Ticks - _timestamp;
-                Console.WriteLine("Total Execution Time: {0}, startTime: {1}", _totalTime, _timestamp);
-
-                this.Dispatcher.Invoke((Action)(() =>
-                {
-                    handleAllDataAvailable();
-                }));
-            }
-        }
-
         private void handleAllDataAvailable()
         {
+            _timer.Stop();
+            _resultingFiles = _loader.FileResult;
+            _resultingLines = _loader.LineResult;
+            _loader = null;
             populateSuspects();
             outputToFile();
             updateIdentifiers();
             saveAsJson();
-            hideLoading();
-            onFilterChanged(null, null);
+            this.Dispatcher.Invoke((Action)(() =>
+            {
+                hideLoading();
+                onFilterChanged(null, null);
+            }));
         }
 
         private void populateSuspects()

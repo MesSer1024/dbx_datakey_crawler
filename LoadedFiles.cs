@@ -15,11 +15,11 @@ namespace Search_DBX_files
 {
     class LoadedFiles
     {
-
+        public Action OnComplete;
         private class ThreadState
         {
             public FileInfo File { get; set; }
-            public string Content { get; set; }
+            public string[] Content { get; set; }
             public bool IsDbxFile { get; set; }
             public string Filter { get; set; }
         }
@@ -35,6 +35,10 @@ namespace Search_DBX_files
         private Dictionary<String, List<String>> _resultingLines;
         private int _counter;
         private Object resultLock = new Object();
+
+        public Dictionary<string, List<FileInfo>> FileResult { get { return _resultingFiles; } }
+        public Dictionary<string, List<string>> LineResult { get { return _resultingLines; } }
+        public int FilesLeft { get { return _counter; } }
 
         public LoadedFiles(FileInfo[] dbxFiles, FileInfo[] cppFiles, string dbxFilter, string cppFilter, ReadOnlyCollection<DiceItem> readOnlyCollection)
         {
@@ -56,16 +60,16 @@ namespace Search_DBX_files
             {
                 foreach(var file in _allDbxFiles)
                 {
-                    using (var sr = new StreamReader(file.OpenRead()))
+                    if(file.Exists)
                     {
-                        ThreadPool.QueueUserWorkItem(new WaitCallback(parseFile), new ThreadState { File = file, Content = sr.ReadToEnd(), IsDbxFile = true, Filter = _dbxFilter });
+                        ThreadPool.QueueUserWorkItem(new WaitCallback(parseFile), new ThreadState { File = file, Content = File.ReadAllLines(file.FullName), IsDbxFile = true, Filter = _dbxFilter });
                     }
                 }
                 foreach(var file in _allCppFiles)
                 {
                     using (var sr = new StreamReader(file.OpenRead()))
                     {
-                        ThreadPool.QueueUserWorkItem(new WaitCallback(parseFile), new ThreadState { File = file, Content = sr.ReadToEnd(), IsDbxFile = false, Filter = _cppFilter });
+                        ThreadPool.QueueUserWorkItem(new WaitCallback(parseFile), new ThreadState { File = file, Content = File.ReadAllLines(file.FullName), IsDbxFile = false, Filter = _cppFilter });
                     }
                 }
             };
@@ -80,18 +84,18 @@ namespace Search_DBX_files
             findUsage((ThreadState)o,ref resultFiles, ref resultLines);
             insertUsage(ref resultFiles, ref resultLines);
             int counter = Interlocked.Decrement(ref _counter);
-            if (counter % 150 == 0)
-                Console.WriteLine("Files left: {0}", _counter);
             if (counter <= 0)
             {
+                Console.WriteLine("Counter: {0}", counter);
                 allThreadsDone();
             }
         }
 
         private void findUsage(ThreadState state, ref Dictionary<string, List<FileInfo>> resultFiles, ref Dictionary<string, List<string>> resultLines)
         {
-            String[] lines;
-            lines = Regex.Split(state.Content, "\r\n|\r|\n");
+            //String[] lines;
+            //lines = Regex.Split(state.Content, "\r\n|\r|\n");
+            String[] lines = state.Content;
             int lineNumber = 1;
 
             foreach (var line in lines)
@@ -126,13 +130,14 @@ namespace Search_DBX_files
         private void allThreadsDone()
         {
             Console.WriteLine("Everything completed in {0}s", (DateTime.Now - _start).TotalSeconds);
+            if (OnComplete != null)
+                OnComplete.Invoke();
         }
 
         private void insertUsage(ref Dictionary<string, List<FileInfo>> resultFiles, ref Dictionary<string, List<string>> resultLines)
         {
             lock (resultLock)
             {
-                --_counter;
                 foreach (var i in resultFiles)
                 {                    
                     if (!_resultingFiles.ContainsKey(i.Key))
@@ -185,12 +190,10 @@ namespace Search_DBX_files
         private void onThreadCompleted(object sender, RunWorkerCompletedEventArgs args)
         {
             if (args.Error != null)  // if an exception occurred during DoWork,
+            {
+                Console.WriteLine("ERROR: {0}", args.Error);
                 MessageBox.Show(args.Error.ToString());  // do your error handling here
-            threadDone();
-        }
-
-        private void threadDone()
-        {
+            }
             Console.WriteLine(String.Format("I/O Operations completed in {0} seconds", (DateTime.Now - _start).TotalSeconds));
         }
     }
