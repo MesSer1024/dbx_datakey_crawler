@@ -82,24 +82,28 @@ namespace Search_DBX_files
             _resultingFiles = new Dictionary<String, List<FileInfo>>();
             _resultingLines = new Dictionary<String, List<String>>();
             _timer = new System.Timers.Timer(75);
-
+            int maxThreads = settingsControl.MaxThreads;
 
             var defFile = new FileInfo(settingsControl.DataDefinesFile);
             var dbxPath = new DirectoryInfo(settingsControl.DbxRoot);
             var cppPath = new DirectoryInfo(settingsControl.CppRoot);
             var cppFilter = settingsControl.CppLineFilter;
             var dbxFilter = settingsControl.DbxLineFilter;
+            fileStatus.Content = "";
+            guidStatus.Content = "";
 
             if (!validatePaths(defFile, dbxPath, cppPath))
             {
+                settingsControl.setEnabled(true);
                 MessageBox.Show("Invalid path to datadefines, dbx-folder or cpp-folder");
             }
             else
             {
+                settingsControl.setEnabled(false);
                 showLoading();
                 updateThePopulationText("Populating files [Finding all DBX & CPP files in subfolders]");
                 new System.Threading.Timer(obj =>
-                {
+                {   
                     populateIdentifiers(defFile);
                     this.Dispatcher.Invoke((Action)(() =>
                     {
@@ -111,7 +115,7 @@ namespace Search_DBX_files
                     _allCppFiles = cppPath.GetFiles("*.cpp", SearchOption.AllDirectories);
                     updateThePopulationText("DBX&CPP Files populated, searching in files");
 
-                    _loader = new LoadedFiles(_allDbxFiles, _allCppFiles, dbxFilter, cppFilter, _items.AsReadOnly());
+                    _loader = new LoadedFiles(_allDbxFiles, _allCppFiles, dbxFilter, cppFilter, _items.AsReadOnly(), maxThreads);
                     _loader.OnComplete = handleAllDataAvailable;
                     _timer.Elapsed += _timer_Elapsed;
                     _timer.Start();
@@ -223,6 +227,7 @@ namespace Search_DBX_files
             {
                 hideLoading();
                 onFilterChanged(null, null);
+                settingsControl.setEnabled(true);
             }));
         }
 
@@ -526,7 +531,15 @@ namespace Search_DBX_files
             var filter = idFilter.Text;
             if (filter != "")
             {
-                identifiersList.ItemsSource = _items.FindAll(a => a.VisibleName.IndexOf(filter, StringComparison.OrdinalIgnoreCase) >= 0);
+                int foo = 0;
+                if (int.TryParse(filter, out foo))
+                {
+                    identifiersList.ItemsSource = _items.FindAll(a => a.Guid.IndexOf(filter, StringComparison.OrdinalIgnoreCase) >= 0);
+                }
+                else
+                {
+                    identifiersList.ItemsSource = _items.FindAll(a => a.VisibleName.IndexOf(filter, StringComparison.OrdinalIgnoreCase) >= 0);
+                }
             }
             else
             {

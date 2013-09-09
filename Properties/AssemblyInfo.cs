@@ -7,11 +7,11 @@ using System.Windows;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("Search DBX files")]
+[assembly: AssemblyTitle("DatakeyCrawler")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("EA Digital Illusions CE AB")]
-[assembly: AssemblyProduct("Search DBX files")]
+[assembly: AssemblyProduct("DatakeyCrawler")]
 [assembly: AssemblyCopyright("Copyright © EA Digital Illusions CE AB 2013")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]

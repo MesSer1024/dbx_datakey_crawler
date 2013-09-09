@@ -40,7 +40,7 @@ namespace Search_DBX_files
         public Dictionary<string, List<string>> LineResult { get { return _resultingLines; } }
         public int FilesLeft { get { return _counter; } }
 
-        public LoadedFiles(FileInfo[] dbxFiles, FileInfo[] cppFiles, string dbxFilter, string cppFilter, ReadOnlyCollection<DiceItem> readOnlyCollection)
+        public LoadedFiles(FileInfo[] dbxFiles, FileInfo[] cppFiles, string dbxFilter, string cppFilter, ReadOnlyCollection<DiceItem> readOnlyCollection, int maxThreads)
         {
             _start = DateTime.Now;
             _strings = new ConcurrentBag<String>();
@@ -52,9 +52,8 @@ namespace Search_DBX_files
             _resultingFiles = new Dictionary<String, List<FileInfo>>();
             _resultingLines = new Dictionary<String, List<String>>();
             _counter = _allDbxFiles.Length + _allCppFiles.Length;
-    
 
-            ThreadPool.SetMaxThreads(Environment.ProcessorCount * 2, Environment.ProcessorCount);
+            ThreadPool.SetMaxThreads(maxThreads * 2, maxThreads); //setting max threads lower than # cpu's doesn't have any affect due to MS being stupid and not allowing that functionality... ;/
             var bw = new BackgroundWorker();
             bw.DoWork += (sender, args) =>
             {

@@ -15,6 +15,10 @@
                 <Label Content="cpp line filter:" />
                 <TextBox x:Name="cppLineFilter" MinWidth="150" Text="UI_"/>
             </StackPanel>
+            <StackPanel DockPanel.Dock="Top" Orientation="Horizontal" Visibility="Collapsed">
+                <Label Content="max Threads: " />
+                <TextBox x:Name="maxThreads" MinWidth="150" Text="2" PreviewKeyDown="onThreadKeydown" />
+            </StackPanel>
         </DockPanel>
         <DockPanel DockPanel.Dock="Left">
             <DockPanel DockPanel.Dock="Top" LastChildFill="False">
