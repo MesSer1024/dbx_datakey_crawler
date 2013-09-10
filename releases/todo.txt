@@ -2,11 +2,11 @@
 	Gör det möjligt att filtrera i fälten
 	Möjligt att spara en sökning
 	Möjligt att ladda en sökning
+	Ändra trådhantering (gör om trådningen till "jobs", där det börjar med t.ex. 4 jobb som laddar in filer från HD till minnet, sedan börjar andra trådar att bearbeta datan i minnet, så IO-bound 		data inte blir bottlenecken...)
 
-förslag till 1.5
+förslag till 1.6
 
 Förslag ...
-	Ändra trådhantering (gör om trådningen till "jobs", där det börjar med t.ex. 4 jobb som laddar in filer från HD till minnet, sedan börjar andra trådar att bearbeta datan i minnet, så IO-bound 		data inte blir bottlenecken...)
 	Ta bort false positives när en key heter precis likadant och sen heter något mer
 		UI_USERCOMP_MENUHINT
 		UI_USERCOMP_MENUHINTAWESOMENESS

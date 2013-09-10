@@ -9,6 +9,11 @@ Source code: https://github.com/MesSer1024/dbx_datakey_crawler
 -----------------------------------------------
 Changelog:
 --------------------------
+  1.5
+--------------------------
+- Increased performance by improving thread reading (Avg. search time on UI for 23k files down from ~60s to ~15s)
+- Possible to filter results given the actual integer value of a datakey
+--------------------------
   1.4
 --------------------------
 - Made it possible to save/load a search to make it faster to use program when user has not done any sync changes etc.
