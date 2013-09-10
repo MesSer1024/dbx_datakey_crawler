@@ -11,8 +11,10 @@ Changelog:
 --------------------------
   1.5
 --------------------------
-- Increased performance by improving thread reading (Avg. search time on UI for 23k files down from ~60s to ~15s)
+- Increased performance by improving thread reading and I/O (Avg. search time on UI-files (approx. 23k files) down from ~60s to ~15s)
 - Possible to filter results given the actual integer value of a datakey
+- Removed a lot of "fake matches" for situations similar to (UI_FOO_BAR & UI_FOO_BARITEM) which previously reported UI_FOO_BARITEM as being used by UI_FOO_BAR)
+- Outputting all the "fake matches" into a seperate file for further error investigations in case this messes something up
 --------------------------
   1.4
 --------------------------
