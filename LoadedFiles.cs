@@ -38,6 +38,7 @@ namespace Search_DBX_files
 
         public Dictionary<string, List<FileInfo>> FileResult { get { return _resultingFiles; } }
         public Dictionary<string, List<string>> LineResult { get { return _resultingLines; } }
+        public int TotalFiles { get; private set; }
         public int FilesLeft { get { return _counter; } }
 
         public LoadedFiles(FileInfo[] dbxFiles, FileInfo[] cppFiles, string dbxFilter, string cppFilter, ReadOnlyCollection<DiceItem> readOnlyCollection, int maxThreads)
@@ -52,6 +53,7 @@ namespace Search_DBX_files
             _resultingFiles = new Dictionary<String, List<FileInfo>>();
             _resultingLines = new Dictionary<String, List<String>>();
             _counter = _allDbxFiles.Length + _allCppFiles.Length;
+            TotalFiles = _counter;
 
             ThreadPool.SetMaxThreads(maxThreads * 2, maxThreads); //setting max threads lower than # cpu's doesn't have any affect due to MS being stupid and not allowing that functionality... ;/
             var bw = new BackgroundWorker();
@@ -131,8 +133,12 @@ namespace Search_DBX_files
                 OnComplete.Invoke();
         }
 
+        /// <summary>
+        /// Thread safe access of member variables
+        /// </summary>
         private void insertUsage(ref Dictionary<string, List<FileInfo>> resultFiles, ref Dictionary<string, List<string>> resultLines)
         {
+            //aquire lock
             lock (resultLock)
             {
                 foreach (var i in resultFiles)
@@ -158,30 +164,6 @@ namespace Search_DBX_files
                     }
                 }
             }
-        }
-
-        private void insertUsage(string guid, FileInfo file)
-        {
-            //not thread safe...
-            if (!_resultingFiles.ContainsKey(guid))
-            {
-                _resultingFiles.Add(guid, new List<FileInfo>());
-            }
-            _resultingFiles[guid].Add(file);
-        }
-
-        private void insertLine(string guid, String line, int lineNumber = -1)
-        {
-            if (!_resultingLines.ContainsKey(guid))
-            {
-                _resultingLines.Add(guid, new List<String>());
-            }
-            var s = line.Trim();
-            if (lineNumber >= 0)
-            {
-                s = "[" + lineNumber + "] " + s;
-            }
-            _resultingLines[guid].Add(s);
         }
 
         private void onThreadCompleted(object sender, RunWorkerCompletedEventArgs args)

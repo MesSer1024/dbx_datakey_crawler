@@ -25,12 +25,6 @@ using Newtonsoft.Json.Linq;
 
 namespace Search_DBX_files
 {
-
-
-    /// <summary>
-    /// Interaction logic for MainWindow.xaml
-    /// </summary>
-    /// 
     public partial class MainWindow : Window
     {
         private Dictionary<String, List<FileInfo>> _resultingFiles;
@@ -40,10 +34,10 @@ namespace Search_DBX_files
 
         private FileInfo[] _allDbxFiles;
         private FileInfo[] _allCppFiles;
-        private int _filesCompleted;
         private long _fileId;
         private LoadedFiles _loader;
         private System.Timers.Timer _timer;
+        private DateTime _timestamp;
 
         public MainWindow()
         {
@@ -81,7 +75,7 @@ namespace Search_DBX_files
             _allCppFiles = new FileInfo[] { };
             _resultingFiles = new Dictionary<String, List<FileInfo>>();
             _resultingLines = new Dictionary<String, List<String>>();
-            _timer = new System.Timers.Timer(75);
+            _timer = new System.Timers.Timer(125);
             int maxThreads = settingsControl.MaxThreads;
 
             var defFile = new FileInfo(settingsControl.DataDefinesFile);
@@ -99,21 +93,22 @@ namespace Search_DBX_files
             }
             else
             {
+                _timestamp = DateTime.Now;
                 settingsControl.setEnabled(false);
                 showLoading();
                 updateThePopulationText("Populating files [Finding all DBX & CPP files in subfolders]");
                 new System.Threading.Timer(obj =>
                 {   
                     populateIdentifiers(defFile);
-                    this.Dispatcher.Invoke((Action)(() =>
-                    {
-                        identifiersList.ItemsSource = _items;
-                        identifiersList.Items.Refresh();
-                    }));
                     _allDbxFiles = dbxPath.GetFiles("*.dbx", SearchOption.AllDirectories);
                     updateThePopulationText("Populating files [Finding all DBX & CPP files in subfolders] \n DBX-files found - searching cpp-files...");
                     _allCppFiles = cppPath.GetFiles("*.cpp", SearchOption.AllDirectories);
-                    updateThePopulationText("DBX&CPP Files populated, searching in files");
+                    this.Dispatcher.BeginInvoke((Action)(() =>
+                    {
+                        blocker2.Content = "DBX&CPP Files populated, searching in files";
+                        identifiersList.ItemsSource = _items;
+                        identifiersList.Items.Refresh();
+                    }));
 
                     _loader = new LoadedFiles(_allDbxFiles, _allCppFiles, dbxFilter, cppFilter, _items.AsReadOnly(), maxThreads);
                     _loader.OnComplete = handleAllDataAvailable;
@@ -128,9 +123,7 @@ namespace Search_DBX_files
         {
             this.Dispatcher.Invoke((Action)(() =>
             {
-                int total = _allCppFiles.Length + _allDbxFiles.Length;
-                int completed = total - _loader.FilesLeft;
-                fileStatus.Content = String.Format("Files completed: {0}/{1}", completed, total);
+                fileStatus.Content = String.Format("Files completed: {0}/{1}", _loader.TotalFiles - _loader.FilesLeft, _loader.TotalFiles);
                 guidStatus.Content = "";
                 blocker2.Content = String.Format("Hang on, I have approximately {0} lines to go through or so ...", 1477 * _loader.FilesLeft);
             }));
@@ -138,7 +131,7 @@ namespace Search_DBX_files
 
         private void updateThePopulationText(string s)
         {
-            this.Dispatcher.Invoke((Action)(() =>
+            this.Dispatcher.BeginInvoke((Action)(() =>
             {
                 blocker2.Content = s;
             }));
@@ -194,27 +187,9 @@ namespace Search_DBX_files
             }
         }
 
-        /// <summary>
-        /// Increase the amount of files that are completed and update the gui
-        /// </summary>
-        /// <param name="value"></param>
-        private void increaseFilesCompleted(int value)
-        {
-            Interlocked.Add(ref _filesCompleted, value);
-
-            Console.WriteLine("Files gone through: " + _filesCompleted);
-            var totalFiles = _allCppFiles.Length + _allDbxFiles.Length;
-            
-            fileStatus.Content = String.Format("Files completed: {0}/{1}", _filesCompleted, _allCppFiles.Length + _allDbxFiles.Length);
-            //guidStatus.Content = String.Format("Amount of keys: {0}", _items.Count);
-            guidStatus.Content = "";
-            var approximateLineCount = 1477;
-            long linesToGoThrough = (long)(totalFiles - _filesCompleted) * (long)_items.Count * (long)approximateLineCount;
-            updateThePopulationText(String.Format("Hang on, I just have another {0} potential lines to go through or so ...", linesToGoThrough));
-        }
-
         private void handleAllDataAvailable()
         {
+            Console.WriteLine("Files analyzed in {0}ms", (DateTime.Now - _timestamp).TotalMilliseconds);
             _timer.Stop();
             _resultingFiles = _loader.FileResult;
             _resultingLines = _loader.LineResult;
@@ -223,11 +198,12 @@ namespace Search_DBX_files
             outputToFile();
             updateIdentifiers();
             saveAsJson();
-            this.Dispatcher.Invoke((Action)(() =>
+            this.Dispatcher.BeginInvoke((Action)(() =>
             {
                 hideLoading();
                 onFilterChanged(null, null);
                 settingsControl.setEnabled(true);
+                Console.WriteLine("From start to finish {0}ms", (DateTime.Now - _timestamp).TotalMilliseconds);
             }));
         }
 
@@ -362,7 +338,6 @@ namespace Search_DBX_files
 
         private void updateIdentifiers()
         {
-            //#TODO: find all items that does not have any references
             for (var i = 0; i < _items.Count; ++i)
             {
                 var item = _items[i];
@@ -381,53 +356,6 @@ namespace Search_DBX_files
             }
         }
 
-        private void findUsage(FileInfo[] files, ReadOnlyCollection<DiceItem> identifiers, String filter, int startIndex, int endIndex, bool checkDbxFiles)
-        {
-            var fileCounter = 0;
-            //navigate through a subset of all the files (files from start_index to end_index)
-            for (int i = startIndex; i < endIndex; ++i)
-            {
-                var file = files[i];
-                //report progress to gui every 50 files or so
-                if (fileCounter % 50 == 0 && fileCounter > 0)
-                {
-                    this.Dispatcher.Invoke((Action)(() =>
-                    {
-                        increaseFilesCompleted(fileCounter);
-                        fileCounter = 0;
-                    }));
-                }
-                String[] lines;
-                using (var sr = new StreamReader(file.OpenRead()))
-                {
-                    var input = sr.ReadToEnd();
-                    lines = Regex.Split(input, "\r\n|\r|\n");
-                }
-                int lineNumber = 1;
-                foreach (var line in lines)
-                {
-                    if (line.Contains(filter))
-                    {
-                        //check the line against the supplied identifiers [guid/identifier]
-                        for (int idCounter = 0; idCounter < identifiers.Count; ++idCounter)
-                        {
-                            var item = identifiers[idCounter];
-                            var filteredId = checkDbxFiles ? item.Guid : item.Identifier;
-                            if (line.Contains(filteredId))
-                            {
-                                insertUsage(item.Guid, file);
-                                insertLine(item.Guid, line, lineNumber);
-                            }
-                        }
-                    }
-                    lineNumber++;
-                }
-                fileCounter++;
-            }
-            //_totalTime = DateTime.Now.Ticks - _timestamp;
-            //Console.WriteLine("Total Execution Time: {0}, startTime: {1}", _totalTime, _timestamp);
-        }
-
         private void showLoading()
         {
             settingsControl.EnableAnalyzeButton = false;
@@ -437,8 +365,6 @@ namespace Search_DBX_files
             fileStatus.Visibility = Visibility.Visible;
             guidStatus.Visibility = Visibility.Visible;
             identifiersList.IsEnabled = false;
-            //settingsControl.MaxHeight = 50;
-            //settingsControl.Visibility = Visibility.Collapsed;
         }
 
         private void hideLoading()
@@ -522,8 +448,6 @@ namespace Search_DBX_files
 
         private void onFilterChanged(object sender, RoutedEventArgs e)
         {
-            //Issue since everything is based on indexes, and those are messed up after filtering
-            
             if (_items == null)
             {
                 return;
@@ -568,7 +492,6 @@ namespace Search_DBX_files
 
         private void doLoadFile(string filePath)
         {
-            //filePath = "./output/635092303488279385.dcs";
             var file = new FileInfo(filePath);
             if (file.Exists)
             {
