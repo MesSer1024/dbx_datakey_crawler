@@ -1,0 +1,710 @@
+ filtered: UI_UIAWARDSSCREENCOMP_SELECTEDDOGTAG
+ line: 			if(helpGetInt(UI_UIAWARDSSCREENCOMP_SELECTEDDOGTAGTYPE) == 1)
+ file: E:\repositories\warsaw-warsaw\Warsaw\TnT\Code\BF\BF\Client\UI\Awards\UIAwardsScreenComp.cpp 
+
+
+ filtered: UI_UIAWARDSSCREENCOMP_SELECTEDDOGTAG
+ line: 			int selectedDogtagType = helpGetInt(UI_UIAWARDSSCREENCOMP_SELECTEDDOGTAGTYPE);
+ file: E:\repositories\warsaw-warsaw\Warsaw\TnT\Code\BF\BF\Client\UI\Awards\UIAwardsScreenComp.cpp 
+
+
+ filtered: UI_UIMANAGEMAPSCOMP_ADDMAPSETTINGSCURRENTSELECTED
+ line: 	IUISystem::getInstance()->setData(UI_UIMANAGEMAPSCOMP_ADDMAPSETTINGSCURRENTSELECTEDINDEX, 0);
+ file: E:\repositories\warsaw-warsaw\Warsaw\TnT\Code\BF\BF\Client\UI\FrontEnd\UIManageMapsComp.cpp 
+
+
+ filtered: UI_UIMANAGEPLAYERSCOMP_CURRENTSELECTED
+ line: 		IUISystem::getInstance()->getData(UI_UIMANAGEPLAYERSCOMP_CURRENTSELECTEDPLAYER, playerValue);
+ file: E:\repositories\warsaw-warsaw\Warsaw\TnT\Code\BF\BF\Client\UI\FrontEnd\UIManagePlayersComp.cpp 
+
+
+ filtered: UI_UIAWARDSSCREENCOMP_SELECTEDDOGTAG
+ line: 		case UI_UIAWARDSSCREENCOMP_SELECTEDDOGTAGTYPE:
+ file: E:\repositories\warsaw-warsaw\Warsaw\TnT\Code\BF\BF\Client\UI\Awards\UIAwardsScreenComp.cpp 
+
+
+ filtered: UI_UIMANAGEPLAYERSCOMP_BUTTONLAYOUT
+ line: 	case UI_UIMANAGEPLAYERSCOMP_BUTTONLAYOUTFRONTEND:
+ file: E:\repositories\warsaw-warsaw\Warsaw\TnT\Code\BF\BF\Client\UI\FrontEnd\UIManagePlayersComp.cpp 
+
+
+ filtered: UI_UIMANAGESERVERPRESETSCOMP_PRESETSETTING
+ line: 								IUISystem::getInstance()->refreshData(UI_UIMANAGESERVERPRESETSCOMP_PRESETSETTINGSLIST);
+ file: E:\repositories\warsaw-warsaw\Warsaw\TnT\Code\BF\BF\Client\UI\FrontEnd\UIManageServerPresetsComp.cpp 
+
+
+ filtered: UI_UIMANAGEPLAYERSCOMP_CURRENTSELECTED
+ line: 					IUISystem::getInstance()->getData(UI_UIMANAGEPLAYERSCOMP_CURRENTSELECTEDPLAYER, playerValue);
+ file: E:\repositories\warsaw-warsaw\Warsaw\TnT\Code\BF\BF\Client\UI\FrontEnd\UIManagePlayersComp.cpp 
+
+
+ filtered: UI_UIAWARDSSCREENCOMP_SELECTEDDOGTAG
+ line: 			IUISystem::getInstance()->setDataValue(UI_UIAWARDSSCREENCOMP_SELECTEDDOGTAGTYPE, 0);
+ file: E:\repositories\warsaw-warsaw\Warsaw\TnT\Code\BF\BF\Client\UI\Awards\UIAwardsScreenComp.cpp 
+
+
+ filtered: UI_UIMANAGEPLAYERSCOMP_CURRENTSELECTED
+ line: 			IUISystem::getInstance()->getData(UI_UIMANAGEPLAYERSCOMP_CURRENTSELECTEDPLAYER, nameId);
+ file: E:\repositories\warsaw-warsaw\Warsaw\TnT\Code\BF\BF\Client\UI\FrontEnd\UIManagePlayersComp.cpp 
+
+
+ filtered: UI_UIMYSOLDIERASSIGNMENTSCOMP_MYSOLDIERSELECTEDASSIGNMENT
+ line: 		case UI_UIMYSOLDIERASSIGNMENTSCOMP_MYSOLDIERSELECTEDASSIGNMENTINFO:
+ file: E:\repositories\warsaw-warsaw\Warsaw\TnT\Code\BF\BF\Client\UI\FrontEnd\UIMySoldierAssignmentsComp.cpp 
+
+
+ filtered: UI_UIMANAGEPLAYERSCOMP_CURRENTSELECTED
+ line: 			IUISystem::getInstance()->getData(UI_UIMANAGEPLAYERSCOMP_CURRENTSELECTEDPLAYER, nameId);
+ file: E:\repositories\warsaw-warsaw\Warsaw\TnT\Code\BF\BF\Client\UI\FrontEnd\UIManagePlayersComp.cpp 
+
+
+ filtered: UI_UIMANAGEMAPSCOMP_CURRENTSELECTED
+ line: 	case UI_UIMANAGEMAPSCOMP_CURRENTSELECTEDEXPERIENCEINDEX:
+ file: E:\repositories\warsaw-warsaw\Warsaw\TnT\Code\BF\BF\Client\UI\FrontEnd\UIManageMapsComp.cpp 
+
+
+ filtered: UI_UIMYSOLDIERASSIGNMENTSCOMP_MYSOLDIERSELECTEDLICENSEASSIGNMENT
+ line: 		case UI_UIMYSOLDIERASSIGNMENTSCOMP_MYSOLDIERSELECTEDLICENSEASSIGNMENTINFO:
+ file: E:\repositories\warsaw-warsaw\Warsaw\TnT\Code\BF\BF\Client\UI\FrontEnd\UIMySoldierAssignmentsComp.cpp 
+
+
+ filtered: UI_UIMYSOLDIERASSIGNMENTSCOMP_MYSOLDIERSELECTEDLICENSEASSIGNMENT
+ line: 			getMySoldierSelectedAssignmentInfo(dataValue, dataKey == UI_UIMYSOLDIERASSIGNMENTSCOMP_MYSOLDIERSELECTEDLICENSEASSIGNMENTINFO);
+ file: E:\repositories\warsaw-warsaw\Warsaw\TnT\Code\BF\BF\Client\UI\FrontEnd\UIMySoldierAssignmentsComp.cpp 
+
+
+ filtered: UI_UIMANAGESERVERPRESETSCOMP_PRESETSETTING
+ line: 			case UI_UIMANAGESERVERPRESETSCOMP_PRESETSETTINGSLIST:
+ file: E:\repositories\warsaw-warsaw\Warsaw\TnT\Code\BF\BF\Client\UI\FrontEnd\UIManageServerPresetsComp.cpp 
+
+
+ filtered: UI_UIMYSOLDIERASSIGNMENTSCOMP_MYSOLDIERSELECTEDASSIGNMENT
+ line: 			IUISystem::getInstance()->refreshData(UI_UIMYSOLDIERASSIGNMENTSCOMP_MYSOLDIERSELECTEDASSIGNMENTINFO);
+ file: E:\repositories\warsaw-warsaw\Warsaw\TnT\Code\BF\BF\Client\UI\FrontEnd\UIMySoldierAssignmentsComp.cpp 
+
+
+ filtered: UI_UIAWARDSSCREENCOMP_SELECTEDDOGTAG
+ line: 		int selectedDogtagType = helpGetInt(UI_UIAWARDSSCREENCOMP_SELECTEDDOGTAGTYPE);
+ file: E:\repositories\warsaw-warsaw\Warsaw\TnT\Code\BF\BF\Client\UI\Awards\UIAwardsScreenComp.cpp 
+
+
+ filtered: UI_UIMYSOLDIERASSIGNMENTSCOMP_MYSOLDIERSELECTEDLICENSEASSIGNMENT
+ line: 			IUISystem::getInstance()->refreshData(UI_UIMYSOLDIERASSIGNMENTSCOMP_MYSOLDIERSELECTEDLICENSEASSIGNMENTINFO);
+ file: E:\repositories\warsaw-warsaw\Warsaw\TnT\Code\BF\BF\Client\UI\FrontEnd\UIMySoldierAssignmentsComp.cpp 
+
+
+ filtered: UI_UIMANAGEMAPSCOMP_CURRENTSELECTED
+ line: 	case UI_UIMANAGEMAPSCOMP_CURRENTSELECTEDEXPERIENCETYPE:
+ file: E:\repositories\warsaw-warsaw\Warsaw\TnT\Code\BF\BF\Client\UI\FrontEnd\UIManageMapsComp.cpp 
+
+
+ filtered: UI_UIAWARDSSCREENCOMP_SELECTEDDOGTAG
+ line: 	int selectedDogtagType = helpGetInt(UI_UIAWARDSSCREENCOMP_SELECTEDDOGTAGTYPE);
+ file: E:\repositories\warsaw-warsaw\Warsaw\TnT\Code\BF\BF\Client\UI\Awards\UIAwardsScreenComp.cpp 
+
+
+ filtered: UI_UIMANAGEMAPSCOMP_CURRENTSELECTED
+ line: 	IUISystem::getInstance()->setData(UI_UIMANAGEMAPSCOMP_CURRENTSELECTEDPRESETINDEX, m_currentSelectedPresetIndex);
+ file: E:\repositories\warsaw-warsaw\Warsaw\TnT\Code\BF\BF\Client\UI\FrontEnd\UIManageMapsComp.cpp 
+
+
+ filtered: UI_UIMANAGEMAPSCOMP_CURRENTSELECTED
+ line: 		IUISystem::getInstance()->setData(UI_UIMANAGEMAPSCOMP_CURRENTSELECTEDMAPROTATIONITEM, 0, UINotifyType_Always);
+ file: E:\repositories\warsaw-warsaw\Warsaw\TnT\Code\BF\BF\Client\UI\FrontEnd\UIManageMapsComp.cpp 
+
+
+ filtered: UI_UIMANAGEMAPSCOMP_CURRENTSELECTEDMAP
+ line: 		IUISystem::getInstance()->setData(UI_UIMANAGEMAPSCOMP_CURRENTSELECTEDMAPROTATIONITEM, 0, UINotifyType_Always);
+ file: E:\repositories\warsaw-warsaw\Warsaw\TnT\Code\BF\BF\Client\UI\FrontEnd\UIManageMapsComp.cpp 
+
+
+ filtered: UI_UIMANAGEMAPSCOMP_ADDMAPSETTINGSCURRENTSELECTED
+ line: 		IUISystem::getInstance()->setData(UI_UIMANAGEMAPSCOMP_ADDMAPSETTINGSCURRENTSELECTEDINDEX, 1, UINotifyType_Always);
+ file: E:\repositories\warsaw-warsaw\Warsaw\TnT\Code\BF\BF\Client\UI\FrontEnd\UIManageMapsComp.cpp 
+
+
+ filtered: UI_UIMANAGEMAPSCOMP_CURRENTSELECTED
+ line: 			IUISystem::getInstance()->getData(UI_UIMANAGEMAPSCOMP_CURRENTSELECTEDMAP, mapEntryValue);
+ file: E:\repositories\warsaw-warsaw\Warsaw\TnT\Code\BF\BF\Client\UI\FrontEnd\UIManageMapsComp.cpp 
+
+
+ filtered: UI_UIMANAGEMAPSCOMP_CURRENTSELECTED
+ line: 					IUISystem::getInstance()->setData(UI_UIMANAGEMAPSCOMP_CURRENTSELECTEDMAPROTATIONITEM, newHighlightedIndex, UINotifyType_Always);
+ file: E:\repositories\warsaw-warsaw\Warsaw\TnT\Code\BF\BF\Client\UI\FrontEnd\UIManageMapsComp.cpp 
+
+
+ filtered: UI_UIMANAGEMAPSCOMP_CURRENTSELECTEDMAP
+ line: 					IUISystem::getInstance()->setData(UI_UIMANAGEMAPSCOMP_CURRENTSELECTEDMAPROTATIONITEM, newHighlightedIndex, UINotifyType_Always);
+ file: E:\repositories\warsaw-warsaw\Warsaw\TnT\Code\BF\BF\Client\UI\FrontEnd\UIManageMapsComp.cpp 
+
+
+ filtered: UI_UIMANAGEMAPSCOMP_CURRENTSELECTED
+ line: 			IUISystem::getInstance()->getData(UI_UIMANAGEMAPSCOMP_CURRENTSELECTEDMAPITEM, mapEntry);
+ file: E:\repositories\warsaw-warsaw\Warsaw\TnT\Code\BF\BF\Client\UI\FrontEnd\UIManageMapsComp.cpp 
+
+
+ filtered: UI_UIMANAGEMAPSCOMP_CURRENTSELECTEDMAP
+ line: 			IUISystem::getInstance()->getData(UI_UIMANAGEMAPSCOMP_CURRENTSELECTEDMAPITEM, mapEntry);
+ file: E:\repositories\warsaw-warsaw\Warsaw\TnT\Code\BF\BF\Client\UI\FrontEnd\UIManageMapsComp.cpp 
+
+
+ filtered: UI_UIMANAGEMAPSCOMP_CURRENTSELECTED
+ line: 				IUISystem::getInstance()->setData(UI_UIMANAGEMAPSCOMP_CURRENTSELECTEDMAPROTATIONITEM, newHighlightedIndex, UINotifyType_Always);
+ file: E:\repositories\warsaw-warsaw\Warsaw\TnT\Code\BF\BF\Client\UI\FrontEnd\UIManageMapsComp.cpp 
+
+
+ filtered: UI_UIMANAGEMAPSCOMP_CURRENTSELECTEDMAP
+ line: 				IUISystem::getInstance()->setData(UI_UIMANAGEMAPSCOMP_CURRENTSELECTEDMAPROTATIONITEM, newHighlightedIndex, UINotifyType_Always);
+ file: E:\repositories\warsaw-warsaw\Warsaw\TnT\Code\BF\BF\Client\UI\FrontEnd\UIManageMapsComp.cpp 
+
+
+ filtered: UI_UIMANAGEMAPSCOMP_CURRENTSELECTED
+ line: 		IUISystem::getInstance()->setData(UI_UIMANAGEMAPSCOMP_CURRENTSELECTEDMAPROTATIONITEM, newHighlightedIndex, UINotifyType_Always);
+ file: E:\repositories\warsaw-warsaw\Warsaw\TnT\Code\BF\BF\Client\UI\FrontEnd\UIManageMapsComp.cpp 
+
+
+ filtered: UI_UIMANAGEMAPSCOMP_CURRENTSELECTEDMAP
+ line: 		IUISystem::getInstance()->setData(UI_UIMANAGEMAPSCOMP_CURRENTSELECTEDMAPROTATIONITEM, newHighlightedIndex, UINotifyType_Always);
+ file: E:\repositories\warsaw-warsaw\Warsaw\TnT\Code\BF\BF\Client\UI\FrontEnd\UIManageMapsComp.cpp 
+
+
+ filtered: UI_UIMANAGEMAPSCOMP_CURRENTSELECTED
+ line: 		IUISystem::getInstance()->setData(UI_UIMANAGEMAPSCOMP_CURRENTSELECTEDMAPROTATIONITEM, 0, UINotifyType_Always);
+ file: E:\repositories\warsaw-warsaw\Warsaw\TnT\Code\BF\BF\Client\UI\FrontEnd\UIManageMapsComp.cpp 
+
+
+ filtered: UI_UIMANAGEMAPSCOMP_CURRENTSELECTEDMAP
+ line: 		IUISystem::getInstance()->setData(UI_UIMANAGEMAPSCOMP_CURRENTSELECTEDMAPROTATIONITEM, 0, UINotifyType_Always);
+ file: E:\repositories\warsaw-warsaw\Warsaw\TnT\Code\BF\BF\Client\UI\FrontEnd\UIManageMapsComp.cpp 
+
+
+ filtered: UI_UIMANAGEMAPSCOMP_CURRENTSELECTED
+ line: 	IUISystem::getInstance()->setData(UI_UIMANAGEMAPSCOMP_CURRENTSELECTEDGAMEMODEINDEX, highlightedIndex);
+ file: E:\repositories\warsaw-warsaw\Warsaw\TnT\Code\BF\BF\Client\UI\FrontEnd\UIManageMapsComp.cpp 
+
+
+ filtered: UI_UIMANAGEMAPSCOMP_CURRENTSELECTED
+ line: 	IUISystem::getInstance()->setData(UI_UIMANAGEMAPSCOMP_CURRENTSELECTEDMODINDEX, highlightedIndex);
+ file: E:\repositories\warsaw-warsaw\Warsaw\TnT\Code\BF\BF\Client\UI\FrontEnd\UIManageMapsComp.cpp 
+
+
+ filtered: UI_UIMANAGESERVERPRESETSCOMP_PRESETSETTING
+ line: 	IUISystem::getInstance()->refreshData(UI_UIMANAGESERVERPRESETSCOMP_PRESETSETTINGSLIST);	
+ file: E:\repositories\warsaw-warsaw\Warsaw\TnT\Code\BF\BF\Client\UI\FrontEnd\UIManageServerPresetsComp.cpp 
+
+
+ filtered: UI_UIAWARDSSCREENCOMP_SELECTEDDOGTAG
+ line: 	int selectedDogtagType = helpGetInt(UI_UIAWARDSSCREENCOMP_SELECTEDDOGTAGTYPE);
+ file: E:\repositories\warsaw-warsaw\Warsaw\TnT\Code\BF\BF\Client\UI\Awards\UIAwardsScreenComp.cpp 
+
+
+ filtered: UI_UIAWARDSSCREENCOMP_SELECTEDDOGTAG
+ line: 		int selectedDogtagType = helpGetInt(UI_UIAWARDSSCREENCOMP_SELECTEDDOGTAGTYPE);
+ file: E:\repositories\warsaw-warsaw\Warsaw\TnT\Code\BF\BF\Client\UI\Awards\UIAwardsScreenComp.cpp 
+
+
+ filtered: UI_UIMANAGESERVERPRESETSCOMP_PRESETSETTING
+ line: 	//IUISystem::getInstance()->refreshData(UI_UIMANAGESERVERPRESETSCOMP_PRESETSETTINGSLIST);
+ file: E:\repositories\warsaw-warsaw\Warsaw\TnT\Code\BF\BF\Client\UI\FrontEnd\UIManageServerPresetsComp.cpp 
+
+
+ filtered: UI_UIMANAGESERVERPRESETSCOMP_PRESETSETTING
+ line: 		IUISystem::getInstance()->refreshData(UI_UIMANAGESERVERPRESETSCOMP_PRESETSETTINGSLIST);
+ file: E:\repositories\warsaw-warsaw\Warsaw\TnT\Code\BF\BF\Client\UI\FrontEnd\UIManageServerPresetsComp.cpp 
+
+
+ filtered: UI_UIMANAGESERVERPRESETSCOMP_PRESETSETTING
+ line: 	IUISystem::getInstance()->refreshData(UI_UIMANAGESERVERPRESETSCOMP_PRESETSETTINGSLIST);
+ file: E:\repositories\warsaw-warsaw\Warsaw\TnT\Code\BF\BF\Client\UI\FrontEnd\UIManageServerPresetsComp.cpp 
+
+
+ filtered: UI_UIMANAGESERVERPRESETSCOMP_PRESETSETTING
+ line: 		IUISystem::getInstance()->refreshData(UI_UIMANAGESERVERPRESETSCOMP_PRESETSETTINGSLIST);
+ file: E:\repositories\warsaw-warsaw\Warsaw\TnT\Code\BF\BF\Client\UI\FrontEnd\UIManageServerPresetsComp.cpp 
+
+
+ filtered: UI_UIMATCHCOMP_TIMER
+ line: 			IUISystem::getInstance()->setData(UI_UIMATCHCOMP_TIMERPREFIXSTRING, "ID_M_EOR_TIME_LEFT");
+ file: E:\repositories\warsaw-warsaw\Warsaw\TnT\Code\BF\BF\Client\UI\Game\UIMatchComp.cpp 
+
+
+ filtered: UI_UIMATCHCOMP_TIMER
+ line: 			IUISystem::getInstance()->setData(UI_UIMATCHCOMP_TIMERPREFIXSTRING, "ID_M_EOR_TIME_TOTAL");
+ file: E:\repositories\warsaw-warsaw\Warsaw\TnT\Code\BF\BF\Client\UI\Game\UIMatchComp.cpp 
+
+
+ filtered: UI_UIMANAGEPLAYERSCOMP_CURRENTSELECTED
+ line: 	IUISystem::getInstance()->getData(UI_UIMANAGEPLAYERSCOMP_CURRENTSELECTEDPLAYER, nameId);
+ file: E:\repositories\warsaw-warsaw\Warsaw\TnT\Code\BF\BF\Client\UI\FlowED\UIActionFactory.cpp 
+
+
+ filtered: UI_UIKILLCARDCOMP_KILLERHEALTH
+ line: 	IUISystem::getInstance()->setData(UI_UIKILLCARDCOMP_KILLERHEALTHREAL, killerHealthReal);
+ file: E:\repositories\warsaw-warsaw\Warsaw\TnT\Code\BF\BF\Client\UI\Game\UIKillCardComp.cpp 
+
+
+ filtered: UI_UIKILLCARDCOMP_KILLERRANK
+ line: 	IUISystem::getInstance()->setData(UI_UIKILLCARDCOMP_KILLERRANKIMAGEPATH, killerRankImage.c_str());
+ file: E:\repositories\warsaw-warsaw\Warsaw\TnT\Code\BF\BF\Client\UI\Game\UIKillCardComp.cpp 
+
+
+ filtered: UI_UIKILLCARDCOMP_KILLERKIT
+ line: 	IUISystem::getInstance()->setData(UI_UIKILLCARDCOMP_KILLERKITSERVICESTARS, killerKitServiceStars);
+ file: E:\repositories\warsaw-warsaw\Warsaw\TnT\Code\BF\BF\Client\UI\Game\UIKillCardComp.cpp 
+
+
+ filtered: UI_UIVEHICLECOMP_ENTRY1ROTATION
+ line: 		UI_UIVEHICLECOMP_ENTRY1ROTATIONINVERTED,
+ file: E:\repositories\warsaw-warsaw\Warsaw\TnT\Code\BF\BF\Client\UI\Game\UIVehicleComp.cpp 
+
+
+ filtered: UI_UIVEHICLECOMP_ENTRY2ROTATION
+ line: 		UI_UIVEHICLECOMP_ENTRY2ROTATIONINVERTED
+ file: E:\repositories\warsaw-warsaw\Warsaw\TnT\Code\BF\BF\Client\UI\Game\UIVehicleComp.cpp 
+
+
+ filtered: UI_UIVEHICLECOMP_ENTRY2ROTATION
+ line: 	return UI_UIVEHICLECOMP_ENTRY2ROTATIONINVERTED;
+ file: E:\repositories\warsaw-warsaw\Warsaw\TnT\Code\BF\BF\Client\UI\Game\UIVehicleComp.cpp 
+
+
+ filtered: UI_UIKILLCOUNTERCOMP_PLAYERTEAM
+ line: 			system->setData(UI_UIKILLCOUNTERCOMP_PLAYERTEAMKILLS, teamKills);
+ file: E:\repositories\warsaw-warsaw\Warsaw\TnT\Code\BF\BF\Client\UI\Hud\UIKillCounterComp.cpp 
+
+
+ filtered: UI_UIKILLCOUNTERCOMP_PLAYERTEAM
+ line: 			system->setData(UI_UIKILLCOUNTERCOMP_PLAYERTEAMMAXKILLS, maxTeamKills);
+ file: E:\repositories\warsaw-warsaw\Warsaw\TnT\Code\BF\BF\Client\UI\Hud\UIKillCounterComp.cpp 
+
+
+ filtered: UI_UIVEHICLECOMP_VELOCITY
+ line: 	m_ui->setData(UI_UIVEHICLECOMP_VELOCITYVECTORX, (double)x);
+ file: E:\repositories\warsaw-warsaw\Warsaw\TnT\Code\BF\BF\Client\UI\Game\UIVehicleComp.cpp 
+
+
+ filtered: UI_UIWEAPONCOMP_ACTIVEWEAPONAMMO
+ line: 		UI_UIWEAPONCOMP_ACTIVEWEAPONAMMOTOTAL, // 1
+ file: E:\repositories\warsaw-warsaw\Warsaw\TnT\Code\BF\BF\Client\UI\Game\UIWeaponComp.cpp 
+
+
+ filtered: UI_UIVEHICLECOMP_VELOCITY
+ line: 	m_ui->setData(UI_UIVEHICLECOMP_VELOCITYVECTORY,  (double)y);	
+ file: E:\repositories\warsaw-warsaw\Warsaw\TnT\Code\BF\BF\Client\UI\Game\UIVehicleComp.cpp 
+
+
+ filtered: UI_UIWEAPONCOMP_SECONDARYWEAPONAMMO
+ line: 		UI_UIWEAPONCOMP_SECONDARYWEAPONAMMOTOTAL, // 1
+ file: E:\repositories\warsaw-warsaw\Warsaw\TnT\Code\BF\BF\Client\UI\Game\UIWeaponComp.cpp 
+
+
+ filtered: UI_UIVEHICLECOMP_RADIOALTITUDE
+ line: 	m_ui->setData(UI_UIVEHICLECOMP_RADIOALTITUDEDIVBYTEN, tmp);
+ file: E:\repositories\warsaw-warsaw\Warsaw\TnT\Code\BF\BF\Client\UI\Game\UIVehicleComp.cpp 
+
+
+ filtered: UI_UIVEHICLECOMP_SEALEVEL
+ line: 	m_ui->setData(UI_UIVEHICLECOMP_SEALEVELALTITUDE, tmp);
+ file: E:\repositories\warsaw-warsaw\Warsaw\TnT\Code\BF\BF\Client\UI\Game\UIVehicleComp.cpp 
+
+
+ filtered: UI_UIVEHICLECOMP_SEALEVEL
+ line: 	m_ui->setData(UI_UIVEHICLECOMP_SEALEVELALTITUDEDIVBYTEN, tmp);
+ file: E:\repositories\warsaw-warsaw\Warsaw\TnT\Code\BF\BF\Client\UI\Game\UIVehicleComp.cpp 
+
+
+ filtered: UI_UIVEHICLECOMP_SEALEVELALTITUDE
+ line: 	m_ui->setData(UI_UIVEHICLECOMP_SEALEVELALTITUDEDIVBYTEN, tmp);
+ file: E:\repositories\warsaw-warsaw\Warsaw\TnT\Code\BF\BF\Client\UI\Game\UIVehicleComp.cpp 
+
+
+ filtered: UI_UILEVELCOMP_CURRENTLEVEL
+ line: 		case UI_UILEVELCOMP_CURRENTLEVELSID:
+ file: E:\repositories\warsaw-warsaw\Warsaw\TnT\Code\BF\BF\Client\UI\Level\UILevelComp.cpp 
+
+
+ filtered: UI_UIHARDCORECOMP_NOMINIMAP
+ line: 	IUISystem::getInstance()->setData(UI_UIHARDCORECOMP_NOMINIMAPSPOTTING, Settings<SyncedBFSettings>()->getNoMinimapSpotting());
+ file: E:\repositories\warsaw-warsaw\Warsaw\TnT\Code\BF\BF\Client\UI\Misc\UIHardcoreComp.cpp 
+
+
+ filtered: UI_UIHARDCORECOMP_NOMINIMAP
+ line: 		case UI_UIHARDCORECOMP_NOMINIMAPSPOTTING:
+ file: E:\repositories\warsaw-warsaw\Warsaw\TnT\Code\BF\BF\Client\UI\Misc\UIHardcoreComp.cpp 
+
+
+ filtered: UI_UIDETAILEDSERVERINFOCOMP_SERVERTYPE
+ line: 		case UI_UIDETAILEDSERVERINFOCOMP_SERVERTYPEIMAGENAME:
+ file: E:\repositories\warsaw-warsaw\Warsaw\TnT\Code\BF\BF\Client\UI\Misc\UIDetailedServerInfoComp.cpp 
+
+
+ filtered: UI_UIINSTALLHDCONTENTCOMP_INSTALLATIONPROGRESS
+ line: 			IUISystem::getInstance()->setData(UI_UIINSTALLHDCONTENTCOMP_INSTALLATIONPROGRESSDESC, buffer);
+ file: E:\repositories\warsaw-warsaw\Warsaw\TnT\Code\BF\BF\Client\UI\Misc\UIInstallHDContentComp.cpp 
+
+
+ filtered: UI_UISETTINGSCOMP_BRIGHTNESS
+ line: 		case UI_UISETTINGSCOMP_BRIGHTNESSMAXIMUM:
+ file: E:\repositories\warsaw-warsaw\Warsaw\TnT\Code\BF\BF\Client\UI\Misc\UISettingsComp.cpp 
+
+
+ filtered: UI_UIDETAILEDSERVERINFOCOMP_SERVERTYPE
+ line: 	bfui->setData(UI_UIDETAILEDSERVERINFOCOMP_SERVERTYPEDESCRIPTION, serverTypeDescription);	
+ file: E:\repositories\warsaw-warsaw\Warsaw\TnT\Code\BF\BF\Client\UI\Misc\UIDetailedServerInfoComp.cpp 
+
+
+ filtered: UI_UISETTINGSCOMP_BRIGHTNESS
+ line: 		case UI_UISETTINGSCOMP_BRIGHTNESSCURRENT:
+ file: E:\repositories\warsaw-warsaw\Warsaw\TnT\Code\BF\BF\Client\UI\Misc\UISettingsComp.cpp 
+
+
+ filtered: UI_UIDETAILEDSERVERINFOCOMP_SERVEROWNER
+ line: 	bfui->setData(UI_UIDETAILEDSERVERINFOCOMP_SERVEROWNERID, owner.c_str());	
+ file: E:\repositories\warsaw-warsaw\Warsaw\TnT\Code\BF\BF\Client\UI\Misc\UIDetailedServerInfoComp.cpp 
+
+
+ filtered: UI_UISETTINGSCOMP_CURRENTGAMEMODE
+ line: 		case UI_UISETTINGSCOMP_CURRENTGAMEMODECLASS:
+ file: E:\repositories\warsaw-warsaw\Warsaw\TnT\Code\BF\BF\Client\UI\Misc\UISettingsComp.cpp 
+
+
+ filtered: UI_UISETTINGSCOMP_CURRENTGAMEMODE
+ line: 		case UI_UISETTINGSCOMP_CURRENTGAMEMODENAME:
+ file: E:\repositories\warsaw-warsaw\Warsaw\TnT\Code\BF\BF\Client\UI\Misc\UISettingsComp.cpp 
+
+
+ filtered: UI_UIDETAILEDSERVERINFOCOMP_CURRENTMAP
+ line: 	UITwoLinerWidget::setLines(getScreen(), "CurrentMap", "ID_M_RSP_CURRENTMAP", UI_UIDETAILEDSERVERINFOCOMP_CURRENTMAPSTRING, true, false);
+ file: E:\repositories\warsaw-warsaw\Warsaw\TnT\Code\BF\BF\Client\UI\RentAServer\UIIngameMapRotationWidget.cpp 
+
+
+ filtered: UI_UIDETAILEDSERVERINFOCOMP_PING
+ line: 		const UITextureInfo* texture = getScreen().getTexture(UIScreenUtil::getDataAndConvertToString(UI_UIDETAILEDSERVERINFOCOMP_PINGRIME), ResourceCompartment_Frontend);
+ file: E:\repositories\warsaw-warsaw\Warsaw\TnT\Code\BF\BF\Client\UI\RentAServer\UIIngameMapRotationWidget.cpp 
+
+
+ filtered: UI_UICONNECTIONCOMP_PASSWORD
+ line: 				IUISystem::getInstance()->getData(UI_UICONNECTIONCOMP_PASSWORDAGAIN, passConfirmValue);
+ file: E:\repositories\warsaw-warsaw\Warsaw\TnT\Code\BF\BF\Client\UI\Online\UIConnectionComp.cpp 
+
+
+ filtered: UI_UITEAMCOMP_FRIENDLYTEAM
+ line: 	, m_leftListProxy(UI_UITEAMCOMP_FRIENDLYTEAMPLAYERS)
+ file: E:\repositories\warsaw-warsaw\Warsaw\TnT\Code\BF\BF\Client\UI\RentAServer\UIManagePlayersWidget.cpp 
+
+
+ filtered: UI_UITEAMCOMP_ENEMYTEAM1
+ line: 	, m_rightListProxy(UI_UITEAMCOMP_ENEMYTEAM1PLAYERS)
+ file: E:\repositories\warsaw-warsaw\Warsaw\TnT\Code\BF\BF\Client\UI\RentAServer\UIManagePlayersWidget.cpp 
+
+
+ filtered: UI_UITEAMCOMP_ENEMYTEAM2
+ line: 	, m_lowerLeftListProxy(UI_UITEAMCOMP_ENEMYTEAM2PLAYERS)
+ file: E:\repositories\warsaw-warsaw\Warsaw\TnT\Code\BF\BF\Client\UI\RentAServer\UIManagePlayersWidget.cpp 
+
+
+ filtered: UI_UITEAMCOMP_ENEMYTEAM3
+ line: 	, m_lowerRightListProxy(UI_UITEAMCOMP_ENEMYTEAM3PLAYERS)
+ file: E:\repositories\warsaw-warsaw\Warsaw\TnT\Code\BF\BF\Client\UI\RentAServer\UIManagePlayersWidget.cpp 
+
+
+ filtered: UI_UIPREMIUMCOMP_DETAILIMAGE
+ line: 		case UI_UIPREMIUMCOMP_DETAILIMAGELOADED:
+ file: E:\repositories\warsaw-warsaw\Warsaw\TnT\Code\BF\BF\Client\UI\Premium\UIPremiumComp.cpp 
+
+
+ filtered: UI_UIMANAGEPLAYERSCOMP_CURRENTSELECTED
+ line: 			UIServerInfoWidget::showGamerCard(UI_UIMANAGEPLAYERSCOMP_CURRENTSELECTEDPLAYER);		// TODO: Refactor, no data value is needed
+ file: E:\repositories\warsaw-warsaw\Warsaw\TnT\Code\BF\BF\Client\UI\RentAServer\UIManagePlayersWidget.cpp 
+
+
+ filtered: UI_UIDETAILEDSERVERINFOCOMP_CURRENTMAP
+ line: 	setMapString(UI_UIDETAILEDSERVERINFOCOMP_CURRENTMAPSTRING, currentMapIndex);
+ file: E:\repositories\warsaw-warsaw\Warsaw\TnT\Code\BF\BF\Client\UI\Misc\UIDetailedServerInfoComp.cpp 
+
+
+ filtered: UI_UIPERSISTENCECOMP_KILLS
+ line: 		case UI_UIPERSISTENCECOMP_KILLSPERMINUTE:
+ file: E:\repositories\warsaw-warsaw\Warsaw\TnT\Code\BF\BF\Client\UI\Persistence\UIPersistenceComp.cpp 
+
+
+ filtered: UI_UICONNECTIONCOMP_PASSWORD
+ line: 	IUISystem::getInstance()->setData(UI_UICONNECTIONCOMP_PASSWORDAGAIN, accountParameters.getPassword());
+ file: E:\repositories\warsaw-warsaw\Warsaw\TnT\Code\BF\BF\Client\UI\Online\UIConnectionComp.cpp 
+
+
+ filtered: UI_UIMANAGEPLAYERSCOMP_CURRENTSELECTED
+ line: 	IUISystem::getInstance()->setData(UI_UIMANAGEPLAYERSCOMP_CURRENTSELECTEDPLAYER, text);		// TODO: Refactor, no data value is needed
+ file: E:\repositories\warsaw-warsaw\Warsaw\TnT\Code\BF\BF\Client\UI\RentAServer\UIManagePlayersWidget.cpp 
+
+
+ filtered: UI_UIPREMIUMCOMP_DETAILSTOREITEM
+ line: 					IUISystem::getInstance()->setData(UI_UIPREMIUMCOMP_DETAILSTOREITEMEXISTS, "store");
+ file: E:\repositories\warsaw-warsaw\Warsaw\TnT\Code\BF\BF\Client\UI\Premium\UIPremiumComp.cpp 
+
+
+ filtered: UI_UIDETAILEDSERVERINFOCOMP_SERVERTYPE
+ line: 	bfui->setData(UI_UIDETAILEDSERVERINFOCOMP_SERVERTYPEDESCRIPTION, "");
+ file: E:\repositories\warsaw-warsaw\Warsaw\TnT\Code\BF\BF\Client\UI\Misc\UIDetailedServerInfoComp.cpp 
+
+
+ filtered: UI_UIPREMIUMCOMP_DETAILIMAGE
+ line: 	IUISystem::getInstance()->refreshData(UI_UIPREMIUMCOMP_DETAILIMAGELOADED);
+ file: E:\repositories\warsaw-warsaw\Warsaw\TnT\Code\BF\BF\Client\UI\Premium\UIPremiumComp.cpp 
+
+
+ filtered: UI_UIDETAILEDSERVERINFOCOMP_CURRENTMAP
+ line: 	IUISystem::getInstance()->setData(UI_UIDETAILEDSERVERINFOCOMP_CURRENTMAPSTRING, mapName);
+ file: E:\repositories\warsaw-warsaw\Warsaw\TnT\Code\BF\BF\Client\UI\RentAServer\UIMyServersWidget.cpp 
+
+
+ filtered: UI_UIDETAILEDSERVERINFOCOMP_PING
+ line: 	bfui->setData(UI_UIDETAILEDSERVERINFOCOMP_PINGRIME, ping.c_str());
+ file: E:\repositories\warsaw-warsaw\Warsaw\TnT\Code\BF\BF\Client\UI\Misc\UIDetailedServerInfoComp.cpp 
+
+
+ filtered: UI_UIDETAILEDSERVERINFOCOMP_SERVEROWNER
+ line: 		IUISystem::getInstance()->getData(UI_UIDETAILEDSERVERINFOCOMP_SERVEROWNERID, data3);
+ file: E:\repositories\warsaw-warsaw\Warsaw\TnT\Code\BF\BF\Client\UI\RentAServer\UIServerInfoWidget.cpp 
+
+
+ filtered: UI_UIDETAILEDSERVERINFOCOMP_SERVEROWNER
+ line: 			showGamerCard(UI_UIDETAILEDSERVERINFOCOMP_SERVEROWNERID);
+ file: E:\repositories\warsaw-warsaw\Warsaw\TnT\Code\BF\BF\Client\UI\RentAServer\UIServerInfoWidget.cpp 
+
+
+ filtered: UI_UITEAMCOMP_ENEMYTEAM1
+ line: 	const char* enemyTeamName = UIScreenUtil::getDataString(UI_UITEAMCOMP_ENEMYTEAM1NAME);
+ file: E:\repositories\warsaw-warsaw\Warsaw\TnT\Code\BF\BF\Client\UI\Scoring\UIEliminationPreEorComp.cpp 
+
+
+ filtered: UI_UIDETAILEDSERVERINFOCOMP_PING
+ line: 		const UITextureInfo* texture = getScreen().getTexture(UIScreenUtil::getDataAndConvertToString(UI_UIDETAILEDSERVERINFOCOMP_PINGRIME), ResourceCompartment_Frontend);
+ file: E:\repositories\warsaw-warsaw\Warsaw\TnT\Code\BF\BF\Client\UI\RentAServer\UIServerInfoWidget.cpp 
+
+
+ filtered: UI_UILEADERBOARDCOMP_LEADERBOARDDATA
+ line: 		case UI_UILEADERBOARDCOMP_LEADERBOARDDATACOOP:
+ file: E:\repositories\warsaw-warsaw\Warsaw\TnT\Code\BF\BF\Client\UI\Scoring\UILeaderboardComp.cpp 
+
+
+ filtered: UI_UIDETAILEDSERVERINFOCOMP_SERVERTYPE
+ line: 		const UITextureInfo* texture = getScreen().getTexture(UIScreenUtil::getDataAndConvertToString(UI_UIDETAILEDSERVERINFOCOMP_SERVERTYPEIMAGENAME), ResourceCompartment_Game); 
+ file: E:\repositories\warsaw-warsaw\Warsaw\TnT\Code\BF\BF\Client\UI\RentAServer\UIServerInfoWidget.cpp 
+
+
+ filtered: UI_UILEADERBOARDCOMP_LOCALPLAYERDATA
+ line: 		case UI_UILEADERBOARDCOMP_LOCALPLAYERDATACOOP:
+ file: E:\repositories\warsaw-warsaw\Warsaw\TnT\Code\BF\BF\Client\UI\Scoring\UILeaderboardComp.cpp 
+
+
+ filtered: UI_UIDETAILEDSERVERINFOCOMP_SERVERTYPE
+ line: 			texture = getScreen().getTexture(UIScreenUtil::getDataAndConvertToString(UI_UIDETAILEDSERVERINFOCOMP_SERVERTYPEIMAGENAME), ResourceCompartment_Frontend); 
+ file: E:\repositories\warsaw-warsaw\Warsaw\TnT\Code\BF\BF\Client\UI\RentAServer\UIServerInfoWidget.cpp 
+
+
+ filtered: UI_UIENDOFROUNDCOMP_AWARDS
+ line: 		case UI_UIENDOFROUNDCOMP_AWARDSCORE:
+ file: E:\repositories\warsaw-warsaw\Warsaw\TnT\Code\BF\BF\Client\UI\Scoring\UIEndOfRoundComp.cpp 
+
+
+ filtered: UI_UIENDOFROUNDCOMP_UNLOCKS
+ line: 		case UI_UIENDOFROUNDCOMP_UNLOCKSCORE:
+ file: E:\repositories\warsaw-warsaw\Warsaw\TnT\Code\BF\BF\Client\UI\Scoring\UIEndOfRoundComp.cpp 
+
+
+ filtered: UI_UIPREMIUMCOMP_DETAILIMAGE
+ line: 		IUISystem::getInstance()->setData(UI_UIPREMIUMCOMP_DETAILIMAGEISLARGE, m_currentDetailItem->hasLargeImage);
+ file: E:\repositories\warsaw-warsaw\Warsaw\TnT\Code\BF\BF\Client\UI\Premium\UIPremiumComp.cpp 
+
+
+ filtered: UI_UILEADERBOARDCOMP_LEADERBOARDDATA
+ line: 		IUISystem::getInstance()->refreshData(UI_UILEADERBOARDCOMP_LEADERBOARDDATACOOP);
+ file: E:\repositories\warsaw-warsaw\Warsaw\TnT\Code\BF\BF\Client\UI\Scoring\UILeaderboardComp.cpp 
+
+
+ filtered: UI_UIENDOFROUNDCOMP_KILLS
+ line: 		case UI_UIENDOFROUNDCOMP_KILLSPERMINUTE:
+ file: E:\repositories\warsaw-warsaw\Warsaw\TnT\Code\BF\BF\Client\UI\Scoring\UIEndOfRoundComp.cpp 
+
+
+ filtered: UI_UILEADERBOARDCOMP_LOCALPLAYERDATA
+ line: 		IUISystem::getInstance()->refreshData(UI_UILEADERBOARDCOMP_LOCALPLAYERDATACOOP);
+ file: E:\repositories\warsaw-warsaw\Warsaw\TnT\Code\BF\BF\Client\UI\Scoring\UILeaderboardComp.cpp 
+
+
+ filtered: UI_UIWEAPONCOMP_SECONDARYWEAPONAMMO
+ line: 			formatStatusText(textObj, UI_UIWEAPONCOMP_SECONDARYWEAPONAMMOTOTAL, 0, false);
+ file: E:\repositories\warsaw-warsaw\Warsaw\TnT\Code\BF\BF\Client\UI\Screens\Widgets\UISoldierStatusWidget.cpp 
+
+
+ filtered: UI_UISETTINGSCOMP_BRIGHTNESS
+ line: 		ui->setData(UI_UISETTINGSCOMP_BRIGHTNESSCURRENT, (double)m_brightnessFactor);
+ file: E:\repositories\warsaw-warsaw\Warsaw\TnT\Code\BF\BF\Client\UI\Screens\Widgets\MainMenu\UICalibrateTVScreenWidget.cpp 
+
+
+ filtered: UI_UISETTINGSCOMP_BRIGHTNESS
+ line: 		ui->setData(UI_UISETTINGSCOMP_BRIGHTNESSMAXIMUM, (double)1.0f);
+ file: E:\repositories\warsaw-warsaw\Warsaw\TnT\Code\BF\BF\Client\UI\Screens\Widgets\MainMenu\UICalibrateTVScreenWidget.cpp 
+
+
+ filtered: UI_UISETTINGSCOMP_BRIGHTNESS
+ line: 				ui->setData(UI_UISETTINGSCOMP_BRIGHTNESSCURRENT, (double)m_brightnessFactor);
+ file: E:\repositories\warsaw-warsaw\Warsaw\TnT\Code\BF\BF\Client\UI\Screens\Widgets\MainMenu\UICalibrateTVScreenWidget.cpp 
+
+
+ filtered: UI_UIVEHICLECOMP_ENTRY1ROTATION
+ line: 	const float tankRotation = (float)BFUIScreenUtil::getDataDouble(isGunnerMode ? UI_UIVEHICLECOMP_ENTRY2ROTATIONINVERTED : UI_UIVEHICLECOMP_ENTRY1ROTATIONINVERTED);
+ file: E:\repositories\warsaw-warsaw\Warsaw\TnT\Code\BF\BF\Client\UI\Screens\Widgets\Vehicle\UITurretRotationWidget.cpp 
+
+
+ filtered: UI_UIVEHICLECOMP_ENTRY2ROTATION
+ line: 	const float tankRotation = (float)BFUIScreenUtil::getDataDouble(isGunnerMode ? UI_UIVEHICLECOMP_ENTRY2ROTATIONINVERTED : UI_UIVEHICLECOMP_ENTRY1ROTATIONINVERTED);
+ file: E:\repositories\warsaw-warsaw\Warsaw\TnT\Code\BF\BF\Client\UI\Screens\Widgets\Vehicle\UITurretRotationWidget.cpp 
+
+
+ filtered: UI_UIVEHICLECOMP_VELOCITY
+ line: 		const Vec2 velocityVectorDelta((float)BFUIScreenUtil::getDataDouble(UI_UIVEHICLECOMP_VELOCITYVECTORX),
+ file: E:\repositories\warsaw-warsaw\Warsaw\TnT\Code\BF\BF\Client\UI\Screens\Widgets\Vehicle\UIPitchLadderWidget.cpp 
+
+
+ filtered: UI_UIVEHICLECOMP_VELOCITY
+ line: 									   (float)BFUIScreenUtil::getDataDouble(UI_UIVEHICLECOMP_VELOCITYVECTORY));
+ file: E:\repositories\warsaw-warsaw\Warsaw\TnT\Code\BF\BF\Client\UI\Screens\Widgets\Vehicle\UIPitchLadderWidget.cpp 
+
+
+ filtered: UI_UITEAMCOMP_FRIENDLYTEAM
+ line: 		IUISystem::getInstance()->refreshData(UI_UITEAMCOMP_FRIENDLYTEAMPLAYERS);
+ file: E:\repositories\warsaw-warsaw\Warsaw\TnT\Code\BF\BF\Client\UI\Soldier\UITeamComp.cpp 
+
+
+ filtered: UI_UITEAMCOMP_ENEMYTEAM1
+ line: 		IUISystem::getInstance()->refreshData(UI_UITEAMCOMP_ENEMYTEAM1PLAYERS);
+ file: E:\repositories\warsaw-warsaw\Warsaw\TnT\Code\BF\BF\Client\UI\Soldier\UITeamComp.cpp 
+
+
+ filtered: UI_UITEAMCOMP_ENEMYTEAM2
+ line: 		IUISystem::getInstance()->refreshData(UI_UITEAMCOMP_ENEMYTEAM2PLAYERS);
+ file: E:\repositories\warsaw-warsaw\Warsaw\TnT\Code\BF\BF\Client\UI\Soldier\UITeamComp.cpp 
+
+
+ filtered: UI_UITEAMCOMP_ENEMYTEAM3
+ line: 		IUISystem::getInstance()->refreshData(UI_UITEAMCOMP_ENEMYTEAM3PLAYERS);
+ file: E:\repositories\warsaw-warsaw\Warsaw\TnT\Code\BF\BF\Client\UI\Soldier\UITeamComp.cpp 
+
+
+ filtered: UI_UITEAMCOMP_FRIENDLYTEAM
+ line: 			uiSystem->setData(UI_UITEAMCOMP_FRIENDLYTEAMNAME, teamSID);
+ file: E:\repositories\warsaw-warsaw\Warsaw\TnT\Code\BF\BF\Client\UI\Soldier\UITeamComp.cpp 
+
+
+ filtered: UI_UITEAMCOMP_FRIENDLYTEAM
+ line: 			uiSystem->setData(UI_UITEAMCOMP_FRIENDLYTEAMLONGNAME, teamLongSID.c_str());
+ file: E:\repositories\warsaw-warsaw\Warsaw\TnT\Code\BF\BF\Client\UI\Soldier\UITeamComp.cpp 
+
+
+ filtered: UI_UITEAMCOMP_ENEMYTEAM1
+ line: 				uiSystem->setData(UI_UITEAMCOMP_ENEMYTEAM1NAME, teamSID);
+ file: E:\repositories\warsaw-warsaw\Warsaw\TnT\Code\BF\BF\Client\UI\Soldier\UITeamComp.cpp 
+
+
+ filtered: UI_UITEAMCOMP_ENEMYTEAM1
+ line: 				uiSystem->setData(UI_UITEAMCOMP_ENEMYTEAM1FACTIONNAME, factionSID);
+ file: E:\repositories\warsaw-warsaw\Warsaw\TnT\Code\BF\BF\Client\UI\Soldier\UITeamComp.cpp 
+
+
+ filtered: UI_UITEAMCOMP_ENEMYTEAM1
+ line: 				uiSystem->setData(UI_UITEAMCOMP_ENEMYTEAM1LONGNAME, teamLongSID.c_str());
+ file: E:\repositories\warsaw-warsaw\Warsaw\TnT\Code\BF\BF\Client\UI\Soldier\UITeamComp.cpp 
+
+
+ filtered: UI_UITEAMCOMP_ENEMYTEAM2
+ line: 				uiSystem->setData(UI_UITEAMCOMP_ENEMYTEAM2NAME, teamSID);
+ file: E:\repositories\warsaw-warsaw\Warsaw\TnT\Code\BF\BF\Client\UI\Soldier\UITeamComp.cpp 
+
+
+ filtered: UI_UITEAMCOMP_ENEMYTEAM2
+ line: 				uiSystem->setData(UI_UITEAMCOMP_ENEMYTEAM2FACTIONNAME, factionSID);
+ file: E:\repositories\warsaw-warsaw\Warsaw\TnT\Code\BF\BF\Client\UI\Soldier\UITeamComp.cpp 
+
+
+ filtered: UI_UITEAMCOMP_ENEMYTEAM2
+ line: 				uiSystem->setData(UI_UITEAMCOMP_ENEMYTEAM2LONGNAME, teamLongSID.c_str());
+ file: E:\repositories\warsaw-warsaw\Warsaw\TnT\Code\BF\BF\Client\UI\Soldier\UITeamComp.cpp 
+
+
+ filtered: UI_UITEAMCOMP_ENEMYTEAM3
+ line: 				uiSystem->setData(UI_UITEAMCOMP_ENEMYTEAM3NAME, teamSID);
+ file: E:\repositories\warsaw-warsaw\Warsaw\TnT\Code\BF\BF\Client\UI\Soldier\UITeamComp.cpp 
+
+
+ filtered: UI_UITEAMCOMP_ENEMYTEAM3
+ line: 				uiSystem->setData(UI_UITEAMCOMP_ENEMYTEAM3FACTIONNAME, factionSID);
+ file: E:\repositories\warsaw-warsaw\Warsaw\TnT\Code\BF\BF\Client\UI\Soldier\UITeamComp.cpp 
+
+
+ filtered: UI_UITEAMCOMP_ENEMYTEAM3
+ line: 				uiSystem->setData(UI_UITEAMCOMP_ENEMYTEAM3LONGNAME, teamLongSID.c_str());
+ file: E:\repositories\warsaw-warsaw\Warsaw\TnT\Code\BF\BF\Client\UI\Soldier\UITeamComp.cpp 
+
+
+ filtered: UI_UITEAMCOMP_FRIENDLYTEAM
+ line: 		case UI_UITEAMCOMP_FRIENDLYTEAMPLAYERS:
+ file: E:\repositories\warsaw-warsaw\Warsaw\TnT\Code\BF\BF\Client\UI\Soldier\UITeamComp.cpp 
+
+
+ filtered: UI_UITEAMCOMP_ENEMYTEAM1
+ line: 		case UI_UITEAMCOMP_ENEMYTEAM1PLAYERS:
+ file: E:\repositories\warsaw-warsaw\Warsaw\TnT\Code\BF\BF\Client\UI\Soldier\UITeamComp.cpp 
+
+
+ filtered: UI_UITEAMCOMP_ENEMYTEAM2
+ line: 		case UI_UITEAMCOMP_ENEMYTEAM2PLAYERS:
+ file: E:\repositories\warsaw-warsaw\Warsaw\TnT\Code\BF\BF\Client\UI\Soldier\UITeamComp.cpp 
+
+
+ filtered: UI_UITEAMCOMP_ENEMYTEAM3
+ line: 		case UI_UITEAMCOMP_ENEMYTEAM3PLAYERS:
+ file: E:\repositories\warsaw-warsaw\Warsaw\TnT\Code\BF\BF\Client\UI\Soldier\UITeamComp.cpp 
+
+
+ filtered: UI_UITEAMCOMP_FRIENDLYTEAM
+ line: 				if (!((dataKey == UI_UITEAMCOMP_FRIENDLYTEAMPLAYERS && TeamInfo::isFriendly(playerTeamId, myTeam)) 
+ file: E:\repositories\warsaw-warsaw\Warsaw\TnT\Code\BF\BF\Client\UI\Soldier\UITeamComp.cpp 
+
+
+ filtered: UI_UITEAMCOMP_ENEMYTEAM1
+ line: 					|| (dataKey == UI_UITEAMCOMP_ENEMYTEAM1PLAYERS && enemyTeamId == Team1 && TeamInfo::isHostile(playerTeamId, myTeam))
+ file: E:\repositories\warsaw-warsaw\Warsaw\TnT\Code\BF\BF\Client\UI\Soldier\UITeamComp.cpp 
+
+
+ filtered: UI_UITEAMCOMP_ENEMYTEAM2
+ line: 					|| (dataKey == UI_UITEAMCOMP_ENEMYTEAM2PLAYERS && enemyTeamId == Team2 && TeamInfo::isHostile(playerTeamId, myTeam))
+ file: E:\repositories\warsaw-warsaw\Warsaw\TnT\Code\BF\BF\Client\UI\Soldier\UITeamComp.cpp 
+
+
+ filtered: UI_UITEAMCOMP_ENEMYTEAM3
+ line: 					|| (dataKey == UI_UITEAMCOMP_ENEMYTEAM3PLAYERS && enemyTeamId == Team3 && TeamInfo::isHostile(playerTeamId, myTeam))))
+ file: E:\repositories\warsaw-warsaw\Warsaw\TnT\Code\BF\BF\Client\UI\Soldier\UITeamComp.cpp 
+
+
+ filtered: UI_UITEAMCOMP_FRIENDLYTEAM
+ line: 				uiSystem->refreshData(UI_UITEAMCOMP_FRIENDLYTEAMPLAYERS);
+ file: E:\repositories\warsaw-warsaw\Warsaw\TnT\Code\BF\BF\Client\UI\Soldier\UITeamComp.cpp 
+
+
+ filtered: UI_UITEAMCOMP_ENEMYTEAM1
+ line: 				uiSystem->refreshData(UI_UITEAMCOMP_ENEMYTEAM1PLAYERS);
+ file: E:\repositories\warsaw-warsaw\Warsaw\TnT\Code\BF\BF\Client\UI\Soldier\UITeamComp.cpp 
+
+
+ filtered: UI_UITEAMCOMP_ENEMYTEAM2
+ line: 				uiSystem->refreshData(UI_UITEAMCOMP_ENEMYTEAM2PLAYERS);
+ file: E:\repositories\warsaw-warsaw\Warsaw\TnT\Code\BF\BF\Client\UI\Soldier\UITeamComp.cpp 
+
+
+ filtered: UI_UITEAMCOMP_ENEMYTEAM3
+ line: 				uiSystem->refreshData(UI_UITEAMCOMP_ENEMYTEAM3PLAYERS);
+ file: E:\repositories\warsaw-warsaw\Warsaw\TnT\Code\BF\BF\Client\UI\Soldier\UITeamComp.cpp 
+
+

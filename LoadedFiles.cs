@@ -40,9 +40,11 @@ namespace Search_DBX_files
         public Dictionary<string, List<string>> LineResult { get { return _resultingLines; } }
         public int TotalFiles { get; private set; }
         public int FilesLeft { get { return _counter; } }
+        private List<string> _regexDisabledMatches;
 
         public LoadedFiles(FileInfo[] dbxFiles, FileInfo[] cppFiles, string dbxFilter, string cppFilter, ReadOnlyCollection<DiceItem> readOnlyCollection, int maxThreads)
         {
+            _regexDisabledMatches = new List<string>();
             _start = DateTime.Now;
             _strings = new ConcurrentBag<String>();
             _allDbxFiles = dbxFiles;
@@ -96,6 +98,7 @@ namespace Search_DBX_files
         private void findUsage(ThreadState state, ref Dictionary<string, List<FileInfo>> resultFiles, ref Dictionary<string, List<string>> resultLines)
         {
             int lineNumber = 1;
+            
             while(!state.Content.EndOfStream)            
             {
                 string line = state.Content.ReadLine();
@@ -108,17 +111,26 @@ namespace Search_DBX_files
                         var filteredId = state.IsDbxFile ? item.Guid : item.Identifier;
                         if (line.Contains(filteredId))
                         {
-                            if (!resultFiles.ContainsKey(item.Guid))
+                            string valid = "[\\w_]+";
+                            Regex match = new Regex(filteredId + valid);
+                            if (!match.IsMatch(line))
                             {
-                                resultFiles.Add(item.Guid, new List<FileInfo>());
-                            }
-                            resultFiles[item.Guid].Add(state.File);
+                                if (!resultFiles.ContainsKey(item.Guid))
+                                {
+                                    resultFiles.Add(item.Guid, new List<FileInfo>());
+                                }
+                                resultFiles[item.Guid].Add(state.File);
 
-                            if (!resultLines.ContainsKey(item.Guid))
-                            {
-                                resultLines.Add(item.Guid, new List<string>());
+                                if (!resultLines.ContainsKey(item.Guid))
+                                {
+                                    resultLines.Add(item.Guid, new List<string>());
+                                }
+                                resultLines[item.Guid].Add(String.Format("[{0}] {1}", lineNumber, line.Trim()));
                             }
-                            resultLines[item.Guid].Add(String.Format("[{0}] {1}", lineNumber, line.Trim()));
+                            else
+                            {
+                                _regexDisabledMatches.Add(String.Format(" filtered: {0}\n line: {1}\n file: {2} \n\n", filteredId, line, state.File.FullName));
+                            }
                         }
                     }
                 }
@@ -130,7 +142,16 @@ namespace Search_DBX_files
         {
             Console.WriteLine("Everything completed in {0}s", (DateTime.Now - _start).TotalSeconds);
             if (OnComplete != null)
+            {
                 OnComplete.Invoke();
+                using (var sw = new StreamWriter("./output/_regex_disabled_items.txt"))
+                {
+                    foreach (var line in _regexDisabledMatches)
+                    {
+                        sw.WriteLine(line);
+                    }
+                }
+            }
         }
 
         /// <summary>

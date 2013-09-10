@@ -3,22 +3,22 @@
 	[634] <field name="DataKey">-524855894</field>
 	[793] <field name="DataKey">-524855894</field>
 	[811] <field name="DataKey">-524855894</field>
+	[523] <field name="DataKey">-524855894</field>
+	[1191] <field name="DataKey">-524855894</field>
+	[143] <field name="DataKey">-524855894</field>
+	[844] <field name="DataKey">-524855894</field>
+	[863] <field name="DataKey">-524855894</field>
 	[356] <field name="DataKey">-524855894</field>
 	[663] <field name="DataKey">-524855894</field>
 	[688] <field name="DataKey">-524855894</field>
 	[870] <field name="DataKey">-524855894</field>
 	[889] <field name="DataKey">-524855894</field>
-	[523] <field name="DataKey">-524855894</field>
-	[1191] <field name="DataKey">-524855894</field>
+	[586] <field name="DataKey">-524855894</field>
+	[696] <field name="DataKey">-524855894</field>
 	[160] <field name="DataKey">-524855894</field>
 	[1095] <field name="DataKey">-524855894</field>
 	[1114] <field name="DataKey">-524855894</field>
 	[1133] <field name="DataKey">-524855894</field>
-	[586] <field name="DataKey">-524855894</field>
-	[696] <field name="DataKey">-524855894</field>
-	[143] <field name="DataKey">-524855894</field>
-	[844] <field name="DataKey">-524855894</field>
-	[863] <field name="DataKey">-524855894</field>
 -910525755 - UI_FRONTENDCOMP_COMCENTERCURRENTSELECTION
 	[300] IUISystem::getInstance()->getData(UI_FRONTENDCOMP_COMCENTERCURRENTSELECTION, currentSelection);
 -834838073 - UI_FRONTENDCOMP_FIRSTPARTYCONNECTIONFAILED
@@ -30,8 +30,8 @@
 -1945598635 - UI_FRONTENDCOMP_FRONTENDTARGETSCREEN
 	[331] <field name="DataKey">-1945598635</field>
 	[2044] <field name="DataKey">-1945598635</field>
-	[127] <field name="DataKey">-1945598635</field>
 	[315] <field name="DataKey">-1945598635</field>
+	[127] <field name="DataKey">-1945598635</field>
 	[1034] <field name="DataKey">-1945598635</field>
 	[432] <field name="DataKey">-1945598635</field>
 	[244] case UI_FRONTENDCOMP_FRONTENDTARGETSCREEN:
@@ -76,23 +76,23 @@
 	[255] <field name="DataKey">629137856</field>
 	[247] case UI_FRONTENDCOMP_ISMOVIEPLAYING:
 -1784124692 - UI_FRONTENDCOMP_ISPRIMARYMOVIEPLAYING
-	[830] <field name="DataKey">-1784124692</field>
 	[270] case UI_FRONTENDCOMP_ISPRIMARYMOVIEPLAYING:
+	[830] <field name="DataKey">-1784124692</field>
 -2099373007 - UI_FRONTENDCOMP_ISPRO
 	[963] <field name="DataKey">-2099373007</field>
 	[1941] <field name="DataKey">-2099373007</field>
+	[1215] <field name="DataKey">-2099373007</field>
+	[1001] <field name="DataKey">-2099373007</field>
 	[323] <field name="DataKey">-2099373007</field>
 	[343] <field name="DataKey">-2099373007</field>
 	[809] <field name="DataKey">-2099373007</field>
-	[1215] <field name="DataKey">-2099373007</field>
-	[1001] <field name="DataKey">-2099373007</field>
-	[960] <field name="DataKey">-2099373007</field>
 	[261] case UI_FRONTENDCOMP_ISPRO:
+	[960] <field name="DataKey">-2099373007</field>
 	[192] IUISystem::getInstance()->getData(UI_FRONTENDCOMP_ISPRO, isPremiumDataValue);
 -51395302 - UI_FRONTENDCOMP_ISSECONDARYMOVIEPLAYING
+	[279] case UI_FRONTENDCOMP_ISSECONDARYMOVIEPLAYING:
 	[801] <field name="DataKey">-51395302</field>
 	[815] <field name="DataKey">-51395302</field>
-	[279] case UI_FRONTENDCOMP_ISSECONDARYMOVIEPLAYING:
 1758702559 - UI_FRONTENDCOMP_JUMPTOBATTLEPACKS
 	[2676] <field name="DataKey">1758702559</field>
 	[2694] <field name="DataKey">1758702559</field>
@@ -119,26 +119,45 @@
 	[2223] <field name="DataKey">606381875</field>
 	[478] <field name="DataKey">606381875</field>
 	[496] <field name="DataKey">606381875</field>
+	[1106] <field name="DataKey">606381875</field>
+	[1112] <field name="DataKey">606381875</field>
+	[290] <field name="DataKey">606381875</field>
+	[333] <field name="DataKey">606381875</field>
 	[264] <field name="DataKey">606381875</field>
 	[270] <field name="DataKey">606381875</field>
 	[550] <field name="DataKey">606381875</field>
-	[1106] <field name="DataKey">606381875</field>
-	[1112] <field name="DataKey">606381875</field>
 	[300] <field name="DataKey">606381875</field>
 	[332] <field name="DataKey">606381875</field>
-	[290] <field name="DataKey">606381875</field>
-	[333] <field name="DataKey">606381875</field>
+	[271] <field name="DataKey">606381875</field>
+	[288] <field name="DataKey">606381875</field>
 	[523] <field name="DataKey">606381875</field>
 	[535] <field name="DataKey">606381875</field>
 	[841] <field name="DataKey">606381875</field>
-	[271] <field name="DataKey">606381875</field>
-	[288] <field name="DataKey">606381875</field>
+	[205] <field name="DataKey">606381875</field>
 	[436] <field name="DataKey">606381875</field>
 	[457] <field name="DataKey">606381875</field>
 	[544] <field name="DataKey">606381875</field>
-	[205] <field name="DataKey">606381875</field>
+	[1121] <field name="DataKey">606381875</field>
+	[1001] <field name="DataKey">606381875</field>
+	[1035] <field name="DataKey">606381875</field>
+	[1293] <field name="DataKey">606381875</field>
+	[287] <field name="DataKey">606381875</field>
+	[383] <field name="DataKey">606381875</field>
+	[784] <field name="DataKey">606381875</field>
+	[1249] <field name="DataKey">606381875</field>
+	[576] <field name="DataKey">606381875</field>
+	[1042] <field name="DataKey">606381875</field>
+	[646] <field name="DataKey">606381875</field>
+	[1451] <field name="DataKey">606381875</field>
+	[1463] <field name="DataKey">606381875</field>
+	[1503] <field name="DataKey">606381875</field>
+	[1533] <field name="DataKey">606381875</field>
 	[355] <field name="DataKey">606381875</field>
 	[471] <field name="DataKey">606381875</field>
+	[669] <field name="DataKey">606381875</field>
+	[686] <field name="DataKey">606381875</field>
+	[711] <field name="DataKey">606381875</field>
+	[723] <field name="DataKey">606381875</field>
 	[1596] <field name="DataKey">606381875</field>
 	[1638] <field name="DataKey">606381875</field>
 	[1682] <field name="DataKey">606381875</field>
@@ -146,25 +165,6 @@
 	[1730] <field name="DataKey">606381875</field>
 	[1754] <field name="DataKey">606381875</field>
 	[1862] <field name="DataKey">606381875</field>
-	[646] <field name="DataKey">606381875</field>
-	[287] <field name="DataKey">606381875</field>
-	[383] <field name="DataKey">606381875</field>
-	[784] <field name="DataKey">606381875</field>
-	[711] <field name="DataKey">606381875</field>
-	[723] <field name="DataKey">606381875</field>
-	[1121] <field name="DataKey">606381875</field>
-	[1451] <field name="DataKey">606381875</field>
-	[1463] <field name="DataKey">606381875</field>
-	[1503] <field name="DataKey">606381875</field>
-	[1533] <field name="DataKey">606381875</field>
-	[576] <field name="DataKey">606381875</field>
-	[1042] <field name="DataKey">606381875</field>
-	[669] <field name="DataKey">606381875</field>
-	[686] <field name="DataKey">606381875</field>
-	[1001] <field name="DataKey">606381875</field>
-	[1035] <field name="DataKey">606381875</field>
-	[1293] <field name="DataKey">606381875</field>
-	[1249] <field name="DataKey">606381875</field>
 	[1902] <field name="DataKey">606381875</field>
 	[2052] <field name="DataKey">606381875</field>
 	[2076] <field name="DataKey">606381875</field>
@@ -250,9 +250,9 @@
 	[533] IUISystem::getInstance()->setData(UI_FRONTENDCOMP_STREAMINSTALLINGFLAG, false);
 -508764810 - UI_FRONTENDCOMP_VKBDCURRENTFIELD
 	[652] <field name="DataKey">-508764810</field>
-	[788] <field name="DataKey">-508764810</field>
-	[652] <field name="DataKey">-508764810</field>
 	[729] <field name="DataKey">-508764810</field>
+	[652] <field name="DataKey">-508764810</field>
+	[788] <field name="DataKey">-508764810</field>
 	[780] <field name="DataKey">-508764810</field>
 	[839] <field name="DataKey">-508764810</field>
 	[903] <field name="DataKey">-508764810</field>
@@ -269,8 +269,8 @@
 	[744] IUISystem::getInstance()->getData(UI_FRONTENDCOMP_VKBDCURRENTFIELD, vkbdFieldValue);
 	[757] IUISystem::getInstance()->setData(UI_FRONTENDCOMP_VKBDCURRENTFIELD, "");
 495565559 - UI_FRONTENDCOMP_VKBDDISPLAYDATA
-	[764] <field name="DataKey">495565559</field>
 	[634] <field name="DataKey">495565559</field>
+	[764] <field name="DataKey">495565559</field>
 	[748] <field name="DataKey">495565559</field>
 	[815] <field name="DataKey">495565559</field>
 	[1205] <field name="DataKey">495565559</field>
@@ -283,14 +283,15 @@
 	[1075] <field name="DataKey">495565559</field>
 	[1613] IUISystem::getInstance()->getData(UI_FRONTENDCOMP_VKBDDISPLAYDATA, vkbdDisplayData);
 -1888704194 - UI_FRONTENDCOMP_VKBDINPUTSTRING
-	[696] <field name="DataKey">-1888704194</field>
-	[721] <field name="DataKey">-1888704194</field>
 	[704] <field name="DataKey">-1888704194</field>
 	[756] <field name="DataKey">-1888704194</field>
+	[696] <field name="DataKey">-1888704194</field>
+	[721] <field name="DataKey">-1888704194</field>
 	[875] <field name="DataKey">-1888704194</field>
 	[926] <field name="DataKey">-1888704194</field>
 	[955] <field name="DataKey">-1888704194</field>
 	[1258] <field name="DataKey">-1888704194</field>
+	[462] <field name="DataKey">-1888704194</field>
 	[385] <field name="DataKey">-1888704194</field>
 	[444] <field name="DataKey">-1888704194</field>
 	[461] <field name="DataKey">-1888704194</field>
@@ -298,7 +299,6 @@
 	[1207] <field name="DataKey">-1888704194</field>
 	[1224] <field name="DataKey">-1888704194</field>
 	[1241] <field name="DataKey">-1888704194</field>
-	[462] <field name="DataKey">-1888704194</field>
 	[844] setData(UI_FRONTENDCOMP_VKBDINPUTSTRING, vkbdResultStr.c_str(), fb::UINotifyType_Always);
 341609718 - UI_FRONTENDCOMP_WANTTOGOONLINE
 	[1955] <field name="DataKey">341609718</field>
@@ -323,11 +323,11 @@
 	[317] IUISystem::getInstance()->setData(UI_UIASSIGNMENTSCOMP_SHOWMULTIPLEREWARDS, false);
 -178667290 - UI_UIAWARDSSCREENCOMP_AWARDSTABSPLUS
 	[572] <field name="DataKey">-178667290</field>
+	[370] <field name="DataKey">-178667290</field>
 	[357] <field name="DataKey">-178667290</field>
 	[559] <field name="DataKey">-178667290</field>
 	[108] <field name="DataKey">-178667290</field>
 	[476] <field name="DataKey">-178667290</field>
-	[370] <field name="DataKey">-178667290</field>
 	[120] case UI_UIAWARDSSCREENCOMP_AWARDSTABSPLUS:	// to show the plus sign on the tab bar inside awards screen
 -154074019 - UI_UIAWARDSSCREENCOMP_BUTTONBARDATA
 	[383] <field name="DataKey">-154074019</field>
@@ -403,19 +403,11 @@
 	[175] IUISystem::getInstance()->refreshData(UI_UIAWARDSSCREENCOMP_SELECTEDBASICDOGTAG);
 -1038357635 - UI_UIAWARDSSCREENCOMP_SELECTEDDOGTAG
 	[276] <field name="DataKey">-1038357635</field>
-	[91] if(helpGetInt(UI_UIAWARDSSCREENCOMP_SELECTEDDOGTAGTYPE) == 1)
 	[168] case UI_UIAWARDSSCREENCOMP_SELECTEDDOGTAG:
-	[171] int selectedDogtagType = helpGetInt(UI_UIAWARDSSCREENCOMP_SELECTEDDOGTAGTYPE);
-	[178] case UI_UIAWARDSSCREENCOMP_SELECTEDDOGTAGTYPE:
-	[190] IUISystem::getInstance()->setDataValue(UI_UIAWARDSSCREENCOMP_SELECTEDDOGTAGTYPE, 0);
 	[531] selectedIndex = helpGetInt(UI_UIAWARDSSCREENCOMP_SELECTEDDOGTAG);
-	[549] int selectedDogtagType = helpGetInt(UI_UIAWARDSSCREENCOMP_SELECTEDDOGTAGTYPE);
-	[757] int selectedDogtagType = helpGetInt(UI_UIAWARDSSCREENCOMP_SELECTEDDOGTAGTYPE);
 	[759] selectedIndex = helpGetInt(UI_UIAWARDSSCREENCOMP_SELECTEDDOGTAG);
-	[823] int selectedDogtagType = helpGetInt(UI_UIAWARDSSCREENCOMP_SELECTEDDOGTAGTYPE);
 	[825] selectedIndex = helpGetInt(UI_UIAWARDSSCREENCOMP_SELECTEDDOGTAG);
 	[874] int selectedIndex = helpGetInt(UI_UIAWARDSSCREENCOMP_SELECTEDDOGTAG);
-	[879] int selectedDogtagType = helpGetInt(UI_UIAWARDSSCREENCOMP_SELECTEDDOGTAGTYPE);
 -49899995 - UI_UIAWARDSSCREENCOMP_SELECTEDDOGTAGTYPE
 	[2551] <field name="DataKey">-49899995</field>
 	[259] <field name="DataKey">-49899995</field>
@@ -513,9 +505,9 @@
 	[217] <field name="DataKey">153329134</field>
 	[221] <field name="DataKey">153329134</field>
 	[280] <field name="DataKey">153329134</field>
-	[443] <field name="DataKey">153329134</field>
 	[438] <field name="DataKey">153329134</field>
 	[543] <field name="DataKey">153329134</field>
+	[443] <field name="DataKey">153329134</field>
 	[228] <field name="DataKey">153329134</field>
 	[232] <field name="DataKey">153329134</field>
 	[41] case UI_UICAMPAIGNCOMP_CURRENTCAMPAIGNDIFFICULTY:
@@ -538,8 +530,8 @@
 	[376] if (const char* inputText = UIScreenUtil::getDataString(UI_UICHATCOMP_CHATINPUTTEXT))
 	[381] IUISystem::getInstance()->setData(UI_UICHATCOMP_CHATINPUTTEXT, "");
 -1103276527 - UI_UICOMBATAREACOMP_SHOWTIMER
-	[22] <field name="DataKey">-1103276527</field>
 	[23] <field name="DataKey">-1103276527</field>
+	[22] <field name="DataKey">-1103276527</field>
 	[22] <field name="DataKey">-1103276527</field>
 	[45] <field name="DataKey">-1103276527</field>
 	[283] UISystem::getInstance()->setData(UI_UICOMBATAREACOMP_SHOWTIMER, false);
@@ -737,11 +729,11 @@
 -1368226861 - UI_UICONNECTIONCOMP_GOONLINEFLOWSTAGE
 	[93] <field name="DataKey">-1368226861</field>
 	[398] <field name="DataKey">-1368226861</field>
+	[865] IUISystem::getInstance()->setData(UI_UICONNECTIONCOMP_GOONLINEFLOWSTAGE, "Done");
 	[448] IUISystem::getInstance()->getData(UI_UICONNECTIONCOMP_GOONLINEFLOWSTAGE, dataValue);
 	[1156] UISystem::getInstance()->getData(UI_UICONNECTIONCOMP_GOONLINEFLOWSTAGE, value);
 	[1161] IUISystem::getInstance()->setData(UI_UICONNECTIONCOMP_GOONLINEFLOWSTAGE, "Done");
 	[1174] IUISystem::getInstance()->setData(UI_UICONNECTIONCOMP_GOONLINEFLOWSTAGE, "Active");
-	[865] IUISystem::getInstance()->setData(UI_UICONNECTIONCOMP_GOONLINEFLOWSTAGE, "Done");
 2031207593 - UI_UICONNECTIONCOMP_HASNOXPACK1
 	[273] case UI_UICONNECTIONCOMP_HASNOXPACK1:
 -1819402279 - UI_UICONNECTIONCOMP_HASSTATS
@@ -756,10 +748,8 @@
 	[272] <field name="DataKey">-1389910147</field>
 	[1006] <field name="DataKey">-1389910147</field>
 	[538] IUISystem::getInstance()->getData(UI_UICONNECTIONCOMP_PASSWORD, passValue);
-	[539] IUISystem::getInstance()->getData(UI_UICONNECTIONCOMP_PASSWORDAGAIN, passConfirmValue);
 	[1034] IUISystem::getInstance()->getData(UI_UICONNECTIONCOMP_PASSWORD, dataValue);
 	[1054] IUISystem::getInstance()->setData(UI_UICONNECTIONCOMP_PASSWORD, accountParameters.getPassword());
-	[1055] IUISystem::getInstance()->setData(UI_UICONNECTIONCOMP_PASSWORDAGAIN, accountParameters.getPassword());
 -1293147299 - UI_UICONNECTIONCOMP_PASSWORDAGAIN
 	[1123] <field name="DataKey">-1293147299</field>
 	[1285] <field name="DataKey">-1293147299</field>
@@ -783,17 +773,17 @@
 	[738] <field name="DataKey">-1641999115</field>
 	[527] <field name="DataKey">-1641999115</field>
 	[356] <field name="DataKey">-1641999115</field>
+	[880] <field name="DataKey">-1641999115</field>
 	[4722] <field name="DataKey">-1641999115</field>
 	[4735] <field name="DataKey">-1641999115</field>
-	[880] <field name="DataKey">-1641999115</field>
 	[459] <field name="DataKey">-1641999115</field>
 	[1060] <field name="DataKey">-1641999115</field>
+	[864] IUISystem::getInstance()->setData(UI_UICONNECTIONCOMP_STATE, "Offline");
 	[197] IUISystem::getInstance()->setData(UI_UICONNECTIONCOMP_STATE, stateStr);
 	[239] IUISystem::getInstance()->setData(UI_UICONNECTIONCOMP_STATE, "Online");
 	[478] IUISystem::getInstance()->setData(UI_UICONNECTIONCOMP_STATE, "Online");
 	[656] IUISystem::getInstance()->setData(UI_UICONNECTIONCOMP_STATE, "Connecting");
 	[737] IUISystem::getInstance()->setData(UI_UICONNECTIONCOMP_STATE, "Offline");
-	[864] IUISystem::getInstance()->setData(UI_UICONNECTIONCOMP_STATE, "Offline");
 	[203] IUISystem::getInstance()->getData(UI_UICONNECTIONCOMP_STATE, blazeOnline);
 2090134834 - UI_UICONNECTIONCOMP_STATSREQUESTDONE
 	[39] <field name="DataKey">2090134834</field>
@@ -838,18 +828,18 @@
 	[238] IUISystem::getInstance()->setDataValue(UI_UICUSTOMIZATIONCOMP_HIGHLIGHTEDITEM, -1);
 	[420] IUISystem::getInstance()->setDataValue(UI_UICUSTOMIZATIONCOMP_HIGHLIGHTEDITEM, deepLinkItem);
 	[327] int highlightedItemIdentifier = UIScreenUtil::getDataInt(UI_UICUSTOMIZATIONCOMP_HIGHLIGHTEDITEM, -1);
-	[454] int highlightedItemIdentifier = UIScreenUtil::getDataInt(UI_UICUSTOMIZATIONCOMP_HIGHLIGHTEDITEM, -1);
-	[266] case UI_UICUSTOMIZATIONCOMP_HIGHLIGHTEDITEM :
-	[526] int highlightedItemIdentifier = UIScreenUtil::getDataInt(UI_UICUSTOMIZATIONCOMP_HIGHLIGHTEDITEM, -1);
 	[204] int highlightedItemIdentifier = UIScreenUtil::getDataInt(UI_UICUSTOMIZATIONCOMP_HIGHLIGHTEDITEM, -1);
+	[454] int highlightedItemIdentifier = UIScreenUtil::getDataInt(UI_UICUSTOMIZATIONCOMP_HIGHLIGHTEDITEM, -1);
+	[526] int highlightedItemIdentifier = UIScreenUtil::getDataInt(UI_UICUSTOMIZATIONCOMP_HIGHLIGHTEDITEM, -1);
+	[266] case UI_UICUSTOMIZATIONCOMP_HIGHLIGHTEDITEM :
 1901064476 - UI_UICUSTOMIZATIONCOMP_HIGHLIGHTEDSLOT
 	[714] const uint highLightedSlot = UIScreenUtil::getDataInt(UI_UICUSTOMIZATIONCOMP_HIGHLIGHTEDSLOT, 0);
 	[237] IUISystem::getInstance()->setDataValue(UI_UICUSTOMIZATIONCOMP_HIGHLIGHTEDSLOT, m_currentSlot);
 	[418] IUISystem::getInstance()->setDataValue(UI_UICUSTOMIZATIONCOMP_HIGHLIGHTEDSLOT, m_currentSlot);
 	[285] uint selectedSlot = UIScreenUtil::getDataAsInt(UI_UICUSTOMIZATIONCOMP_HIGHLIGHTEDSLOT, 0);
+	[195] uint selectedSlot = UIScreenUtil::getDataAsInt(UI_UICUSTOMIZATIONCOMP_HIGHLIGHTEDSLOT, 0);
 	[364] uint selectedSlot = UIScreenUtil::getDataAsInt(UI_UICUSTOMIZATIONCOMP_HIGHLIGHTEDSLOT, 0);
 	[497] CustomizationKitsSlot selectedSlot = (CustomizationKitsSlot)UIScreenUtil::getDataAsInt(UI_UICUSTOMIZATIONCOMP_HIGHLIGHTEDSLOT, 0);
-	[195] uint selectedSlot = UIScreenUtil::getDataAsInt(UI_UICUSTOMIZATIONCOMP_HIGHLIGHTEDSLOT, 0);
 478890960 - UI_UICUSTOMIZATIONCOMP_ISITEMLISTOPEN
 	[1435] <field name="DataKey">478890960</field>
 	[2239] <field name="DataKey">478890960</field>
@@ -900,10 +890,10 @@
 	[416] IUISystem::getInstance()->setDataValue(UI_UICUSTOMIZATIONCOMP_SELECTEDSTATE, m_currentState);
 	[306] CustomizationState selectedState = (CustomizationState)UIScreenUtil::getDataInt(UI_UICUSTOMIZATIONCOMP_SELECTEDSTATE, 0);
 	[280] int selectedState = UIScreenUtil::getDataAsInt(UI_UICUSTOMIZATIONCOMP_SELECTEDSTATE, 0);
-	[359] int selectedState = UIScreenUtil::getDataAsInt(UI_UICUSTOMIZATIONCOMP_SELECTEDSTATE, 0);
-	[272] uint selectedState = UIScreenUtil::getDataInt(UI_UICUSTOMIZATIONCOMP_SELECTEDSTATE, 0);
-	[492] int selectedState = UIScreenUtil::getDataAsInt(UI_UICUSTOMIZATIONCOMP_SELECTEDSTATE, 0);
 	[193] CustomizationState selectedState = (CustomizationState)UIScreenUtil::getDataAsInt(UI_UICUSTOMIZATIONCOMP_SELECTEDSTATE, 0);
+	[359] int selectedState = UIScreenUtil::getDataAsInt(UI_UICUSTOMIZATIONCOMP_SELECTEDSTATE, 0);
+	[492] int selectedState = UIScreenUtil::getDataAsInt(UI_UICUSTOMIZATIONCOMP_SELECTEDSTATE, 0);
+	[272] uint selectedState = UIScreenUtil::getDataInt(UI_UICUSTOMIZATIONCOMP_SELECTEDSTATE, 0);
 1651935255 - UI_UICUSTOMIZATIONCOMP_SELECTEDTAB
 	[236] IUISystem::getInstance()->setDataValue(UI_UICUSTOMIZATIONCOMP_SELECTEDTAB, m_currentTab);
 	[241] IUISystem::getInstance()->refreshData(UI_UICUSTOMIZATIONCOMP_SELECTEDTAB);
@@ -912,10 +902,10 @@
 	[349] uint selectedVehicle = UIScreenUtil::getDataInt(UI_UICUSTOMIZATIONCOMP_SELECTEDTAB, 0);
 	[290] uint selectedTab = UIScreenUtil::getDataAsInt(UI_UICUSTOMIZATIONCOMP_SELECTEDTAB, 0);
 	[297] CustomizationKitsTab selectedKit = (CustomizationKitsTab)UIScreenUtil::getDataAsInt(UI_UICUSTOMIZATIONCOMP_SELECTEDTAB, 0);
-	[363] CustomizationKitsTab selectedKit = (CustomizationKitsTab)UIScreenUtil::getDataAsInt(UI_UICUSTOMIZATIONCOMP_SELECTEDTAB, 0);
-	[273] uint selectedTab = UIScreenUtil::getDataInt(UI_UICUSTOMIZATIONCOMP_SELECTEDTAB, 0);
-	[496] CustomizationKitsTab selectedKit = (CustomizationKitsTab)UIScreenUtil::getDataAsInt(UI_UICUSTOMIZATIONCOMP_SELECTEDTAB, 0);
 	[194] uint selectedTab  = UIScreenUtil::getDataAsInt(UI_UICUSTOMIZATIONCOMP_SELECTEDTAB, 0);
+	[363] CustomizationKitsTab selectedKit = (CustomizationKitsTab)UIScreenUtil::getDataAsInt(UI_UICUSTOMIZATIONCOMP_SELECTEDTAB, 0);
+	[496] CustomizationKitsTab selectedKit = (CustomizationKitsTab)UIScreenUtil::getDataAsInt(UI_UICUSTOMIZATIONCOMP_SELECTEDTAB, 0);
+	[273] uint selectedTab = UIScreenUtil::getDataInt(UI_UICUSTOMIZATIONCOMP_SELECTEDTAB, 0);
 -334445011 - UI_UICUSTOMIZATIONCOMP_SUPPLYCRATEKIT
 	[626] <field name="DataKey">-334445011</field>
 	[637] <field name="DataKey">-334445011</field>
@@ -974,10 +964,7 @@
 	[1053] bfui->setData(UI_UIDETAILEDSERVERINFOCOMP_CURRENTGAMEMODE, "");
 	[54] UITwoLinerWidget::setLines(getScreen(), "ModeName", "ID_M_CURRENT_MODE", UI_UIDETAILEDSERVERINFOCOMP_CURRENTGAMEMODE);
 1806929722 - UI_UIDETAILEDSERVERINFOCOMP_CURRENTMAP
-	[76] UITwoLinerWidget::setLines(getScreen(), "CurrentMap", "ID_M_RSP_CURRENTMAP", UI_UIDETAILEDSERVERINFOCOMP_CURRENTMAPSTRING, true, false);
-	[577] IUISystem::getInstance()->setData(UI_UIDETAILEDSERVERINFOCOMP_CURRENTMAPSTRING, mapName);
 	[511] bfui->setData(UI_UIDETAILEDSERVERINFOCOMP_CURRENTMAP, levelDescriptionAsset ? levelDescriptionAsset->getDescription().getName().c_str() : "");
-	[991] setMapString(UI_UIDETAILEDSERVERINFOCOMP_CURRENTMAPSTRING, currentMapIndex);
 	[1052] bfui->setData(UI_UIDETAILEDSERVERINFOCOMP_CURRENTMAP, "");
 	[53] UITwoLinerWidget::setLines(getScreen(), "MapName", "ID_M_CURRENT_MAP", UI_UIDETAILEDSERVERINFOCOMP_CURRENTMAP);
 -1633636785 - UI_UIDETAILEDSERVERINFOCOMP_CURRENTMAPSTRING
@@ -988,9 +975,9 @@
 -787786429 - UI_UIDETAILEDSERVERINFOCOMP_DOWNLOADERROR
 	[3679] <field name="DataKey">-787786429</field>
 	[795] IUISystem::getInstance()->setData(UI_UIDETAILEDSERVERINFOCOMP_DOWNLOADERROR, true);
-	[340] IUISystem::getInstance()->setData(UI_UIDETAILEDSERVERINFOCOMP_DOWNLOADERROR, false);
 	[1442] IUISystem::getInstance()->setData(UI_UIDETAILEDSERVERINFOCOMP_DOWNLOADERROR, false);
 	[2595] IUISystem::getInstance()->setData(UI_UIDETAILEDSERVERINFOCOMP_DOWNLOADERROR, false);
+	[340] IUISystem::getInstance()->setData(UI_UIDETAILEDSERVERINFOCOMP_DOWNLOADERROR, false);
 	[297] bfui->setData(UI_UIDETAILEDSERVERINFOCOMP_DOWNLOADERROR, true);
 -825709519 - UI_UIDETAILEDSERVERINFOCOMP_EXPERIENCE
 	[521] bfui->setData(UI_UIDETAILEDSERVERINFOCOMP_EXPERIENCE, uiDetailedServerInfoComp::getExperienceSID(m_detailedServerInfo.getExperience()));
@@ -1057,10 +1044,7 @@
 	[1049] bfui->setData(UI_UIDETAILEDSERVERINFOCOMP_PERSISTENTGAMEID, "");
 	[229] IUISystem::getInstance()->getData(UI_UIDETAILEDSERVERINFOCOMP_PERSISTENTGAMEID, data);
 -1940100321 - UI_UIDETAILEDSERVERINFOCOMP_PING
-	[111] const UITextureInfo* texture = getScreen().getTexture(UIScreenUtil::getDataAndConvertToString(UI_UIDETAILEDSERVERINFOCOMP_PINGRIME), ResourceCompartment_Frontend);
 	[1096] bfui->setData(UI_UIDETAILEDSERVERINFOCOMP_PING, pingImage->getImagePath().c_str());
-	[1099] bfui->setData(UI_UIDETAILEDSERVERINFOCOMP_PINGRIME, ping.c_str());
-	[151] const UITextureInfo* texture = getScreen().getTexture(UIScreenUtil::getDataAndConvertToString(UI_UIDETAILEDSERVERINFOCOMP_PINGRIME), ResourceCompartment_Frontend);
 -325272148 - UI_UIDETAILEDSERVERINFOCOMP_PINGRIME
 	[111] const UITextureInfo* texture = getScreen().getTexture(UIScreenUtil::getDataAndConvertToString(UI_UIDETAILEDSERVERINFOCOMP_PINGRIME), ResourceCompartment_Frontend);
 	[1099] bfui->setData(UI_UIDETAILEDSERVERINFOCOMP_PINGRIME, ping.c_str());
@@ -1099,25 +1083,17 @@
 	[105] <field name="DataKey">1153159177</field>
 	[214] IUISystem::getInstance()->setData(UI_UIDETAILEDSERVERINFOCOMP_SERVERINFOLAYERVISIBLE, isInFocus(listWidget));
 938741515 - UI_UIDETAILEDSERVERINFOCOMP_SERVEROWNER
-	[523] bfui->setData(UI_UIDETAILEDSERVERINFOCOMP_SERVEROWNERID, owner.c_str());
 	[554] bfui->setData(UI_UIDETAILEDSERVERINFOCOMP_SERVEROWNER, owner.c_str());
 	[1058] bfui->setData(UI_UIDETAILEDSERVERINFOCOMP_SERVEROWNER, "");
 	[60] UITwoLinerWidget::setLines(getScreen(), "Owner", "ID_M_SERVEROWNER", UI_UIDETAILEDSERVERINFOCOMP_SERVEROWNER);
-	[105] IUISystem::getInstance()->getData(UI_UIDETAILEDSERVERINFOCOMP_SERVEROWNERID, data3);
-	[109] showGamerCard(UI_UIDETAILEDSERVERINFOCOMP_SERVEROWNERID);
 87290918 - UI_UIDETAILEDSERVERINFOCOMP_SERVEROWNERID
 	[523] bfui->setData(UI_UIDETAILEDSERVERINFOCOMP_SERVEROWNERID, owner.c_str());
 	[105] IUISystem::getInstance()->getData(UI_UIDETAILEDSERVERINFOCOMP_SERVEROWNERID, data3);
 	[109] showGamerCard(UI_UIDETAILEDSERVERINFOCOMP_SERVEROWNERID);
 -2053245742 - UI_UIDETAILEDSERVERINFOCOMP_SERVERTYPE
 	[276] <field name="DataKey">-2053245742</field>
-	[434] case UI_UIDETAILEDSERVERINFOCOMP_SERVERTYPEIMAGENAME:
 	[519] bfui->setData(UI_UIDETAILEDSERVERINFOCOMP_SERVERTYPE, serverType);
-	[520] bfui->setData(UI_UIDETAILEDSERVERINFOCOMP_SERVERTYPEDESCRIPTION, serverTypeDescription);
 	[1055] bfui->setData(UI_UIDETAILEDSERVERINFOCOMP_SERVERTYPE, "");
-	[1056] bfui->setData(UI_UIDETAILEDSERVERINFOCOMP_SERVERTYPEDESCRIPTION, "");
-	[172] const UITextureInfo* texture = getScreen().getTexture(UIScreenUtil::getDataAndConvertToString(UI_UIDETAILEDSERVERINFOCOMP_SERVERTYPEIMAGENAME), ResourceCompartment_Game);
-	[174] texture = getScreen().getTexture(UIScreenUtil::getDataAndConvertToString(UI_UIDETAILEDSERVERINFOCOMP_SERVERTYPEIMAGENAME), ResourceCompartment_Frontend);
 1242223956 - UI_UIDETAILEDSERVERINFOCOMP_SERVERTYPEDESCRIPTION
 	[303] <field name="DataKey">1242223956</field>
 	[520] bfui->setData(UI_UIDETAILEDSERVERINFOCOMP_SERVERTYPEDESCRIPTION, serverTypeDescription);
@@ -1195,7 +1171,6 @@
 	[206] <field name="DataKey">-966105726</field>
 	[147] <field name="DataKey">-966105726</field>
 	[138] case UI_UIENDOFROUNDCOMP_AWARDS:
-	[183] case UI_UIENDOFROUNDCOMP_AWARDSCORE:
 404947769 - UI_UIENDOFROUNDCOMP_AWARDSCORE
 	[61] <field name="DataKey">404947769</field>
 	[183] case UI_UIENDOFROUNDCOMP_AWARDSCORE:
@@ -1233,11 +1208,11 @@
 	[55] <field name="DataKey">-1035749490</field>
 	[179] case UI_UIENDOFROUNDCOMP_COMBATSCORE:
 -1159267695 - UI_UIENDOFROUNDCOMP_CURRENTLEVELSID
+	[151] <field name="DataKey">-1159267695</field>
+	[163] <field name="DataKey">-1159267695</field>
 	[86] <field name="DataKey">-1159267695</field>
 	[151] <field name="DataKey">-1159267695</field>
-	[151] <field name="DataKey">-1159267695</field>
 	[146] <field name="DataKey">-1159267695</field>
-	[163] <field name="DataKey">-1159267695</field>
 	[500] case UI_UIENDOFROUNDCOMP_CURRENTLEVELSID:
 -1889958520 - UI_UIENDOFROUNDCOMP_CURRENTRANKIMAGE
 	[169] <field name="DataKey">-1889958520</field>
@@ -1296,7 +1271,6 @@
 1809513057 - UI_UIENDOFROUNDCOMP_KILLS
 	[79] <field name="DataKey">1809513057</field>
 	[199] case UI_UIENDOFROUNDCOMP_KILLS:
-	[290] case UI_UIENDOFROUNDCOMP_KILLSPERMINUTE:
 -90750072 - UI_UIENDOFROUNDCOMP_KILLSPERMINUTE
 	[115] <field name="DataKey">-90750072</field>
 	[290] case UI_UIENDOFROUNDCOMP_KILLSPERMINUTE:
@@ -1362,6 +1336,13 @@
 	[39] <field name="DataKey">440278732</field>
 	[270] case UI_UIENDOFROUNDCOMP_ROUNDDURATION:
 913405464 - UI_UIENDOFROUNDCOMP_ROUNDOUTCOME
+	[57] <field name="DataKey">913405464</field>
+	[93] <field name="DataKey">913405464</field>
+	[493] <field name="DataKey">913405464</field>
+	[529] <field name="DataKey">913405464</field>
+	[60] <field name="DataKey">913405464</field>
+	[232] <field name="DataKey">913405464</field>
+	[746] <field name="DataKey">913405464</field>
 	[411] <field name="DataKey">913405464</field>
 	[431] <field name="DataKey">913405464</field>
 	[507] <field name="DataKey">913405464</field>
@@ -1370,17 +1351,10 @@
 	[93] <field name="DataKey">913405464</field>
 	[483] <field name="DataKey">913405464</field>
 	[533] <field name="DataKey">913405464</field>
-	[57] <field name="DataKey">913405464</field>
-	[93] <field name="DataKey">913405464</field>
-	[493] <field name="DataKey">913405464</field>
-	[529] <field name="DataKey">913405464</field>
 	[58] <field name="DataKey">913405464</field>
 	[91] <field name="DataKey">913405464</field>
 	[575] <field name="DataKey">913405464</field>
 	[625] <field name="DataKey">913405464</field>
-	[60] <field name="DataKey">913405464</field>
-	[232] <field name="DataKey">913405464</field>
-	[746] <field name="DataKey">913405464</field>
 	[88] const char* outcome = UIScreenUtil::getDataString(UI_UIENDOFROUNDCOMP_ROUNDOUTCOME);
 	[532] case UI_UIENDOFROUNDCOMP_ROUNDOUTCOME:
 -1359971741 - UI_UIENDOFROUNDCOMP_ROUNDSTARTRANKIMAGE
@@ -1427,7 +1401,6 @@
 	[97] <field name="DataKey">676250387</field>
 	[136] <field name="DataKey">676250387</field>
 	[132] case UI_UIENDOFROUNDCOMP_UNLOCKS:
-	[189] case UI_UIENDOFROUNDCOMP_UNLOCKSCORE:
 	[737] case UI_UIENDOFROUNDCOMP_UNLOCKS:
 	[770] if(key == UI_UIENDOFROUNDCOMP_UNLOCKS)
 1764531432 - UI_UIENDOFROUNDCOMP_UNLOCKSCORE
@@ -1474,8 +1447,8 @@
 	[56] IUISystem::getInstance()->setData(UI_UIHARDCORECOMP_NO3DSPOTTING, Settings<SyncedBFSettings>()->getNo3dSpotting());
 	[84] case UI_UIHARDCORECOMP_NO3DSPOTTING:
 -1458087320 - UI_UIHARDCORECOMP_NOHUD
-	[334] <field name="DataKey">-1458087320</field>
 	[360] <field name="DataKey">-1458087320</field>
+	[334] <field name="DataKey">-1458087320</field>
 	[6043] <field name="DataKey">-1458087320</field>
 	[54] IUISystem::getInstance()->setData(UI_UIHARDCORECOMP_NOHUD, Settings<SyncedBFSettings>()->getNoHud());
 	[71] case UI_UIHARDCORECOMP_NOHUD:
@@ -1484,9 +1457,7 @@
 -1240988626 - UI_UIHARDCORECOMP_NOMINIMAP
 	[6060] <field name="DataKey">-1240988626</field>
 	[53] IUISystem::getInstance()->setData(UI_UIHARDCORECOMP_NOMINIMAP, Settings<SyncedBFSettings>()->getNoMinimap());
-	[55] IUISystem::getInstance()->setData(UI_UIHARDCORECOMP_NOMINIMAPSPOTTING, Settings<SyncedBFSettings>()->getNoMinimapSpotting());
 	[66] case UI_UIHARDCORECOMP_NOMINIMAP:
-	[79] case UI_UIHARDCORECOMP_NOMINIMAPSPOTTING:
 1493588194 - UI_UIHARDCORECOMP_NOMINIMAPSPOTTING
 	[55] IUISystem::getInstance()->setData(UI_UIHARDCORECOMP_NOMINIMAPSPOTTING, Settings<SyncedBFSettings>()->getNoMinimapSpotting());
 	[79] case UI_UIHARDCORECOMP_NOMINIMAPSPOTTING:
@@ -1524,8 +1495,8 @@
 1097112106 - UI_UIIMCOMP_MENUWANTSINPUT
 	[35] <field name="DataKey">1097112106</field>
 	[35] <field name="DataKey">1097112106</field>
-	[355] <field name="DataKey">1097112106</field>
 	[378] <field name="DataKey">1097112106</field>
+	[355] <field name="DataKey">1097112106</field>
 	[1231] <field name="DataKey">1097112106</field>
 	[2773] <field name="DataKey">1097112106</field>
 	[223] <field name="DataKey">1097112106</field>
@@ -1617,10 +1588,10 @@
 1448673452 - UI_UIIMCOMP_SUPPRESSLOADINGICON
 	[1961] <field name="DataKey">1448673452</field>
 	[1978] <field name="DataKey">1448673452</field>
-	[35] IUISystem::getInstance()->setData(UI_UIIMCOMP_SUPPRESSLOADINGICON, false);
-	[231] bool suppressLoadingIcon = UIScreenUtil::getDataBool(UI_UIIMCOMP_SUPPRESSLOADINGICON, false);
 	[80] ui->setData(UI_UIIMCOMP_SUPPRESSLOADINGICON, false);
 	[336] ui->setData(UI_UIIMCOMP_SUPPRESSLOADINGICON, true);
+	[35] IUISystem::getInstance()->setData(UI_UIIMCOMP_SUPPRESSLOADINGICON, false);
+	[231] bool suppressLoadingIcon = UIScreenUtil::getDataBool(UI_UIIMCOMP_SUPPRESSLOADINGICON, false);
 -836926977 - UI_UIIMCOMP_WEAPONCRATEACTIVE
 	[314] <field name="DataKey">-836926977</field>
 	[344] <field name="DataKey">-836926977</field>
@@ -1646,7 +1617,6 @@
 	[165] IUISystem::getInstance()->setData(UI_UIINSTALLHDCONTENTCOMP_INSTALLATIONCOMPLETESTATE, result ? "SUCCESS" : "FAILED");
 108202001 - UI_UIINSTALLHDCONTENTCOMP_INSTALLATIONPROGRESS
 	[151] IUISystem::getInstance()->setData(UI_UIINSTALLHDCONTENTCOMP_INSTALLATIONPROGRESS, progress);
-	[158] IUISystem::getInstance()->setData(UI_UIINSTALLHDCONTENTCOMP_INSTALLATIONPROGRESSDESC, buffer);
 -1710169312 - UI_UIINSTALLHDCONTENTCOMP_INSTALLATIONPROGRESSDESC
 	[75] <field name="DataKey">-1710169312</field>
 	[158] IUISystem::getInstance()->setData(UI_UIINSTALLHDCONTENTCOMP_INSTALLATIONPROGRESSDESC, buffer);
@@ -1712,9 +1682,9 @@
 	[153] IUISystem::getInstance()->setData(UI_UIKILLCARDCOMP_KILLEDBYTEAMMATE, false);
 	[247] IUISystem::getInstance()->setData(UI_UIKILLCARDCOMP_KILLEDBYTEAMMATE, true);
 494406840 - UI_UIKILLCARDCOMP_KILLEDINACTION
-	[27] <field name="DataKey">494406840</field>
 	[26] <field name="DataKey">494406840</field>
 	[59] <field name="DataKey">494406840</field>
+	[27] <field name="DataKey">494406840</field>
 	[151] IUISystem::getInstance()->setData(UI_UIKILLCARDCOMP_KILLEDINACTION, false);
 	[177] IUISystem::getInstance()->setData(UI_UIKILLCARDCOMP_KILLEDINACTION, true);
 	[266] IUISystem::getInstance()->setData(UI_UIKILLCARDCOMP_KILLEDINACTION, true);
@@ -1738,7 +1708,6 @@
 	[713] <field name="DataKey">124914347</field>
 	[740] <field name="DataKey">124914347</field>
 	[294] IUISystem::getInstance()->setData(UI_UIKILLCARDCOMP_KILLERHEALTH, killerHealth);
-	[295] IUISystem::getInstance()->setData(UI_UIKILLCARDCOMP_KILLERHEALTHREAL, killerHealthReal);
 833041105 - UI_UIKILLCARDCOMP_KILLERHEALTHREAL
 	[295] IUISystem::getInstance()->setData(UI_UIKILLCARDCOMP_KILLERHEALTHREAL, killerHealthReal);
 1275929409 - UI_UIKILLCARDCOMP_KILLERKIT
@@ -1749,7 +1718,6 @@
 	[92] <field name="DataKey">1275929409</field>
 	[132] <field name="DataKey">1275929409</field>
 	[296] IUISystem::getInstance()->setData(UI_UIKILLCARDCOMP_KILLERKIT, killerKit.c_str());
-	[304] IUISystem::getInstance()->setData(UI_UIKILLCARDCOMP_KILLERKITSERVICESTARS, killerKitServiceStars);
 445690491 - UI_UIKILLCARDCOMP_KILLERKITSERVICESTARS
 	[304] IUISystem::getInstance()->setData(UI_UIKILLCARDCOMP_KILLERKITSERVICESTARS, killerKitServiceStars);
 -844242640 - UI_UIKILLCARDCOMP_KILLERNAME
@@ -1768,7 +1736,6 @@
 	[299] IUISystem::getInstance()->setData(UI_UIKILLCARDCOMP_KILLERPLAYERKILLS, killerPlayerKills);
 -844960959 - UI_UIKILLCARDCOMP_KILLERRANK
 	[298] IUISystem::getInstance()->setData(UI_UIKILLCARDCOMP_KILLERRANK, killerRank);
-	[303] IUISystem::getInstance()->setData(UI_UIKILLCARDCOMP_KILLERRANKIMAGEPATH, killerRankImage.c_str());
 -1353766805 - UI_UIKILLCARDCOMP_KILLERRANKIMAGEPATH
 	[16] <field name="BitmapNameDataKey">-1353766805</field>
 	[1086] <field name="DataKey">-1353766805</field>
@@ -1904,9 +1871,6 @@
 	[91] <field name="CurrentValueData">1935098548</field>
 	[92] <field name="MaxValueData">1935098548</field>
 	[87] system->setData(UI_UIKILLCOUNTERCOMP_ENEMYTEAMKILLS, teamKills);
--1311541044 - UI_UIKILLCOUNTERCOMP_PLAYERTEAM
-	[80] system->setData(UI_UIKILLCOUNTERCOMP_PLAYERTEAMKILLS, teamKills);
-	[81] system->setData(UI_UIKILLCOUNTERCOMP_PLAYERTEAMMAXKILLS, maxTeamKills);
 -1885752899 - UI_UIKILLCOUNTERCOMP_PLAYERTEAMKILLS
 	[363] <field name="DataKey">-1885752899</field>
 	[256] <field name="DataKey">-1885752899</field>
@@ -1934,8 +1898,6 @@
 1947948292 - UI_UILEADERBOARDCOMP_LEADERBOARDDATA
 	[206] <field name="DataKey">1947948292</field>
 	[215] case UI_UILEADERBOARDCOMP_LEADERBOARDDATA:
-	[233] case UI_UILEADERBOARDCOMP_LEADERBOARDDATACOOP:
-	[781] IUISystem::getInstance()->refreshData(UI_UILEADERBOARDCOMP_LEADERBOARDDATACOOP);
 	[782] IUISystem::getInstance()->refreshData(UI_UILEADERBOARDCOMP_LEADERBOARDDATA);
 204210391 - UI_UILEADERBOARDCOMP_LEADERBOARDDATACOOP
 	[233] case UI_UILEADERBOARDCOMP_LEADERBOARDDATACOOP:
@@ -1948,8 +1910,6 @@
 	[551] <field name="DataKey">-1927452773</field>
 	[767] <field name="DataKey">-1927452773</field>
 	[254] case UI_UILEADERBOARDCOMP_LOCALPLAYERDATA:
-	[271] case UI_UILEADERBOARDCOMP_LOCALPLAYERDATACOOP:
-	[783] IUISystem::getInstance()->refreshData(UI_UILEADERBOARDCOMP_LOCALPLAYERDATACOOP);
 	[784] IUISystem::getInstance()->refreshData(UI_UILEADERBOARDCOMP_LOCALPLAYERDATA);
 642384840 - UI_UILEADERBOARDCOMP_LOCALPLAYERDATACOOP
 	[271] case UI_UILEADERBOARDCOMP_LOCALPLAYERDATACOOP:
@@ -1989,7 +1949,6 @@
 -1633950179 - UI_UILEVELCOMP_CURRENTLEVEL
 	[2009] <field name="DataKey">-1633950179</field>
 	[177] case UI_UILEVELCOMP_CURRENTLEVEL:
-	[186] case UI_UILEVELCOMP_CURRENTLEVELSID:
 1525343363 - UI_UILEVELCOMP_CURRENTLEVELSID
 	[61] <field name="DataKey">1525343363</field>
 	[186] case UI_UILEVELCOMP_CURRENTLEVELSID:
@@ -2120,16 +2079,14 @@
 	[949] int objectivesCount = UIScreenUtil::getDataInt(UI_UILIFECOUNTERCOMP_OBJECTIVESTOTAL);
 -1904486575 - UI_UILIFECOUNTERCOMP_REVIVEAMOUNT
 	[602] <field name="DataKey">-1904486575</field>
-	[1002] <field name="DataKey">-1904486575</field>
 	[591] <field name="DataKey">-1904486575</field>
+	[1002] <field name="DataKey">-1904486575</field>
 	[518] system->setData(UI_UILIFECOUNTERCOMP_REVIVEAMOUNT, player->getExtent<VeniceClientPlayerExtent>().isReviveAllowed() ? 1 : 0);
 469493999 - UI_UILIFECOUNTERCOMP_TEAM1ISATTACKER
 	[515] system->setData(UI_UILIFECOUNTERCOMP_TEAM1ISATTACKER, lifeCounterTeam == Team1 ? isAttacker : !isAttacker);
 351649346 - UI_UIMANAGEMAPSCOMP_ADDMAPSETTINGSCURRENTSELECTED
 	[251] <field name="DataKey">351649346</field>
 	[862] <field name="DataKey">351649346</field>
-	[68] IUISystem::getInstance()->setData(UI_UIMANAGEMAPSCOMP_ADDMAPSETTINGSCURRENTSELECTEDINDEX, 0);
-	[708] IUISystem::getInstance()->setData(UI_UIMANAGEMAPSCOMP_ADDMAPSETTINGSCURRENTSELECTEDINDEX, 1, UINotifyType_Always);
 1232779772 - UI_UIMANAGEMAPSCOMP_ADDMAPSETTINGSCURRENTSELECTEDINDEX
 	[746] <field name="DataKey">1232779772</field>
 	[68] IUISystem::getInstance()->setData(UI_UIMANAGEMAPSCOMP_ADDMAPSETTINGSCURRENTSELECTEDINDEX, 0);
@@ -2160,18 +2117,6 @@
 	[2092] <field name="DataKey">-1340028929</field>
 1473377850 - UI_UIMANAGEMAPSCOMP_CURRENTSELECTED
 	[332] <field name="DataKey">1473377850</field>
-	[169] case UI_UIMANAGEMAPSCOMP_CURRENTSELECTEDEXPERIENCEINDEX:
-	[271] case UI_UIMANAGEMAPSCOMP_CURRENTSELECTEDEXPERIENCETYPE:
-	[492] IUISystem::getInstance()->setData(UI_UIMANAGEMAPSCOMP_CURRENTSELECTEDPRESETINDEX, m_currentSelectedPresetIndex);
-	[651] IUISystem::getInstance()->setData(UI_UIMANAGEMAPSCOMP_CURRENTSELECTEDMAPROTATIONITEM, 0, UINotifyType_Always);
-	[762] IUISystem::getInstance()->getData(UI_UIMANAGEMAPSCOMP_CURRENTSELECTEDMAP, mapEntryValue);
-	[778] IUISystem::getInstance()->setData(UI_UIMANAGEMAPSCOMP_CURRENTSELECTEDMAPROTATIONITEM, newHighlightedIndex, UINotifyType_Always);
-	[789] IUISystem::getInstance()->getData(UI_UIMANAGEMAPSCOMP_CURRENTSELECTEDMAPITEM, mapEntry);
-	[810] IUISystem::getInstance()->setData(UI_UIMANAGEMAPSCOMP_CURRENTSELECTEDMAPROTATIONITEM, newHighlightedIndex, UINotifyType_Always);
-	[869] IUISystem::getInstance()->setData(UI_UIMANAGEMAPSCOMP_CURRENTSELECTEDMAPROTATIONITEM, newHighlightedIndex, UINotifyType_Always);
-	[875] IUISystem::getInstance()->setData(UI_UIMANAGEMAPSCOMP_CURRENTSELECTEDMAPROTATIONITEM, 0, UINotifyType_Always);
-	[1097] IUISystem::getInstance()->setData(UI_UIMANAGEMAPSCOMP_CURRENTSELECTEDGAMEMODEINDEX, highlightedIndex);
-	[1173] IUISystem::getInstance()->setData(UI_UIMANAGEMAPSCOMP_CURRENTSELECTEDMODINDEX, highlightedIndex);
 -2072739398 - UI_UIMANAGEMAPSCOMP_CURRENTSELECTEDEXPERIENCEINDEX
 	[698] <field name="DataKey">-2072739398</field>
 	[169] case UI_UIMANAGEMAPSCOMP_CURRENTSELECTEDEXPERIENCEINDEX:
@@ -2184,13 +2129,7 @@
 422899526 - UI_UIMANAGEMAPSCOMP_CURRENTSELECTEDMAP
 	[803] <field name="DataKey">422899526</field>
 	[881] <field name="DataKey">422899526</field>
-	[651] IUISystem::getInstance()->setData(UI_UIMANAGEMAPSCOMP_CURRENTSELECTEDMAPROTATIONITEM, 0, UINotifyType_Always);
 	[762] IUISystem::getInstance()->getData(UI_UIMANAGEMAPSCOMP_CURRENTSELECTEDMAP, mapEntryValue);
-	[778] IUISystem::getInstance()->setData(UI_UIMANAGEMAPSCOMP_CURRENTSELECTEDMAPROTATIONITEM, newHighlightedIndex, UINotifyType_Always);
-	[789] IUISystem::getInstance()->getData(UI_UIMANAGEMAPSCOMP_CURRENTSELECTEDMAPITEM, mapEntry);
-	[810] IUISystem::getInstance()->setData(UI_UIMANAGEMAPSCOMP_CURRENTSELECTEDMAPROTATIONITEM, newHighlightedIndex, UINotifyType_Always);
-	[869] IUISystem::getInstance()->setData(UI_UIMANAGEMAPSCOMP_CURRENTSELECTEDMAPROTATIONITEM, newHighlightedIndex, UINotifyType_Always);
-	[875] IUISystem::getInstance()->setData(UI_UIMANAGEMAPSCOMP_CURRENTSELECTEDMAPROTATIONITEM, 0, UINotifyType_Always);
 2100323603 - UI_UIMANAGEMAPSCOMP_CURRENTSELECTEDMAPITEM
 	[507] <field name="DataKey">2100323603</field>
 	[789] IUISystem::getInstance()->getData(UI_UIMANAGEMAPSCOMP_CURRENTSELECTEDMAPITEM, mapEntry);
@@ -2312,8 +2251,8 @@
 	[197] case UI_UIMANAGEMAPSCOMP_PRESETTYPEICONFRAME:
 	[504] IUISystem::getInstance()->refreshData(UI_UIMANAGEMAPSCOMP_PRESETTYPEICONFRAME);
 1632852758 - UI_UIMANAGEMAPSCOMP_SAVECOMPLETED
-	[1812] <field name="DataKey">1632852758</field>
 	[153] <field name="DataKey">1632852758</field>
+	[1812] <field name="DataKey">1632852758</field>
 	[452] IUISystem::getInstance()->setData(UI_UIMANAGEMAPSCOMP_SAVECOMPLETED, m_saveResult == RspResult_Success, UINotifyType_Always);
 -2145853627 - UI_UIMANAGEMAPSCOMP_SELECTORROW
 	[775] <field name="DataKey">-2145853627</field>
@@ -2343,7 +2282,6 @@
 -1839035672 - UI_UIMANAGEMAPSCOMP_SETTINGSTICKETS
 	[390] <field name="DataKey">-1839035672</field>
 -1774892903 - UI_UIMANAGEPLAYERSCOMP_BUTTONLAYOUT
-	[190] case UI_UIMANAGEPLAYERSCOMP_BUTTONLAYOUTFRONTEND:
 	[232] case UI_UIMANAGEPLAYERSCOMP_BUTTONLAYOUT:
 200718583 - UI_UIMANAGEPLAYERSCOMP_BUTTONLAYOUTFRONTEND
 	[183] <field name="DataKey">200718583</field>
@@ -2355,14 +2293,7 @@
 	[1032] <field name="DataKey">-1496508843</field>
 	[1316] <field name="DataKey">-1496508843</field>
 	[1620] <field name="DataKey">-1496508843</field>
-	[111] IUISystem::getInstance()->getData(UI_UIMANAGEPLAYERSCOMP_CURRENTSELECTEDPLAYER, playerValue);
 	[120] uiSystem->getData(UI_UIMANAGEPLAYERSCOMP_CURRENTSELECTED, listType);
-	[203] IUISystem::getInstance()->getData(UI_UIMANAGEPLAYERSCOMP_CURRENTSELECTEDPLAYER, playerValue);
-	[255] IUISystem::getInstance()->getData(UI_UIMANAGEPLAYERSCOMP_CURRENTSELECTEDPLAYER, nameId);
-	[304] IUISystem::getInstance()->getData(UI_UIMANAGEPLAYERSCOMP_CURRENTSELECTEDPLAYER, nameId);
-	[126] UIServerInfoWidget::showGamerCard(UI_UIMANAGEPLAYERSCOMP_CURRENTSELECTEDPLAYER);		// TODO: Refactor, no data value is needed
-	[188] IUISystem::getInstance()->setData(UI_UIMANAGEPLAYERSCOMP_CURRENTSELECTEDPLAYER, text);		// TODO: Refactor, no data value is needed
-	[1923] IUISystem::getInstance()->getData(UI_UIMANAGEPLAYERSCOMP_CURRENTSELECTEDPLAYER, nameId);
 505605062 - UI_UIMANAGEPLAYERSCOMP_CURRENTSELECTEDPLAYER
 	[738] <field name="DataKey">505605062</field>
 	[821] <field name="DataKey">505605062</field>
@@ -2371,13 +2302,13 @@
 	[203] IUISystem::getInstance()->getData(UI_UIMANAGEPLAYERSCOMP_CURRENTSELECTEDPLAYER, playerValue);
 	[255] IUISystem::getInstance()->getData(UI_UIMANAGEPLAYERSCOMP_CURRENTSELECTEDPLAYER, nameId);
 	[304] IUISystem::getInstance()->getData(UI_UIMANAGEPLAYERSCOMP_CURRENTSELECTEDPLAYER, nameId);
+	[1923] IUISystem::getInstance()->getData(UI_UIMANAGEPLAYERSCOMP_CURRENTSELECTEDPLAYER, nameId);
 	[126] UIServerInfoWidget::showGamerCard(UI_UIMANAGEPLAYERSCOMP_CURRENTSELECTEDPLAYER);		// TODO: Refactor, no data value is needed
 	[188] IUISystem::getInstance()->setData(UI_UIMANAGEPLAYERSCOMP_CURRENTSELECTEDPLAYER, text);		// TODO: Refactor, no data value is needed
-	[1923] IUISystem::getInstance()->getData(UI_UIMANAGEPLAYERSCOMP_CURRENTSELECTEDPLAYER, nameId);
 448595892 - UI_UIMANAGEPLAYERSCOMP_DEFAULTROW
-	[591] <field name="DataKey">448595892</field>
-	[446] <field name="DataKey">448595892</field>
 	[437] <field name="DataKey">448595892</field>
+	[446] <field name="DataKey">448595892</field>
+	[591] <field name="DataKey">448595892</field>
 	[683] IUISystem::getInstance()->setData(UI_UIMANAGEPLAYERSCOMP_DEFAULTROW, (int)-1, UINotifyType_Always);
 -522203497 - UI_UIMANAGEPLAYERSCOMP_GETSTATICPLAYERSINFOLIST
 	[419] <field name="DataKey">-522203497</field>
@@ -2414,9 +2345,9 @@
 	[118] <field name="DataKey">629151515</field>
 	[1027] IUISystem::getInstance()->setData(UI_UIMANAGEPLAYERSCOMP_REQUESTPENDING, m_pendingRequest != 0, UINotifyType_Always);
 1400479229 - UI_UIMANAGESERVERPRESETSCOMP_CURRENTSELECTEDPRESETINDEX
+	[659] <field name="DataKey">1400479229</field>
 	[2937] <field name="DataKey">1400479229</field>
 	[3114] <field name="DataKey">1400479229</field>
-	[659] <field name="DataKey">1400479229</field>
 	[766] IUISystem::getInstance()->setData(UI_UIMANAGESERVERPRESETSCOMP_CURRENTSELECTEDPRESETINDEX, m_currentSelectedPresetIndex);
 794982696 - UI_UIMANAGESERVERPRESETSCOMP_CURRENTSELECTEDTEMPLATEINDEX
 	[788] <field name="DataKey">794982696</field>
@@ -2450,21 +2381,14 @@
 	[189] IUISystem::getInstance()->refreshData(UI_UIMANAGESERVERPRESETSCOMP_PRESETLIST);
 	[314] case UI_UIMANAGESERVERPRESETSCOMP_PRESETLIST:
 -1897705291 - UI_UIMANAGESERVERPRESETSCOMP_PRESETSETTING
-	[225] <field name="DataKey">-1897705291</field>
 	[720] <field name="DataKey">-1897705291</field>
 	[1204] <field name="DataKey">-1897705291</field>
-	[190] IUISystem::getInstance()->refreshData(UI_UIMANAGESERVERPRESETSCOMP_PRESETSETTINGSLIST);
-	[322] case UI_UIMANAGESERVERPRESETSCOMP_PRESETSETTINGSLIST:
+	[225] <field name="DataKey">-1897705291</field>
 	[425] IUISystem::getInstance()->getData(UI_UIMANAGESERVERPRESETSCOMP_PRESETSETTING, pID);
-	[771] IUISystem::getInstance()->refreshData(UI_UIMANAGESERVERPRESETSCOMP_PRESETSETTINGSLIST);
 	[788] IUISystem::getInstance()->getData(UI_UIMANAGESERVERPRESETSCOMP_PRESETSETTING, pID);
-	[804] //IUISystem::getInstance()->refreshData(UI_UIMANAGESERVERPRESETSCOMP_PRESETSETTINGSLIST);
-	[823] IUISystem::getInstance()->refreshData(UI_UIMANAGESERVERPRESETSCOMP_PRESETSETTINGSLIST);
-	[886] IUISystem::getInstance()->refreshData(UI_UIMANAGESERVERPRESETSCOMP_PRESETSETTINGSLIST);
-	[903] IUISystem::getInstance()->refreshData(UI_UIMANAGESERVERPRESETSCOMP_PRESETSETTINGSLIST);
 -1846321436 - UI_UIMANAGESERVERPRESETSCOMP_PRESETSETTINGSLIST
-	[281] <field name="DataKey">-1846321436</field>
 	[431] <field name="DataKey">-1846321436</field>
+	[281] <field name="DataKey">-1846321436</field>
 	[190] IUISystem::getInstance()->refreshData(UI_UIMANAGESERVERPRESETSCOMP_PRESETSETTINGSLIST);
 	[322] case UI_UIMANAGESERVERPRESETSCOMP_PRESETSETTINGSLIST:
 	[771] IUISystem::getInstance()->refreshData(UI_UIMANAGESERVERPRESETSCOMP_PRESETSETTINGSLIST);
@@ -2497,8 +2421,8 @@
 1080700488 - UI_UIMANAGESERVERPRESETSCOMP_PRESETVALUE
 	[248] <field name="DataKey">1080700488</field>
 -586254966 - UI_UIMANAGESERVERPRESETSCOMP_SAVECOMPLETED
-	[1790] <field name="DataKey">-586254966</field>
 	[120] <field name="DataKey">-586254966</field>
+	[1790] <field name="DataKey">-586254966</field>
 	[261] IUISystem::getInstance()->setData(UI_UIMANAGESERVERPRESETSCOMP_SAVECOMPLETED, m_saveResult == RspResult_Success, UINotifyType_Always);
 -1710732232 - UI_UIMANAGESERVERPRESETSCOMP_SELECTORVALUE
 	[683] <field name="DataKey">-1710732232</field>
@@ -2542,25 +2466,23 @@
 	[122] IUISystem::getInstance()->setData(UI_UIMATCHCOMP_TIMELEFT, limit > 0 ? timeString.c_str() : "", fb::UINotifyType_Always);
 352340160 - UI_UIMATCHCOMP_TIMER
 	[225] <field name="DataKey">352340160</field>
+	[181] <field name="DataKey">352340160</field>
+	[193] <field name="DataKey">352340160</field>
 	[132] <field name="DataKey">352340160</field>
 	[196] <field name="DataKey">352340160</field>
-	[181] <field name="DataKey">352340160</field>
 	[191] <field name="DataKey">352340160</field>
-	[193] <field name="DataKey">352340160</field>
 	[438] <field name="DataKey">352340160</field>
 	[105] <field name="DataKey">352340160</field>
 	[1036] <field name="DataKey">352340160</field>
-	[96] IUISystem::getInstance()->setData(UI_UIMATCHCOMP_TIMERPREFIXSTRING, "ID_M_EOR_TIME_LEFT");
-	[101] IUISystem::getInstance()->setData(UI_UIMATCHCOMP_TIMERPREFIXSTRING, "ID_M_EOR_TIME_TOTAL");
 	[121] IUISystem::getInstance()->setData(UI_UIMATCHCOMP_TIMER, timeString.c_str(), fb::UINotifyType_Always);
 	[126] IUISystem::getInstance()->setData(UI_UIMATCHCOMP_TIMER, "", fb::UINotifyType_Always);
 1555567909 - UI_UIMATCHCOMP_TIMERPREFIXSTRING
 	[218] <field name="DataKey">1555567909</field>
+	[173] <field name="DataKey">1555567909</field>
+	[185] <field name="DataKey">1555567909</field>
 	[125] <field name="DataKey">1555567909</field>
 	[188] <field name="DataKey">1555567909</field>
-	[173] <field name="DataKey">1555567909</field>
 	[183] <field name="DataKey">1555567909</field>
-	[185] <field name="DataKey">1555567909</field>
 	[96] IUISystem::getInstance()->setData(UI_UIMATCHCOMP_TIMERPREFIXSTRING, "ID_M_EOR_TIME_LEFT");
 	[101] IUISystem::getInstance()->setData(UI_UIMATCHCOMP_TIMERPREFIXSTRING, "ID_M_EOR_TIME_TOTAL");
 710961946 - UI_UIMATCHCOMP_WARMUPCOUNTDOWN
@@ -2598,10 +2520,8 @@
 1030409358 - UI_UIMYSOLDIERASSIGNMENTSCOMP_MYSOLDIERSELECTEDASSIGNMENT
 	[642] <field name="DataKey">1030409358</field>
 	[276] case UI_UIMYSOLDIERASSIGNMENTSCOMP_MYSOLDIERSELECTEDASSIGNMENT:
-	[281] case UI_UIMYSOLDIERASSIGNMENTSCOMP_MYSOLDIERSELECTEDASSIGNMENTINFO:
 	[298] int selectedIndex = helpGetInt(!isLicenseTab ? UI_UIMYSOLDIERASSIGNMENTSCOMP_MYSOLDIERSELECTEDASSIGNMENT : UI_UIMYSOLDIERASSIGNMENTSCOMP_MYSOLDIERSELECTEDLICENSEASSIGNMENT);
 	[312] case UI_UIMYSOLDIERASSIGNMENTSCOMP_MYSOLDIERSELECTEDASSIGNMENT:
-	[313] IUISystem::getInstance()->refreshData(UI_UIMYSOLDIERASSIGNMENTSCOMP_MYSOLDIERSELECTEDASSIGNMENTINFO);
 1473406240 - UI_UIMYSOLDIERASSIGNMENTSCOMP_MYSOLDIERSELECTEDASSIGNMENTINFO
 	[512] <field name="DataKey">1473406240</field>
 	[281] case UI_UIMYSOLDIERASSIGNMENTSCOMP_MYSOLDIERSELECTEDASSIGNMENTINFO:
@@ -2609,11 +2529,8 @@
 -446245803 - UI_UIMYSOLDIERASSIGNMENTSCOMP_MYSOLDIERSELECTEDLICENSEASSIGNMENT
 	[629] <field name="DataKey">-446245803</field>
 	[277] case UI_UIMYSOLDIERASSIGNMENTSCOMP_MYSOLDIERSELECTEDLICENSEASSIGNMENT:
-	[282] case UI_UIMYSOLDIERASSIGNMENTSCOMP_MYSOLDIERSELECTEDLICENSEASSIGNMENTINFO:
-	[283] getMySoldierSelectedAssignmentInfo(dataValue, dataKey == UI_UIMYSOLDIERASSIGNMENTSCOMP_MYSOLDIERSELECTEDLICENSEASSIGNMENTINFO);
 	[298] int selectedIndex = helpGetInt(!isLicenseTab ? UI_UIMYSOLDIERASSIGNMENTSCOMP_MYSOLDIERSELECTEDASSIGNMENT : UI_UIMYSOLDIERASSIGNMENTSCOMP_MYSOLDIERSELECTEDLICENSEASSIGNMENT);
 	[315] case UI_UIMYSOLDIERASSIGNMENTSCOMP_MYSOLDIERSELECTEDLICENSEASSIGNMENT:
-	[316] IUISystem::getInstance()->refreshData(UI_UIMYSOLDIERASSIGNMENTSCOMP_MYSOLDIERSELECTEDLICENSEASSIGNMENTINFO);
 714384187 - UI_UIMYSOLDIERASSIGNMENTSCOMP_MYSOLDIERSELECTEDLICENSEASSIGNMENTINFO
 	[499] <field name="DataKey">714384187</field>
 	[282] case UI_UIMYSOLDIERASSIGNMENTSCOMP_MYSOLDIERSELECTEDLICENSEASSIGNMENTINFO:
@@ -2745,8 +2662,8 @@
 -1883329313 - UI_UINEWSTORECOMP_PS3STOREIMAGE
 	[603] <field name="DataKey">-1883329313</field>
 	[705] <field name="DataKey">-1883329313</field>
-	[648] <field name="DataKey">-1883329313</field>
 	[617] <field name="DataKey">-1883329313</field>
+	[648] <field name="DataKey">-1883329313</field>
 	[370] case UI_UINEWSTORECOMP_PS3STOREIMAGE:
 -397902276 - UI_UINEWSTORECOMP_PURCHASE
 	[160] <field name="DataKey">-397902276</field>
@@ -2809,16 +2726,16 @@
 	[233] <field name="DataKey">-441819365</field>
 	[247] case UI_UIPERSISTENCECOMP_BESTVEHICLE:
 1792353432 - UI_UIPERSISTENCECOMP_BUCKETUNLOCKLEVELS
+	[45] <field name="DataKey">1792353432</field>
+	[69] <field name="DataKey">1792353432</field>
+	[93] <field name="DataKey">1792353432</field>
+	[117] <field name="DataKey">1792353432</field>
 	[152] <field name="DataKey">1792353432</field>
 	[232] <field name="DataKey">1792353432</field>
 	[242] <field name="DataKey">1792353432</field>
 	[252] <field name="DataKey">1792353432</field>
 	[262] <field name="DataKey">1792353432</field>
 	[272] <field name="DataKey">1792353432</field>
-	[45] <field name="DataKey">1792353432</field>
-	[69] <field name="DataKey">1792353432</field>
-	[93] <field name="DataKey">1792353432</field>
-	[117] <field name="DataKey">1792353432</field>
 	[86] case UI_UIPERSISTENCECOMP_BUCKETUNLOCKLEVELS:
 1152748301 - UI_UIPERSISTENCECOMP_COOPAVENGERKILLS
 	[288] case  UI_UIPERSISTENCECOMP_COOPAVENGERKILLS:
@@ -2861,7 +2778,6 @@
 1512650578 - UI_UIPERSISTENCECOMP_KILLS
 	[203] <field name="DataKey">1512650578</field>
 	[140] case UI_UIPERSISTENCECOMP_KILLS:
-	[197] case UI_UIPERSISTENCECOMP_KILLSPERMINUTE:
 -107359333 - UI_UIPERSISTENCECOMP_KILLSPERMINUTE
 	[239] <field name="DataKey">-107359333</field>
 	[197] case UI_UIPERSISTENCECOMP_KILLSPERMINUTE:
@@ -2882,8 +2798,8 @@
 	[287] <field name="DataKey">1224231858</field>
 	[102] case UI_UIPERSISTENCECOMP_RANKNAME:
 -1972000832 - UI_UIPERSISTENCECOMP_RANKUNLOCKLEVELS
-	[221] <field name="DataKey">-1972000832</field>
 	[149] <field name="DataKey">-1972000832</field>
+	[221] <field name="DataKey">-1972000832</field>
 	[93] case UI_UIPERSISTENCECOMP_RANKUNLOCKLEVELS:
 1560262882 - UI_UIPERSISTENCECOMP_SCOREPERMINUTE
 	[275] <field name="DataKey">1560262882</field>
@@ -2945,32 +2861,32 @@
 	[106] <field name="DataKey">-1192680079</field>
 	[70] <field name="DataKey">-1192680079</field>
 	[82] <field name="DataKey">-1192680079</field>
-	[78] <field name="DataKey">-1192680079</field>
 	[210] <field name="DataKey">-1192680079</field>
+	[108] <field name="DataKey">-1192680079</field>
 	[67] <field name="DataKey">-1192680079</field>
 	[78] <field name="DataKey">-1192680079</field>
 	[106] <field name="DataKey">-1192680079</field>
-	[108] <field name="DataKey">-1192680079</field>
-	[280] <field name="DataKey">-1192680079</field>
-	[208] <field name="DataKey">-1192680079</field>
+	[43] <field name="DataKey">-1192680079</field>
 	[77] <field name="DataKey">-1192680079</field>
+	[280] <field name="DataKey">-1192680079</field>
+	[78] <field name="DataKey">-1192680079</field>
 	[26] <field name="DataKey">-1192680079</field>
 	[290] <field name="DataKey">-1192680079</field>
 	[324] <field name="DataKey">-1192680079</field>
-	[43] <field name="DataKey">-1192680079</field>
 	[64] <field name="DataKey">-1192680079</field>
 	[294] <field name="DataKey">-1192680079</field>
+	[123] <field name="DataKey">-1192680079</field>
 	[64] <field name="DataKey">-1192680079</field>
+	[193] <field name="DataKey">-1192680079</field>
+	[208] <field name="DataKey">-1192680079</field>
 	[164] <field name="DataKey">-1192680079</field>
 	[171] <field name="DataKey">-1192680079</field>
 	[196] <field name="DataKey">-1192680079</field>
-	[193] <field name="DataKey">-1192680079</field>
 	[74] <field name="DataKey">-1192680079</field>
 	[703] <field name="DataKey">-1192680079</field>
-	[123] <field name="DataKey">-1192680079</field>
 	[186] <field name="DataKey">-1192680079</field>
-	[184] <field name="DataKey">-1192680079</field>
 	[124] <field name="DataKey">-1192680079</field>
+	[184] <field name="DataKey">-1192680079</field>
 	[464] case UI_UIPOPUPCOMP_POPUPBUTTONS:
 	[505] case UI_UIPOPUPCOMP_POPUPBUTTONS:
 682819360 - UI_UIPOPUPCOMP_POPUPISVISIBLE
@@ -2988,20 +2904,20 @@
 	[57] <field name="DataKey">201161033</field>
 	[47] <field name="DataKey">201161033</field>
 	[55] <field name="DataKey">201161033</field>
-	[111] <field name="DataKey">201161033</field>
 	[70] <field name="DataKey">201161033</field>
-	[57] <field name="DataKey">201161033</field>
 	[148] <field name="DataKey">201161033</field>
-	[97] <field name="DataKey">201161033</field>
-	[361] <field name="DataKey">201161033</field>
-	[50] <field name="DataKey">201161033</field>
-	[40] <field name="DataKey">201161033</field>
+	[57] <field name="DataKey">201161033</field>
 	[124] <field name="DataKey">201161033</field>
-	[240] <field name="DataKey">201161033</field>
-	[275] <field name="DataKey">201161033</field>
+	[50] <field name="DataKey">201161033</field>
+	[97] <field name="DataKey">201161033</field>
+	[111] <field name="DataKey">201161033</field>
+	[40] <field name="DataKey">201161033</field>
+	[98] <field name="DataKey">201161033</field>
 	[184] <field name="DataKey">201161033</field>
 	[268] <field name="DataKey">201161033</field>
-	[98] <field name="DataKey">201161033</field>
+	[361] <field name="DataKey">201161033</field>
+	[240] <field name="DataKey">201161033</field>
+	[275] <field name="DataKey">201161033</field>
 	[193] <field name="DataKey">201161033</field>
 	[142] <field name="DataKey">201161033</field>
 	[463] case UI_UIPOPUPCOMP_POPUPTEXT:
@@ -3010,26 +2926,26 @@
 	[90] <field name="DataKey">-1951480908</field>
 	[51] <field name="DataKey">-1951480908</field>
 	[51] <field name="DataKey">-1951480908</field>
-	[41] <field name="DataKey">-1951480908</field>
 	[37] <field name="DataKey">-1951480908</field>
+	[41] <field name="DataKey">-1951480908</field>
 	[49] <field name="DataKey">-1951480908</field>
+	[38] <field name="DataKey">-1951480908</field>
+	[120] <field name="DataKey">-1951480908</field>
 	[69] <field name="DataKey">-1951480908</field>
+	[51] <field name="DataKey">-1951480908</field>
+	[118] <field name="DataKey">-1951480908</field>
+	[44] <field name="DataKey">-1951480908</field>
+	[62] <field name="DataKey">-1951480908</field>
 	[122] <field name="DataKey">-1951480908</field>
 	[163] <field name="DataKey">-1951480908</field>
-	[38] <field name="DataKey">-1951480908</field>
-	[51] <field name="DataKey">-1951480908</field>
-	[120] <field name="DataKey">-1951480908</field>
-	[62] <field name="DataKey">-1951480908</field>
-	[355] <field name="DataKey">-1951480908</field>
-	[44] <field name="DataKey">-1951480908</field>
 	[34] <field name="DataKey">-1951480908</field>
-	[118] <field name="DataKey">-1951480908</field>
 	[83] <field name="DataKey">-1951480908</field>
+	[26] <field name="DataKey">-1951480908</field>
 	[72] <field name="DataKey">-1951480908</field>
 	[178] <field name="DataKey">-1951480908</field>
 	[224] <field name="DataKey">-1951480908</field>
+	[355] <field name="DataKey">-1951480908</field>
 	[81] <field name="DataKey">-1951480908</field>
-	[26] <field name="DataKey">-1951480908</field>
 	[41] <field name="DataKey">-1951480908</field>
 	[97] <field name="DataKey">-1951480908</field>
 	[462] case UI_UIPOPUPCOMP_POPUPTITLE:
@@ -3046,15 +2962,15 @@
 	[293] <field name="DataKey">1310175943</field>
 	[157] <field name="DataKey">1310175943</field>
 	[157] <field name="DataKey">1310175943</field>
-	[203] <field name="DataKey">1310175943</field>
 	[556] <field name="DataKey">1310175943</field>
 	[157] <field name="DataKey">1310175943</field>
-	[601] <field name="DataKey">1310175943</field>
+	[203] <field name="DataKey">1310175943</field>
 	[208] <field name="DataKey">1310175943</field>
 	[145] <field name="DataKey">1310175943</field>
 	[193] <field name="DataKey">1310175943</field>
-	[564] <field name="DataKey">1310175943</field>
 	[337] <field name="DataKey">1310175943</field>
+	[564] <field name="DataKey">1310175943</field>
+	[601] <field name="DataKey">1310175943</field>
 	[519] <field name="DataKey">1310175943</field>
 	[1328] <field name="DataKey">1310175943</field>
 	[52] IUISystem::getInstance()->setData(UI_UIPOPUPCOMP_SHOWDIMMER, true);
@@ -3186,10 +3102,10 @@
 	[377] IUISystem::getInstance()->refreshData(UI_UIPREMIUMCOMP_CALENDARDATA);
 	[860] IUISystem::getInstance()->refreshData(UI_UIPREMIUMCOMP_CALENDARDATA);
 -879835926 - UI_UIPREMIUMCOMP_CALENDARSELECTEDINDEX
-	[586] <field name="DataKey">-879835926</field>
-	[739] <field name="DataKey">-879835926</field>
 	[502] <field name="DataKey">-879835926</field>
 	[728] <field name="DataKey">-879835926</field>
+	[586] <field name="DataKey">-879835926</field>
+	[739] <field name="DataKey">-879835926</field>
 	[66] //case UI_UIPREMIUMCOMP_CALENDARSELECTEDINDEX:
 	[758] IUISystem::getInstance()->getData(UI_UIPREMIUMCOMP_CALENDARSELECTEDINDEX, selectedItemIndexDataValue);
 2053244060 - UI_UIPREMIUMCOMP_CURRENTMONTHFRACTION
@@ -3211,10 +3127,6 @@
 	[319] <field name="DataKey">1254067457</field>
 	[369] <field name="DataKey">1254067457</field>
 	[812] IUISystem::getInstance()->setData(UI_UIPREMIUMCOMP_DETAILHEADER, m_currentDetailItem->name.c_str());
-429853017 - UI_UIPREMIUMCOMP_DETAILIMAGE
-	[136] case UI_UIPREMIUMCOMP_DETAILIMAGELOADED:
-	[380] IUISystem::getInstance()->refreshData(UI_UIPREMIUMCOMP_DETAILIMAGELOADED);
-	[818] IUISystem::getInstance()->setData(UI_UIPREMIUMCOMP_DETAILIMAGEISLARGE, m_currentDetailItem->hasLargeImage);
 602424478 - UI_UIPREMIUMCOMP_DETAILIMAGEISLARGE
 	[445] <field name="DataKey">602424478</field>
 	[818] IUISystem::getInstance()->setData(UI_UIPREMIUMCOMP_DETAILIMAGEISLARGE, m_currentDetailItem->hasLargeImage);
@@ -3227,8 +3139,6 @@
 	[899] <field name="DataKey">-1913318863</field>
 	[185] case UI_UIPREMIUMCOMP_DETAILPOPUPBUTTONS:
 	[820] IUISystem::getInstance()->refreshData(UI_UIPREMIUMCOMP_DETAILPOPUPBUTTONS);
-1029206676 - UI_UIPREMIUMCOMP_DETAILSTOREITEM
-	[237] IUISystem::getInstance()->setData(UI_UIPREMIUMCOMP_DETAILSTOREITEMEXISTS, "store");
 1478376340 - UI_UIPREMIUMCOMP_DETAILSTOREITEMEXISTS
 	[728] <field name="DataKey">1478376340</field>
 	[237] IUISystem::getInstance()->setData(UI_UIPREMIUMCOMP_DETAILSTOREITEMEXISTS, "store");
@@ -3260,12 +3170,6 @@
 	[426] <field name="DataKey">-1709389666</field>
 	[112] case UI_UIPREMIUMCOMP_HASPREMIUMDATA:
 -421834112 - UI_UIPREMIUMCOMP_ISVIDEOPLAYING
-	[494] <field name="DataKey">-421834112</field>
-	[529] <field name="DataKey">-421834112</field>
-	[604] <field name="DataKey">-421834112</field>
-	[638] <field name="DataKey">-421834112</field>
-	[656] <field name="DataKey">-421834112</field>
-	[691] <field name="DataKey">-421834112</field>
 	[1164] <field name="DataKey">-421834112</field>
 	[1210] <field name="DataKey">-421834112</field>
 	[1296] <field name="DataKey">-421834112</field>
@@ -3273,6 +3177,12 @@
 	[1395] <field name="DataKey">-421834112</field>
 	[1494] <field name="DataKey">-421834112</field>
 	[1512] <field name="DataKey">-421834112</field>
+	[494] <field name="DataKey">-421834112</field>
+	[529] <field name="DataKey">-421834112</field>
+	[604] <field name="DataKey">-421834112</field>
+	[638] <field name="DataKey">-421834112</field>
+	[656] <field name="DataKey">-421834112</field>
+	[691] <field name="DataKey">-421834112</field>
 	[102] IUISystem::getInstance()->refreshData(UI_UIPREMIUMCOMP_ISVIDEOPLAYING);
 	[160] case UI_UIPREMIUMCOMP_ISVIDEOPLAYING:
 948726668 - UI_UIPREMIUMCOMP_ISVIDEOVISIBLEINABOUTSCREEN
@@ -3317,9 +3227,6 @@
 	[582] <field name="DataKey">677258269</field>
 	[168] case UI_UIPREMIUMCOMP_PREMIUMABOUTLISTITEMS:
 1127654995 - UI_UIPREMIUMCOMP_PREMIUMBUTTONBAR
-	[285] <field name="DataKey">1127654995</field>
-	[305] <field name="DataKey">1127654995</field>
-	[833] <field name="DataKey">1127654995</field>
 	[280] <field name="DataKey">1127654995</field>
 	[549] <field name="DataKey">1127654995</field>
 	[1192] <field name="DataKey">1127654995</field>
@@ -3327,6 +3234,9 @@
 	[350] <field name="DataKey">1127654995</field>
 	[978] <field name="DataKey">1127654995</field>
 	[1043] <field name="DataKey">1127654995</field>
+	[285] <field name="DataKey">1127654995</field>
+	[305] <field name="DataKey">1127654995</field>
+	[833] <field name="DataKey">1127654995</field>
 1121080044 - UI_UIPREMIUMCOMP_PREMIUMERROR
 	[116] <field name="DataKey">1121080044</field>
 	[141] <field name="DataKey">1121080044</field>
@@ -3339,16 +3249,16 @@
 	[423] IUISystem::getInstance()->setDataValue(UI_UIPREMIUMCOMP_PREMIUMREQUESTDONE, true);
 	[459] IUISystem::getInstance()->setDataValue(UI_UIPREMIUMCOMP_PREMIUMREQUESTDONE, false);
 2110519064 - UI_UIPREMIUMCOMP_PREMIUMSCREEN
-	[604] <field name="DataKey">2110519064</field>
-	[763] <field name="DataKey">2110519064</field>
 	[631] <field name="DataKey">2110519064</field>
 	[746] <field name="DataKey">2110519064</field>
+	[604] <field name="DataKey">2110519064</field>
+	[763] <field name="DataKey">2110519064</field>
 	[771] IUISystem::getInstance()->getData(UI_UIPREMIUMCOMP_PREMIUMSCREEN, listName);
 	[841] IUISystem::getInstance()->getData(UI_UIPREMIUMCOMP_PREMIUMSCREEN, listName);
 1178113217 - UI_UIPREMIUMCOMP_PREMIUMTABLIST
 	[115] <field name="DataKey">1178113217</field>
-	[115] <field name="DataKey">1178113217</field>
 	[207] <field name="DataKey">1178113217</field>
+	[115] <field name="DataKey">1178113217</field>
 	[149] case UI_UIPREMIUMCOMP_PREMIUMTABLIST:
 1232432388 - UI_UIPREMIUMCOMP_TIMELINEDATA
 	[421] <field name="DataKey">1232432388</field>
@@ -3427,12 +3337,12 @@
 	[974] <field name="DataKey">1346905968</field>
 	[143] bool hasInputFocus = UIScreenUtil::getDataBool(UI_UISCOREBOARDCOMP_HASFOCUS, false);
 218661847 - UI_UISERVERLISTCOMP_ALLOWREFRESH
-	[2154] <field name="DataKey">218661847</field>
-	[2193] <field name="DataKey">218661847</field>
-	[2227] <field name="DataKey">218661847</field>
 	[178] <field name="DataKey">218661847</field>
 	[208] <field name="DataKey">218661847</field>
 	[238] <field name="DataKey">218661847</field>
+	[2154] <field name="DataKey">218661847</field>
+	[2193] <field name="DataKey">218661847</field>
+	[2227] <field name="DataKey">218661847</field>
 1399947513 - UI_UISERVERLISTCOMP_CURRENTBUTTONBARCONF
 	[570] IUISystem::getInstance()->setData(UI_UISERVERLISTCOMP_CURRENTBUTTONBARCONF, backButton);
 	[651] IUISystem::getInstance()->setData(UI_UISERVERLISTCOMP_CURRENTBUTTONBARCONF, barInfo.c_str());
@@ -3448,11 +3358,11 @@
 	[718] <field name="DataKey">-680358469</field>
 1443253171 - UI_UISERVERLISTCOMP_CURRENTSELECTED
 	[963] <field name="DataKey">1443253171</field>
+	[934] <field name="DataKey">1443253171</field>
 	[3503] <field name="DataKey">1443253171</field>
 	[4569] <field name="DataKey">1443253171</field>
 	[4623] <field name="DataKey">1443253171</field>
 	[4696] <field name="DataKey">1443253171</field>
-	[934] <field name="DataKey">1443253171</field>
 	[329] IUISystem::getInstance()->getData(UI_UISERVERLISTCOMP_CURRENTSELECTED, dataValue);
 	[567] IUISystem::getInstance()->setData(UI_UISERVERLISTCOMP_CURRENTSELECTED, legacyString);
 	[453] IUISystem::getInstance()->setData(UI_UISERVERLISTCOMP_CURRENTSELECTED, serverBrowserHelper::getFormattedIndex(m_selectedRow, row.gameID, 0, row.secret, sb));
@@ -3520,8 +3430,8 @@
 	[117] <field name="DataKey">1963457139</field>
 	[384] IUISystem::getInstance()->setData(UI_UISERVERLISTCOMP_WAITINGFORDATA, false, UINotifyType_Always);
 	[1245] IUISystem::getInstance()->setData(UI_UISERVERLISTCOMP_WAITINGFORDATA, true, UINotifyType_Always);
-	[171] // IUISystem::getInstance()->setData(UI_UISERVERLISTCOMP_WAITINGFORDATA, false, UINotifyType_Always);
 	[671] IUISystem::getInstance()->setData(UI_UISERVERLISTCOMP_WAITINGFORDATA, true, UINotifyType_Always);
+	[171] // IUISystem::getInstance()->setData(UI_UISERVERLISTCOMP_WAITINGFORDATA, false, UINotifyType_Always);
 -246486894 - UI_UISERVERLISTCOMP_WARNINGMESSAGE
 	[1396] IUISystem::getInstance()->setData(UI_UISERVERLISTCOMP_WARNINGMESSAGE, "", UINotifyType_Always, UIDataValue::UISetType_Always);
 	[1402] IUISystem::getInstance()->setData(UI_UISERVERLISTCOMP_WARNINGMESSAGE, uiServerListComp::ID_M_SB_MISSINGDLC, UINotifyType_Always, UIDataValue::UISetType_Always);
@@ -3547,14 +3457,9 @@
 	[1842] <field name="DataKey">1759039576</field>
 	[444] <field name="DataKey">1759039576</field>
 	[5296] <field name="DataKey">1759039576</field>
-	[200] case UI_UISETTINGSCOMP_BRIGHTNESSMAXIMUM:
-	[201] case UI_UISETTINGSCOMP_BRIGHTNESSCURRENT:
 	[255] case UI_UISETTINGSCOMP_BRIGHTNESS:
 	[378] case UI_UISETTINGSCOMP_BRIGHTNESS:
 	[939] ui->setData(UI_UISETTINGSCOMP_BRIGHTNESS, newValue);
-	[35] ui->setData(UI_UISETTINGSCOMP_BRIGHTNESSCURRENT, (double)m_brightnessFactor);
-	[36] ui->setData(UI_UISETTINGSCOMP_BRIGHTNESSMAXIMUM, (double)1.0f);
-	[121] ui->setData(UI_UISETTINGSCOMP_BRIGHTNESSCURRENT, (double)m_brightnessFactor);
 	[122] ui->setData(UI_UISETTINGSCOMP_BRIGHTNESS, m_brightnessFactor);
 -1429870735 - UI_UISETTINGSCOMP_BRIGHTNESSCURRENT
 	[73] <field name="DataKey">-1429870735</field>
@@ -3577,8 +3482,6 @@
 	[77] <field name="DataKey">1733092213</field>
 	[15] <field name="DataKey">1733092213</field>
 	[211] case UI_UISETTINGSCOMP_CURRENTGAMEMODE:
-	[217] case UI_UISETTINGSCOMP_CURRENTGAMEMODECLASS:
-	[223] case UI_UISETTINGSCOMP_CURRENTGAMEMODENAME:
 	[367] case UI_UISETTINGSCOMP_CURRENTGAMEMODE:
 1870459195 - UI_UISETTINGSCOMP_CURRENTGAMEMODECLASS
 	[315] <field name="DataKey">1870459195</field>
@@ -3589,11 +3492,11 @@
 	[217] case UI_UISETTINGSCOMP_CURRENTGAMEMODECLASS:
 1098058770 - UI_UISETTINGSCOMP_CURRENTGAMEMODENAME
 	[207] <field name="DataKey">1098058770</field>
+	[162] <field name="DataKey">1098058770</field>
+	[174] <field name="DataKey">1098058770</field>
 	[97] <field name="DataKey">1098058770</field>
 	[162] <field name="DataKey">1098058770</field>
-	[162] <field name="DataKey">1098058770</field>
 	[157] <field name="DataKey">1098058770</field>
-	[174] <field name="DataKey">1098058770</field>
 	[37] <field name="DataKey">1098058770</field>
 	[223] case UI_UISETTINGSCOMP_CURRENTGAMEMODENAME:
 -1959405252 - UI_UISETTINGSCOMP_ISPS3JAPANESEDD
@@ -3697,8 +3600,8 @@
 	[343] case UI_UISETUPSERVERWIZARDCOMP_RANKEDSTRING:
 	[1171] IUISystem::getInstance()->refreshData(UI_UISETUPSERVERWIZARDCOMP_RANKEDSTRING);
 -798977783 - UI_UISETUPSERVERWIZARDCOMP_SAVECOMPLETED
-	[1030] <field name="DataKey">-798977783</field>
 	[51] <field name="DataKey">-798977783</field>
+	[1030] <field name="DataKey">-798977783</field>
 	[625] IUISystem::getInstance()->setData(UI_UISETUPSERVERWIZARDCOMP_SAVECOMPLETED, false, UINotifyType_Always);
 	[833] IUISystem::getInstance()->setData(UI_UISETUPSERVERWIZARDCOMP_SAVECOMPLETED, false, UINotifyType_Always);
 	[1352] IUISystem::getInstance()->setData(UI_UISETUPSERVERWIZARDCOMP_SAVECOMPLETED, false, UINotifyType_Always);
@@ -3836,9 +3739,9 @@
 	[1540] <field name="DataKey">-299224144</field>
 	[1605] <field name="DataKey">-299224144</field>
 1337307685 - UI_UISETUPSERVERWIZARDCOMP_WAITINGFORDATA
-	[1256] <field name="DataKey">1337307685</field>
 	[93] <field name="DataKey">1337307685</field>
 	[122] <field name="DataKey">1337307685</field>
+	[1256] <field name="DataKey">1337307685</field>
 	[227] case UI_UISETUPSERVERWIZARDCOMP_WAITINGFORDATA:
 	[1388] IUISystem::getInstance()->refreshData(UI_UISETUPSERVERWIZARDCOMP_WAITINGFORDATA);
 2058781455 - UI_UISOLDIERCOMP_COMPASSANGLE
@@ -4032,23 +3935,14 @@
 	[63] IUISystem::getInstance()->setData(UI_UITEAMCOMP_DEFAULTSCOREBOARDINDEX, 0);
 	[172] IUISystem::getInstance()->setData(UI_UITEAMCOMP_DEFAULTSCOREBOARDINDEX, (int)-1);
 -1256601953 - UI_UITEAMCOMP_ENEMYTEAM1
-	[29] , m_rightListProxy(UI_UITEAMCOMP_ENEMYTEAM1PLAYERS)
 	[291] m_team2 = getTeamName(UI_UITEAMCOMP_ENEMYTEAM1);
 	[307] m_team2 = getTeamName(UI_UITEAMCOMP_ENEMYTEAM1);
-	[47] const char* enemyTeamName = UIScreenUtil::getDataString(UI_UITEAMCOMP_ENEMYTEAM1NAME);
-	[196] IUISystem::getInstance()->refreshData(UI_UITEAMCOMP_ENEMYTEAM1PLAYERS);
-	[276] uiSystem->setData(UI_UITEAMCOMP_ENEMYTEAM1NAME, teamSID);
 	[277] uiSystem->setData(UI_UITEAMCOMP_ENEMYTEAM1, (int)teamId);
-	[278] uiSystem->setData(UI_UITEAMCOMP_ENEMYTEAM1FACTIONNAME, factionSID);
-	[279] uiSystem->setData(UI_UITEAMCOMP_ENEMYTEAM1LONGNAME, teamLongSID.c_str());
-	[308] case UI_UITEAMCOMP_ENEMYTEAM1PLAYERS:
-	[434] || (dataKey == UI_UITEAMCOMP_ENEMYTEAM1PLAYERS && enemyTeamId == Team1 && TeamInfo::isHostile(playerTeamId, myTeam))
-	[538] uiSystem->refreshData(UI_UITEAMCOMP_ENEMYTEAM1PLAYERS);
 -748921216 - UI_UITEAMCOMP_ENEMYTEAM1FACTIONNAME
-	[250] <field name="DataKey">-748921216</field>
-	[322] <field name="DataKey">-748921216</field>
 	[307] <field name="DataKey">-748921216</field>
 	[690] <field name="DataKey">-748921216</field>
+	[250] <field name="DataKey">-748921216</field>
+	[322] <field name="DataKey">-748921216</field>
 	[112] <field name="DataKey">-748921216</field>
 	[16] <field name="BitmapNameDataKey">-748921216</field>
 	[122] <field name="DataKey">-748921216</field>
@@ -4076,16 +3970,8 @@
 	[434] || (dataKey == UI_UITEAMCOMP_ENEMYTEAM1PLAYERS && enemyTeamId == Team1 && TeamInfo::isHostile(playerTeamId, myTeam))
 	[538] uiSystem->refreshData(UI_UITEAMCOMP_ENEMYTEAM1PLAYERS);
 -1256601956 - UI_UITEAMCOMP_ENEMYTEAM2
-	[30] , m_lowerLeftListProxy(UI_UITEAMCOMP_ENEMYTEAM2PLAYERS)
 	[309] m_team3 = getTeamName(UI_UITEAMCOMP_ENEMYTEAM2);
-	[197] IUISystem::getInstance()->refreshData(UI_UITEAMCOMP_ENEMYTEAM2PLAYERS);
-	[282] uiSystem->setData(UI_UITEAMCOMP_ENEMYTEAM2NAME, teamSID);
 	[283] uiSystem->setData(UI_UITEAMCOMP_ENEMYTEAM2, (int)teamId);
-	[284] uiSystem->setData(UI_UITEAMCOMP_ENEMYTEAM2FACTIONNAME, factionSID);
-	[285] uiSystem->setData(UI_UITEAMCOMP_ENEMYTEAM2LONGNAME, teamLongSID.c_str());
-	[309] case UI_UITEAMCOMP_ENEMYTEAM2PLAYERS:
-	[435] || (dataKey == UI_UITEAMCOMP_ENEMYTEAM2PLAYERS && enemyTeamId == Team2 && TeamInfo::isHostile(playerTeamId, myTeam))
-	[539] uiSystem->refreshData(UI_UITEAMCOMP_ENEMYTEAM2PLAYERS);
 -2138094351 - UI_UITEAMCOMP_ENEMYTEAM2LONGNAME
 	[451] <field name="DataKey">-2138094351</field>
 	[285] uiSystem->setData(UI_UITEAMCOMP_ENEMYTEAM2LONGNAME, teamLongSID.c_str());
@@ -4099,16 +3985,8 @@
 	[435] || (dataKey == UI_UITEAMCOMP_ENEMYTEAM2PLAYERS && enemyTeamId == Team2 && TeamInfo::isHostile(playerTeamId, myTeam))
 	[539] uiSystem->refreshData(UI_UITEAMCOMP_ENEMYTEAM2PLAYERS);
 -1256601955 - UI_UITEAMCOMP_ENEMYTEAM3
-	[31] , m_lowerRightListProxy(UI_UITEAMCOMP_ENEMYTEAM3PLAYERS)
 	[311] m_team4 = getTeamName(UI_UITEAMCOMP_ENEMYTEAM3);
-	[198] IUISystem::getInstance()->refreshData(UI_UITEAMCOMP_ENEMYTEAM3PLAYERS);
-	[288] uiSystem->setData(UI_UITEAMCOMP_ENEMYTEAM3NAME, teamSID);
 	[289] uiSystem->setData(UI_UITEAMCOMP_ENEMYTEAM3, (int)teamId);
-	[290] uiSystem->setData(UI_UITEAMCOMP_ENEMYTEAM3FACTIONNAME, factionSID);
-	[291] uiSystem->setData(UI_UITEAMCOMP_ENEMYTEAM3LONGNAME, teamLongSID.c_str());
-	[310] case UI_UITEAMCOMP_ENEMYTEAM3PLAYERS:
-	[436] || (dataKey == UI_UITEAMCOMP_ENEMYTEAM3PLAYERS && enemyTeamId == Team3 && TeamInfo::isHostile(playerTeamId, myTeam))))
-	[540] uiSystem->refreshData(UI_UITEAMCOMP_ENEMYTEAM3PLAYERS);
 49022384 - UI_UITEAMCOMP_ENEMYTEAM3LONGNAME
 	[478] <field name="DataKey">49022384</field>
 	[291] uiSystem->setData(UI_UITEAMCOMP_ENEMYTEAM3LONGNAME, teamLongSID.c_str());
@@ -4122,35 +4000,28 @@
 	[436] || (dataKey == UI_UITEAMCOMP_ENEMYTEAM3PLAYERS && enemyTeamId == Team3 && TeamInfo::isHostile(playerTeamId, myTeam))))
 	[540] uiSystem->refreshData(UI_UITEAMCOMP_ENEMYTEAM3PLAYERS);
 93402129 - UI_UITEAMCOMP_FRIENDLYFACTIONNAME
-	[220] <field name="DataKey">93402129</field>
-	[252] <field name="DataKey">93402129</field>
 	[237] <field name="DataKey">93402129</field>
 	[623] <field name="DataKey">93402129</field>
+	[220] <field name="DataKey">93402129</field>
+	[252] <field name="DataKey">93402129</field>
 	[81] <field name="DataKey">93402129</field>
 	[19] <field name="BitmapNameDataKey">93402129</field>
-	[46] <field name="DataKey">93402129</field>
 	[52] <field name="DataKey">93402129</field>
-	[273] <field name="DataKey">93402129</field>
 	[19] <field name="BitmapNameDataKey">93402129</field>
-	[62] <field name="DataKey">93402129</field>
+	[273] <field name="DataKey">93402129</field>
 	[64] <field name="DataKey">93402129</field>
+	[46] <field name="DataKey">93402129</field>
+	[62] <field name="DataKey">93402129</field>
 	[92] <field name="DataKey">93402129</field>
 	[399] <field name="DataKey">93402129</field>
 	[728] <field name="DataKey">93402129</field>
 	[46] const char* myTeamName = UIScreenUtil::getDataString(UI_UITEAMCOMP_FRIENDLYFACTIONNAME);
 	[263] uiSystem->setData(UI_UITEAMCOMP_FRIENDLYFACTIONNAME, factionSID);
 746554835 - UI_UITEAMCOMP_FRIENDLYTEAM
-	[28] , m_leftListProxy(UI_UITEAMCOMP_FRIENDLYTEAMPLAYERS)
 	[289] m_team1 = getTeamName(UI_UITEAMCOMP_FRIENDLYTEAM);
 	[305] m_team1 = getTeamName(UI_UITEAMCOMP_FRIENDLYTEAM);
 	[43] int myTeamId = UIScreenUtil::getDataInt(UI_UITEAMCOMP_FRIENDLYTEAM);
-	[195] IUISystem::getInstance()->refreshData(UI_UITEAMCOMP_FRIENDLYTEAMPLAYERS);
-	[261] uiSystem->setData(UI_UITEAMCOMP_FRIENDLYTEAMNAME, teamSID);
 	[262] uiSystem->setData(UI_UITEAMCOMP_FRIENDLYTEAM, (int) teamId);
-	[264] uiSystem->setData(UI_UITEAMCOMP_FRIENDLYTEAMLONGNAME, teamLongSID.c_str());
-	[307] case UI_UITEAMCOMP_FRIENDLYTEAMPLAYERS:
-	[433] if (!((dataKey == UI_UITEAMCOMP_FRIENDLYTEAMPLAYERS && TeamInfo::isFriendly(playerTeamId, myTeam))
-	[537] uiSystem->refreshData(UI_UITEAMCOMP_FRIENDLYTEAMPLAYERS);
 18024190 - UI_UITEAMCOMP_FRIENDLYTEAMLONGNAME
 	[131] <field name="DataKey">18024190</field>
 	[972] <field name="DataKey">18024190</field>
@@ -4238,19 +4109,18 @@
 	[96] if (unlockComponent->getData().getUnlockDataKey()==(uint)UI_UIUNLOCKSCOMP_LASERDESIGNATED)
 -1924458570 - UI_UIWEAPONCOMP_ACTIVEWEAPONAMMO
 	[972] <field name="DataKey">-1924458570</field>
-	[1634] <field name="DataKey">-1924458570</field>
 	[1175] <field name="DataKey">-1924458570</field>
 	[1610] <field name="DataKey">-1924458570</field>
+	[1634] <field name="DataKey">-1924458570</field>
 	[645] UI_UIWEAPONCOMP_ACTIVEWEAPONAMMO, // 0
-	[646] UI_UIWEAPONCOMP_ACTIVEWEAPONAMMOTOTAL, // 1
 	[239] formatStatusText(textObj, UI_UIWEAPONCOMP_ACTIVEWEAPONAMMO, 0, true);
 -582063692 - UI_UIWEAPONCOMP_ACTIVEWEAPONAMMOTOTAL
 	[646] UI_UIWEAPONCOMP_ACTIVEWEAPONAMMOTOTAL, // 1
 -1977496045 - UI_UIWEAPONCOMP_ACTIVEWEAPONISRELOADING
 	[952] <field name="DataKey">-1977496045</field>
-	[1865] <field name="DataKey">-1977496045</field>
 	[1536] <field name="DataKey">-1977496045</field>
 	[1843] <field name="DataKey">-1977496045</field>
+	[1865] <field name="DataKey">-1977496045</field>
 	[687] m_ui->setData(secondaryWeapon ? UI_UIWEAPONCOMP_SECONDARYWEAPONISRELOADING : UI_UIWEAPONCOMP_ACTIVEWEAPONISRELOADING, isRreloading);
 	[148] const bool isReloading = UIScreenUtil::getDataBool(UI_UIWEAPONCOMP_ACTIVEWEAPONISRELOADING);
 -1924559777 - UI_UIWEAPONCOMP_ACTIVEWEAPONNAME
@@ -4281,9 +4151,9 @@
 	[544] m_ui->setData(UI_UIWEAPONCOMP_GPSLONGITUDEPOSITION, (float)gpsLong);
 -211913842 - UI_UIWEAPONCOMP_HEAT
 	[983] <field name="DataKey">-211913842</field>
-	[1846] <field name="DataKey">-211913842</field>
 	[1515] <field name="DataKey">-211913842</field>
 	[1822] <field name="DataKey">-211913842</field>
+	[1846] <field name="DataKey">-211913842</field>
 	[609] m_ui->setData(UI_UIWEAPONCOMP_HEAT, hasOverHeat() ? (double)getHeat() : 0.0);
 -1581064823 - UI_UIWEAPONCOMP_JAVELININITIALIZED
 	[424] <field name="DataKey">-1581064823</field>
@@ -4293,10 +4163,10 @@
 -1183721598 - UI_UIWEAPONCOMP_RANGEMETER
 	[152] <field name="DataKey">-1183721598</field>
 	[53] <field name="DataKey">-1183721598</field>
-	[60] <field name="DataKey">-1183721598</field>
 	[120] <field name="DataKey">-1183721598</field>
-	[43] <field name="DataKey">-1183721598</field>
+	[60] <field name="DataKey">-1183721598</field>
 	[40] <field name="DataKey">-1183721598</field>
+	[43] <field name="DataKey">-1183721598</field>
 	[43] <field name="DataKey">-1183721598</field>
 	[62] <field name="DataKey">-1183721598</field>
 	[59] <field name="DataKey">-1183721598</field>
@@ -4306,20 +4176,18 @@
 	[409] m_ui->setData(UI_UIWEAPONCOMP_RANGEMETER, rangeString.c_str());
 663993856 - UI_UIWEAPONCOMP_SECONDARYWEAPONAMMO
 	[651] UI_UIWEAPONCOMP_SECONDARYWEAPONAMMO, // 0
-	[652] UI_UIWEAPONCOMP_SECONDARYWEAPONAMMOTOTAL, // 1
-	[252] formatStatusText(textObj, UI_UIWEAPONCOMP_SECONDARYWEAPONAMMOTOTAL, 0, false);
 359271362 - UI_UIWEAPONCOMP_SECONDARYWEAPONAMMOTOTAL
 	[652] UI_UIWEAPONCOMP_SECONDARYWEAPONAMMOTOTAL, // 1
 	[252] formatStatusText(textObj, UI_UIWEAPONCOMP_SECONDARYWEAPONAMMOTOTAL, 0, false);
 1914676773 - UI_UIWEAPONCOMP_SECONDARYWEAPONISRELOADING
 	[687] m_ui->setData(secondaryWeapon ? UI_UIWEAPONCOMP_SECONDARYWEAPONISRELOADING : UI_UIWEAPONCOMP_ACTIVEWEAPONISRELOADING, isRreloading);
 -335649383 - UI_UIWEAPONCOMP_SHOWCROSSHAIR
-	[96] <field name="DataKey">-335649383</field>
-	[129] <field name="DataKey">-335649383</field>
-	[161] <field name="DataKey">-335649383</field>
 	[111] <field name="DataKey">-335649383</field>
 	[144] <field name="DataKey">-335649383</field>
 	[176] <field name="DataKey">-335649383</field>
+	[96] <field name="DataKey">-335649383</field>
+	[129] <field name="DataKey">-335649383</field>
+	[161] <field name="DataKey">-335649383</field>
 	[329] <field name="DataKey">-335649383</field>
 	[5930] <field name="DataKey">-335649383</field>
 	[179] //m_ui->setData(UI_UIWEAPONCOMP_SHOWCROSSHAIR, false);
@@ -4349,8 +4217,8 @@
 	[166] <field name="DataKey">-1748411521</field>
 	[449] m_ui->setData(UI_UIWEAPONCOMP_ZEROINGMETER, (int)distance);
 295672096 - UI_UIWEAPONCOMP_ZOOMED
-	[196] <field name="DataKey">295672096</field>
 	[195] <field name="DataKey">295672096</field>
+	[196] <field name="DataKey">295672096</field>
 	[196] <field name="DataKey">295672096</field>
 	[195] <field name="DataKey">295672096</field>
 	[259] <field name="DataKey">295672096</field>
@@ -4371,9 +4239,9 @@
 	[37] <field name="DataKey">971779877</field>
 	[182] <field name="DataKey">971779877</field>
 	[1662] <field name="DataKey">971779877</field>
-	[1671] <field name="DataKey">971779877</field>
 	[1234] <field name="DataKey">971779877</field>
 	[1647] <field name="DataKey">971779877</field>
+	[1671] <field name="DataKey">971779877</field>
 	[523] m_ui->setData(UI_UIVEHICLECOMP_ACTIVEWEAPONNAME, vehicleDescription->getName().c_str());
 -1969876539 - UI_UIVEHICLECOMP_ATTACKANGLE
 	[238] <field name="DataKey">-1969876539</field>
@@ -4386,8 +4254,8 @@
 -357891235 - UI_UIVEHICLECOMP_COMPASSANGLE
 	[38] <field name="DataKey">-357891235</field>
 	[140] <field name="DataKey">-357891235</field>
-	[38] <field name="DataKey">-357891235</field>
 	[758] <field name="DataKey">-357891235</field>
+	[38] <field name="DataKey">-357891235</field>
 	[1615] <field name="DataKey">-357891235</field>
 	[135] m_ui->setData(UI_UIVEHICLECOMP_COMPASSANGLE, 0);
 	[723] m_ui->setData(UI_UIVEHICLECOMP_COMPASSANGLE, i);
@@ -4395,8 +4263,6 @@
 	[1407] <field name="DataKey">823142877</field>
 	[1626] <field name="DataKey">823142877</field>
 	[658] UI_UIVEHICLECOMP_ENTRY1ROTATION,
-	[676] UI_UIVEHICLECOMP_ENTRY1ROTATIONINVERTED,
-	[43] const float tankRotation = (float)BFUIScreenUtil::getDataDouble(isGunnerMode ? UI_UIVEHICLECOMP_ENTRY2ROTATIONINVERTED : UI_UIVEHICLECOMP_ENTRY1ROTATIONINVERTED);
 	[44] const float otherGunRotation = (float)BFUIScreenUtil::getDataDouble(isGunnerMode ? UI_UIVEHICLECOMP_ENTRY1ROTATION : UI_UIVEHICLECOMP_ENTRY2ROTATION);
 -603410354 - UI_UIVEHICLECOMP_ENTRY1ROTATIONINVERTED
 	[676] UI_UIVEHICLECOMP_ENTRY1ROTATIONINVERTED,
@@ -4404,45 +4270,42 @@
 348555806 - UI_UIVEHICLECOMP_ENTRY2ROTATION
 	[659] UI_UIVEHICLECOMP_ENTRY2ROTATION
 	[667] return UI_UIVEHICLECOMP_ENTRY2ROTATION;
-	[677] UI_UIVEHICLECOMP_ENTRY2ROTATIONINVERTED
-	[685] return UI_UIVEHICLECOMP_ENTRY2ROTATIONINVERTED;
-	[43] const float tankRotation = (float)BFUIScreenUtil::getDataDouble(isGunnerMode ? UI_UIVEHICLECOMP_ENTRY2ROTATIONINVERTED : UI_UIVEHICLECOMP_ENTRY1ROTATIONINVERTED);
 	[44] const float otherGunRotation = (float)BFUIScreenUtil::getDataDouble(isGunnerMode ? UI_UIVEHICLECOMP_ENTRY1ROTATION : UI_UIVEHICLECOMP_ENTRY2ROTATION);
 1506809613 - UI_UIVEHICLECOMP_ENTRY2ROTATIONINVERTED
 	[677] UI_UIVEHICLECOMP_ENTRY2ROTATIONINVERTED
 	[685] return UI_UIVEHICLECOMP_ENTRY2ROTATIONINVERTED;
 	[43] const float tankRotation = (float)BFUIScreenUtil::getDataDouble(isGunnerMode ? UI_UIVEHICLECOMP_ENTRY2ROTATIONINVERTED : UI_UIVEHICLECOMP_ENTRY1ROTATIONINVERTED);
 1364532982 - UI_UIVEHICLECOMP_GFORCE
-	[288] <field name="DataKey">1364532982</field>
 	[153] <field name="DataKey">1364532982</field>
+	[288] <field name="DataKey">1364532982</field>
 	[320] <field name="DataKey">1364532982</field>
 	[1176] m_ui->setData(UI_UIVEHICLECOMP_GFORCE, abs(m_chassisComponent->getGForce()));
 603474369 - UI_UIVEHICLECOMP_GPSLATITUDEPOSITION
 	[63] <field name="DataKey">603474369</field>
 	[91] <field name="DataKey">603474369</field>
-	[62] <field name="DataKey">603474369</field>
 	[1020] <field name="DataKey">603474369</field>
+	[62] <field name="DataKey">603474369</field>
 	[985] m_ui->setData(UI_UIVEHICLECOMP_GPSLATITUDEPOSITION, m_gpsLatitude[eGpsPosition]);
 1727142546 - UI_UIVEHICLECOMP_GPSLONGITUDEPOSITION
 	[114] <field name="DataKey">1727142546</field>
 	[116] <field name="DataKey">1727142546</field>
-	[87] <field name="DataKey">1727142546</field>
 	[1030] <field name="DataKey">1727142546</field>
+	[87] <field name="DataKey">1727142546</field>
 	[986] m_ui->setData(UI_UIVEHICLECOMP_GPSLONGITUDEPOSITION, m_gpsLongitude[eGpsPosition]);
 1872287886 - UI_UIVEHICLECOMP_GROUNDSPEED
 	[57] <field name="DataKey">1872287886</field>
-	[53] <field name="DataKey">1872287886</field>
 	[40] <field name="DataKey">1872287886</field>
+	[53] <field name="DataKey">1872287886</field>
 	[295] <field name="DataKey">1872287886</field>
 	[207] <field name="DataKey">1872287886</field>
 	[1161] m_ui->setData(UI_UIVEHICLECOMP_GROUNDSPEED, (int)groundspeed);
 556761553 - UI_UIVEHICLECOMP_GUNNERDIRECTIONPITCHPERCENT
-	[1935] <field name="DataKey">556761553</field>
 	[1913] <field name="DataKey">556761553</field>
+	[1935] <field name="DataKey">556761553</field>
 	[1119] IUISystem::getInstance()->setData(UI_UIVEHICLECOMP_GUNNERDIRECTIONPITCHPERCENT, (int)percent);
 564144216 - UI_UIVEHICLECOMP_GUNNERDIRECTIONYAWPERCENT
-	[1924] <field name="DataKey">564144216</field>
 	[1902] <field name="DataKey">564144216</field>
+	[1924] <field name="DataKey">564144216</field>
 	[1138] IUISystem::getInstance()->setData(UI_UIVEHICLECOMP_GUNNERDIRECTIONYAWPERCENT, static_cast<int>(percent));
 1236946160 - UI_UIVEHICLECOMP_HEALTH
 	[229] <field name="FracDataValue">1236946160</field>
@@ -4471,14 +4334,14 @@
 	[1163] m_ui->setData(UI_UIVEHICLECOMP_PITCHANGLE, (double)gameInfo.vehiclePitchAngle);
 	[36] const float pitchAngle = float(BFUIScreenUtil::getDataDouble(UI_UIVEHICLECOMP_PITCHANGLE, false));
 -1370513655 - UI_UIVEHICLECOMP_PREDICTEDSIGHTX
-	[1816] <field name="DataKey">-1370513655</field>
 	[1485] <field name="DataKey">-1370513655</field>
 	[1792] <field name="DataKey">-1370513655</field>
+	[1816] <field name="DataKey">-1370513655</field>
 	[791] m_ui->setData(UI_UIVEHICLECOMP_PREDICTEDSIGHTX,  (double)x);
 -1370513656 - UI_UIVEHICLECOMP_PREDICTEDSIGHTY
-	[1805] <field name="DataKey">-1370513656</field>
 	[1474] <field name="DataKey">-1370513656</field>
 	[1781] <field name="DataKey">-1370513656</field>
+	[1805] <field name="DataKey">-1370513656</field>
 	[792] m_ui->setData(UI_UIVEHICLECOMP_PREDICTEDSIGHTY,  (double)y);
 -327666683 - UI_UIVEHICLECOMP_PRIMARYWEAPONPITCHANGLE
 	[88] <field name="DataKey">-327666683</field>
@@ -4486,13 +4349,12 @@
 	[1164] m_ui->setData(UI_UIVEHICLECOMP_PRIMARYWEAPONPITCHANGLE, double(gameInfo.primaryWeaponWorldPitchAngle - gameInfo.vehiclePitchAngle + 90));
 1739732397 - UI_UIVEHICLECOMP_RADIOALTITUDE
 	[39] <field name="DataKey">1739732397</field>
-	[39] <field name="DataKey">1739732397</field>
 	[161] <field name="DataKey">1739732397</field>
-	[1724] <field name="DataKey">1739732397</field>
+	[39] <field name="DataKey">1739732397</field>
 	[1300] <field name="DataKey">1739732397</field>
 	[1700] <field name="DataKey">1739732397</field>
+	[1724] <field name="DataKey">1739732397</field>
 	[857] m_ui->setData(UI_UIVEHICLECOMP_RADIOALTITUDE, tmp);
-	[860] m_ui->setData(UI_UIVEHICLECOMP_RADIOALTITUDEDIVBYTEN, tmp);
 	[38] const char* radioAltitudeString = BFUIScreenUtil::getDataString(UI_UIVEHICLECOMP_RADIOALTITUDE);
 -688679438 - UI_UIVEHICLECOMP_RADIOALTITUDEDIVBYTEN
 	[228] <field name="DataKey">-688679438</field>
@@ -4501,22 +4363,18 @@
 	[209] <field name="DataKey">1100989432</field>
 	[36] <field name="DataKey">1100989432</field>
 	[85] <field name="DataKey">1100989432</field>
-	[215] <field name="DataKey">1100989432</field>
 	[66] <field name="DataKey">1100989432</field>
+	[215] <field name="DataKey">1100989432</field>
 	[635] m_ui->setData(UI_UIVEHICLECOMP_RANGEMETER, int(norm(weaponOrigin.trans - hit.m_position) + 0.5f));
 	[637] m_ui->setData(UI_UIVEHICLECOMP_RANGEMETER, "-");
-2032494477 - UI_UIVEHICLECOMP_SEALEVEL
-	[894] m_ui->setData(UI_UIVEHICLECOMP_SEALEVELALTITUDE, tmp);
-	[897] m_ui->setData(UI_UIVEHICLECOMP_SEALEVELALTITUDEDIVBYTEN, tmp);
 301029501 - UI_UIVEHICLECOMP_SEALEVELALTITUDE
 	[58] <field name="DataKey">301029501</field>
 	[40] <field name="DataKey">301029501</field>
-	[150] <field name="DataKey">301029501</field>
 	[233] <field name="DataKey">301029501</field>
 	[258] <field name="DataKey">301029501</field>
+	[150] <field name="DataKey">301029501</field>
 	[108] <field name="DataKey">301029501</field>
 	[894] m_ui->setData(UI_UIVEHICLECOMP_SEALEVELALTITUDE, tmp);
-	[897] m_ui->setData(UI_UIVEHICLECOMP_SEALEVELALTITUDEDIVBYTEN, tmp);
 148953250 - UI_UIVEHICLECOMP_SEALEVELALTITUDEDIVBYTEN
 	[203] <field name="DataKey">148953250</field>
 	[897] m_ui->setData(UI_UIVEHICLECOMP_SEALEVELALTITUDEDIVBYTEN, tmp);
@@ -4527,19 +4385,19 @@
 	[5527] <field name="DataKey">501014533</field>
 	[5069] <field name="DataKey">501014533</field>
 1320579273 - UI_UIVEHICLECOMP_SHOWSOLDIERCROSSHAIR
-	[271] <field name="DataKey">1320579273</field>
 	[297] <field name="DataKey">1320579273</field>
+	[271] <field name="DataKey">1320579273</field>
 	[241] if (!UIScreenUtil::getDataBool(UI_UIVEHICLECOMP_SHOWSOLDIERCROSSHAIR, false))
 -398987169 - UI_UIVEHICLECOMP_SKIDSLIP
-	[1699] <field name="DataKey">-398987169</field>
 	[1260] <field name="DataKey">-398987169</field>
 	[1675] <field name="DataKey">-398987169</field>
+	[1699] <field name="DataKey">-398987169</field>
 	[958] m_ui->setData(UI_UIVEHICLECOMP_SKIDSLIP, (double)m_skidSlip);
 2013126640 - UI_UIVEHICLECOMP_THRUST
 	[136] <field name="DataKey">2013126640</field>
-	[1760] <field name="DataKey">2013126640</field>
 	[1429] <field name="DataKey">2013126640</field>
 	[1736] <field name="DataKey">2013126640</field>
+	[1760] <field name="DataKey">2013126640</field>
 	[920] m_ui->setData(UI_UIVEHICLECOMP_THRUST, tmp);
 -234786695 - UI_UIVEHICLECOMP_TIME
 	[58] <field name="DataKey">-234786695</field>
@@ -4553,11 +4411,7 @@
 	[251] <field name="DataKey">-1074335173</field>
 	[40] <field name="DataKey">-1074335173</field>
 	[41] <field name="DataKey">-1074335173</field>
-	[818] m_ui->setData(UI_UIVEHICLECOMP_VELOCITYVECTORX, (double)x);
-	[819] m_ui->setData(UI_UIVEHICLECOMP_VELOCITYVECTORY,  (double)y);
 	[1149] m_ui->setData(UI_UIVEHICLECOMP_VELOCITY, (int)mpsToKph(norm(gameInfo.linearVelocity)));
-	[44] const Vec2 velocityVectorDelta((float)BFUIScreenUtil::getDataDouble(UI_UIVEHICLECOMP_VELOCITYVECTORX),
-	[45] (float)BFUIScreenUtil::getDataDouble(UI_UIVEHICLECOMP_VELOCITYVECTORY));
 -1976718342 - UI_UIVEHICLECOMP_VELOCITYVECTORX
 	[818] m_ui->setData(UI_UIVEHICLECOMP_VELOCITYVECTORX, (double)x);
 	[44] const Vec2 velocityVectorDelta((float)BFUIScreenUtil::getDataDouble(UI_UIVEHICLECOMP_VELOCITYVECTORX),
@@ -4622,8 +4476,8 @@
 	[97] IUISystem::getInstance()->setData(UI_USERCOMP_INSUFFICIENTSPACE, false);
 	[350] IUISystem::getInstance()->setData(UI_USERCOMP_INSUFFICIENTSPACE, true);
 -1093327606 - UI_USERCOMP_ISINGAME
-	[234] <field name="DataKey">-1093327606</field>
 	[256] <field name="DataKey">-1093327606</field>
+	[234] <field name="DataKey">-1093327606</field>
 	[112] uiSystem->setData(UI_USERCOMP_ISINGAME, true);
 	[106] IUISystem::getInstance()->setData(UI_USERCOMP_ISINGAME, bfui->isIngame());*/
 	[369] IUISystem::getInstance()->setData(UI_USERCOMP_ISINGAME, false);
