@@ -57,28 +57,36 @@ namespace Search_DBX_files
             _counter = _allDbxFiles.Length + _allCppFiles.Length;
             TotalFiles = _counter;
 
-            ThreadPool.SetMaxThreads(maxThreads * 2, maxThreads); //setting max threads lower than # cpu's doesn't have any affect due to MS being stupid and not allowing that functionality... ;/
-            var bw = new BackgroundWorker();
-            bw.DoWork += (sender, args) =>
+            if (TotalFiles > 0)
             {
-                foreach(var file in _allDbxFiles)
+                ThreadPool.SetMaxThreads(maxThreads * 2, maxThreads); //setting max threads lower than # cpu's doesn't have any affect due to MS being stupid and not allowing that functionality... ;/
+                var bw = new BackgroundWorker();
+                bw.DoWork += (sender, args) =>
                 {
-                    if(file.Exists)
+                    foreach (var file in _allDbxFiles)
                     {
-                        ThreadPool.QueueUserWorkItem(new WaitCallback(parseFile), new ThreadState { File = file, Content = new StreamReader(file.FullName), IsDbxFile = true, Filter = _dbxFilter });
+                        if (file.Exists)
+                        {
+                            ThreadPool.QueueUserWorkItem(new WaitCallback(parseFile), new ThreadState { File = file, Content = new StreamReader(file.FullName), IsDbxFile = true, Filter = _dbxFilter });
+                        }
                     }
-                }
-                foreach(var file in _allCppFiles)
-                {
-                    using (var sr = new StreamReader(file.OpenRead()))
+                    foreach (var file in _allCppFiles)
                     {
-                        ThreadPool.QueueUserWorkItem(new WaitCallback(parseFile), new ThreadState { File = file, Content = new StreamReader(file.FullName), IsDbxFile = false, Filter = _cppFilter });
+                        using (var sr = new StreamReader(file.OpenRead()))
+                        {
+                            ThreadPool.QueueUserWorkItem(new WaitCallback(parseFile), new ThreadState { File = file, Content = new StreamReader(file.FullName), IsDbxFile = false, Filter = _cppFilter });
+                        }
                     }
-                }
-                Console.WriteLine("foreach done in {0}s", (DateTime.Now - _start).TotalSeconds);
-            };
-            bw.RunWorkerCompleted += onThreadCompleted;
-            bw.RunWorkerAsync();
+                    Console.WriteLine("foreach done in {0}s", (DateTime.Now - _start).TotalSeconds);
+                };
+                bw.RunWorkerCompleted += onThreadCompleted;
+                bw.RunWorkerAsync();
+            }
+            else
+            {
+                allThreadsDone();
+            }
+
         }
 
         private void parseFile(Object o)

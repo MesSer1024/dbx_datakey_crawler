@@ -4,21 +4,20 @@ Intention: Make it possible to bridge dataKey-identifiers inside CPP-screens (FR
 
 Source code: https://github.com/MesSer1024/dbx_datakey_crawler
 
-
 -----------------------------------------------
 -----------------------------------------------
 Changelog:
 --------------------------
   1.5
 --------------------------
-- Increased performance by improving thread reading and I/O (Avg. search time on UI-files (approx. 23k files) down from ~60s to ~15s)
-- Possible to filter results given the actual integer value of a datakey
+- Increased performance by improving thread utilization and file I/O (Avg. search time on UI-files (approx. 23k files) down from ~60s to ~15s)
+- Possible to filter results given the actual integer value of a datakey (just write the numeric value of the key in filter)
 - Removed a lot of "fake matches" for situations similar to (UI_FOO_BAR & UI_FOO_BARITEM) which previously reported UI_FOO_BARITEM as being used by UI_FOO_BAR)
-- Outputting all the "fake matches" into a seperate file for further error investigations in case this messes something up
+- Outputting all the "fake matches" into a seperate file for further error investigations in case this messes something up 
 --------------------------
   1.4
 --------------------------
-- Made it possible to save/load a search to make it faster to use program when user has not done any sync changes etc.
+- Made it possible to load a previous search
 - Improved GUI of program and made it possible to rearrange lists in view
 - fixed bug with line numbers being wrong (windows understood \n\r as 2 line breaks instead of 1)
 --------------------------
@@ -28,6 +27,7 @@ Changelog:
 - Introduced "suspects" that are keys that has references but doesn't seem to have any impact on the system (only setData-calls)
 - now using mono-font (Mono Segoe UI)
 - Now showing how many references each key has in gui
+
 - Major refactoring on underlying datastructure to improve usage
 
 --------------------------
