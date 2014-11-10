@@ -93,6 +93,7 @@ namespace Search_DBX_files
             }
             else
             {
+                settingsControl.saveSettings("./config.ini");
                 _timestamp = DateTime.Now;
                 settingsControl.setEnabled(false);
                 showLoading();

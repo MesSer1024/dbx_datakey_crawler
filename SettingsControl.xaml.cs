@@ -110,6 +110,22 @@ namespace Search_DBX_files
             }
         }
 
+        public void saveSettings(string path)
+        {
+            using (var sw = new StreamWriter(path, false))
+            {
+                var sb = new StringBuilder();
+                sb.AppendFormat("dbx_root|{0}\n", DbxRoot);
+                sb.AppendFormat("cpp_root|{0}\n", CppRoot);
+                sb.AppendFormat("comp_file|{0}\n", DataDefinesFile);
+                sb.AppendFormat("dbx_filter|{0}\n", DbxLineFilter);
+                sb.AppendFormat("cpp_filter|{0}\n", CppLineFilter);
+
+                sw.Write(sb.ToString());
+                sw.Flush();
+            }
+        }
+
         private void onAnalyze(object sender, RoutedEventArgs e)
         {
             if (onAnalyzeButton != null)
